@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "net.lgitech.remotesupport",
+      "sha256_cert_fingerprints": [
+        "91:24:6F:DC:27:BA:07:F7:97:2C:D8:B1:2B:A5:6B:D6:04:FC:19:4E:95:BC:DE:A4:88:D0:71:A7:AD:5E:78:94"
+      ]
+    }
+  }
+]

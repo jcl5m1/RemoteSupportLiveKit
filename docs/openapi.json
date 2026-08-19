@@ -1,0 +1,1705 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "RemoteSupportLiveKit backend",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/v1/sessions": {
+      "post": {
+        "tags": [
+          "sessions"
+        ],
+        "summary": "Create Session",
+        "description": "Create a session. Auth: none. Rate limit: 5/min/IP, 20/hour/device.",
+        "operationId": "create_session_v1_sessions_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateSessionRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreateSessionResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/sessions/{session_id}/consent": {
+      "post": {
+        "tags": [
+          "sessions"
+        ],
+        "summary": "Record Consent",
+        "description": "Record the consent decision and, on acceptance, actually start the call.",
+        "operationId": "record_consent_v1_sessions__session_id__consent_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConsentRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConsentResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/sessions/join": {
+      "post": {
+        "tags": [
+          "sessions"
+        ],
+        "summary": "Join Session",
+        "description": "Support joins by code. Auth: support user.",
+        "operationId": "join_session_v1_sessions_join_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/JoinRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/JoinResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ]
+      }
+    },
+    "/v1/sessions/{session_id}/token/refresh": {
+      "post": {
+        "tags": [
+          "sessions"
+        ],
+        "summary": "Refresh Token",
+        "description": "Fresh LiveKit token for the same identity.",
+        "operationId": "refresh_token_v1_sessions__session_id__token_refresh_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LiveKitCredentials"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/sessions/{session_id}": {
+      "get": {
+        "tags": [
+          "sessions"
+        ],
+        "summary": "Get Session",
+        "description": "Full session state. Also the agent worker's reconciliation source.",
+        "operationId": "get_session_v1_sessions__session_id__get",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SessionDetail"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/sessions/{session_id}/end": {
+      "post": {
+        "tags": [
+          "sessions"
+        ],
+        "summary": "End Session",
+        "description": "Delete the LiveKit room, which cascades to egress and the agent job.",
+        "operationId": "end_session_v1_sessions__session_id__end_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/sessions/{session_id}/data": {
+      "delete": {
+        "tags": [
+          "sessions"
+        ],
+        "summary": "Purge Session Data",
+        "description": "Purge media, transcript rows and exports. Requires an admin claim.",
+        "operationId": "purge_session_data_v1_sessions__session_id__data_delete",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/sessions/{session_id}/agent": {
+      "post": {
+        "tags": [
+          "agent"
+        ],
+        "summary": "Set Ai Enabled",
+        "description": "Enable/disable the AI agent's speech. **Support auth only** (FR-4.1).",
+        "operationId": "set_ai_enabled_v1_sessions__session_id__agent_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AgentToggleRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AgentToggleResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/sessions/{session_id}/agent/mode": {
+      "post": {
+        "tags": [
+          "agent"
+        ],
+        "summary": "Set Agent Mode",
+        "description": "Record a mode transition. Called by the agent worker (service auth) or\nforced by support.",
+        "operationId": "set_agent_mode_v1_sessions__session_id__agent_mode_post",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AgentModeRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/sessions/{session_id}/utterances": {
+      "post": {
+        "tags": [
+          "transcripts"
+        ],
+        "summary": "Ingest Utterances",
+        "description": "Batched, idempotent utterance ingest. Auth: service (agent worker).\n\nINSERT ... ON CONFLICT (session_id, client_utterance_id) DO NOTHING.\nThat index is what makes the agent's retry-with-backoff loop safe.\n\nOnly finalized utterances arrive here; interims are never persisted (FR-6.3).",
+        "operationId": "ingest_utterances_v1_sessions__session_id__utterances_post",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Session Id"
+            }
+          },
+          {
+            "name": "x-service-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "X-Service-Key"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UtteranceIngestRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UtteranceIngestResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/sessions/{session_id}/transcript": {
+      "get": {
+        "tags": [
+          "transcripts"
+        ],
+        "summary": "Get Transcript",
+        "description": "Ordered utterances with a cursor. The support panel reconciles against\nthis every 10s; the low-latency path is the lk.transcription text stream.",
+        "operationId": "get_transcript_v1_sessions__session_id__transcript_get",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Session Id"
+            }
+          },
+          {
+            "name": "since_ms",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 0,
+              "title": "Since Ms"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 500,
+              "title": "Limit"
+            }
+          },
+          {
+            "name": "cursor",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Cursor"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TranscriptPage"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/sessions/{session_id}/transcript/export": {
+      "post": {
+        "tags": [
+          "transcripts"
+        ],
+        "summary": "Export Transcript",
+        "description": "Force the JSONL/VTT/TXT/session.json export. Normally triggered by the\nroom_finished webhook; this endpoint exists for retry. Idempotent.",
+        "operationId": "export_transcript_v1_sessions__session_id__transcript_export_post",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/sessions/{session_id}/recordings": {
+      "get": {
+        "tags": [
+          "recordings"
+        ],
+        "summary": "List Recordings",
+        "description": "List the session's media with V4 signed URLs.\n\nThe backend never proxies media bytes -- egress writes straight to GCS and\nclients fetch via short-lived signed URLs (SIGNED_URL_TTL_SECONDS).",
+        "operationId": "list_recordings_v1_sessions__session_id__recordings_get",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RecordingsResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/webhooks/livekit": {
+      "post": {
+        "tags": [
+          "webhooks"
+        ],
+        "summary": "Livekit Webhook",
+        "description": "Verify, dispatch, and always return 200.",
+        "operationId": "livekit_webhook_v1_webhooks_livekit_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/metrics": {
+      "get": {
+        "summary": "Metrics",
+        "operationId": "metrics_metrics_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/healthz": {
+      "get": {
+        "summary": "Healthz",
+        "operationId": "healthz_healthz_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": {
+                    "type": "string"
+                  },
+                  "type": "object",
+                  "title": "Response Healthz Healthz Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/readyz": {
+      "get": {
+        "summary": "Readyz",
+        "operationId": "readyz_readyz_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Readyz Readyz Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AgentMode": {
+        "type": "string",
+        "enum": [
+          "SOLO",
+          "ASSISTED",
+          "WRAP_UP"
+        ],
+        "title": "AgentMode"
+      },
+      "AgentModeRequest": {
+        "properties": {
+          "mode": {
+            "$ref": "#/components/schemas/AgentMode"
+          }
+        },
+        "type": "object",
+        "required": [
+          "mode"
+        ],
+        "title": "AgentModeRequest"
+      },
+      "AgentToggleRequest": {
+        "properties": {
+          "enabled": {
+            "type": "boolean",
+            "title": "Enabled"
+          },
+          "reason": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Reason"
+          }
+        },
+        "type": "object",
+        "required": [
+          "enabled"
+        ],
+        "title": "AgentToggleRequest"
+      },
+      "AgentToggleResponse": {
+        "properties": {
+          "ai_enabled": {
+            "type": "boolean",
+            "title": "Ai Enabled"
+          },
+          "metadata_version": {
+            "type": "integer",
+            "title": "Metadata Version"
+          },
+          "applied_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Applied At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "ai_enabled",
+          "metadata_version",
+          "applied_at"
+        ],
+        "title": "AgentToggleResponse"
+      },
+      "ConsentRequest": {
+        "properties": {
+          "accepted": {
+            "type": "boolean",
+            "title": "Accepted"
+          },
+          "consent_text_version": {
+            "type": "string",
+            "title": "Consent Text Version"
+          }
+        },
+        "type": "object",
+        "required": [
+          "accepted",
+          "consent_text_version"
+        ],
+        "title": "ConsentRequest"
+      },
+      "ConsentResponse": {
+        "properties": {
+          "accepted": {
+            "type": "boolean",
+            "title": "Accepted"
+          },
+          "session_state": {
+            "type": "string",
+            "title": "Session State"
+          },
+          "livekit": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/LiveKitCredentials"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "recording_enabled": {
+            "type": "boolean",
+            "title": "Recording Enabled",
+            "default": true
+          }
+        },
+        "type": "object",
+        "required": [
+          "accepted",
+          "session_state"
+        ],
+        "title": "ConsentResponse"
+      },
+      "CreateSessionRequest": {
+        "properties": {
+          "device_id": {
+            "type": "string",
+            "title": "Device Id"
+          },
+          "display_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Display Name"
+          },
+          "locale": {
+            "type": "string",
+            "title": "Locale",
+            "default": "en-US"
+          }
+        },
+        "type": "object",
+        "required": [
+          "device_id"
+        ],
+        "title": "CreateSessionRequest"
+      },
+      "CreateSessionResponse": {
+        "properties": {
+          "session_id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Session Id"
+          },
+          "join_code": {
+            "type": "string",
+            "title": "Join Code"
+          },
+          "join_code_expires_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Join Code Expires At"
+          },
+          "deep_link": {
+            "type": "string",
+            "title": "Deep Link"
+          },
+          "universal_link": {
+            "type": "string",
+            "title": "Universal Link"
+          },
+          "qr_payload": {
+            "type": "string",
+            "title": "Qr Payload"
+          },
+          "caller_session_token": {
+            "type": "string",
+            "title": "Caller Session Token"
+          },
+          "consent_required": {
+            "type": "boolean",
+            "title": "Consent Required",
+            "default": true
+          },
+          "consent_text_version": {
+            "type": "string",
+            "title": "Consent Text Version"
+          },
+          "consent_text": {
+            "type": "string",
+            "title": "Consent Text"
+          }
+        },
+        "type": "object",
+        "required": [
+          "session_id",
+          "join_code",
+          "join_code_expires_at",
+          "deep_link",
+          "universal_link",
+          "qr_payload",
+          "caller_session_token",
+          "consent_text_version",
+          "consent_text"
+        ],
+        "title": "CreateSessionResponse"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "JoinRequest": {
+        "properties": {
+          "join_code": {
+            "type": "string",
+            "title": "Join Code"
+          },
+          "display_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Display Name"
+          }
+        },
+        "type": "object",
+        "required": [
+          "join_code"
+        ],
+        "title": "JoinRequest"
+      },
+      "JoinResponse": {
+        "properties": {
+          "session_id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Session Id"
+          },
+          "livekit": {
+            "$ref": "#/components/schemas/LiveKitCredentials"
+          },
+          "ai_enabled": {
+            "type": "boolean",
+            "title": "Ai Enabled"
+          },
+          "agent_mode": {
+            "$ref": "#/components/schemas/AgentMode"
+          },
+          "recording_enabled": {
+            "type": "boolean",
+            "title": "Recording Enabled"
+          },
+          "caller_display_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Caller Display Name"
+          }
+        },
+        "type": "object",
+        "required": [
+          "session_id",
+          "livekit",
+          "ai_enabled",
+          "agent_mode",
+          "recording_enabled"
+        ],
+        "title": "JoinResponse"
+      },
+      "LiveKitCredentials": {
+        "properties": {
+          "ws_url": {
+            "type": "string",
+            "title": "Ws Url"
+          },
+          "token": {
+            "type": "string",
+            "title": "Token"
+          },
+          "room_name": {
+            "type": "string",
+            "title": "Room Name"
+          },
+          "identity": {
+            "type": "string",
+            "title": "Identity"
+          },
+          "expires_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Expires At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "ws_url",
+          "token",
+          "room_name",
+          "identity",
+          "expires_at"
+        ],
+        "title": "LiveKitCredentials"
+      },
+      "ParticipantInfo": {
+        "properties": {
+          "role": {
+            "$ref": "#/components/schemas/ParticipantRole"
+          },
+          "identity": {
+            "type": "string",
+            "title": "Identity"
+          },
+          "display_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Display Name"
+          },
+          "joined_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Joined At"
+          },
+          "left_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Left At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "role",
+          "identity"
+        ],
+        "title": "ParticipantInfo"
+      },
+      "ParticipantRole": {
+        "type": "string",
+        "enum": [
+          "caller",
+          "support",
+          "agent"
+        ],
+        "title": "ParticipantRole"
+      },
+      "RecordingInfo": {
+        "properties": {
+          "kind": {
+            "$ref": "#/components/schemas/RecordingKind"
+          },
+          "role": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ParticipantRole"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "state": {
+            "$ref": "#/components/schemas/RecordingState"
+          },
+          "mime_type": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Mime Type"
+          },
+          "duration_ms": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Duration Ms"
+          },
+          "size_bytes": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Size Bytes"
+          },
+          "gcs_uri": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Gcs Uri"
+          },
+          "download_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Download Url"
+          },
+          "url_expires_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Url Expires At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "kind",
+          "state"
+        ],
+        "title": "RecordingInfo"
+      },
+      "RecordingKind": {
+        "type": "string",
+        "enum": [
+          "track_video",
+          "track_audio",
+          "room_composite"
+        ],
+        "title": "RecordingKind"
+      },
+      "RecordingState": {
+        "type": "string",
+        "enum": [
+          "starting",
+          "active",
+          "ending",
+          "complete",
+          "failed",
+          "aborted"
+        ],
+        "title": "RecordingState"
+      },
+      "RecordingsResponse": {
+        "properties": {
+          "recordings": {
+            "items": {
+              "$ref": "#/components/schemas/RecordingInfo"
+            },
+            "type": "array",
+            "title": "Recordings"
+          },
+          "transcript": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TranscriptExportUrls"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "recordings"
+        ],
+        "title": "RecordingsResponse"
+      },
+      "SessionDetail": {
+        "properties": {
+          "session_id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Session Id"
+          },
+          "state": {
+            "type": "string",
+            "title": "State"
+          },
+          "room_name": {
+            "type": "string",
+            "title": "Room Name"
+          },
+          "ai_enabled": {
+            "type": "boolean",
+            "title": "Ai Enabled"
+          },
+          "agent_mode": {
+            "$ref": "#/components/schemas/AgentMode"
+          },
+          "recording_enabled": {
+            "type": "boolean",
+            "title": "Recording Enabled"
+          },
+          "metadata_version": {
+            "type": "integer",
+            "title": "Metadata Version"
+          },
+          "participants": {
+            "items": {
+              "$ref": "#/components/schemas/ParticipantInfo"
+            },
+            "type": "array",
+            "title": "Participants"
+          },
+          "recordings": {
+            "items": {
+              "$ref": "#/components/schemas/RecordingInfo"
+            },
+            "type": "array",
+            "title": "Recordings"
+          },
+          "started_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Started At"
+          },
+          "ended_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Ended At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "session_id",
+          "state",
+          "room_name",
+          "ai_enabled",
+          "agent_mode",
+          "recording_enabled",
+          "metadata_version",
+          "participants",
+          "recordings"
+        ],
+        "title": "SessionDetail"
+      },
+      "TranscriptExportUrls": {
+        "properties": {
+          "jsonl_url": {
+            "type": "string",
+            "title": "Jsonl Url"
+          },
+          "vtt_url": {
+            "type": "string",
+            "title": "Vtt Url"
+          },
+          "txt_url": {
+            "type": "string",
+            "title": "Txt Url"
+          }
+        },
+        "type": "object",
+        "required": [
+          "jsonl_url",
+          "vtt_url",
+          "txt_url"
+        ],
+        "title": "TranscriptExportUrls"
+      },
+      "TranscriptPage": {
+        "properties": {
+          "utterances": {
+            "items": {
+              "$ref": "#/components/schemas/UtteranceOut"
+            },
+            "type": "array",
+            "title": "Utterances"
+          },
+          "next_cursor": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Next Cursor"
+          }
+        },
+        "type": "object",
+        "required": [
+          "utterances"
+        ],
+        "title": "TranscriptPage"
+      },
+      "UtteranceIn": {
+        "properties": {
+          "client_utterance_id": {
+            "type": "string",
+            "title": "Client Utterance Id"
+          },
+          "role": {
+            "$ref": "#/components/schemas/ParticipantRole"
+          },
+          "identity": {
+            "type": "string",
+            "title": "Identity"
+          },
+          "source": {
+            "$ref": "#/components/schemas/UtteranceSource"
+          },
+          "start_ms": {
+            "type": "integer",
+            "title": "Start Ms"
+          },
+          "end_ms": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "End Ms"
+          },
+          "text": {
+            "type": "string",
+            "title": "Text"
+          },
+          "language": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Language"
+          },
+          "confidence": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Confidence"
+          },
+          "agent_mode": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/AgentMode"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "ai_enabled": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Ai Enabled"
+          }
+        },
+        "type": "object",
+        "required": [
+          "client_utterance_id",
+          "role",
+          "identity",
+          "source",
+          "start_ms",
+          "text"
+        ],
+        "title": "UtteranceIn"
+      },
+      "UtteranceIngestRequest": {
+        "properties": {
+          "utterances": {
+            "items": {
+              "$ref": "#/components/schemas/UtteranceIn"
+            },
+            "type": "array",
+            "maxItems": 200,
+            "title": "Utterances"
+          }
+        },
+        "type": "object",
+        "required": [
+          "utterances"
+        ],
+        "title": "UtteranceIngestRequest"
+      },
+      "UtteranceIngestResponse": {
+        "properties": {
+          "accepted": {
+            "type": "integer",
+            "title": "Accepted"
+          },
+          "duplicates": {
+            "type": "integer",
+            "title": "Duplicates"
+          }
+        },
+        "type": "object",
+        "required": [
+          "accepted",
+          "duplicates"
+        ],
+        "title": "UtteranceIngestResponse"
+      },
+      "UtteranceOut": {
+        "properties": {
+          "client_utterance_id": {
+            "type": "string",
+            "title": "Client Utterance Id"
+          },
+          "role": {
+            "$ref": "#/components/schemas/ParticipantRole"
+          },
+          "identity": {
+            "type": "string",
+            "title": "Identity"
+          },
+          "source": {
+            "$ref": "#/components/schemas/UtteranceSource"
+          },
+          "start_ms": {
+            "type": "integer",
+            "title": "Start Ms"
+          },
+          "end_ms": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "End Ms"
+          },
+          "text": {
+            "type": "string",
+            "title": "Text"
+          },
+          "language": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Language"
+          },
+          "confidence": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Confidence"
+          },
+          "agent_mode": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/AgentMode"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "ai_enabled": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Ai Enabled"
+          },
+          "seq": {
+            "type": "integer",
+            "title": "Seq"
+          }
+        },
+        "type": "object",
+        "required": [
+          "client_utterance_id",
+          "role",
+          "identity",
+          "source",
+          "start_ms",
+          "text",
+          "seq"
+        ],
+        "title": "UtteranceOut"
+      },
+      "UtteranceSource": {
+        "type": "string",
+        "enum": [
+          "agent_stt",
+          "support_stt",
+          "agent_llm"
+        ],
+        "title": "UtteranceSource"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    },
+    "securitySchemes": {
+      "HTTPBearer": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+remotesupport.lgitech.net {
+	# Android App Links verification file
+	handle /.well-known/assetlinks.json {
+		root /srv
+		rewrite * /assetlinks.json
+		file_server
+		header Content-Type application/json
+	}
+
+	# Everything else proxies to the FastAPI backend
+	reverse_proxy backend:8000
+}

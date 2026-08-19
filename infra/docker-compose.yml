@@ -1,0 +1,50 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: rs
+      POSTGRES_PASSWORD: rs
+      POSTGRES_DB: remote_support
+    ports: ["5432:5432"]
+    volumes: ["pgdata:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U rs"]
+      interval: 5s
+      retries: 10
+
+  backend:
+    build:
+      context: ../backend
+      dockerfile: ../infra/Dockerfile.backend
+    env_file: [../backend/.env]
+    environment:
+      DATABASE_URL: postgresql+asyncpg://rs:rs@postgres:5432/remote_support
+      # ALLOW_DEGRADED_START is read from backend/.env. Set it to true there if
+      # you are developing without LiveKit/GCS credentials.
+    ports: ["8000:8000"]
+    depends_on:
+      postgres: {condition: service_healthy}
+    command: >
+      sh -c "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload"
+
+  agent:
+    build:
+      context: ../agent
+      dockerfile: ../infra/Dockerfile.agent
+    env_file: [../agent/.env]
+    environment:
+      BACKEND_URL: http://backend:8000
+      # ALLOW_DEGRADED_START is read from agent/.env. Set it to true there if
+      # you are developing without LiveKit/GCS credentials.
+    depends_on: [backend]
+    command: python -m agent.main start
+
+  # LiveKit itself is Cloud-hosted (docs/00). Nothing to run locally.
+  #
+  # Webhooks need a publicly reachable backend. For local development, tunnel
+  # port 8000 (cloudflared / ngrok) and point the LiveKit Cloud webhook config
+  # at https://<tunnel>/v1/webhooks/livekit. Without this, phases 4+ will not
+  # work locally — track egress is webhook-driven.
+
+volumes:
+  pgdata:

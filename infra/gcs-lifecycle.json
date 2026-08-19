@@ -1,0 +1,14 @@
+{
+  "_comment": "Retention policy (FR-7.4). Apply with: gsutil lifecycle set infra/gcs-lifecycle.json gs://$GCS_BUCKET  — keep RETENTION_DAYS in the backend config in sync with age below, and make sure the transcript-row pruning job uses the same horizon so the database does not outlive the media it describes.",
+  "lifecycle": {
+    "rule": [
+      {
+        "action": { "type": "Delete" },
+        "condition": {
+          "age": 30,
+          "matchesPrefix": ["sessions/"]
+        }
+      }
+    ]
+  }
+}

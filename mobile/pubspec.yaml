@@ -1,0 +1,48 @@
+name: remote_support
+description: Two-party support video calling with an AI voice agent.
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # LiveKit
+  livekit_client: ^2.11.0
+
+  # State + networking
+  flutter_riverpod: ^2.5.0
+  dio: ^5.4.0
+  freezed_annotation: ^2.4.0
+  json_annotation: ^4.9.0
+
+  # Quick join
+  app_links: ^6.3.0 # deep links + universal links
+  mobile_scanner: ^5.2.0 # QR scan (support)
+  qr_flutter: ^4.1.0 # QR render (caller)
+
+  # Support auth — Google SSO via Firebase (support role only; callers stay
+  # anonymous). See docs/08-security-compliance.md.
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.0
+  google_sign_in: ^6.2.0
+
+  # Platform
+  permission_handler: ^11.3.0
+  wakelock_plus: ^1.2.0
+  flutter_secure_storage: ^9.2.0
+  share_plus: ^10.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.4.0
+  freezed: ^2.5.0
+  json_serializable: ^6.8.0
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true

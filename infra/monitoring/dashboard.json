@@ -1,0 +1,235 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "id": null,
+  "links": [],
+  "panels": [
+    {
+      "collapsed": false,
+      "gridPos": {"h": 1, "w": 24, "x": 0, "y": 0},
+      "id": 1,
+      "panels": [],
+      "title": "Overview",
+      "type": "row"
+    },
+    {
+      "datasource": "${DS_PROMETHEUS}",
+      "fieldConfig": {
+        "defaults": {
+          "mappings": [],
+          "thresholds": {"mode": "absolute", "steps": [{"color": "green", "value": null}]},
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "gridPos": {"h": 4, "w": 6, "x": 0, "y": 1},
+      "id": 2,
+      "options": {"colorMode": "value", "graphMode": "area", "justifyMode": "auto", "orientation": "auto", "reduceOptions": {"calcs": ["lastNotNull"], "fields": "", "values": false}, "textMode": "auto"},
+      "pluginVersion": "10.0.0",
+      "targets": [
+        {"expr": "remote_support_active_sessions", "refId": "A"}
+      ],
+      "title": "Active Sessions",
+      "type": "stat"
+    },
+    {
+      "datasource": "${DS_PROMETHEUS}",
+      "fieldConfig": {
+        "defaults": {
+          "mappings": [],
+          "thresholds": {"mode": "absolute", "steps": [{"color": "green", "value": null}]},
+          "unit": "reqps"
+        }
+      },
+      "gridPos": {"h": 4, "w": 6, "x": 6, "y": 1},
+      "id": 3,
+      "options": {"colorMode": "value", "graphMode": "area", "justifyMode": "auto", "orientation": "auto", "reduceOptions": {"calcs": ["lastNotNull"], "fields": "", "values": false}, "textMode": "auto"},
+      "targets": [
+        {"expr": "sum(rate(remote_support_request_duration_seconds_count[5m]))", "refId": "A"}
+      ],
+      "title": "Request Rate",
+      "type": "stat"
+    },
+    {
+      "datasource": "${DS_PROMETHEUS}",
+      "fieldConfig": {
+        "defaults": {
+          "mappings": [],
+          "thresholds": {"mode": "absolute", "steps": [{"color": "green", "value": null}, {"color": "red", "value": 0.05}]},
+          "unit": "percentunit"
+        }
+      },
+      "gridPos": {"h": 4, "w": 6, "x": 12, "y": 1},
+      "id": 4,
+      "options": {"colorMode": "value", "graphMode": "area", "justifyMode": "auto", "orientation": "auto", "reduceOptions": {"calcs": ["lastNotNull"], "fields": "", "values": false}, "textMode": "auto"},
+      "targets": [
+        {"expr": "sum(rate(remote_support_request_duration_seconds_count{status=~\"5..\"}[5m])) / sum(rate(remote_support_request_duration_seconds_count[5m]))", "refId": "A"}
+      ],
+      "title": "5xx Error Rate",
+      "type": "stat"
+    },
+    {
+      "datasource": "${DS_PROMETHEUS}",
+      "fieldConfig": {
+        "defaults": {
+          "mappings": [],
+          "thresholds": {"mode": "absolute", "steps": [{"color": "green", "value": null}, {"color": "red", "value": 0}]},
+          "unit": "none"
+        }
+      },
+      "gridPos": {"h": 4, "w": 6, "x": 18, "y": 1},
+      "id": 5,
+      "options": {"colorMode": "background", "graphMode": "none", "justifyMode": "center", "orientation": "auto", "reduceOptions": {"calcs": ["lastNotNull"], "fields": "", "values": false}, "textMode": "auto"},
+      "targets": [
+        {"expr": "remote_support_readyz_dependency_healthy", "legendFormat": "{{name}}", "refId": "A"}
+      ],
+      "title": "Dependency Health",
+      "type": "stat"
+    },
+    {
+      "datasource": "${DS_PROMETHEUS}",
+      "fieldConfig": {
+        "defaults": {"custom": {"drawStyle": "line", "lineInterpolation": "linear", "spanNulls": false}, "unit": "reqps"}
+      },
+      "gridPos": {"h": 8, "w": 12, "x": 0, "y": 5},
+      "id": 6,
+      "options": {"legend": {"calcs": [], "displayMode": "list", "placement": "bottom"}, "tooltip": {"mode": "multi"}},
+      "targets": [
+        {"expr": "sum by (path) (rate(remote_support_request_duration_seconds_count[5m]))", "legendFormat": "{{path}}", "refId": "A"}
+      ],
+      "title": "Request Rate by Path",
+      "type": "timeseries"
+    },
+    {
+      "datasource": "${DS_PROMETHEUS}",
+      "fieldConfig": {
+        "defaults": {"custom": {"drawStyle": "line"}, "unit": "s"}
+      },
+      "gridPos": {"h": 8, "w": 12, "x": 12, "y": 5},
+      "id": 7,
+      "options": {"legend": {"displayMode": "list", "placement": "bottom"}},
+      "targets": [
+        {"expr": "histogram_quantile(0.95, sum by (le, path) (rate(remote_support_request_duration_seconds_bucket[5m])))", "legendFormat": "p95 {{path}}", "refId": "A"},
+        {"expr": "histogram_quantile(0.99, sum by (le, path) (rate(remote_support_request_duration_seconds_bucket[5m])))", "legendFormat": "p99 {{path}}", "refId": "B"}
+      ],
+      "title": "HTTP Latency (p95/p99)",
+      "type": "timeseries"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {"h": 1, "w": 24, "x": 0, "y": 13},
+      "id": 8,
+      "panels": [],
+      "title": "Business Events",
+      "type": "row"
+    },
+    {
+      "datasource": "${DS_PROMETHEUS}",
+      "fieldConfig": {"defaults": {"custom": {"drawStyle": "line"}, "unit": "short"}},
+      "gridPos": {"h": 8, "w": 8, "x": 0, "y": 14},
+      "id": 9,
+      "options": {"legend": {"displayMode": "list", "placement": "bottom"}},
+      "targets": [
+        {"expr": "sum by (recording_enabled) (rate(remote_support_sessions_created_total[5m]))", "legendFormat": "recording={{recording_enabled}}", "refId": "A"}
+      ],
+      "title": "Session Creation Rate",
+      "type": "timeseries"
+    },
+    {
+      "datasource": "${DS_PROMETHEUS}",
+      "fieldConfig": {"defaults": {"custom": {"drawStyle": "line"}, "unit": "short"}},
+      "gridPos": {"h": 8, "w": 8, "x": 8, "y": 14},
+      "id": 10,
+      "options": {"legend": {"displayMode": "list", "placement": "bottom"}},
+      "targets": [
+        {"expr": "sum by (result) (rate(remote_support_joins_attempted_total[5m]))", "legendFormat": "{{result}}", "refId": "A"}
+      ],
+      "title": "Support Join Attempts by Result",
+      "type": "timeseries"
+    },
+    {
+      "datasource": "${DS_PROMETHEUS}",
+      "fieldConfig": {"defaults": {"custom": {"drawStyle": "line"}, "unit": "short"}},
+      "gridPos": {"h": 8, "w": 8, "x": 16, "y": 14},
+      "id": 11,
+      "options": {"legend": {"displayMode": "list", "placement": "bottom"}},
+      "targets": [
+        {"expr": "sum by (enabled) (rate(remote_support_ai_toggles_total[5m]))", "legendFormat": "enabled={{enabled}}", "refId": "A"}
+      ],
+      "title": "AI Toggle Rate",
+      "type": "timeseries"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {"h": 1, "w": 24, "x": 0, "y": 22},
+      "id": 12,
+      "panels": [],
+      "title": "Media & Transcripts",
+      "type": "row"
+    },
+    {
+      "datasource": "${DS_PROMETHEUS}",
+      "fieldConfig": {"defaults": {"custom": {"drawStyle": "line"}, "unit": "short"}},
+      "gridPos": {"h": 8, "w": 12, "x": 0, "y": 23},
+      "id": 13,
+      "options": {"legend": {"displayMode": "list", "placement": "bottom"}},
+      "targets": [
+        {"expr": "sum by (kind, state) (rate(remote_support_egress_events_total[5m]))", "legendFormat": "{{kind}} / {{state}}", "refId": "A"}
+      ],
+      "title": "Egress Events by Kind and State",
+      "type": "timeseries"
+    },
+    {
+      "datasource": "${DS_PROMETHEUS}",
+      "fieldConfig": {"defaults": {"custom": {"drawStyle": "line"}, "unit": "short"}},
+      "gridPos": {"h": 8, "w": 12, "x": 12, "y": 23},
+      "id": 14,
+      "options": {"legend": {"displayMode": "list", "placement": "bottom"}},
+      "targets": [
+        {"expr": "sum by (role, source) (rate(remote_support_utterances_ingested_total[5m]))", "legendFormat": "{{role}} / {{source}}", "refId": "A"},
+        {"expr": "sum by (status) (rate(remote_support_transcript_batches_total[5m]))", "legendFormat": "batch {{status}}", "refId": "B"}
+      ],
+      "title": "Transcript Ingest",
+      "type": "timeseries"
+    }
+  ],
+  "refresh": "30s",
+  "schemaVersion": 38,
+  "style": "dark",
+  "tags": ["remote-support", "livekit"],
+  "templating": {
+    "list": [
+      {
+        "current": {"selected": false, "text": "Prometheus", "value": "Prometheus"},
+        "hide": 0,
+        "label": "Data source",
+        "name": "DS_PROMETHEUS",
+        "options": [],
+        "query": "prometheus",
+        "refresh": 1,
+        "regex": "",
+        "type": "datasource"
+      }
+    ]
+  },
+  "time": {"from": "now-1h", "to": "now"},
+  "timepicker": {},
+  "timezone": "utc",
+  "title": "RemoteSupportLiveKit",
+  "uid": "remote-support-livekit",
+  "version": 1
+}

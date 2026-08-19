@@ -1,0 +1,6 @@
+# Copy this file to key.properties and fill in the real values.
+# Do NOT commit key.properties or your .keystore file to git.
+storePassword=YOUR_STORE_PASSWORD
+keyPassword=YOUR_KEY_PASSWORD
+keyAlias=remotesupport
+storeFile=../remotesupport-release.keystore

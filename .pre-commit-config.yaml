@@ -1,0 +1,75 @@
+# Pre-commit hooks for RemoteSupportLiveKit.
+# Install: pip install pre-commit && pre-commit install
+
+repos:
+  - repo: local
+    hooks:
+      - id: backend-ruff
+        name: backend ruff
+        entry: backend/.venv/bin/ruff
+        args: [check, backend/]
+        language: system
+        types: [python]
+        pass_filenames: false
+        files: ^backend/
+
+      - id: backend-mypy
+        name: backend mypy
+        entry: backend/.venv/bin/mypy
+        args: [app]
+        language: system
+        types: [python]
+        pass_filenames: false
+        files: ^backend/app/
+
+      - id: backend-tests
+        name: backend tests
+        entry: backend/.venv/bin/pytest
+        args: [-q, backend/tests/]
+        language: system
+        types: [python]
+        pass_filenames: false
+        files: ^backend/
+
+      - id: agent-ruff
+        name: agent ruff
+        entry: agent/.venv/bin/ruff
+        args: [check, agent/]
+        language: system
+        types: [python]
+        pass_filenames: false
+        files: ^agent/
+
+      - id: agent-tests
+        name: agent tests
+        entry: agent/.venv/bin/pytest
+        args: [-q, agent/tests/]
+        language: system
+        types: [python]
+        pass_filenames: false
+        files: ^agent/
+
+      - id: flutter-analyze
+        name: flutter analyze
+        entry: .flutter-sdk/flutter/bin/flutter
+        args: [analyze, --no-fatal-infos, mobile/]
+        language: system
+        types: [file]
+        pass_filenames: false
+        files: ^mobile/
+
+      - id: flutter-tests
+        name: flutter tests
+        entry: .flutter-sdk/flutter/bin/flutter
+        args: [test, mobile/]
+        language: system
+        types: [file]
+        pass_filenames: false
+        files: ^mobile/
+
+      - id: openapi-drift
+        name: openapi drift check
+        entry: scripts/check-openapi-drift.sh
+        language: script
+        pass_filenames: false
+        files: ^(backend/app/|backend/app/schemas\.py|docs/openapi\.json)$

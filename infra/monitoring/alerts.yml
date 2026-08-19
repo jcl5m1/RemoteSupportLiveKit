@@ -1,0 +1,107 @@
+# Prometheus alerting rules for RemoteSupportLiveKit.
+# Load into Prometheus with:
+#   rule_files:
+#     - /etc/prometheus/alerts.d/*.yml
+#
+# Assumptions:
+# - Backend exposes /metrics with the counters defined in backend/app/metrics.py.
+# - EGRESS_EVENTS uses labels {kind, state}; failure is state="failed".
+# - TRANSCRIPT_BATCHES uses label {status}; failure includes failed/not_found/rate_limited.
+# - Agent worker availability is inferred from heartbeat or dispatch success.
+# - `up{job="remote-support-backend"}` is scraped by Prometheus.
+
+groups:
+  - name: remote_support
+    interval: 30s
+    rules:
+      - alert: RemoteSupportBackendDown
+        expr: up{job="remote-support-backend"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "RemoteSupport backend is down"
+          description: "Backend instance {{ $labels.instance }} has been unreachable for 1m."
+
+      - alert: RemoteSupportHighErrorRate
+        expr: |
+          (
+            sum by (job) (rate(remote_support_request_duration_seconds_count{status=~"5.."}[5m]))
+            /
+            sum by (job) (rate(remote_support_request_duration_seconds_count[5m]))
+          ) > 0.05
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Backend 5xx error rate is high"
+          description: "5xx rate is {{ $value | humanizePercentage }} over the last 5m."
+
+      - alert: RemoteSupportEgressFailureRateHigh
+        expr: |
+          (
+            sum by (kind) (rate(remote_support_egress_events_total{state="failed"}[5m]))
+            /
+            sum by (kind) (rate(remote_support_egress_events_total[5m]))
+          ) > 0.05
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Egress failure rate > 5%"
+          description: "Egress kind {{ $labels.kind }} failure rate is {{ $value | humanizePercentage }}. See docs/runbooks/egress-backlog.md."
+
+      - alert: RemoteSupportEgressBacklog
+        expr: |
+          (
+            sum(remote_support_egress_events_total{state=~"starting|active"})
+            -
+            sum(remote_support_egress_events_total{state=~"complete|failed"})
+          ) > 10
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Egress backlog is growing"
+          description: "More than 10 egresses appear stuck in starting/active state. See docs/runbooks/egress-backlog.md."
+
+      - alert: RemoteSupportTranscriptPostFailureRateHigh
+        expr: |
+          (
+            sum(rate(remote_support_transcript_batches_total{status!="success"}[5m]))
+            /
+            sum(rate(remote_support_transcript_batches_total[5m]))
+          ) > 0.01
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Transcript POST failure rate > 1%"
+          description: "Transcript batch failure rate is {{ $value | humanizePercentage }} over the last 5m."
+
+      - alert: RemoteSupportAgentDispatchFailures
+        expr: rate(remote_support_joins_attempted_total{result="agent_dispatch_failed"}[5m]) > 0
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Agent dispatch failures detected"
+          description: "Support join succeeded but agent dispatch failed. Check agent worker and LiveKit Inference. See docs/runbooks/agent-worker-down.md."
+
+      - alert: RemoteSupportActiveSessionsUnexpectedlyZero
+        expr: remote_support_active_sessions == 0
+        for: 10m
+        labels:
+          severity: info
+        annotations:
+          summary: "No active sessions"
+          description: "Zero active sessions for 10m; may be normal off-hours or indicate a telemetry issue."
+
+      - alert: RemoteSupportPostgresUnhealthy
+        expr: remote_support_readyz_dependency_healthy{name="postgres"} == 0
+        for: 30s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Postgres dependency unhealthy"
+          description: "Backend /readyz reports Postgres as unhealthy. See docs/runbooks/postgres-failover.md."

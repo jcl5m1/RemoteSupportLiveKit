@@ -1,0 +1,103 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: rs
+          POSTGRES_PASSWORD: rs
+          POSTGRES_DB: remote_support_test
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      TEST_DATABASE_URL: postgresql+asyncpg://rs:rs@localhost:5432/remote_support_test
+      DATABASE_URL: postgresql+asyncpg://rs:rs@localhost:5432/remote_support_test
+      CALLER_JWT_SECRET: ci-caller-secret
+      SERVICE_API_KEY: ci-service-key
+      FIREBASE_PROJECT_ID: ci-project
+      SUPPORT_ALLOWED_DOMAINS: example.com
+      SUPPORT_ALLOWED_EMAILS: ""
+      SUPPORT_ADMIN_EMAILS: ""
+      ALLOW_DEGRADED_START: "true"
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[dev]"
+      - run: ruff check .
+      - run: mypy app
+      - run: pytest -q
+
+  agent:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: agent
+    env:
+      SERVICE_API_KEY: ci-service-key
+      ALLOW_DEGRADED_START: "true"
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[dev]"
+      - run: ruff check .
+      - run: pytest -q
+
+  flutter:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: mobile
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - run: flutter pub get
+      - run: flutter analyze --no-fatal-infos
+      - run: flutter test
+
+  openapi:
+    runs-on: ubuntu-latest
+    env:
+      CALLER_JWT_SECRET: ci-caller-secret
+      SERVICE_API_KEY: ci-service-key
+      FIREBASE_PROJECT_ID: ci-project
+      SUPPORT_ALLOWED_DOMAINS: example.com
+      ALLOW_DEGRADED_START: "true"
+      LIVEKIT_URL: wss://example.livekit.cloud
+      LIVEKIT_API_KEY: ci-key
+      LIVEKIT_API_SECRET: ci-secret
+      DATABASE_URL: postgresql+asyncpg://rs:rs@localhost:5432/remote_support
+      GCS_BUCKET: ci-bucket
+      GCP_CREDENTIALS_B64: ""
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e backend/
+      - run: python scripts/export-openapi.py /tmp/openapi.json
+      - run: diff -u docs/openapi.json /tmp/openapi.json

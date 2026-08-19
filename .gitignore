@@ -1,0 +1,32 @@
+.env
+*.pyc
+__pycache__/
+.venv/
+.dart_tool/
+build/
+*.iml
+.DS_Store
+*.freezed.dart
+*.g.dart
+
+# Local SDKs installed for validation
+.flutter-sdk/
+.android-sdk/
+.jdk/
+.easyeda-mcp-pro/
+
+# Generated Python package metadata
+*.egg-info/
+
+# Generated Flutter plugin metadata
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# IDE metadata
+.idea/
+.vscode/
+
+# Firebase app config — not secret, but keep the project layout out of the repo
+google-services.json
+GoogleService-Info.plist
+firebase_options.dart

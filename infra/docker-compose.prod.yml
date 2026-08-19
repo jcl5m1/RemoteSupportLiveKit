@@ -1,0 +1,71 @@
+# Production-ish Docker Compose stack for a single GCP VM.
+# Images are pulled from Artifact Registry; source is built via:
+#   docker build -t us-central1-docker.pkg.dev/hermes-458420/remote-support/backend:latest -f infra/Dockerfile.backend backend
+#   docker build -t us-central1-docker.pkg.dev/hermes-458420/remote-support/agent:latest -f infra/Dockerfile.agent agent
+#   docker push ...
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: rs
+      POSTGRES_PASSWORD: rs
+      POSTGRES_DB: remote_support
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U rs"]
+      interval: 5s
+      retries: 10
+    restart: unless-stopped
+
+  backend:
+    image: us-central1-docker.pkg.dev/hermes-458420/remote-support/backend:latest
+    env_file:
+      - backend.env
+    environment:
+      DATABASE_URL: postgresql+asyncpg://rs:rs@postgres:5432/remote_support
+      APP_LINK_HOST: remotesupport.lgitech.net
+    depends_on:
+      postgres:
+        condition: service_healthy
+    expose:
+      - "8000"
+    command: >
+      sh -c "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://localhost:8000/healthz')\""]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+
+  agent:
+    image: us-central1-docker.pkg.dev/hermes-458420/remote-support/agent:latest
+    env_file:
+      - agent.env
+    environment:
+      BACKEND_URL: http://backend:8000
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  caddy:
+    image: caddy:2-alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile.prod:/etc/caddy/Caddyfile:ro
+      - ./assetlinks.json:/srv/assetlinks.json:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+  caddy_data:
+  caddy_config:
