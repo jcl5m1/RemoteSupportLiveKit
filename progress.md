@@ -261,7 +261,6 @@
 
 ## Latest turn summary
 
-- Committed the full project to git (196 files, root commit `cf862ff`) and pushed to `https://github.com/jcl5m1/RemoteSupportLiveKit`.
-- Cleaned up `.gitignore` to exclude local SDKs (`.android-sdk`, `.jdk`, `.flutter-sdk`, `.easyeda-mcp-pro`), `.env` files, Python `*.egg-info/`, and Firebase config files.
-- Removed generated `.egg-info` directories and `.bak` files before committing so secrets and build artifacts stay out of the repo.
-- Remaining: full two-device A/V call test requires a second Android device or a support user.
+- Added `docs/11-automated-regression-testing.md` with a concrete plan for two-way A/V regression tests using a web support client + Playwright.
+- Plan covers a fully headless two-web-client harness, an Android + web variant, a backend test endpoint, and CI integration.
+- Remaining: implement the web support client and Playwright harness (pending your go-ahead on the open questions in `docs/11-automated-regression-testing.md`).
