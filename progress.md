@@ -261,11 +261,7 @@
 
 ## Latest turn summary
 
-- Reinstalled the fixed APK on Pixel 7 over ADB Wi-Fi and verified both deep-link variants launch the app with no Flutter errors:
-  - `https://remotesupport.lgitech.net/j/{code}`
-  - `remotesupport://join?code={code}`
-- Fixed `lib/main.dart` default `_appLinkHost` (`remotesupport.lgitech.net`) and moved link handling to `addPostFrameCallback` to avoid the "No ProviderScope found" error.
-- Moved `MainActivity.kt` to the `net.lgitech.remotesupport` package to match the production application id.
-- Updated `scripts/apply-mobile-config.py` to only patch the HTTPS App Links host.
-- `scripts/test-all.sh` passes (backend 44/44, agent 17/17, Flutter 11/11, lints clean).
+- Committed the full project to git (196 files, root commit `cf862ff`) and pushed to `https://github.com/jcl5m1/RemoteSupportLiveKit`.
+- Cleaned up `.gitignore` to exclude local SDKs (`.android-sdk`, `.jdk`, `.flutter-sdk`, `.easyeda-mcp-pro`), `.env` files, Python `*.egg-info/`, and Firebase config files.
+- Removed generated `.egg-info` directories and `.bak` files before committing so secrets and build artifacts stay out of the repo.
 - Remaining: full two-device A/V call test requires a second Android device or a support user.
