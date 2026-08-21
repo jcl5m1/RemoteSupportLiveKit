@@ -96,6 +96,8 @@ class SessionDetail(BaseModel):
     session_id: uuid.UUID
     state: str
     room_name: str
+    caller_identity: str | None = None
+    support_identity: str | None = None
     ai_enabled: bool
     agent_mode: AgentMode
     recording_enabled: bool

@@ -68,6 +68,12 @@ class Settings(BaseSettings):
     # those dependencies unhealthy while postgres can still be healthy.
     allow_degraded_start: bool = False
 
+    # --- Internal test endpoints ---------------------------------------
+    # When true, exposes /internal/test/* endpoints used by the automated
+    # regression harness. These endpoints bypass production auth and must never
+    # be enabled in a public-facing deployment.
+    allow_test_endpoints: bool = False
+
     # --- Rate limits ---------------------------------------------------
     utterance_rate_limit: int = 600
     utterance_rate_limit_window_seconds: int = 60

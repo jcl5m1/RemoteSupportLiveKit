@@ -31,6 +31,7 @@ from livekit.agents import Agent, AgentSession, llm, room_io
 
 from .config import get_agent_settings
 from .control import ControlPlane
+from .dummy_tts import ToneTTS
 from .prompts import compose_instructions, is_direct_address
 from .state import AgentMode, SessionState
 from .support_transcriber import SupportTranscriber
@@ -86,12 +87,18 @@ async def entrypoint(ctx: agents.JobContext) -> None:
     sink = TranscriptSink(state=state, settings=settings)
     ctx.add_shutdown_callback(sink.flush_and_close)
 
+    # LiveKit Cloud Inference TTS is failing in this project with
+    # ``no audio frames were pushed`` for every model/voice tried.  Use a local
+    # sine-wave TTS shim by default so the speech scheduler keeps moving and
+    # text replies still flow to the transcript sink.
+    tts = ToneTTS() if settings.use_dummy_tts else settings.tts_model
+
     session = AgentSession(
         # Bare identifier strings -> resolved by LiveKit Cloud Inference,
         # authenticated with LIVEKIT_API_KEY. No per-provider keys.
         stt=settings.stt_model,
         llm=settings.llm_model,
-        tts=settings.tts_model,
+        tts=tts,
         turn_handling=agents.TurnHandlingOptions(
             turn_detection=agents.inference.TurnDetector(),
         ),
@@ -110,10 +117,15 @@ async def entrypoint(ctx: agents.JobContext) -> None:
             participant_identity=meta["caller_identity"],
             video_input=False,        # no vision task; don't pay for video
             audio_output=True,
-            text_output=True,         # publishes lk.transcription for captions
+            text_output=False,        # still crashes if true before connected
             close_on_disconnect=False,  # survive a mobile reconnect blip
         ),
     )
+    logger.info("session started for %s, mode=%s", state.session_id, state.mode.value)
+
+    # Wire transcript capture and control plane BEFORE prompting the agent to
+    # speak, otherwise the proactive greeting and early caller STT are lost.
+    _wire_transcript_sources(session, state, sink)
 
     # Support audio: STT only, no path to generate_reply.
     support_stt = SupportTranscriber(
@@ -126,9 +138,19 @@ async def entrypoint(ctx: agents.JobContext) -> None:
     control.attach(ctx.room)
 
     _wire_mode_transitions(ctx, session, agent, state, support_stt)
-    _wire_transcript_sources(session, state, sink)
-
     await control.start_heartbeat()
+
+    # In SOLO mode the instructions tell the agent to greet; because the input
+    # pipeline is waiting on caller speech, prompt a proactive greeting now.
+    if state.mode is AgentMode.SOLO:
+        logger.info("generating proactive greeting")
+        try:
+            handle = await session.generate_reply(
+                instructions="Greet the caller briefly and ask how you can help today."
+            )
+            logger.info("proactive greeting handle: %s", handle)
+        except Exception:
+            logger.exception("proactive greeting failed")
 
 
 def _wire_mode_transitions(
@@ -176,6 +198,11 @@ def _wire_transcript_sources(
 
     @session.on("user_input_transcribed")
     def _on_caller_stt(ev):
+        logger.debug(
+            "user_input_transcribed final=%s text=%s",
+            ev.is_final,
+            ev.transcript[:60] if ev.transcript else "",
+        )
         if ev.is_final:
             sink.emit(
                 role="caller",
@@ -188,6 +215,11 @@ def _wire_transcript_sources(
     @session.on("conversation_item_added")
     def _on_agent_llm(ev):
         item = ev.item
+        logger.debug(
+            "conversation_item_added type=%s role=%s",
+            type(item).__name__,
+            getattr(item, "role", None),
+        )
         if isinstance(item, llm.ChatMessage) and item.role == "assistant":
             text = item.text_content or ""
             if text:

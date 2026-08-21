@@ -12,6 +12,7 @@ from datetime import UTC, datetime, timedelta
 import structlog
 from fastapi import FastAPI, HTTPException, Response
 from fastapi.responses import JSONResponse
+from fastapi.staticfiles import StaticFiles
 from google.cloud import storage as gcs
 from livekit import api
 from sqlalchemy import select
@@ -174,6 +175,16 @@ def create_app() -> FastAPI:
     app.include_router(transcripts.router)
     app.include_router(recordings.router)
     app.include_router(webhooks.router)
+
+    if get_settings().allow_test_endpoints:
+        from .routers import testing
+
+        app.include_router(testing.router)
+        app.mount(
+            "/support-web",
+            StaticFiles(directory="app/static/support-web", html=True),
+            name="support-web",
+        )
 
     @app.get("/metrics")
     async def metrics() -> Response:

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import logging
 import uuid
 from datetime import UTC, datetime, timedelta
 
@@ -34,6 +35,7 @@ from ..services.room_codes import claim_code, normalize_code
 
 router = APIRouter(prefix="/v1/sessions", tags=["sessions"])
 settings = get_settings()
+logger = logging.getLogger("remote-support-backend")
 
 CONSENT_TEXT = """\
 This call, including video and audio from both participants, will be recorded \
@@ -168,6 +170,7 @@ async def record_consent(
 
 async def _start_room(lkapi: api.LiveKitAPI, session: Session) -> None:
     """Create the LiveKit room, dispatch the agent, and publish metadata."""
+    logger.info("_start_room: creating room %s", session.room_name)
     await lkapi.room.create_room(
         api.CreateRoomRequest(
             name=session.room_name,
@@ -175,7 +178,9 @@ async def _start_room(lkapi: api.LiveKitAPI, session: Session) -> None:
             departure_timeout=settings.room_departure_timeout_seconds,
         )
     )
+    logger.info("_start_room: dispatching agent for %s", session.room_name)
     await dispatch.dispatch_agent(lkapi, session)
+    logger.info("_start_room: updating room metadata for %s", session.room_name)
     await dispatch.update_room_metadata(lkapi, session)
 
 
@@ -419,6 +424,8 @@ async def get_session(
             session_id=session.id,
             state=session.state.value,
             room_name=session.room_name,
+            caller_identity=session.caller_identity,
+            support_identity=session.support_identity,
             ai_enabled=session.ai_enabled,
             agent_mode=session.agent_mode,
             recording_enabled=session.recording_enabled,

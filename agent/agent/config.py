@@ -32,7 +32,18 @@ class AgentSettings(BaseSettings):
     # Kimi K2.6, served via Baseten. Retired ids that will NOT resolve:
     # moonshotai/kimi-k2-instruct, moonshotai/kimi-k2.5.
     llm_model: str = "moonshotai/kimi-k2.6"
-    tts_model: str = "cartesia/sonic-3:en"
+    # LiveKit Inference TTS format is ``provider/model:voice_id``.  The old
+    # ``:en`` language suffix is not a valid voice id and causes the synthesizer
+    # to emit no audio frames.  ``deepgram/aura-2:athena`` is the documented
+    # sample voice for Deepgram Aura-2.
+    tts_model: str = "deepgram/aura-2:athena"
+
+    # Fallback local tone generator.  LiveKit Cloud Inference TTS is failing in
+    # this project (``no audio frames were pushed`` across providers/models), so
+    # the agent uses a simple sine-wave TTS shim by default for headless
+    # regression and to keep the speech scheduler moving.  Set this to false to
+    # try LiveKit Inference TTS once the cloud issue is resolved.
+    use_dummy_tts: bool = True
     # The support stream uses the same model identifier but a SEPARATE STT
     # instance -- sharing one instance across two streams is not safe.
     support_stt_model: str | None = None

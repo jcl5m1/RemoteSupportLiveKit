@@ -205,3 +205,78 @@ out-of-order metadata delivery from resurrecting a stale toggle state.
 
 Webhooks require the backend to be publicly reachable at
 `POST /v1/webhooks/livekit`, with signature verification enabled.
+
+## Web support client & regression harness
+
+For automated regression testing the system also exposes a minimal browser-based
+support client. It is not a production user interface; it exists so the call
+path can be exercised headlessly without two physical mobile devices.
+
+```
+┌─────────────────┐      create session       ┌──────────────────┐
+│  Test harness   │ ────────────────────────▶ │  GCP backend     │
+│  (Playwright)   │                           │                  │
+└────────┬────────┘                           │  /support-web/   │
+         │                                    │  /internal/test/ │
+         │ 1. open caller page   2. open support page  support-token│
+         │    ( LiveKit JS SDK ) ( LiveKit JS SDK )    │
+         ▼                                                 ▼
+┌─────────────────┐                           ┌──────────────────┐
+│  Caller client  │ ◀──── audio/video ──────▶ │  Support client  │
+│  (browser tab)  │      (via LiveKit Cloud)  │  (browser tab)   │
+└─────────────────┘                           └──────────────────┘
+```
+
+**`backend/app/static/support-web/`**
+Plain HTML + JavaScript served under `/support-web/`. It joins a room given
+`?token=<jwt>&ws_url=<wss://...>`, publishes fake camera/mic (via Chromium's
+`--use-fake-device-for-media-stream`), subscribes to remote tracks, and exposes
+`window.testState` flags (`connected`, `remoteVideoReady`, `remoteAudioReady`)
+for the harness to poll.
+
+**`POST /internal/test/support-token`**
+Service-key-gated endpoint available only when `ALLOW_TEST_ENDPOINTS=true`.
+The harness calls it after creating a caller session and recording consent; it
+returns a support LiveKit token using a synthetic identity (`support-test-support`)
+so the test does not need Firebase Auth.
+
+**`tests/e2e/test_two_web_clients.py`**
+Playwright + pytest flow:
+1. `POST /v1/sessions` (caller)
+2. `POST /v1/sessions/{id}/consent` (caller)
+3. `POST /internal/test/support-token` (service key)
+4. Open two Chromium tabs at `/support-web/?token=...&ws_url=...`
+5. Wait for both to connect and show remote video/audio
+6. Poll `RTCPeerConnection.getStats()` and assert inbound bytes increase
+7. `POST /v1/sessions/{id}/end` and assert cleanup
+
+The test runs nightly in GitHub Actions (`.github/workflows/e2e.yml`) against the
+live backend, and can be triggered manually via `workflow_dispatch`.
+
+### Expanded headless regression coverage
+
+`tests/e2e/test_two_web_clients.py` now covers:
+
+| Test | What it checks |
+|---|---|
+| `test_two_web_clients` | Two headless Chromium tabs connect, subscribe to each other's video/audio, and inbound bytes increase. |
+| `test_lifecycle_reconnect` | Caller network is dropped for 5 s; the tab reconnects and media resumes. |
+| `test_agent_joins_and_greets` | The AI agent joins after caller consent and produces an `agent_llm` transcript utterance. |
+| `test_caller_speech_agent_response` | The caller publishes real speech audio (`fixtures/caller_prompt.wav`); the agent transcribes it (`agent_stt`) and replies (`agent_llm`). |
+| `test_recordings_and_transcript_after_session_end` | Ends the call and verifies track/room-composite egress recordings plus JSONL/VTT/TXT transcript exports. |
+
+**Local vs. deployed recording tests.** Recording egress and transcript export are
+driven by LiveKit Cloud webhooks (`track_published`, `egress_ended`, `room_finished`).
+When the backend runs on `localhost`, LiveKit cannot deliver those webhooks, so the
+recording test is skipped locally. Run it against the deployed backend (e.g.
+`https://remotesupport.lgitech.net`) to verify egress end-to-end.
+
+### Agent TTS fallback
+
+LiveKit Cloud Inference TTS currently fails in this project with
+`no audio frames were pushed` across providers/voices. The agent therefore defaults
+to `USE_DUMMY_TTS=true`: a local sine-wave `ToneTTS` shim that satisfies the speech
+scheduler so text replies still flow to the transcript sink. The audio is not
+intelligible speech, but it keeps the dialogue loop functional for regression
+testing. Set `USE_DUMMY_TTS=false` to re-test cloud TTS once the provider issue is
+resolved.

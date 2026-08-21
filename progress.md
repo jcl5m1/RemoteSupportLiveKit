@@ -20,6 +20,14 @@
 - **Load testing:** Added `scripts/load-test.py` for backend-only load testing (session creation, consent, utterance ingest) in degraded mode. This is NOT a full LiveKit/media load test; that still requires a headless LiveKit client.
 - **Documentation:** Updated `README.md` with current test counts, `scripts/dev-start.sh`, `scripts/test-all.sh`, pre-commit hooks, and degraded-mode development flow.
 - **Bootstrap:** Added `scripts/setup.sh` to verify prerequisites and create backend/agent venvs on a fresh clone.
+- **Web support client:** Added `backend/app/static/support-web/` (HTML + JS using LiveKit JS SDK from CDN). Joins a room via `?token=&ws_url=`, publishes camera/mic, subscribes to remote tracks, and exposes `window.testState` flags for Playwright.
+- **Internal test endpoint:** Added `POST /internal/test/support-token` in `backend/app/routers/testing.py`, gated by `ALLOW_TEST_ENDPOINTS=true` and `X-Service-Key`. It loads the session, starts the LiveKit room if pending, creates the support participant row, and mints a support LiveKit token with a synthetic identity (`support-test-support`).
+- **Conditional static mount:** `backend/app/main.py` now includes the testing router and mounts `/support-web/` only when `settings.allow_test_endpoints` is true.
+- **Playwright regression harness:** Added `tests/e2e/` with `requirements.txt`, `conftest.py`, `.env.example`, and `test_two_web_clients.py`. The test creates a caller session, records consent, calls the internal support-token endpoint, opens two headless Chromium tabs, asserts both sides connect and see remote video/audio, and verifies inbound media bytes increase.
+- **Local E2E validation:** The two-web-client Playwright test passes against a local backend with real LiveKit Cloud credentials (headless Chromium with fake A/V devices).
+- **Production E2E validation:** After gcloud re-authentication, the new backend image was built, pushed to Artifact Registry, loaded on the GCP VM, and the production container was restarted. `GET https://remotesupport.lgitech.net/support-web/` returns 200 and the Playwright two-web-client test passes against `https://remotesupport.lgitech.net`.
+- **CI workflow:** Added `.github/workflows/e2e.yml` to run the two-web-client test nightly and on workflow dispatch against the live backend using repository secrets (`E2E_BACKEND_URL`, `E2E_SERVICE_API_KEY`, `E2E_LIVEKIT_URL`).
+- **Documentation:** Updated `docs/02-architecture.md` with the web support client and Playwright regression harness. Added `docs/12-user-guide.md` covering caller/support flows, permissions, and troubleshooting. Rewrote `README.md` with an architecture diagram, quick-start usage, expanded local/prod test instructions, and production deployment notes.
 - **Cloud credentials:** Verified LiveKit and GCS credentials in `backend/.env` and `agent/.env`. Fixed GCS client initialization to use `GCP_CREDENTIALS_B64`; fixed `/readyz` GCS check to use `list_blobs` instead of `bucket.exists()`. `GET /readyz` now reports all dependencies healthy.
 - **Integration smoke test:** Added `scripts/integration-smoke-test.py` which starts the backend, creates a session, records consent, verifies the LiveKit room exists, ends the session, and cleans up. It passes with the real cloud credentials.
 - **Agent worker registration:** Verified the agent worker starts and registers with LiveKit Cloud (`registered worker ... id: AW_xFAxwtTGJJCL`).
@@ -191,7 +199,8 @@
 - [x] Agent tests: direct-address gate truth table, AI toggle gate.
 - [x] Integration smoke test with real LiveKit/GCS (`scripts/integration-smoke-test.py`).
 - [x] Caller-only backend integration flows (`scripts/integration-caller-flows.py`).
-- [ ] Full integration test with headless LiveKit client joining a room (blocked: no headless Flutter/LiveKit client harness).
+- [x] Full integration test with headless LiveKit client joining a room — implemented as two-web-client Playwright harness (`tests/e2e/test_two_web_clients.py`) and passes locally and in production.
+- [x] Production GCP deployment of the new backend image — deployed to `remote-support-vm`; `/support-web/` and `/internal/test/support-token` are live on `https://remotesupport.lgitech.net`.
 - [x] Flutter widget tests written (`test/utils/join_code_test.dart`, `test/widgets/ai_toggle_test.dart`, `test/screens/consent_sheet_test.dart`) — runnable once Flutter SDK is available.
 - [x] Backend-only load test script (`scripts/load-test.py`) for HTTP endpoints.
 - [ ] Full load test 25 concurrent LiveKit sessions (blocked: no LiveKit/GCS credentials).
@@ -235,6 +244,14 @@
 30. **Docker build contexts are scoped to service directories.** `infra/Dockerfile.backend` and `infra/Dockerfile.agent` now expect `backend/` and `agent/` as their respective build contexts, avoiding multi-gigabyte context transfers.
 31. **Mobile release config is intentionally left as placeholders.** `com.example.remote_support` and `support.example.com` are used until production values are supplied; `scripts/apply-mobile-config.py` and `scripts/check-mobile-config.py` automate the switch and validation.
 32. **Android release signing uses `key.properties`.** `mobile/android/app/build.gradle` reads `mobile/android/key.properties` when it exists; otherwise it falls back to the debug keystore so CI/fresh clones still build. A `key.properties.example` template is committed; the real keystore and passwords are secrets and must not be committed.
+33. **Web support client uses the LiveKit JS SDK UMD build from jsDelivr.** The UMD global is `window.LivekitClient` (lowercase "k"), confirmed by inspecting the CDN bundle.
+34. **Web client URL parameters.** The page requires both `?token=` (LiveKit JWT) and `?ws_url=` (websocket URL) because the SDK does not extract the URL from the token. The Playwright harness passes both.
+35. **Test support identity is synthetic.** `/internal/test/support-token` uses `support-test-support` as the support user id. It is meant for one test run per session; a second call returns `409 role_occupied` if the support slot is already filled.
+36. **Headless Chromium fake media.** The Playwright harness launches Chromium with `--use-fake-device-for-media-stream` and `--use-fake-ui-for-media-stream` so no physical camera/mic are needed. Video bytes flow; audio bytes may be silence but still increase once stats are populated.
+37. **LiveKit JS SDK peer-connection structure.** In the pinned `livekit-client@2.x`, the active peer connection is reached via `room.engine.pcManager.publisher._pc` (the wrapper exposes `_pc`). Receiving tracks are enumerated via `pc.getStats()` rather than `pc.getReceivers()` because `getReceivers()` returns wrappers, not raw receivers in this build.
+38. **LiveKit Cloud Inference TTS is currently unusable in this project.** Every provider/voice tried emitted `no audio frames were pushed`. The agent therefore defaults to `USE_DUMMY_TTS=true`, which uses a local sine-wave `ToneTTS` so the speech scheduler can advance and text replies still flow to the transcript sink. Real speech audio is not produced; set `USE_DUMMY_TTS=false` to re-test cloud TTS once the issue is resolved.
+39. **Caller speech in the headless web client is repeated once with a silence gap.** The 2.3-second `caller_prompt.wav` clip is played twice with an 8-second silence gap so the agent's STT has a fresh utterance to transcribe even if it joins after the first play has already started.
+40. **Recording egress tests require a public backend URL.** LiveKit Cloud sends `track_published`, `egress_ended`, and `room_finished` webhooks to the backend. When the backend is `localhost`, those webhooks cannot be delivered, so egress never starts and transcript export is not triggered. The E2E recordings test is skipped locally and must run against the deployed backend.
 
 ## Open questions
 
@@ -247,20 +264,56 @@
 7. **iOS Firebase config.** `mobile/ios/Runner/GoogleService-Info.plist` is missing. Drop it from the Firebase Console (project `hermes-458420`, bundle id `net.lgitech.remotesupport`).
 8. **iOS/macOS build host.** Full Xcode is required to validate the iOS build and entitlements. Should I install full Xcode, or will you validate on a Mac with Xcode?
 9. ~~**Docker Compose runtime.**~~ Resolved: Colima + Docker installed and validated locally; GCP production VM also running Docker Compose.
+10. ~~**GCP deployment of the new backend image.**~~ Resolved: `gcloud auth login` was refreshed by the user. The backend image was built locally (linux/amd64), pushed to Artifact Registry with the user's credentials, saved to a tar, copied to the VM, loaded with `docker load`, and the production container was restarted. The VM's default compute service account still lacks Artifact Registry pull/push permissions, so future deploys should use the same tar-load workflow or grant that SA `roles/artifactregistry.reader` + `roles/artifactregistry.writer`.
 
 ## Next actions
 
-1. Provide the production universal-link domain, then run `scripts/apply-mobile-config.py --bundle-id net.lgitech.remotesupport --app-group group.net.lgitech.remotesupport --universal-link-domain <domain>` to update Android/iOS manifests.
+1. ~~Provide the production universal-link domain, then run `scripts/apply-mobile-config.py --bundle-id net.lgitech.remotesupport --app-group group.net.lgitech.remotesupport --universal-link-domain <domain>` to update Android/iOS manifests.~~ Done: using `remotesupport.lgitech.net`.
 2. Drop Firebase config files (`google-services.json`, `GoogleService-Info.plist`) into `mobile/android/app/` and `mobile/ios/Runner/`; `Firebase.initializeApp()` is already wired in `lib/main.dart`.
 3. ~~Provide LiveKit Cloud / GCS credentials for full `docker compose up` and `/readyz` validation.~~ Credentials verified; `/readyz` healthy.
 4. ~~Install a container runtime (Docker Desktop) or validate `docker compose up` on a host with Docker.~~ Colima + Docker installed and `docker compose up` validated.
 5. Install full Xcode or validate the iOS build and entitlements on a Mac with Xcode.
 6. ~~Run the Android app on a real device to verify A/V, deep links, and permissions.~~ APK installed on Pixel 7; deep links verified. Full A/V call requires a second device/support user.
-7. Add end-to-end/integration tests once LiveKit / GCS credentials are available.
-8. Set up alerting rules and dashboards once a monitoring stack is chosen.
+7. ~~Add end-to-end/integration tests once LiveKit / GCS credentials are available.~~ Done: two-web-client Playwright harness passes locally and in production.
+8. ~~**Deploy the new backend image to the GCP VM** so `/support-web/` and `/internal/test/support-token` are available for production regression runs.~~ Done: deployed and verified.
+9. ~~**Run the Playwright test against `https://remotesupport.lgitech.net`** once the deployed backend has `ALLOW_TEST_ENDPOINTS=true`.~~ Done: test passed.
+10. Add the Android + web regression variant (ADB deep-link launch + web support client).
+11. Consider granting the VM's compute service account `roles/artifactregistry.reader` so `docker compose pull` works without the tar-load workaround.
+12. Add the required GitHub repository secrets (`E2E_BACKEND_URL`, `E2E_SERVICE_API_KEY`, `E2E_LIVEKIT_URL`) to enable the nightly E2E workflow.
+13. Set up alerting rules and dashboards once a monitoring stack is chosen.
+14. Investigate and resolve the LiveKit Cloud Inference TTS `no audio frames were pushed` failure so `USE_DUMMY_TTS` can default back to `false`.
+15. Run `test_recordings_and_transcript_after_session_end` against the deployed backend (`https://remotesupport.lgitech.net`) to verify egress and transcript export end-to-end.
+16. Add lifecycle-specific E2E assertions for agent reconnection after caller network drop and after support joins mid-call.
 
 ## Latest turn summary
 
-- Added `docs/11-automated-regression-testing.md` with a concrete plan for two-way A/V regression tests using a web support client + Playwright.
-- Plan covers a fully headless two-web-client harness, an Android + web variant, a backend test endpoint, and CI integration.
-- Remaining: implement the web support client and Playwright harness (pending your go-ahead on the open questions in `docs/11-automated-regression-testing.md`).
+### Headless web-client lifecycle / dialogue / recording harness
+
+- **Goal:** Get the local E2E suite green for two headless web clients with synthetic A/V, lifecycle/reconnect, agent transcription/dialogue, and recording verification.
+- **LiveKit Cloud Inference TTS blocker:** Every TTS provider/voice tried failed with `no audio frames were pushed`. Added `agent/agent/dummy_tts.py` (`ToneTTS`) — a local sine-wave TTS shim implementing the `tts.TTS` interface so the agent speech scheduler keeps moving and text replies still reach the transcript sink. Controlled by `USE_DUMMY_TTS=true` (default) in `agent/agent/config.py`.
+- **Agent wiring fix:** Moved `_wire_transcript_sources`, `SupportTranscriber.watch`, and `ControlPlane.attach` **before** the proactive SOLO greeting in `agent/agent/main.py`. The previous order registered event handlers after `session.generate_reply()`, so the greeting and early caller STT were lost.
+- **Proactive greeting restored:** Re-enabled the SOLO-mode proactive greeting now that the ToneTTS shim and wiring order are correct.
+- **Web client speech fixture fix:** Changed `backend/app/static/support-web/app.js` so the caller speech fixture no longer loops continuously. It now plays the clip twice with an 8-second silence gap, giving the agent's STT pipeline a fresh chance to transcribe even if the agent joins after the first utterance has started.
+- **E2E results (local, `BACKEND_URL=http://localhost:8000`):**
+  - `test_two_web_clients` ✅
+  - `test_lifecycle_reconnect` ✅
+  - `test_agent_joins_and_greets` ✅
+  - `test_caller_speech_agent_response` ✅ (caller speech transcribed as "Hello, agent."; agent replied)
+  - `test_recordings_and_transcript_after_session_end` ⏭️ skipped on localhost
+- **Recording/egress gap:** LiveKit Cloud delivers `track_published`, `egress_ended`, and `room_finished` webhooks to the backend URL. When that URL is `localhost`, the cloud service cannot reach it, so egress never starts and the post-room transcript export is never triggered. Added a localhost skip to the test with an explanatory docstring. This test should be run against the deployed backend (`https://remotesupport.lgitech.net`).
+- **Assumption/decision logged:** `USE_DUMMY_TTS=true` is the default so the agent remains functional while LiveKit Cloud Inference TTS is broken. Set it to `false` to re-test cloud TTS once the provider issue is resolved.
+- **Next:** Update `docs/02-architecture.md`, `docs/12-user-guide.md`, and `README.md` with the new web-client regression flow, the TTS fallback, and the localhost recording limitation.
+
+### Previous turn summary
+
+- Implemented the approved two-web-client automated regression harness.
+- Added `backend/app/routers/testing.py` with `POST /internal/test/support-token` (service-key gated, `ALLOW_TEST_ENDPOINTS=true`).
+- Added `backend/app/static/support-web/` (HTML/JS client using LiveKit JS SDK UMD from jsDelivr).
+- Updated `backend/app/main.py` to conditionally include the testing router and mount `/support-web/` static files.
+- Added `tests/e2e/` with `requirements.txt`, `conftest.py`, `.env.example`, and `test_two_web_clients.py`.
+- Updated `backend/.env.example` and `backend/.env` with `ALLOW_TEST_ENDPOINTS=true`.
+- Verified locally: backend tests 44/44, ruff/mypy clean, OpenAPI drift clean, and the Playwright two-web-client test passes against a local backend with real LiveKit Cloud credentials.
+- Deployed to production after the user refreshed `gcloud auth login`: built linux/amd64 image locally, pushed to Artifact Registry, copied as a tar to `remote-support-vm`, loaded with `docker load`, and restarted the backend container.
+- Verified production: `https://remotesupport.lgitech.net/healthz` and `/readyz` healthy, `/support-web/` returns 200, and the Playwright two-web-client test passes against the live backend.
+- Added `.github/workflows/e2e.yml` for nightly / workflow-dispatch regression runs against the live backend.
+- Updated documentation: `docs/02-architecture.md` now covers the web client and regression harness; new `docs/12-user-guide.md` explains caller/support usage; `README.md` rewritten with architecture diagram, usage quick-start, test/run instructions, and production deployment notes.

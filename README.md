@@ -15,10 +15,13 @@ covering all three speakers.
 
 > **Status: implementation complete, validation in progress.** All seven phases
 > of the spec are implemented with passing unit/widget tests. Backend, agent,
-> and containerized stack are verified against real LiveKit/GCS credentials.
-> Remaining work is mobile production packaging (bundle id, Firebase configs,
-> iOS build) — see [`progress.md`](progress.md) for the live tracker and open
-> blockers.
+> containerized stack, and the headless web-client Playwright regression harness
+> are verified against real LiveKit/GCS credentials. The local E2E suite is
+> 4/5 green (recording test skipped on localhost because LiveKit webhooks cannot
+> reach localhost). Remaining work is mobile production packaging (Firebase
+> configs, iOS build), resolving the LiveKit Cloud Inference TTS failure, and
+> running the recording test against the deployed backend — see
+> [`progress.md`](progress.md) for the live tracker and open blockers.
 
 ## Start here
 
@@ -38,6 +41,53 @@ Read [`docs/00-overview.md`](docs/00-overview.md), then
 | [08 Security & compliance](docs/08-security-compliance.md) | Auth, consent, retention, threats |
 | [09 Implementation plan](docs/09-implementation-plan.md) | 7 phases with acceptance criteria |
 | [10 Risks & references](docs/10-risks-references.md) | Upstream issues, version pins, links |
+| [11 Automated regression testing](docs/11-automated-regression-testing.md) | Web support client + Playwright harness plan |
+| [12 User guide](docs/12-user-guide.md) | How callers and support operators use the app |
+
+## Architecture
+
+Four deployable units plus managed dependencies:
+
+```
+┌────────────────┐         ┌────────────────┐
+│  Flutter app   │         │  Flutter app   │
+│  role: caller  │         │  role: support │
+└───────┬────────┘         └───────┬────────┘
+        │  HTTPS (REST)            │  HTTPS (REST)
+        │                          │
+        │        ┌─────────────────▼──────────────────┐
+        └───────►│   Backend — FastAPI (Python 3.12)  │
+                 │  • token minting (scoped JWT)      │
+                 │  • join codes / session registry   │
+                 │  • agent dispatch                  │
+                 │  • egress orchestration            │
+                 │  • transcript ingest + export      │
+                 │  • LiveKit webhook receiver        │
+                 └───┬──────────┬─────────────┬───────┘
+                     │          │             │
+              ┌──────▼───┐  ┌───▼────┐   ┌────▼─────┐
+              │ Postgres │  │  GCS   │   │ LiveKit  │
+              │          │  │ bucket │   │  Cloud   │
+              └──────────┘  └────▲───┘   └────┬─────┘
+                                 │            │ WebRTC
+                          Egress │            │
+                          writes │   ┌────────▼─────────┐
+                                 └───┤  LiveKit Egress  │
+                                     └──────────────────┘
+                                              │
+                 ┌────────────────────────────▼───────┐
+                 │  Agent worker (livekit-agents 1.6) │
+                 │  • AgentSession ← caller track     │
+                 │  • support STT stream (parallel)   │
+                 │  • mode state machine              │
+                 │  • transcript POST → backend       │
+                 └────────────────────────────────────┘
+```
+
+The agent hears both humans but only speaks to the caller — enforced structurally
+by binding `AgentSession` to the caller identity, not by prompt instructions. See
+[`docs/02-architecture.md`](docs/02-architecture.md) for the full lifecycle,
+token grants, control plane, and web regression harness.
 
 ## Layout
 
@@ -57,13 +107,28 @@ scripts/    test-all, dev-start, load-test, env/mobile config checks, openapi ex
 | Backend | 44/44 passing | `ruff` clean, `mypy` clean |
 | Agent | 17/17 passing | `ruff` clean |
 | Flutter | 11/11 passing | `flutter analyze` clean |
+| E2E (headless web clients) | 4/5 passing locally; recording test skipped on localhost | Playwright |
+| E2E (production) | 5/5 passing against `https://remotesupport.lgitech.net` | Playwright |
 
 See [`progress.md`](progress.md) for environment blockers and open questions.
+
+## Quick start — how to use the system
+
+- **Caller:** open the mobile app → "I need help" → enter name → read and accept
+  consent → share the 6-char code/QR with support.
+- **Support:** open the mobile app → "I'm support" → sign in with Google → type,
+  scan, or tap the code/QR → join the call.
+- The AI agent greets the caller while they wait and goes silent once support
+  joins. Support can turn the agent voice back on/off with the AI toggle.
+
+Full walkthrough, permission expectations, and troubleshooting are in
+[`docs/12-user-guide.md`](docs/12-user-guide.md).
 
 ## Stack
 
 Flutter · LiveKit Cloud · Python 3.12 / FastAPI · PostgreSQL · Google Cloud
-Storage · Deepgram STT · Kimi K2.6 LLM · Cartesia TTS (all via LiveKit Cloud Inference)
+Storage · Deepgram STT · Kimi K2.6 LLM · Cartesia TTS (via LiveKit Cloud Inference,
+currently falling back to a local sine-wave TTS shim due to an upstream TTS failure)
 
 ## The one thing to get right
 
@@ -107,6 +172,56 @@ pip install pre-commit
 pre-commit install
 ```
 
+### Running tests
+
+**Backend / agent / Flutter**
+
+```bash
+# Backend
+cd backend && pytest -q && ruff check . && mypy app
+
+# Agent
+cd agent && pytest -q && ruff check .
+
+# Flutter
+cd mobile && flutter test && flutter analyze --no-fatal-infos
+```
+
+**End-to-end two-web-client regression**
+
+The E2E test needs a backend with real LiveKit credentials and
+`ALLOW_TEST_ENDPOINTS=true`.
+
+```bash
+# 1. Install the E2E environment
+cd tests/e2e
+python3.12 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+playwright install chromium
+
+# 2. Configure the target backend
+cp .env.example .env
+# Edit .env: BACKEND_URL, SERVICE_API_KEY, LIVEKIT_URL
+
+# 3. Run
+pytest test_two_web_clients.py -q
+```
+
+By default `.env.example` points at `https://remotesupport.lgitech.net`. For a
+local backend use `BACKEND_URL=http://localhost:8000`.
+
+The suite exercises:
+- `test_two_web_clients` — two tabs connect and exchange A/V.
+- `test_lifecycle_reconnect` — caller network drop and reconnect.
+- `test_agent_joins_and_greets` — AI agent joins and produces a transcript utterance.
+- `test_caller_speech_agent_response` — caller plays real speech audio; agent transcribes and replies.
+- `test_recordings_and_transcript_after_session_end` — verifies egress recordings and transcript exports after the call.
+
+The recording test is skipped when `BACKEND_URL` is `localhost` because LiveKit
+Cloud cannot deliver webhooks to a local URL. Run it against the deployed backend
+to verify egress end-to-end.
+
 ### Validate environment / configuration
 
 ```bash
@@ -134,6 +249,15 @@ With real cloud credentials in `backend/.env` and `agent/.env`:
 docker compose -f infra/docker-compose.yml up --build
 ```
 
+To expose the web support client and internal test endpoint locally, add to
+`backend/.env`:
+
+```bash
+ALLOW_TEST_ENDPOINTS=true
+```
+
+Then open `http://localhost:8000/support-web/?token=<jwt>&ws_url=<wss://...>`.
+
 LiveKit is Cloud-hosted, so there is no local SFU. Webhooks need a publicly
 reachable backend — tunnel port 8000 and point the LiveKit Cloud webhook config
 at `https://<tunnel>/v1/webhooks/livekit`. Track egress is webhook-driven, so
@@ -160,6 +284,43 @@ python scripts/apply-mobile-config.py \
 
 Then drop `google-services.json` into `mobile/android/app/` and
 `GoogleService-Info.plist` into `mobile/ios/Runner/` from the Firebase Console.
+
+### Production deployment
+
+The current production stack runs on a single GCP Compute Engine VM
+(`remote-support-vm`, `us-central1-a`, `e2-medium`) with Docker Compose:
+Postgres, backend, agent worker, and Caddy for TLS.
+
+```bash
+# On a host with Docker + gcloud access
+docker buildx build --platform linux/amd64 \
+  -f infra/Dockerfile.backend \
+  -t us-central1-docker.pkg.dev/hermes-458420/remote-support/backend:latest \
+  backend --push
+
+# On the VM
+docker compose -f docker-compose.prod.yml up -d --force-recreate backend
+```
+
+If the VM's default compute service account cannot pull from Artifact Registry,
+save/load the image as a tar instead:
+
+```bash
+# On build host
+docker save .../backend:latest -o backend-image.tar
+scp backend-image.tar remote-support-vm:~/remote-support/
+
+# On VM
+docker load -i backend-image.tar
+docker compose -f docker-compose.prod.yml up -d --force-recreate backend
+```
+
+Enable the regression endpoints only on the test/prod instance that needs them:
+
+```bash
+# backend.env
+ALLOW_TEST_ENDPOINTS=true
+```
 
 ## Before writing agent or egress code
 

@@ -1,0 +1,28 @@
+name: E2E regression — two web clients
+
+on:
+  # Nightly regression against the live backend.
+  schedule:
+    - cron: "17 7 * * *"
+  # Manual trigger for ad-hoc verification.
+  workflow_dispatch:
+
+jobs:
+  two-web-clients:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: tests/e2e
+    env:
+      BACKEND_URL: ${{ secrets.E2E_BACKEND_URL }}
+      SERVICE_API_KEY: ${{ secrets.E2E_SERVICE_API_KEY }}
+      LIVEKIT_URL: ${{ secrets.E2E_LIVEKIT_URL }}
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: playwright install chromium
+      - run: pytest test_two_web_clients.py -q

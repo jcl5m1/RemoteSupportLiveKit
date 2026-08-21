@@ -2,6 +2,7 @@
 *.pyc
 __pycache__/
 .venv/
+*.aiff
 .dart_tool/
 build/
 *.iml
