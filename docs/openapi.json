@@ -1307,6 +1307,28 @@
             "type": "string",
             "title": "Room Name"
           },
+          "caller_identity": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Caller Identity"
+          },
+          "support_identity": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Support Identity"
+          },
           "ai_enabled": {
             "type": "boolean",
             "title": "Ai Enabled"

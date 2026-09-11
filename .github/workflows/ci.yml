@@ -35,6 +35,11 @@ jobs:
       SUPPORT_ALLOWED_EMAILS: ""
       SUPPORT_ADMIN_EMAILS: ""
       ALLOW_DEGRADED_START: "true"
+      LIVEKIT_URL: wss://example.livekit.cloud
+      LIVEKIT_API_KEY: ci-key
+      LIVEKIT_API_SECRET: ci-secret
+      GCS_BUCKET: ci-bucket
+      GCP_CREDENTIALS_B64: ""
       PYTHONDONTWRITEBYTECODE: "1"
     steps:
       - uses: actions/checkout@v4
