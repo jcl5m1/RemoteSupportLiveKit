@@ -51,6 +51,19 @@ services:
       - backend
     restart: unless-stopped
 
+  # Real-time multilingual translation bridge (docs/13). Separate worker
+  # process: AgentServer supports only one rtc_session per process.
+  translation-agent:
+    image: us-central1-docker.pkg.dev/hermes-458420/remote-support/agent:latest
+    env_file:
+      - agent.env
+    environment:
+      BACKEND_URL: http://backend:8000
+    depends_on:
+      - backend
+    command: python -m agent.translation_worker start
+    restart: unless-stopped
+
   caddy:
     image: caddy:2-alpine
     ports:

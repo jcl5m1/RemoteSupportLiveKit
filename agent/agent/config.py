@@ -56,6 +56,26 @@ class AgentSettings(BaseSettings):
     agent_wake_phrases: str = "hey assistant,hey agent,hey ai"
     heartbeat_seconds: int = 30
 
+    # --- Translation bridge (agent_name="translation-agent") ----------------
+    # Multilingual STT with provider-side language detection. Default is
+    # AssemblyAI universal streaming multilingual: deepgram nova-3:multi is
+    # NOT suitable — its multi subset excludes Chinese, and the gateway
+    # rejects detect_language on it.
+    translation_stt_model: str = "assemblyai/universal-streaming-multilingual"
+    # Default relay mode for fresh rooms.
+    translation_relay_mode: str = "ENGLISH_RELAY"
+    # Comma-separated ``lang=provider/model:voice`` map; languages missing from
+    # the map fall back to ``tts_model``.
+    translation_tts_voices: str = "es=deepgram/aura-2:athena"
+    # TTS backend for the spoken relay. "livekit" resolves voices through
+    # Cloud Inference, but Inference TTS currently emits no audio frames in
+    # this project (see ToneTTS in agent/main.py) — the relay would be
+    # silence. "edge" uses edge-tts neural voices (network required); it is
+    # the only backend verified to produce audio for en/zh/es/tl.
+    translation_tts_backend: str = "edge"
+    # Language spoken to a NATIVE_RELAY listener whose language is unknown.
+    translation_fallback_language: str = "en"
+
     # --- Local development -------------------------------------------------
     # When true and LiveKit credentials are missing, the worker keeps the
     # container alive without connecting to LiveKit.
@@ -66,6 +86,19 @@ class AgentSettings(BaseSettings):
     @property
     def wake_phrases(self) -> tuple[str, ...]:
         return tuple(p.strip().lower() for p in self.agent_wake_phrases.split(",") if p.strip())
+
+    @property
+    def translation_voice_map(self) -> dict[str, str]:
+        """Parse ``translation_tts_voices`` into a ``lang -> model:voice`` dict."""
+        voices: dict[str, str] = {}
+        for pair in self.translation_tts_voices.split(","):
+            if "=" not in pair:
+                continue
+            lang, model = pair.split("=", 1)
+            lang, model = lang.strip(), model.strip()
+            if lang and model:
+                voices[lang] = model
+        return voices
 
 
 @lru_cache

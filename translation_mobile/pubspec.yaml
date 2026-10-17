@@ -1,0 +1,24 @@
+name: translation_mobile
+description: Audio-only multilingual translation call client for the LiveKit translation bridge.
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Same major version as the main app (mobile/pubspec.yaml).
+  livekit_client: ^2.11.0
+  permission_handler: ^11.3.0
+  app_links: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true

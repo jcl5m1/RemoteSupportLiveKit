@@ -23,7 +23,17 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=8.3", "pytest-asyncio>=0.24", "ruff>=0.7"]
+dev = [
+    "pytest>=8.3",
+    "pytest-asyncio>=0.24",
+    "ruff>=0.7",
+    # Synthetic loop-back test harness (test_translation_loopback.py):
+    # edge-tts generates the multilingual speech, faster-whisper recognizes it,
+    # opencc normalizes Traditional/Simplified differences in scoring.
+    "edge-tts>=7.0",
+    "faster-whisper>=1.0",
+    "opencc-python-reimplemented>=0.1",
+]
 
 [tool.ruff]
 line-length = 100
@@ -31,3 +41,6 @@ target-version = "py312"
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
+markers = [
+    "slow: synthetic speech loop-back tests (network + local model download required)",
+]

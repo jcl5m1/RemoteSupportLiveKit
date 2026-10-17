@@ -39,6 +39,19 @@ services:
     depends_on: [backend]
     command: python -m agent.main start
 
+  # Real-time multilingual translation bridge (audio-only peer rooms; see
+  # docs/13). Runs as its own worker because AgentServer supports only one
+  # rtc_session per process.
+  translation-agent:
+    build:
+      context: ../agent
+      dockerfile: ../infra/Dockerfile.agent
+    env_file: [../agent/.env]
+    environment:
+      BACKEND_URL: http://backend:8000
+    depends_on: [backend]
+    command: python -m agent.translation_worker start
+
   # LiveKit itself is Cloud-hosted (docs/00). Nothing to run locally.
   #
   # Webhooks need a publicly reachable backend. For local development, tunnel

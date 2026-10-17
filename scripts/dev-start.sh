@@ -22,6 +22,7 @@ echo ""
 
 BACKEND_PID=""
 AGENT_PID=""
+TRANSLATION_AGENT_PID=""
 
 cleanup() {
   echo ""
@@ -33,6 +34,10 @@ cleanup() {
   if [ -n "${AGENT_PID}" ]; then
     kill "${AGENT_PID}" 2>/dev/null || true
     pkill -P "${AGENT_PID}" 2>/dev/null || true
+  fi
+  if [ -n "${TRANSLATION_AGENT_PID}" ]; then
+    kill "${TRANSLATION_AGENT_PID}" 2>/dev/null || true
+    pkill -P "${TRANSLATION_AGENT_PID}" 2>/dev/null || true
   fi
   wait 2>/dev/null || true
   echo "Stopped."
@@ -88,6 +93,13 @@ echo "=== starting agent ==="
   exec .venv/bin/python -m agent.main start
 ) &
 AGENT_PID=$!
+
+echo "=== starting translation agent (optional; exits in degraded mode without LiveKit) ==="
+(
+  cd "${AGENT_DIR}"
+  exec .venv/bin/python -m agent.translation_worker start
+) &
+TRANSLATION_AGENT_PID=$!
 
 echo "=== local stack running ==="
 echo "  backend: http://localhost:8000"
