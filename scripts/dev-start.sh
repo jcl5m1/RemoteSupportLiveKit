@@ -14,6 +14,9 @@ AGENT_DIR="${PROJECT_ROOT}/agent"
 export ALLOW_DEGRADED_START="${ALLOW_DEGRADED_START:-true}"
 export ENVIRONMENT="${ENVIRONMENT:-development}"
 export LOG_LEVEL="${LOG_LEVEL:-INFO}"
+# The translation worker's health-check HTTP server needs its own port when
+# the support agent (8081) runs on the same host.
+export TRANSLATION_WORKER_PORT="${TRANSLATION_WORKER_PORT:-8082}"
 
 echo "Starting local dev stack. If LiveKit/GCS credentials are present in"
 echo "backend/.env or agent/.env, the services will connect to real cloud"

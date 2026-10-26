@@ -1,0 +1,12 @@
+[Unit]
+Description=Mirror RemoteSupportLiveKit recordings from GCS to /mnt/ext_primary
+Wants=network-online.target
+After=network-online.target
+# Don't create the folder on the internal disk if the external drive is not mounted.
+ConditionPathIsMountPoint=/mnt/ext_primary
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/github/jcl5m1/RemoteSupportLiveKit
+ExecStart=%h/github/jcl5m1/RemoteSupportLiveKit/backend/.venv/bin/python scripts/sync-recordings.py
+Nice=10

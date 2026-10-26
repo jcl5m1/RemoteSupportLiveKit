@@ -8,6 +8,7 @@ from datetime import UTC, datetime, timedelta
 
 from fastapi import APIRouter, Depends, HTTPException, Request, status
 from livekit import api
+from livekit.api.twirp_client import TwirpError
 from sqlalchemy import delete, func, select
 
 from .. import metrics, schemas
@@ -48,6 +49,20 @@ def _error(code: str, message: str, status_code: int = status.HTTP_400_BAD_REQUE
     raise HTTPException(
         status_code=status_code,
         detail={"error": {"code": code, "message": message, "details": {}}},
+    )
+
+
+@router.get("/public-config", response_model=schemas.PublicConfig)
+async def public_config():
+    """Firebase web config for browser Google sign-in.
+
+    The API key identifies the Firebase project to the Web SDK and is not a
+    secret; it is already visible in any client that signs users in.
+    """
+    return schemas.PublicConfig(
+        firebase_api_key=settings.firebase_web_api_key or None,
+        firebase_auth_domain=settings.firebase_auth_domain,
+        firebase_project_id=settings.firebase_project_id,
     )
 
 
@@ -236,7 +251,7 @@ async def join_session(
     request: Request,
     support: SupportTokenPayload = Depends(require_support_user),
 ):
-    """Support joins by code. Auth: support user."""
+    """Support joins by code or session id. Auth: support user."""
     ip = client_ip(request)
     if not await check_rate_limit(
         key=f"join:ip:{ip}", limit=100, window_seconds=3600
@@ -255,24 +270,43 @@ async def join_session(
             status.HTTP_429_TOO_MANY_REQUESTS,
         )
 
-    code = normalize_code(body.join_code)
-    if len(code) != settings.join_code_length:
-        _error("code_not_found", "Invalid join code length", status.HTTP_404_NOT_FOUND)
+    if (body.join_code is None) == (body.session_id is None):
+        _error(
+            "invalid_request",
+            "Exactly one of join_code or session_id must be set",
+        )
 
     lkapi: api.LiveKitAPI = request.app.state.lkapi
 
     async with AsyncSessionLocal() as db:
-        session_result = await db.execute(
-            select(Session)
-            .where(Session.join_code == code)
-            .where(Session.state.in_([SessionState.PENDING, SessionState.ACTIVE]))
-        )
+        if body.session_id is not None:
+            session_result = await db.execute(
+                select(Session)
+                .where(Session.id == body.session_id)
+                .where(Session.state.in_([SessionState.PENDING, SessionState.ACTIVE]))
+            )
+        else:
+            code = normalize_code(body.join_code or "")
+            if len(code) != settings.join_code_length:
+                _error(
+                    "code_not_found", "Invalid join code length", status.HTTP_404_NOT_FOUND
+                )
+            session_result = await db.execute(
+                select(Session)
+                .where(Session.join_code == code)
+                .where(Session.state.in_([SessionState.PENDING, SessionState.ACTIVE]))
+            )
         session = session_result.scalar_one_or_none()
         if session is None:
             _error("code_not_found", "Join code not found", status.HTTP_404_NOT_FOUND)
         assert session is not None
 
-        if session.join_code_expires_at and session.join_code_expires_at < datetime.now(UTC):
+        # Session-id joins follow operator links that may outlive the 6-char
+        # code, so the join-code TTL only applies to code-based joins.
+        if body.session_id is None and (
+            session.join_code_expires_at
+            and session.join_code_expires_at < datetime.now(UTC)
+        ):
             _error("code_expired", "Join code has expired", status.HTTP_410_GONE)
 
         if session.state not in (SessionState.PENDING, SessionState.ACTIVE):
@@ -475,7 +509,14 @@ async def end_session(
             _error("not_found", "Session not found", status.HTTP_404_NOT_FOUND)
         assert session is not None
 
-        await lkapi.room.delete_room(api.DeleteRoomRequest(room=session.room_name))
+        try:
+            await lkapi.room.delete_room(api.DeleteRoomRequest(room=session.room_name))
+        except TwirpError as exc:
+            # The room may already be gone (empty-timeout, earlier end call, or
+            # never created); ending is still a success for the caller.
+            if exc.status != status.HTTP_404_NOT_FOUND:
+                raise
+            logger.info("end_session: room %s already gone", session.room_name)
         session.state = SessionState.COMPLETED
         session.ended_at = datetime.now(UTC)
         await db.commit()

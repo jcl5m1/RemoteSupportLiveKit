@@ -56,7 +56,11 @@ class ConsentResponse(BaseModel):
 
 
 class JoinRequest(BaseModel):
-    join_code: str
+    # Exactly one of join_code / session_id must be set. join_code is the
+    # caller-shared 6-char code; session_id is used by authenticated support
+    # operators following a /join/<session_id> link.
+    join_code: str | None = None
+    session_id: uuid.UUID | None = None
     display_name: str | None = None
 
 
@@ -67,6 +71,53 @@ class JoinResponse(BaseModel):
     agent_mode: AgentMode
     recording_enabled: bool
     caller_display_name: str | None = None
+
+
+class OpenCallJoinRequest(BaseModel):
+    display_name: str | None = Field(default=None, max_length=64)
+
+
+class OpenCallInfo(BaseModel):
+    call_id: str
+    # recording_enabled: participants may record; recording_active: they are.
+    recording_enabled: bool
+    recording_active: bool = False
+
+
+class CallRecordingFile(BaseModel):
+    name: str
+    participant: str
+    identity: str
+    source: str
+    started_at: datetime
+    size_bytes: int
+    content_type: str
+    url: str  # short-lived signed GCS URL
+
+
+class CallRecordingList(BaseModel):
+    call_id: str
+    recordings: list[CallRecordingFile]
+
+
+class CallRecordingState(BaseModel):
+    recording: bool
+    started_by: str | None = None
+
+
+class OpenCallJoinResponse(BaseModel):
+    call_id: str
+    livekit: LiveKitCredentials
+    # True when participants may start/stop per-track recording.
+    recording_enabled: bool = False
+
+
+class PublicConfig(BaseModel):
+    """Firebase web config for browser Google sign-in (not secret)."""
+
+    firebase_api_key: str | None
+    firebase_auth_domain: str
+    firebase_project_id: str
 
 
 # --- session detail ----------------------------------------------------

@@ -37,6 +37,9 @@ class Settings(BaseSettings):
     # Support operators sign in with Google SSO via Firebase Auth. Firebase
     # issues the token; the ``admin`` custom claim gates the purge endpoint.
     firebase_project_id: str
+    # Firebase Web SDK API key for browser Google sign-in (served to the web
+    # client via /v1/public-config). Not a secret -- it ships in client JS.
+    firebase_web_api_key: str = ""
     # Comma-separated. At least one of domains/emails MUST be set -- an empty
     # allowlist would let any Google account claim the trusted support role.
     support_allowed_domains: str = ""
@@ -74,6 +77,23 @@ class Settings(BaseSettings):
     # be enabled in a public-facing deployment.
     allow_test_endpoints: bool = False
 
+    # Optional path prefix when served behind a shared hostname, e.g.
+    # "/livekit" for https://gx10-645d.lgitech.net/livekit/. The proxy forwards
+    # the prefix unchanged; the app serves both prefixed and bare paths.
+    public_base_path: str = ""
+
+    # --- Open calls ----------------------------------------------------
+    # When true, anyone with a /call/<call_id> link can join a plain
+    # multi-party A/V room (no sign-in, no consent, no recording, no agent).
+    # Open-call rooms use a separate ``call_`` prefix so a guest token can never
+    # reach a support session room (``rs_``).
+    open_calls_enabled: bool = False
+    open_call_max_participants: int = 12
+    # When true, any open-call participant can start/stop recording; while on,
+    # every published audio/video track is saved as its own file in GCS_BUCKET
+    # under calls/<call_id>/.
+    open_call_recording_enabled: bool = False
+
     # --- Rate limits ---------------------------------------------------
     utterance_rate_limit: int = 600
     utterance_rate_limit_window_seconds: int = 60
@@ -85,6 +105,10 @@ class Settings(BaseSettings):
     @staticmethod
     def _csv_set(raw: str) -> frozenset[str]:
         return frozenset(p.strip().lower() for p in raw.split(",") if p.strip())
+
+    @property
+    def firebase_auth_domain(self) -> str:
+        return f"{self.firebase_project_id}.firebaseapp.com"
 
     @property
     def support_allowed_domain_set(self) -> frozenset[str]:

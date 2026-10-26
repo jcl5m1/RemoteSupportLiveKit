@@ -5,56 +5,596 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Remote Support — Web Client</title>
   <style>
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    [hidden] { display: none !important; }
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
-      padding: 1rem;
-      background: #111;
-      color: #eee;
+      background: #202124;
+      color: #e8eaed;
+      overflow: hidden;
     }
-    #status {
-      margin-bottom: 0.5rem;
+
+    /* ---- transient status / error chips (top-left) ---- */
+    #statusChip {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 60;
+      background: rgba(0, 0, 0, 0.55);
+      border-radius: 8px;
+      padding: 4px 10px;
+      font-size: 12px;
+      max-width: 60vw;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    #identity { color: #9aa0a6; }
+    #identity:not(:empty)::before { content: " · "; }
+    #error {
+      position: fixed;
+      top: 42px;
+      left: 10px;
+      z-index: 60;
+      color: #ff6b6b;
+      font-size: 13px;
+      white-space: pre-wrap;
+      max-width: 70vw;
+    }
+
+    /* ---- pre-join / auth overlay ---- */
+    .overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      display: grid;
+      place-items: center;
+      background: #202124;
+      overflow-y: auto;
+      padding: 1rem 0;
+    }
+    .card {
+      text-align: center;
+      max-width: 380px;
+      padding: 2rem;
+      background: #292a2d;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+    }
+    .card h1 { font-size: 1.3rem; font-weight: 500; margin: 0 0 0.5rem; }
+    .card p { color: #9aa0a6; font-size: 0.9rem; margin: 0 0 1.25rem; }
+    #googleSignIn {
+      font: inherit;
+      font-weight: 600;
+      padding: 0.6rem 1.4rem;
+      border: none;
+      border-radius: 20px;
+      background: #8ab4f8;
+      color: #202124;
+      cursor: pointer;
+    }
+    #googleSignIn:hover { background: #a8c7fa; }
+    #googleSignIn:disabled { opacity: 0.5; cursor: default; }
+    #prejoinForm { display: flex; flex-direction: column; gap: 0.75rem; }
+    #nameInput {
+      background: #202124;
+      color: #e8eaed;
+      border: 1px solid #5f6368;
+      border-radius: 6px;
+      padding: 0.6rem 0.75rem;
+      font-size: 0.95rem;
+    }
+    #joinCallBtn, #copyLinkBtn {
+      background: #8ab4f8;
+      color: #202124;
+      border: none;
+      border-radius: 20px;
+      padding: 0.6rem 1.25rem;
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    #joinCallBtn:disabled { opacity: 0.5; cursor: default; }
+    #copyLinkBtn, #viewRecsBtn { background: transparent; color: #8ab4f8; border: 1px solid #5f6368; }
+    #viewRecsBtn {
+      border-radius: 20px;
+      padding: 0.6rem 1.25rem;
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    #recordings { z-index: 110; }
+    #settings { z-index: 105; background: rgba(0, 0, 0, 0.6); }
+    #settings .card { width: min(420px, calc(100vw - 2rem)); text-align: left; }
+    #settings header { display: flex; align-items: center; margin-bottom: 0.75rem; }
+    #settings header h1 { flex: 1; margin: 0; }
+    #settings header button, #settingsRecsBtn {
+      background: transparent; color: #8ab4f8; border: 1px solid #5f6368;
+      border-radius: 16px; padding: 0.35rem 0.9rem; cursor: pointer; font: inherit;
+    }
+    #settingsRecsBtn { margin-top: 1rem; width: 100%; }
+    .devices { display: flex; flex-direction: column; gap: 0.6rem; text-align: left; margin-bottom: 1rem; }
+    .devices label { display: flex; flex-direction: column; gap: 0.25rem; font-size: 0.8rem; color: #9aa0a6; }
+    .devices select {
+      background: #202124; color: #e8eaed; border: 1px solid #5f6368;
+      border-radius: 6px; padding: 0.45rem 0.5rem; font-size: 0.9rem; max-width: 100%;
+    }
+    #prejoinPreview {
+      width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #000;
+      border-radius: 10px; margin-bottom: 0.75rem; transform: scaleX(-1);
+    }
+    #prejoinPreview.no-mirror { transform: none; }
+    #recordings .card { max-width: 720px; width: calc(100vw - 2rem); max-height: 85vh; overflow-y: auto; text-align: left; }
+    #recordings header { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; }
+    #recordings header h1 { flex: 1; margin: 0; }
+    #recordings header button {
+      background: transparent; color: #8ab4f8; border: 1px solid #5f6368;
+      border-radius: 16px; padding: 0.3rem 0.8rem; cursor: pointer;
+    }
+    #recList { list-style: none; margin: 0; padding: 0; }
+    #recList li { border-top: 1px solid #3c4043; padding: 0.75rem 0; }
+    #recList .rec-head { display: flex; gap: 0.75rem; align-items: baseline; flex-wrap: wrap; }
+    #recList .rec-who { font-weight: 500; }
+    #recList .rec-meta { color: #9aa0a6; font-size: 0.8rem; flex: 1; }
+    #recList a { color: #8ab4f8; font-size: 0.85rem; }
+    #recList video, #recList audio { width: 100%; margin-top: 0.5rem; border-radius: 8px; background: #000; }
+    #recEmpty { color: #9aa0a6; font-size: 0.9rem; }
+    #recNotice { color: #9aa0a6; font-size: 0.85rem; margin: 0 0 1rem; }
+    #recNotice.active { color: #f28b82; }
+    .cbtn.recording { background: #ea4335; color: #fff; }
+    .cbtn.recording:hover { background: #d33426; }
+    #recBadge {
+      margin-left: 0.5rem;
+      color: #fff;
+      background: #d93025;
+      border-radius: 4px;
+      padding: 0 0.35rem;
+      font-size: 0.75rem;
       font-weight: 600;
     }
-    #error {
-      color: #ff6b6b;
+    #callLink { font-family: monospace; font-size: 0.8rem; color: #9aa0a6; word-break: break-all; margin-bottom: 1rem; }
+    #userInfo { margin-top: 0.75rem; font-size: 0.85rem; color: #9aa0a6; }
+
+    /* ---- call layout ---- */
+    #callUI { display: flex; flex-direction: column; height: 100vh; }
+    #stageRow { flex: 1; display: flex; min-height: 0; padding: 8px; gap: 8px; }
+    #tileGrid {
+      flex: 1;
+      display: grid;
+      gap: 8px;
+      grid-template-columns: repeat(var(--cols, 1), 1fr);
+      align-content: center;
+      min-width: 0;
+    }
+    .tile {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      width: 100%;
+      max-height: calc((100vh - 132px) / var(--rows, 1));
+      margin: auto;
+      background: #3c4043;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 2px solid transparent;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .tile.speaking {
+      border-color: #8ab4f8;
+      box-shadow: 0 0 14px rgba(138, 180, 248, 0.45);
+    }
+    .tile video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .tile.mirror video { transform: scaleX(-1); }
+    .tile.cam-off video { display: none; }
+    .avatar {
+      position: absolute;
+      inset: 0;
+      display: none;
+      place-items: center;
+    }
+    .tile.cam-off .avatar,
+    .tile.no-video .avatar { display: grid; }
+    .avatar .circle {
+      width: clamp(48px, 22%, 96px);
+      aspect-ratio: 1;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: clamp(20px, 4vw, 40px);
+      font-weight: 500;
+      color: #fff;
+    }
+    .namechip {
+      position: absolute;
+      left: 8px;
+      bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(0, 0, 0, 0.55);
+      border-radius: 6px;
+      padding: 3px 8px;
+      font-size: 13px;
+      max-width: calc(100% - 24px);
+    }
+    .namechip .nm { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .namechip svg { width: 14px; height: 14px; flex: none; fill: #e8eaed; }
+    .namechip .mic-off-ic { display: none; fill: #ea4335; }
+    .tile.mic-off .namechip .mic-on-ic { display: none; }
+    .tile.mic-off .namechip .mic-off-ic { display: block; }
+    .bars { display: none; align-items: flex-end; gap: 2px; height: 12px; }
+    .tile.speaking .bars { display: inline-flex; }
+    .bars i {
+      width: 3px;
+      background: #8ab4f8;
+      border-radius: 1px;
+      animation: bar 0.9s ease-in-out infinite;
+    }
+    .bars i:nth-child(2) { animation-delay: 0.15s; }
+    .bars i:nth-child(3) { animation-delay: 0.3s; }
+    @keyframes bar { 0%, 100% { height: 4px; } 50% { height: 12px; } }
+
+    /* ---- people panel ---- */
+    #peoplePanel {
+      width: 300px;
+      flex: none;
+      background: #292a2d;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+    }
+    #peoplePanel[hidden] { display: none; }
+    #peoplePanel header {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 8px 8px 0;
+      border-bottom: 1px solid #3c4043;
+    }
+    #peoplePanel header .tab {
+      font: inherit;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #9aa0a6;
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+    #peoplePanel header .tab.active {
+      color: #8ab4f8;
+      border-bottom-color: #8ab4f8;
+    }
+    #closePanelBtn {
+      margin-left: auto;
+      font: inherit;
+      color: #9aa0a6;
+      background: none;
+      border: none;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+    }
+    #closePanelBtn:hover { background: #3c4043; }
+    #chatTab {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+    }
+    #chatMessages {
+      flex: 1;
+      overflow-y: auto;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .chat-msg { max-width: 90%; }
+    .chat-msg .meta {
+      font-size: 0.72rem;
+      color: #9aa0a6;
+      margin-bottom: 2px;
+    }
+    .chat-msg .body {
+      background: #3c4043;
+      border-radius: 10px;
+      padding: 7px 11px;
+      font-size: 0.88rem;
+      overflow-wrap: break-word;
       white-space: pre-wrap;
     }
-    .videos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 0.5rem;
-      margin-top: 1rem;
+    .chat-msg.mine { align-self: flex-end; }
+    .chat-msg.mine .meta { text-align: right; }
+    .chat-msg.mine .body { background: #8ab4f8; color: #202124; }
+    #chatForm {
+      display: flex;
+      gap: 8px;
+      padding: 10px 12px;
+      border-top: 1px solid #3c4043;
     }
-    video {
-      width: 100%;
-      max-width: 480px;
-      background: #222;
+    #chatInput {
+      flex: 1;
+      font: inherit;
+      font-size: 0.9rem;
+      color: #e8eaed;
+      background: #3c4043;
+      border: 1px solid #5f6368;
+      border-radius: 18px;
+      padding: 8px 14px;
+      outline: none;
+    }
+    #chatInput:focus { border-color: #8ab4f8; }
+    #chatSend {
+      font: inherit;
+      border: none;
+      border-radius: 50%;
+      width: 38px;
+      height: 38px;
+      background: #8ab4f8;
+      color: #202124;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      flex: none;
+    }
+    #chatSend svg { width: 18px; height: 18px; fill: currentColor; }
+    #chatSend:disabled { opacity: 0.5; cursor: default; }
+    #peopleList { list-style: none; margin: 0; padding: 6px; overflow-y: auto; }
+    #peopleList li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 10px;
       border-radius: 8px;
     }
-    .label {
-      font-size: 0.85rem;
-      color: #aaa;
-      margin-top: 0.25rem;
+    #peopleList li.speaking { background: rgba(138, 180, 248, 0.12); }
+    #peopleList .pcircle {
+      width: 32px;
+      height: 32px;
+      flex: none;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 14px;
+      font-weight: 500;
+      color: #fff;
+    }
+    #peopleList .pname { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 0.9rem; }
+    #peopleList .prole { color: #9aa0a6; font-size: 0.75rem; }
+    #peopleList svg { width: 16px; height: 16px; flex: none; fill: #9aa0a6; }
+    #peopleList li.mic-off svg.pmic { fill: #ea4335; }
+
+    /* ---- control bar ---- */
+    #controlBar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 14px 12px 18px;
+    }
+    .cbtn {
+      position: relative;
+      width: 48px;
+      height: 48px;
+      border: none;
+      border-radius: 50%;
+      background: #3c4043;
+      color: #e8eaed;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      transition: background 0.15s;
+    }
+    .cbtn:hover { background: #4a4f53; }
+    .cbtn svg { width: 22px; height: 22px; fill: currentColor; }
+    .cbtn .ic-off { display: none; }
+    .cbtn.off { background: #ea4335; color: #fff; }
+    .cbtn.off:hover { background: #d33426; }
+    .cbtn.off .ic-on { display: none; }
+    .cbtn.off .ic-off { display: block; }
+    .cbtn:disabled { opacity: 0.5; cursor: default; }
+    .cbtn.hangup {
+      width: 64px;
+      border-radius: 24px;
+      background: #ea4335;
+      color: #fff;
+    }
+    .cbtn.hangup:hover { background: #d33426; }
+    .cbtn.toggled { background: #8ab4f8; color: #202124; }
+    .cbtn.toggled:hover { background: #a8c7fa; }
+    /* Device chooser: small arrow on the mic/camera buttons (Meet style). */
+    .cgroup { position: relative; display: inline-flex; }
+    .chev {
+      position: absolute; top: -6px; right: -6px; z-index: 2;
+      width: 22px; height: 22px; border-radius: 50%; padding: 0;
+      border: 2px solid #202124; background: #5f6368; color: #e8eaed;
+      font-size: 9px; line-height: 1; cursor: pointer;
+    }
+    .chev:hover, .chev.open { background: #8ab4f8; color: #202124; }
+    #deviceMenu {
+      position: fixed; z-index: 90; min-width: 220px; max-width: calc(100vw - 16px);
+      background: #292a2d; border-radius: 10px; padding: 6px 0;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+    }
+    #deviceMenu h2 { font-size: 0.75rem; font-weight: 500; color: #9aa0a6; margin: 6px 14px 4px; }
+    #deviceMenu button {
+      display: flex; gap: 8px; width: 100%; text-align: left; font: inherit; font-size: 0.9rem;
+      background: none; border: none; color: #e8eaed; padding: 8px 14px; cursor: pointer;
+    }
+    #deviceMenu button:hover { background: #3c4043; }
+    #deviceMenu .check { width: 1em; color: #8ab4f8; }
+    #deviceMenu button.danger { color: #f28b82; }
+    #deviceMenu .empty { color: #9aa0a6; font-size: 0.85rem; padding: 6px 14px; }
+    .badge {
+      position: absolute;
+      top: -4px;
+      right: -4px;
+      min-width: 18px;
+      height: 18px;
+      border-radius: 9px;
+      background: #8ab4f8;
+      color: #202124;
+      font-size: 11px;
+      font-weight: 600;
+      display: grid;
+      place-items: center;
+      padding: 0 4px;
+    }
+    /* ---- phones / narrow windows ---- */
+    @media (max-width: 600px) {
+      #controlBar { gap: 4px; padding: 8px 6px 12px; flex-wrap: wrap; }
+      .cbtn { width: 40px; height: 40px; }
+      .cbtn svg { width: 20px; height: 20px; }
+      .cbtn.hangup { width: 52px; }
+      #stageRow { padding: 4px; }
+      #tileGrid { gap: 4px; }
+      .tile { max-height: calc((100vh - 110px) / var(--rows, 1)); }
+      #peoplePanel { position: fixed; inset: 0 0 64px 0; width: auto; max-width: none; z-index: 70; }
+      .card { padding: 1.25rem; margin: 0 0.75rem; }
+      #statusChip { max-width: calc(100vw - 20px); }
+    }
+    @media (max-width: 360px) {
+      #controlBar { gap: 3px; padding: 8px 4px 10px; }
+      .cbtn { width: 34px; height: 34px; }
+      .cbtn svg { width: 18px; height: 18px; }
+      .cbtn.hangup { width: 44px; }
     }
   </style>
 </head>
 <body>
-  <div id="status">Initializing…</div>
+  <div id="statusChip"><span id="status">Initializing…</span><span id="identity"></span><span id="recBadge" hidden>REC</span></div>
   <div id="error"></div>
-  <div id="identity"></div>
-  <div class="videos">
-    <div>
-      <video id="localVideo" autoplay playsinline muted></video>
-      <div class="label">Local</div>
+
+  <div id="callUI" hidden>
+    <div id="stageRow">
+      <div id="tileGrid"></div>
+      <aside id="peoplePanel" hidden>
+        <header>
+          <button id="tabPeople" class="tab active" type="button">People</button>
+          <button id="tabChatBtn" class="tab" type="button">Chat</button>
+          <button id="closePanelBtn" type="button" title="Close">✕</button>
+        </header>
+        <ul id="peopleList"></ul>
+        <div id="chatTab" hidden>
+          <div id="chatMessages"></div>
+          <form id="chatForm">
+            <input id="chatInput" type="text" placeholder="Send a message" autocomplete="off" />
+            <button id="chatSend" type="submit" title="Send">
+              <svg viewBox="0 0 24 24"><use href="#i-send"/></svg>
+            </button>
+          </form>
+        </div>
+      </aside>
     </div>
-    <div>
-      <video id="remoteVideo" autoplay playsinline></video>
-      <div class="label">Remote</div>
+    <div id="controlBar">
+      <button id="muteAllBtn" class="cbtn" type="button" title="Mute microphone and camera"></button>
+      <span class="cgroup">
+        <button id="micBtn" class="cbtn" type="button" title="Toggle microphone"></button>
+        <button id="micMenuBtn" class="chev" type="button" title="Choose microphone and speaker" data-kinds="audioinput,audiooutput">&#9650;</button>
+      </span>
+      <span class="cgroup">
+        <button id="camBtn" class="cbtn" type="button" title="Toggle camera"></button>
+        <button id="camMenuBtn" class="chev" type="button" title="Choose camera" data-kinds="videoinput">&#9650;</button>
+      </span>
+      <button id="hangupBtn" class="cbtn hangup" type="button" title="Hang up"></button>
+      <button id="recBtn" class="cbtn" type="button" title="Start recording" hidden></button>
+      <button id="peopleBtn" class="cbtn" type="button" title="Show everyone"></button>
+      <button id="chatBtn" class="cbtn" type="button" title="Chat with everyone"></button>
+      <button id="settingsBtn" class="cbtn" type="button" title="Settings: microphone, camera, speaker"></button>
     </div>
   </div>
 
+  <div id="auth" class="overlay" hidden>
+    <div class="card">
+      <h1>Remote Support</h1>
+      <p>Sign in with your Google account to join this support session.</p>
+      <button id="googleSignIn" type="button">Sign in with Google</button>
+      <div id="userInfo"></div>
+    </div>
+  </div>
+
+  <div id="prejoin" class="overlay" hidden>
+    <div class="card">
+      <h1>Ready to join?</h1>
+      <p>Anyone with this link can join the call.</p>
+      <video id="prejoinPreview" autoplay playsinline muted></video>
+      <div id="prejoinDevices" class="devices"></div>
+      <div id="callLink"></div>
+      <p id="recNotice" hidden></p>
+      <form id="prejoinForm">
+        <input id="nameInput" type="text" placeholder="Your name" maxlength="64" autocomplete="name" />
+        <button id="joinCallBtn" type="submit">Join now</button>
+        <button id="copyLinkBtn" type="button">Copy joining link</button>
+        <button id="viewRecsBtn" type="button" hidden>View recordings</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="deviceMenu" role="menu" hidden></div>
+
+  <div id="settings" class="overlay" hidden>
+    <div class="card">
+      <header>
+        <h1>Settings</h1>
+        <button id="settingsCloseBtn" type="button">Done</button>
+      </header>
+      <div id="settingsDevices" class="devices"></div>
+      <button id="settingsRecsBtn" type="button" hidden>View recordings</button>
+    </div>
+  </div>
+
+  <div id="recordings" class="overlay" hidden>
+    <div class="card">
+      <header>
+        <h1>Recordings</h1>
+        <button id="recRefreshBtn" type="button">Refresh</button>
+        <button id="recCloseBtn" type="button">Close</button>
+      </header>
+      <p id="recEmpty" hidden>No recordings for this call yet.</p>
+      <ul id="recList"></ul>
+    </div>
+  </div>
+
+  <div id="endCard" class="overlay" hidden>
+    <div class="card">
+      <h1 id="endTitle">You left the call</h1>
+      <p id="endDetail"></p>
+      <button id="rejoinBtn" type="button" onclick="location.reload()">Rejoin</button>
+    </div>
+  </div>
+
+  <!-- Shared inline SVG symbols -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-rec" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm0-13a5 5 0 1 0 0 10 5 5 0 0 0 0-10z"/></symbol>
+      <symbol id="i-library" viewBox="0 0 24 24"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z"/></symbol>
+      <symbol id="i-settings" viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.49.49 0 0 0-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.48.48 0 0 0-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96a.48.48 0 0 0-.59.22L2.74 8.87a.47.47 0 0 0 .12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 0 0-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32a.47.47 0 0 0-.12-.61l-2.01-1.58zM12 15.6A3.6 3.6 0 1 1 12 8.4a3.6 3.6 0 0 1 0 7.2z"/></symbol>
+      <symbol id="i-pause" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></symbol>
+      <symbol id="i-play" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-2 14.5v-9l6 4.5-6 4.5z"/></symbol>
+      <symbol id="i-mic" viewBox="0 0 24 24"><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5-3c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/></symbol>
+      <symbol id="i-mic-off" viewBox="0 0 24 24"><path d="M19 11h-1.7c0 .74-.16 1.43-.43 2.05l1.23 1.23c.56-.98.9-2.09.9-3.28zm-4.02.17c0-.06.02-.11.02-.17V5c0-1.66-1.34-3-3-3S9 3.34 9 5v.18l5.98 5.99zM4.27 3L3 4.27l6.01 6.01V11c0 1.66 1.33 3 2.99 3 .22 0 .44-.03.65-.08l1.66 1.66c-.71.33-1.5.52-2.31.52-2.76 0-5.3-2.1-5.3-5.1H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c.91-.13 1.77-.45 2.54-.9L19.73 21 21 19.73 4.27 3z"/></symbol>
+      <symbol id="i-cam" viewBox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></symbol>
+      <symbol id="i-cam-off" viewBox="0 0 24 24"><path d="M21 6.5l-4 4V7c0-.55-.45-1-1-1H9.82L21 17.18V6.5zM3.27 2L2 3.27 4.73 6H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.21 0 .39-.08.54-.18L19.73 21 21 19.73 3.27 2z"/></symbol>
+      <symbol id="i-hangup" viewBox="0 0 24 24"><path d="M12 9c-1.6 0-3.15.25-4.6.72v3.1c0 .39-.23.74-.56.9-.98.49-1.87 1.12-2.66 1.85-.18.18-.43.28-.7.28-.28 0-.53-.11-.71-.29L.29 13.08c-.18-.17-.29-.42-.29-.7 0-.28.11-.53.29-.71C3.34 8.78 7.46 7 12 7s8.66 1.78 11.71 4.67c.18.18.29.43.29.71 0 .28-.11.53-.29.71l-2.48 2.48c-.18.18-.43.29-.71.29-.27 0-.52-.11-.7-.28-.79-.74-1.69-1.36-2.67-1.85-.33-.16-.56-.5-.56-.9v-3.1C15.15 9.25 13.6 9 12 9z"/></symbol>
+      <symbol id="i-people" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/></symbol>
+      <symbol id="i-send" viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></symbol>
+    </defs>
+  </svg>
+
   <script src="https://cdn.jsdelivr.net/npm/livekit-client@2.x/dist/livekit-client.umd.min.js"></script>
-  <script src="app.js"></script>
+  <!-- Bump the v= query when app.js changes: the CDN edge caches .js for 4h,
+       and the new cache key forces a fresh fetch from the backend. -->
+  <script src="app.js?v=20261026i"></script>
 </body>
 </html>

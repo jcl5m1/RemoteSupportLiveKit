@@ -159,11 +159,30 @@ def client() -> HarnessClient:
     return HarnessClient(BACKEND_URL, SERVICE_API_KEY)
 
 
+def _backend_is_loopback() -> bool:
+    host = urlparse(BACKEND_URL).hostname or ""
+    return host in ("localhost", "127.0.0.1", "::1")
+
+
 @pytest.fixture(scope="session")
 def audio_server() -> str:
-    """Serve tests/e2e/fixtures/ on a local port so the browser can fetch WAV files."""
+    """URL the browser can use to fetch the caller speech WAV.
+
+    A page served from a public origin (e.g. through a Cloudflare tunnel) may
+    not fetch loopback addresses (browser Private Network Access), so for
+    non-local backends the fixture is served same-origin from
+    ``/support-web/test-assets/`` instead of a local HTTP server.
+    """
     if not SPEECH_WAV.exists():
         pytest.skip(f"Speech fixture not found: {SPEECH_WAV}")
+
+    if not _backend_is_loopback():
+        url = f"{BACKEND_URL}/support-web/test-assets/caller_prompt.wav"
+        status = requests.head(url, timeout=10).status_code
+        if status != 200:
+            pytest.skip(f"Speech fixture not served by backend: {url} (HTTP {status})")
+        yield url
+        return
 
     class _Handler(SimpleHTTPRequestHandler):
         def __init__(self, *args, **kwargs):
@@ -390,13 +409,28 @@ def test_lifecycle_reconnect(client: HarnessClient, browser: Browser) -> None:
         # Capture reconnect count before going offline.
         before = caller_page.evaluate("() => window.testState.reconnectCount")
 
-        # Drop caller's network for 5 s.
+        # Drop caller's network for 5 s. Chromium's set_offline blocks new
+        # connections but leaves established sockets (the signal WebSocket,
+        # WebRTC media) running, so additionally close the signal socket from
+        # inside the page — the same mechanism livekit-client's own connection
+        # checker uses to simulate a signal drop. Reconnect attempts then fail
+        # while offline and succeed once restored, exercising the real
+        # reconnect path.
         caller_page.context.set_offline(True)
+        caller_page.evaluate(
+            """() => {
+                const client = window.testState.room.engine.client;
+                if (client.ws) client.ws.close();
+                if (client.onClose) client.onClose('');
+            }"""
+        )
         time.sleep(5)
         caller_page.context.set_offline(False)
 
-        # Wait for reconnect.
-        deadline = time.monotonic() + 20
+        # Wait for reconnect. LiveKit's reconnect backoff after a signal loss
+        # is exponential (1s, 2s, 4s, …), so allow a generous window (FR: a
+        # WiFi drop recovers, no hard bound).
+        deadline = time.monotonic() + 45
         while time.monotonic() < deadline:
             after = caller_page.evaluate("() => window.testState.reconnectCount")
             state = caller_page.evaluate("() => window.testState.connectionState")

@@ -5,6 +5,28 @@
     "version": "0.1.0"
   },
   "paths": {
+    "/v1/sessions/public-config": {
+      "get": {
+        "tags": [
+          "sessions"
+        ],
+        "summary": "Public Config",
+        "description": "Firebase web config for browser Google sign-in.\n\nThe API key identifies the Firebase project to the Web SDK and is not a\nsecret; it is already visible in any client that signs users in.",
+        "operationId": "public_config_v1_sessions_public_config_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PublicConfig"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/v1/sessions": {
       "post": {
         "tags": [
@@ -112,7 +134,7 @@
           "sessions"
         ],
         "summary": "Join Session",
-        "description": "Support joins by code. Auth: support user.",
+        "description": "Support joins by code or session id. Auth: support user.",
         "operationId": "join_session_v1_sessions_join_post",
         "requestBody": {
           "content": {
@@ -707,6 +729,440 @@
         }
       }
     },
+    "/call": {
+      "get": {
+        "tags": [
+          "calls"
+        ],
+        "summary": "New Call",
+        "description": "Start a fresh call: redirect to a newly generated call link.",
+        "operationId": "new_call_call_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/call/{call_id}": {
+      "get": {
+        "tags": [
+          "calls"
+        ],
+        "summary": "Open Call Link",
+        "description": "Shareable call link: redirects into the web client in open-call mode.",
+        "operationId": "open_call_link_call__call_id__get",
+        "parameters": [
+          {
+            "name": "call_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Call Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/calls/{call_id}": {
+      "get": {
+        "tags": [
+          "calls"
+        ],
+        "summary": "Open Call Info",
+        "description": "Pre-join info so the client can show a recording notice before joining.",
+        "operationId": "open_call_info_v1_calls__call_id__get",
+        "parameters": [
+          {
+            "name": "call_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Call Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OpenCallInfo"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/calls/{call_id}/join": {
+      "post": {
+        "tags": [
+          "calls"
+        ],
+        "summary": "Join Open Call",
+        "description": "Mint a guest LiveKit token for an open call. Auth: none (link-only).",
+        "operationId": "join_open_call_v1_calls__call_id__join_post",
+        "parameters": [
+          {
+            "name": "call_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Call Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OpenCallJoinRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OpenCallJoinResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/calls/{call_id}/recordings": {
+      "get": {
+        "tags": [
+          "calls"
+        ],
+        "summary": "List Call Recordings",
+        "description": "Recordings for a call, with short-lived signed URLs to play them.\n\nAuth: none -- anyone holding the call link may view its recordings, by\nproduct decision. Call ids from GET /call are unguessable; hand-picked ids\nlike \"team-standup\" are not.",
+        "operationId": "list_call_recordings_v1_calls__call_id__recordings_get",
+        "parameters": [
+          {
+            "name": "call_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Call Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CallRecordingList"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/calls/{call_id}/end": {
+      "post": {
+        "tags": [
+          "calls"
+        ],
+        "summary": "End Open Call",
+        "description": "Hang up for everyone. Auth: this call's LiveKit token (any participant).",
+        "operationId": "end_open_call_v1_calls__call_id__end_post",
+        "parameters": [
+          {
+            "name": "call_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Call Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/calls/{call_id}/recording/start": {
+      "post": {
+        "tags": [
+          "calls"
+        ],
+        "summary": "Start Call Recording",
+        "description": "Start recording every participant's tracks. Auth: this call's LiveKit token.",
+        "operationId": "start_call_recording_v1_calls__call_id__recording_start_post",
+        "parameters": [
+          {
+            "name": "call_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Call Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CallRecordingState"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/calls/{call_id}/recording/stop": {
+      "post": {
+        "tags": [
+          "calls"
+        ],
+        "summary": "Stop Call Recording",
+        "description": "Stop all recordings in the call. Auth: this call's LiveKit token.",
+        "operationId": "stop_call_recording_v1_calls__call_id__recording_stop_post",
+        "parameters": [
+          {
+            "name": "call_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Call Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CallRecordingState"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/calls/{call_id}/recording/sync": {
+      "post": {
+        "tags": [
+          "calls"
+        ],
+        "summary": "Sync Call Recording",
+        "description": "Nudge after publishing a track so it is recorded without waiting for the\nbackground loop. No-op when recording is off.",
+        "operationId": "sync_call_recording_v1_calls__call_id__recording_sync_post",
+        "parameters": [
+          {
+            "name": "call_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Call Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CallRecordingState"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/metrics": {
       "get": {
         "summary": "Metrics",
@@ -717,6 +1173,61 @@
             "content": {
               "application/json": {
                 "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "summary": "Root Entry",
+        "description": "Entry point (e.g. https://host/livekit/): start a new open call.",
+        "operationId": "root_entry__get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/join/{session_id}": {
+      "get": {
+        "summary": "Join Short Link",
+        "description": "Short support join link: redirects into the web client, which signs\nthe operator in with Google and joins via POST /v1/sessions/join.",
+        "operationId": "join_short_link_join__session_id__get",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
               }
             }
           }
@@ -836,6 +1347,100 @@
           "applied_at"
         ],
         "title": "AgentToggleResponse"
+      },
+      "CallRecordingFile": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "participant": {
+            "type": "string",
+            "title": "Participant"
+          },
+          "identity": {
+            "type": "string",
+            "title": "Identity"
+          },
+          "source": {
+            "type": "string",
+            "title": "Source"
+          },
+          "started_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Started At"
+          },
+          "size_bytes": {
+            "type": "integer",
+            "title": "Size Bytes"
+          },
+          "content_type": {
+            "type": "string",
+            "title": "Content Type"
+          },
+          "url": {
+            "type": "string",
+            "title": "Url"
+          }
+        },
+        "type": "object",
+        "required": [
+          "name",
+          "participant",
+          "identity",
+          "source",
+          "started_at",
+          "size_bytes",
+          "content_type",
+          "url"
+        ],
+        "title": "CallRecordingFile"
+      },
+      "CallRecordingList": {
+        "properties": {
+          "call_id": {
+            "type": "string",
+            "title": "Call Id"
+          },
+          "recordings": {
+            "items": {
+              "$ref": "#/components/schemas/CallRecordingFile"
+            },
+            "type": "array",
+            "title": "Recordings"
+          }
+        },
+        "type": "object",
+        "required": [
+          "call_id",
+          "recordings"
+        ],
+        "title": "CallRecordingList"
+      },
+      "CallRecordingState": {
+        "properties": {
+          "recording": {
+            "type": "boolean",
+            "title": "Recording"
+          },
+          "started_by": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Started By"
+          }
+        },
+        "type": "object",
+        "required": [
+          "recording"
+        ],
+        "title": "CallRecordingState"
       },
       "ConsentRequest": {
         "properties": {
@@ -993,8 +1598,27 @@
       "JoinRequest": {
         "properties": {
           "join_code": {
-            "type": "string",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
             "title": "Join Code"
+          },
+          "session_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uuid"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Session Id"
           },
           "display_name": {
             "anyOf": [
@@ -1009,9 +1633,6 @@
           }
         },
         "type": "object",
-        "required": [
-          "join_code"
-        ],
         "title": "JoinRequest"
       },
       "JoinResponse": {
@@ -1091,6 +1712,69 @@
         ],
         "title": "LiveKitCredentials"
       },
+      "OpenCallInfo": {
+        "properties": {
+          "call_id": {
+            "type": "string",
+            "title": "Call Id"
+          },
+          "recording_enabled": {
+            "type": "boolean",
+            "title": "Recording Enabled"
+          },
+          "recording_active": {
+            "type": "boolean",
+            "title": "Recording Active",
+            "default": false
+          }
+        },
+        "type": "object",
+        "required": [
+          "call_id",
+          "recording_enabled"
+        ],
+        "title": "OpenCallInfo"
+      },
+      "OpenCallJoinRequest": {
+        "properties": {
+          "display_name": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 64
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Display Name"
+          }
+        },
+        "type": "object",
+        "title": "OpenCallJoinRequest"
+      },
+      "OpenCallJoinResponse": {
+        "properties": {
+          "call_id": {
+            "type": "string",
+            "title": "Call Id"
+          },
+          "livekit": {
+            "$ref": "#/components/schemas/LiveKitCredentials"
+          },
+          "recording_enabled": {
+            "type": "boolean",
+            "title": "Recording Enabled",
+            "default": false
+          }
+        },
+        "type": "object",
+        "required": [
+          "call_id",
+          "livekit"
+        ],
+        "title": "OpenCallJoinResponse"
+      },
       "ParticipantInfo": {
         "properties": {
           "role": {
@@ -1151,6 +1835,37 @@
           "agent"
         ],
         "title": "ParticipantRole"
+      },
+      "PublicConfig": {
+        "properties": {
+          "firebase_api_key": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Firebase Api Key"
+          },
+          "firebase_auth_domain": {
+            "type": "string",
+            "title": "Firebase Auth Domain"
+          },
+          "firebase_project_id": {
+            "type": "string",
+            "title": "Firebase Project Id"
+          }
+        },
+        "type": "object",
+        "required": [
+          "firebase_api_key",
+          "firebase_auth_domain",
+          "firebase_project_id"
+        ],
+        "title": "PublicConfig",
+        "description": "Firebase web config for browser Google sign-in (not secret)."
       },
       "RecordingInfo": {
         "properties": {

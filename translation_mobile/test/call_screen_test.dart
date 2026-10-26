@@ -54,9 +54,6 @@ class FakeTranslationClient extends ChangeNotifier
   Future<void> declarePreferredLanguage(String language) async {
     declaredLanguage = language;
   }
-
-  @override
-  void dispose() {}
 }
 
 void main() {

@@ -32,6 +32,9 @@ dev = [
     # opencc normalizes Traditional/Simplified differences in scoring.
     "edge-tts>=7.0",
     "faster-whisper>=1.0",
+    # faster-whisper decode_audio passes metadata_errors= to av.open; PyAV
+    # dropped that kwarg after 15.x (19.x confirmed broken), so cap the range.
+    "av>=14,<16",
     "opencc-python-reimplemented>=0.1",
 ]
 

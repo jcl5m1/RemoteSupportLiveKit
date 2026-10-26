@@ -4,7 +4,6 @@ import 'package:app_links/app_links.dart';
 import 'package:flutter/material.dart';
 
 import 'call_screen.dart';
-import 'src/protocol.dart';
 import 'src/room_controller.dart';
 
 void main() {

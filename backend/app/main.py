@@ -16,12 +16,15 @@ from fastapi.staticfiles import StaticFiles
 from google.cloud import storage as gcs
 from livekit import api
 from sqlalchemy import select
+from starlette._utils import get_route_path
+from starlette.requests import Request
 
+from .base_path import BasePathMiddleware, url_for_path
 from .config import get_settings
 from .db import AsyncSessionLocal, engine
 from .degraded_clients import DegradedGCSClient, DegradedLiveKitAPI
 from .models import Session, SessionState
-from .routers import agent, recordings, sessions, transcripts, webhooks
+from .routers import agent, calls, recordings, sessions, transcripts, webhooks
 
 logger = logging.getLogger("remote-support-backend")
 
@@ -151,7 +154,6 @@ def create_app() -> FastAPI:
         )
 
     from starlette.middleware.base import BaseHTTPMiddleware, RequestResponseEndpoint
-    from starlette.requests import Request
 
     class _LatencyMiddleware(BaseHTTPMiddleware):
         async def dispatch(self, request: Request, call_next: RequestResponseEndpoint):
@@ -175,11 +177,16 @@ def create_app() -> FastAPI:
     app.include_router(transcripts.router)
     app.include_router(recordings.router)
     app.include_router(webhooks.router)
+    app.include_router(calls.router)
 
     if get_settings().allow_test_endpoints:
         from .routers import testing
 
         app.include_router(testing.router)
+        # Join-link redirects must be routed before the static mount.
+        app.include_router(testing.join_router)
+
+    if get_settings().allow_test_endpoints or get_settings().open_calls_enabled:
         app.mount(
             "/support-web",
             StaticFiles(directory="app/static/support-web", html=True),
@@ -192,6 +199,35 @@ def create_app() -> FastAPI:
             content=generate_latest(),
             media_type=CONTENT_TYPE_LATEST,
         )
+
+    @app.get("/")
+    async def root_entry(request: Request) -> Response:
+        """Entry point (e.g. https://host/livekit/): start a new open call."""
+        if not get_settings().open_calls_enabled:
+            return JSONResponse({"service": "remote-support-backend"})
+        return Response(
+            status_code=302, headers={"Location": url_for_path(request, "/call")}
+        )
+
+    @app.get("/join/{session_id}")
+    async def join_short_link(session_id: str, request: Request) -> Response:
+        """Short support join link: redirects into the web client, which signs
+        the operator in with Google and joins via POST /v1/sessions/join."""
+        return Response(
+            status_code=302,
+            headers={
+                "Location": url_for_path(request, f"/support-web/?session={session_id}")
+            },
+        )
+
+    @app.middleware("http")
+    async def no_cache_support_web(request, call_next):
+        # The web client JS must never be served stale from a CDN/browser cache
+        # after a deploy; revalidate (304) instead.
+        response = await call_next(request)
+        if get_route_path(request.scope).startswith("/support-web"):
+            response.headers["Cache-Control"] = "no-cache"
+        return response
 
     @app.get("/healthz")
     async def healthz() -> dict[str, str]:
@@ -236,6 +272,8 @@ def create_app() -> FastAPI:
         healthy = all(v == "ok" for v in checks.values())
         return {"status": "healthy" if healthy else "unhealthy", "checks": checks}
 
+    # Outermost, so every route, mount, and middleware sees the prefix as root_path.
+    app.add_middleware(BasePathMiddleware, base_path=get_settings().public_base_path)
     return app
 
 

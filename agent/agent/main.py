@@ -39,7 +39,11 @@ from .transcript_sink import TranscriptSink
 
 logger = logging.getLogger("support-agent")
 
-server = agents.AgentServer()
+# The default prod load threshold (0.7) measures whole-system CPU and sheds
+# jobs on shared hosts; keep accepting jobs unless the box is truly saturated.
+server = agents.AgentServer(
+    load_threshold=float(os.environ.get("AGENT_LOAD_THRESHOLD", "0.95"))
+)
 
 
 class SupportAgent(Agent):
@@ -109,6 +113,10 @@ async def entrypoint(ctx: agents.JobContext) -> None:
     if state.chat_context.messages:
         await agent.update_chat_ctx(state.chat_context)
 
+    # Connect before session.start: RoomIO's transcription output reads
+    # room.local_participant during start(), which raises "cannot access local
+    # participant before connecting" on an unconnected room (every job crashed).
+    await ctx.connect()
     await session.start(
         room=ctx.room,
         agent=agent,

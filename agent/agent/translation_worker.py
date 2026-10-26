@@ -34,7 +34,13 @@ from .translation.translator import LiveKitTranslator
 
 logger = logging.getLogger("translation-worker")
 
-server = agents.AgentServer()
+# The support agent's worker HTTP server (health check) binds 8081 in
+# production mode; both workers cannot share it on one host. The load
+# threshold matches main.py: system-CPU shedding misfires on shared hosts.
+server = agents.AgentServer(
+    port=int(os.environ.get("TRANSLATION_WORKER_PORT", "8081")),
+    load_threshold=float(os.environ.get("TRANSLATION_LOAD_THRESHOLD", "0.95")),
+)
 
 
 def _build_synthesizer(settings) -> LiveKitTTSSynthesizer | EdgeTTSSynthesizer:

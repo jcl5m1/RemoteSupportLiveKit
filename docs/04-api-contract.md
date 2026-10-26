@@ -85,12 +85,19 @@ and dispatches the agent.
 
 ### `POST /v1/sessions/join`
 
-Support joins by code. Auth: support user.
+Support joins by code or session id. Auth: support user (Firebase ID token).
+Exactly one of `join_code` / `session_id` must be set.
 
 **Request**
 ```json
 { "join_code": "K7R2XM", "display_name": "Dana" }
 ```
+```json
+{ "session_id": "9f1c8a20-...", "display_name": "Dana" }
+```
+
+`session_id` joins are used by authenticated operators following a short
+`/join/<session_id>` link; they are not subject to the 6-char join-code TTL.
 
 **Response `200`** — same `livekit` block as above, with
 `identity: "support-u_412"`, plus a snapshot of current session state:
@@ -105,8 +112,30 @@ Support joins by code. Auth: support user.
 }
 ```
 
-**Errors:** `404 code_not_found`, `410 code_expired`, `409 role_occupied`,
-`409 session_not_joinable`.
+**Errors:** `400 invalid_request` (neither/both lookups set),
+`404 code_not_found`, `410 code_expired` (code joins only),
+`409 role_occupied`, `409 session_not_joinable`.
+
+### `GET /v1/sessions/public-config`
+
+No auth. Firebase Web SDK config for browser Google sign-in (the API key is
+not a secret — it ships in any sign-in client):
+
+```json
+{
+  "firebase_api_key": "AIza...",
+  "firebase_auth_domain": "your-project.firebaseapp.com",
+  "firebase_project_id": "your-project"
+}
+```
+
+### `GET /join/{session_id}`
+
+Short support join link. Redirects (302) to
+`/support-web/?session=<session_id>`, where the web client runs the Google
+sign-in flow and then calls `POST /v1/sessions/join` with the Firebase ID
+token. Knowledge of the session UUID is required, and support auth +
+allowlist checks still apply.
 
 ### `POST /v1/sessions/{id}/token/refresh`
 
@@ -241,6 +270,60 @@ export files; writes a `data_purges` tombstone; sets state `purged`.
 Response `200` with counts.
 
 ---
+
+## Open calls
+
+Plain multi-party A/V rooms joined by link only (no sign-in, consent, or agent). Disabled unless `OPEN_CALLS_ENABLED=true`; all endpoints return `404`
+otherwise. Rooms are named `call_<call_id>`, disjoint from session rooms
+(`rs_<uuid>`). Call ids are 3–64 chars of `[a-z0-9-]`, lowercased.
+
+### `GET /call`
+`302` to `/call/<new id>` (Meet-style `xxx-xxxx-xxx`).
+
+### `GET /call/{call_id}`
+`302` to `/support-web/?call=<call_id>`, which prompts for a display name and joins.
+
+### `GET /v1/calls/{call_id}`
+`{ "call_id", "recording_enabled" }`, so the client can show a recording notice before joining.
+
+### `POST /v1/calls/{call_id}/join`
+Auth: none. Rate limit: 30/min/IP. Body `{ "display_name"?: string }`.
+Creates the room if needed (capped at `OPEN_CALL_MAX_PARTICIPANTS`, default 12)
+and returns `{ "call_id", "livekit": LiveKitCredentials }` with a fresh
+`guest-<name>-xxxxxxxx` identity, plus `recording_enabled`. `400 invalid_call_id`
+on a malformed id.
+
+### `POST /v1/calls/{call_id}/end`
+Auth: this call's LiveKit token (any participant). Stops all recording egress
+(files finalize), sets room metadata `{"recording": false, "ended_by": <name>}`,
+then deletes the LiveKit room, disconnecting everyone (`ROOM_DELETED`). `202`
+`{ "ended": true, "ended_by" }`; idempotent if the room is already gone.
+
+### `POST /v1/calls/{call_id}/recording/{start|stop|sync}`
+Auth: `Authorization: Bearer <LiveKit token from /join>`; the token's room grant
+must be this call's room (`401`/`403` otherwise). `403 recording_disabled` unless
+`OPEN_CALL_RECORDING_ENABLED=true`. Returns `{ "recording", "started_by" }`.
+Any participant may start or stop. `sync` is a client nudge after publishing a
+track so it is recorded immediately (a no-op when recording is off).
+
+### `GET /v1/calls/{call_id}/recordings`
+Auth: none — anyone with the call link may view its recordings (product
+decision). Rate limit 60/min/IP. Returns `{ "call_id", "recordings": [ { "name",
+"participant", "identity", "source", "started_at", "size_bytes", "content_type",
+"url" } ] }`, oldest first; `url` is a V4 signed GCS URL valid for
+`SIGNED_URL_TTL_SECONDS`.
+
+**Recording.** State lives in LiveKit room metadata
+(`{"recording", "started_by", "started_at" | "stopped_by", "skipped"}`) so every
+client sees changes via `RoomMetadataChanged`. While on, a backend loop (every
+3 s) plus `sync` start one Participant Egress per person who publishes audio or
+video: their camera and mic muxed into one MP4 (H.264 + AAC) at
+`calls/<call_id>/<UTC>_<identity>.mp4` in `GCS_BUCKET`. A camera turned on later
+lands in the same file; late joiners get their own. `stop` stops every live
+egress in the room; each start/stop cycle yields new files. One egress per
+person (not per track) halves use of the LiveKit project's concurrent-egress
+cap (observed 2–5 on the current plan); `skipped` counts people LiveKit refused,
+retried every loop tick.
 
 ## Webhooks
 

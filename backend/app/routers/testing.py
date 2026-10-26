@@ -7,15 +7,17 @@ public-facing deployment.
 
 from __future__ import annotations
 
+import secrets
 import uuid
 from datetime import UTC, datetime, timedelta
 
-from fastapi import APIRouter, Depends, HTTPException, Request, status
+from fastapi import APIRouter, Depends, HTTPException, Request, Response, status
 from livekit import api
 from pydantic import BaseModel
 from sqlalchemy import select
 
 from .. import schemas
+from ..base_path import url_for_path
 from ..config import get_settings
 from ..db import AsyncSessionLocal
 from ..deps import require_service_key
@@ -28,7 +30,67 @@ from ..services.livekit_tokens import (
 )
 
 router = APIRouter(prefix="/internal/test", tags=["internal-test"])
+
+# Short-lived join links for human testing. ``join_router`` is mounted at the
+# root (not under /internal/test) so the redirect path can live at
+# /support-web/j/<code>; both routers are only mounted when test endpoints are
+# enabled. Knowing a code yields the embedded LiveKit token, so codes are
+# random, single-use-per-window, and expire quickly.
+join_router = APIRouter(tags=["internal-test"])
 settings = get_settings()
+
+_JOIN_LINK_TTL = timedelta(minutes=30)
+_join_links: dict[str, tuple[str, str, str, datetime]] = {}
+
+
+class JoinLinkRequest(BaseModel):
+    token: str
+    ws_url: str
+    identity: str
+
+
+class JoinLinkResponse(BaseModel):
+    code: str
+    path: str
+
+
+@router.post("/join-link", response_model=JoinLinkResponse)
+async def create_join_link(
+    body: JoinLinkRequest,
+    _service: None = Depends(require_service_key),
+):
+    """Store a LiveKit token behind a short, human-shareable URL code."""
+    _prune_join_links()
+    code = secrets.token_urlsafe(6)
+    _join_links[code] = (
+        body.token,
+        body.ws_url,
+        body.identity,
+        datetime.now(UTC) + _JOIN_LINK_TTL,
+    )
+    return JoinLinkResponse(code=code, path=f"/support-web/j/{code}")
+
+
+@join_router.get("/support-web/j/{code}")
+async def open_join_link(code: str, request: Request):
+    """Redirect a short join link to the web client with the token attached."""
+    entry = _join_links.get(code)
+    if entry is None or entry[3] < datetime.now(UTC):
+        _join_links.pop(code, None)
+        _error("not_found", "Join link not found or expired", status.HTTP_404_NOT_FOUND)
+    assert entry is not None
+    token, ws_url, identity, _ = entry
+    target = f"/support-web/?token={token}&ws_url={ws_url}&identity={identity}"
+    return Response(
+        status_code=status.HTTP_302_FOUND, headers={"Location": url_for_path(request, target)}
+    )
+
+
+def _prune_join_links() -> None:
+    now = datetime.now(UTC)
+    expired = [c for c, (_, _, _, exp) in _join_links.items() if exp < now]
+    for code in expired:
+        _join_links.pop(code, None)
 
 TEST_SUPPORT_USER_ID = "test-support"
 
