@@ -8,6 +8,7 @@ import json
 import logging
 from contextlib import asynccontextmanager
 from datetime import UTC, datetime, timedelta
+from pathlib import Path
 
 import structlog
 from fastapi import FastAPI, HTTPException, Response
@@ -186,12 +187,13 @@ def create_app() -> FastAPI:
         # Join-link redirects must be routed before the static mount.
         app.include_router(testing.join_router)
 
-    if get_settings().allow_test_endpoints or get_settings().open_calls_enabled:
-        app.mount(
-            "/support-web",
-            StaticFiles(directory="app/static/support-web", html=True),
-            name="support-web",
-        )
+    # The web client is only served when open calls or the test endpoints are
+    # on; checked per request (see support_web_gate) like the "/" entry.
+    app.mount(
+        "/support-web",
+        StaticFiles(directory=Path(__file__).parent / "static" / "support-web", html=True),
+        name="support-web",
+    )
 
     @app.get("/metrics")
     async def metrics() -> Response:
@@ -222,11 +224,15 @@ def create_app() -> FastAPI:
         )
 
     @app.middleware("http")
-    async def no_cache_support_web(request, call_next):
+    async def support_web_gate(request, call_next):
+        is_web = get_route_path(request.scope).startswith("/support-web")
+        s = get_settings()
+        if is_web and not (s.open_calls_enabled or s.allow_test_endpoints):
+            return JSONResponse({"detail": "Not Found"}, status_code=404)
         # The web client JS must never be served stale from a CDN/browser cache
         # after a deploy; revalidate (304) instead.
         response = await call_next(request)
-        if get_route_path(request.scope).startswith("/support-web"):
+        if is_web:
             response.headers["Cache-Control"] = "no-cache"
         return response
 

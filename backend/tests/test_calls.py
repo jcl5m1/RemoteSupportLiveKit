@@ -476,3 +476,15 @@ async def test_page_carries_google_maps_config(client, open_calls, monkeypatch):
     monkeypatch.setattr(calls_module.settings, "google_maps_map_id", "abc123")
     resp = await client.get("/?call=team-sync")
     assert '"googleMapsKey": "AIza-test", "googleMapsMapId": "abc123"' in resp.text
+
+
+@pytest.mark.asyncio
+async def test_web_client_hidden_when_meetings_and_tests_are_off(client, monkeypatch):
+    from app.config import get_settings
+
+    monkeypatch.setattr(get_settings(), "open_calls_enabled", False)
+    monkeypatch.setattr(get_settings(), "allow_test_endpoints", False)
+    assert (await client.get("/support-web/app.js")).status_code == 404
+    monkeypatch.setattr(get_settings(), "open_calls_enabled", True)
+    resp = await client.get("/support-web/app.js")
+    assert resp.status_code == 200 and resp.headers["cache-control"] == "no-cache"
