@@ -35,7 +35,7 @@ import pytest
 
 from agent.translation.core import RelayMode, TranslationCore
 from agent.translation.registry import ParticipantRegistry
-from agent.translation.synthesizer import EdgeTTSSynthesizer
+from agent.translation.synthesizer import EdgeTTSSynthesizer, _decode_to_pcm16
 
 from .translation_corpus import SENTENCES, SUPPORTED_LANGUAGES
 
@@ -47,6 +47,9 @@ WHISPER_MODEL = os.environ.get("TRANSLATION_TEST_WHISPER_MODEL", "small")
 EDGE_VOICE = os.environ.get("TRANSLATION_TEST_EDGE_VOICE")  # override all voices
 SIMILARITY_THRESHOLD = float(os.environ.get("TRANSLATION_TEST_SIMILARITY", "0.6"))
 CACHE_DIR = Path(tempfile.gettempdir()) / "rs-translation-test-cache"
+# Checked-in edge-tts clips (see fixtures/tts/generate.py): the service gives
+# no Tagalog audio to CI runners.
+TTS_FIXTURES = Path(__file__).parent / "fixtures" / "tts"
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
 
@@ -133,11 +136,19 @@ class Harness:
         return self._model
 
     async def speak(self, text: str, language: str) -> bytes:
-        """Synthesize speech; cached by (voice, text)."""
-        key = _cache_key("tts", self.synthesizer._voices.get(language, ""), text)
+        """Synthesize speech; checked-in fixture first, then cached by (voice, text)."""
+        import hashlib
+
+        voice = self.synthesizer._voices.get(language, "")
+        key = _cache_key("tts", voice, text)
         if key.with_suffix(".pcm").exists():
             return key.with_suffix(".pcm").read_bytes()
-        pcm = await self.synthesizer.synthesize(text, language)
+        h = hashlib.sha256(f"{voice}||{text}".encode()).hexdigest()[:16]
+        fixture = TTS_FIXTURES / f"{language}-{h}.mp3"
+        if fixture.exists():
+            pcm = await _decode_to_pcm16(str(fixture), self.synthesizer.sample_rate)
+        else:
+            pcm = await self.synthesizer.synthesize(text, language)
         key.with_suffix(".pcm").write_bytes(pcm)
         return pcm
 
