@@ -735,7 +735,7 @@
           "calls"
         ],
         "summary": "New Call",
-        "description": "Start a fresh call: redirect to a newly generated call link.",
+        "description": "Legacy/short entry: same as ``/`` (``/call?call=x`` etc. included).",
         "operationId": "new_call_call_get",
         "responses": {
           "200": {
@@ -755,7 +755,7 @@
           "calls"
         ],
         "summary": "Open Call Link",
-        "description": "Shareable call link: redirects into the web client in open-call mode.",
+        "description": "Path-style link ``/call/<code>``: redirects to the canonical ``/?call=<code>``.",
         "operationId": "open_call_link_call__call_id__get",
         "parameters": [
           {
@@ -796,7 +796,7 @@
           "calls"
         ],
         "summary": "Open Call Info",
-        "description": "Pre-join info so the client can show a recording notice before joining.",
+        "description": "Pre-join info: recording notice, and whether the meeting is running.",
         "operationId": "open_call_info_v1_calls__call_id__get",
         "parameters": [
           {
@@ -935,7 +935,7 @@
           "calls"
         ],
         "summary": "End Open Call",
-        "description": "Hang up for everyone. Auth: this call's LiveKit token (any participant).",
+        "description": "End the meeting: stop recordings and close the room. The web client calls\nthis when the last person hangs up (abrupt exits fall back to the room's\ndeparture timeout). Auth: this call's LiveKit token.",
         "operationId": "end_open_call_v1_calls__call_id__end_post",
         "parameters": [
           {
@@ -964,6 +964,296 @@
             }
           }
         ],
+        "responses": {
+          "202": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/calls/{call_id}/media-check": {
+      "get": {
+        "tags": [
+          "calls"
+        ],
+        "summary": "Check Shared Media",
+        "description": "Validate a ``/show <url>`` chat link before it is sent: it must resolve\n(redirects followed, public hosts only) and is classified so receivers can\npresent it full screen. ``422 media_unavailable`` carries a user-facing\nreason. Auth: this call's LiveKit token.",
+        "operationId": "check_shared_media_v1_calls__call_id__media_check_get",
+        "parameters": [
+          {
+            "name": "call_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Call Id"
+            }
+          },
+          {
+            "name": "url",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Url"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/calls/{call_id}/photos": {
+      "post": {
+        "tags": [
+          "calls"
+        ],
+        "summary": "Upload Call Photo",
+        "description": "A full-resolution photo from a participant's (phone) camera, taken when\nsomeone in the call asked for one. Raw image body (JPEG/PNG/WebP, \u226425 MB);\nstored beside the recordings and logged as a ``photo`` event.\nAuth: this call's LiveKit token (the photo is attributed to its identity).",
+        "operationId": "upload_call_photo_v1_calls__call_id__photos_post",
+        "parameters": [
+          {
+            "name": "call_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Call Id"
+            }
+          },
+          {
+            "name": "requested_by",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Requested By"
+            }
+          },
+          {
+            "name": "width",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Width"
+            }
+          },
+          {
+            "name": "height",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Height"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CallPhotoFile"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/calls/{call_id}/photos/{filename}": {
+      "get": {
+        "tags": [
+          "calls"
+        ],
+        "summary": "Get Call Photo",
+        "description": "Stable link to a call photo: redirects to a fresh signed URL. Auth: none,\nlike the recordings list (anyone with the call link).",
+        "operationId": "get_call_photo_v1_calls__call_id__photos__filename__get",
+        "parameters": [
+          {
+            "name": "call_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Call Id"
+            }
+          },
+          {
+            "name": "filename",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Filename"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/calls/{call_id}/events": {
+      "post": {
+        "tags": [
+          "calls"
+        ],
+        "summary": "Post Call Events",
+        "description": "Interaction log from a participant's client (what *it* sent/did), stored\nwith server receive timestamps and exported beside the recordings.\nAuth: this call's LiveKit token (identity/name come from the token).",
+        "operationId": "post_call_events_v1_calls__call_id__events_post",
+        "parameters": [
+          {
+            "name": "call_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Call Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CallEventBatch"
+              }
+            }
+          }
+        },
         "responses": {
           "202": {
             "description": "Successful Response",
@@ -1163,6 +1453,227 @@
         }
       }
     },
+    "/internal/test/join-link": {
+      "post": {
+        "tags": [
+          "internal-test"
+        ],
+        "summary": "Create Join Link",
+        "description": "Store a LiveKit token behind a short, human-shareable URL code.",
+        "operationId": "create_join_link_internal_test_join_link_post",
+        "parameters": [
+          {
+            "name": "x-service-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "X-Service-Key"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/JoinLinkRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/JoinLinkResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/internal/test/support-token": {
+      "post": {
+        "tags": [
+          "internal-test"
+        ],
+        "summary": "Test Support Token",
+        "description": "Mint a support LiveKit token for the regression harness.\n\nThis bypasses Firebase auth and assigns a synthetic support identity. It is\nmeant for one test run per session.",
+        "operationId": "test_support_token_internal_test_support_token_post",
+        "parameters": [
+          {
+            "name": "x-service-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "X-Service-Key"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SupportTokenRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LiveKitCredentials"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/internal/test/{session_id}/recordings": {
+      "get": {
+        "tags": [
+          "internal-test"
+        ],
+        "summary": "Test List Recordings",
+        "description": "List recordings and transcript exports for the regression harness.\n\nMirrors ``GET /v1/sessions/{id}/recordings`` but uses the service key so the\nharness does not need Firebase support auth.",
+        "operationId": "test_list_recordings_internal_test__session_id__recordings_get",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Session Id"
+            }
+          },
+          {
+            "name": "x-service-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "X-Service-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RecordingsResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/support-web/j/{code}": {
+      "get": {
+        "tags": [
+          "internal-test"
+        ],
+        "summary": "Open Join Link",
+        "description": "Redirect a short join link to the web client with the token attached.",
+        "operationId": "open_join_link_support_web_j__code__get",
+        "parameters": [
+          {
+            "name": "code",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Code"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/metrics": {
       "get": {
         "summary": "Metrics",
@@ -1182,7 +1693,7 @@
     "/": {
       "get": {
         "summary": "Root Entry",
-        "description": "Entry point (e.g. https://host/livekit/): start a new open call.",
+        "description": "Web client entry point (e.g. https://host/livekit/). The query names\nthe kind of link: ``?call=<code>`` meetings, ``?session=<id>`` support\nsessions; no parameter starts a new meeting.",
         "operationId": "root_entry__get",
         "responses": {
           "200": {
@@ -1348,6 +1859,154 @@
         ],
         "title": "AgentToggleResponse"
       },
+      "CallEventBatch": {
+        "properties": {
+          "events": {
+            "items": {
+              "$ref": "#/components/schemas/CallEventIn"
+            },
+            "type": "array",
+            "maxItems": 100,
+            "title": "Events"
+          },
+          "sent_at": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Sent At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "events"
+        ],
+        "title": "CallEventBatch"
+      },
+      "CallEventIn": {
+        "properties": {
+          "id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 64
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Id"
+          },
+          "type": {
+            "type": "string",
+            "maxLength": 32,
+            "title": "Type"
+          },
+          "ts": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Ts"
+          },
+          "data": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Data"
+          }
+        },
+        "type": "object",
+        "required": [
+          "type"
+        ],
+        "title": "CallEventIn"
+      },
+      "CallEventLogFile": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "started_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Started At"
+          },
+          "size_bytes": {
+            "type": "integer",
+            "title": "Size Bytes"
+          },
+          "url": {
+            "type": "string",
+            "title": "Url"
+          }
+        },
+        "type": "object",
+        "required": [
+          "name",
+          "started_at",
+          "size_bytes",
+          "url"
+        ],
+        "title": "CallEventLogFile"
+      },
+      "CallPhotoFile": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "participant": {
+            "type": "string",
+            "title": "Participant"
+          },
+          "identity": {
+            "type": "string",
+            "title": "Identity"
+          },
+          "taken_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Taken At"
+          },
+          "size_bytes": {
+            "type": "integer",
+            "title": "Size Bytes"
+          },
+          "content_type": {
+            "type": "string",
+            "title": "Content Type"
+          },
+          "path": {
+            "type": "string",
+            "title": "Path"
+          },
+          "url": {
+            "type": "string",
+            "title": "Url"
+          }
+        },
+        "type": "object",
+        "required": [
+          "name",
+          "participant",
+          "identity",
+          "taken_at",
+          "size_bytes",
+          "content_type",
+          "path",
+          "url"
+        ],
+        "title": "CallPhotoFile"
+      },
       "CallRecordingFile": {
         "properties": {
           "name": {
@@ -1409,6 +2068,22 @@
             },
             "type": "array",
             "title": "Recordings"
+          },
+          "event_logs": {
+            "items": {
+              "$ref": "#/components/schemas/CallEventLogFile"
+            },
+            "type": "array",
+            "title": "Event Logs",
+            "default": []
+          },
+          "photos": {
+            "items": {
+              "$ref": "#/components/schemas/CallPhotoFile"
+            },
+            "type": "array",
+            "title": "Photos",
+            "default": []
           }
         },
         "type": "object",
@@ -1595,6 +2270,47 @@
         "type": "object",
         "title": "HTTPValidationError"
       },
+      "JoinLinkRequest": {
+        "properties": {
+          "token": {
+            "type": "string",
+            "title": "Token"
+          },
+          "ws_url": {
+            "type": "string",
+            "title": "Ws Url"
+          },
+          "identity": {
+            "type": "string",
+            "title": "Identity"
+          }
+        },
+        "type": "object",
+        "required": [
+          "token",
+          "ws_url",
+          "identity"
+        ],
+        "title": "JoinLinkRequest"
+      },
+      "JoinLinkResponse": {
+        "properties": {
+          "code": {
+            "type": "string",
+            "title": "Code"
+          },
+          "path": {
+            "type": "string",
+            "title": "Path"
+          }
+        },
+        "type": "object",
+        "required": [
+          "code",
+          "path"
+        ],
+        "title": "JoinLinkResponse"
+      },
       "JoinRequest": {
         "properties": {
           "join_code": {
@@ -1726,6 +2442,38 @@
             "type": "boolean",
             "title": "Recording Active",
             "default": false
+          },
+          "room_active": {
+            "type": "boolean",
+            "title": "Room Active",
+            "default": false
+          },
+          "participant_count": {
+            "type": "integer",
+            "title": "Participant Count",
+            "default": 0
+          },
+          "maps_api_key": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Maps Api Key"
+          },
+          "maps_map_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Maps Map Id"
           }
         },
         "type": "object",
@@ -2111,6 +2859,20 @@
           "recordings"
         ],
         "title": "SessionDetail"
+      },
+      "SupportTokenRequest": {
+        "properties": {
+          "session_id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Session Id"
+          }
+        },
+        "type": "object",
+        "required": [
+          "session_id"
+        ],
+        "title": "SupportTokenRequest"
       },
       "TranscriptExportUrls": {
         "properties": {

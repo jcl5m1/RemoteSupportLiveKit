@@ -8,7 +8,7 @@ through the public tunnel host; the API calls go straight to the local
 backend, so this must run on the backend host.
 
 Usage:
-  python3 scripts/dev-join-urls.py [--public-host remote-support.lgitech.net]
+  python3 scripts/dev-join-urls.py [--public-host dev-remotesupport.lgitech.net]
 
 Requires the local backend on 127.0.0.1:8000 (scripts/dev-start.sh) and
 ALLOW_TEST_ENDPOINTS=true. The URLs are valid for LIVEKIT_TOKEN_TTL_SECONDS
@@ -62,7 +62,7 @@ def _join_link(token: str, ws_url: str, identity: str, service_key: str) -> str:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--public-host", default="remote-support.lgitech.net")
+    parser.add_argument("--public-host", default="dev-remotesupport.lgitech.net")
     parser.add_argument("--name", default="Browser Caller")
     args = parser.parse_args()
 

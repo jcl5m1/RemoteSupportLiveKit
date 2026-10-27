@@ -46,17 +46,24 @@ def participant_filepath(call_id: str, identity: str, now: datetime | None = Non
     return f"calls/{call_id}/{stamp}_{identity}.mp4"
 
 
-async def get_state(lkapi: api.LiveKitAPI, room_name: str) -> dict:
-    """Recording state from room metadata; ``{}`` if the room does not exist."""
+async def get_room(lkapi: api.LiveKitAPI, room_name: str) -> api.Room | None:
     resp = await lkapi.room.list_rooms(api.ListRoomsRequest(names=[room_name]))
-    for room in resp.rooms:
-        if room.name == room_name and room.metadata:
-            try:
-                state = json.loads(room.metadata)
-            except ValueError:
-                return {}
-            return state if isinstance(state, dict) else {}
-    return {}
+    return next((r for r in resp.rooms if r.name == room_name), None)
+
+
+def room_state(room: api.Room | None) -> dict:
+    """Recording state from room metadata; ``{}`` if no room or no metadata."""
+    if room is None or not room.metadata:
+        return {}
+    try:
+        state = json.loads(room.metadata)
+    except ValueError:
+        return {}
+    return state if isinstance(state, dict) else {}
+
+
+async def get_state(lkapi: api.LiveKitAPI, room_name: str) -> dict:
+    return room_state(await get_room(lkapi, room_name))
 
 
 async def _set_state(lkapi: api.LiveKitAPI, room_name: str, state: dict) -> None:

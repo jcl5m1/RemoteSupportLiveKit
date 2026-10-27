@@ -82,6 +82,13 @@ class OpenCallInfo(BaseModel):
     # recording_enabled: participants may record; recording_active: they are.
     recording_enabled: bool
     recording_active: bool = False
+    # Whether the meeting is currently running, and how many are in it.
+    room_active: bool = False
+    participant_count: int = 0
+    # Browser (referrer-restricted) Maps key for "/show" maps in native-app
+    # web views, which load with the public base URL as their origin.
+    maps_api_key: str | None = None
+    maps_map_id: str | None = None
 
 
 class CallRecordingFile(BaseModel):
@@ -95,9 +102,43 @@ class CallRecordingFile(BaseModel):
     url: str  # short-lived signed GCS URL
 
 
+class CallEventLogFile(BaseModel):
+    name: str
+    started_at: datetime
+    size_bytes: int
+    url: str  # short-lived signed GCS URL (JSON lines)
+
+
+class CallPhotoFile(BaseModel):
+    name: str
+    participant: str  # who took it (the phone)
+    identity: str
+    taken_at: datetime
+    size_bytes: int
+    content_type: str
+    path: str  # stable app path, redirects to a fresh signed URL
+    url: str  # short-lived signed GCS URL
+
+
 class CallRecordingList(BaseModel):
     call_id: str
     recordings: list[CallRecordingFile]
+    # Interaction logs (chat, pointer, controls, server events) per room instance.
+    event_logs: list[CallEventLogFile] = []
+    # Full-resolution photos taken from phone cameras during the call.
+    photos: list[CallPhotoFile] = []
+
+
+class CallEventIn(BaseModel):
+    id: str | None = Field(default=None, max_length=64)  # client-generated, dedupes retries
+    type: str = Field(max_length=32)
+    ts: int | None = None  # sender clock, ms since epoch
+    data: dict = Field(default_factory=dict)
+
+
+class CallEventBatch(BaseModel):
+    events: list[CallEventIn] = Field(max_length=100)
+    sent_at: int | None = None  # sender clock when the batch was sent (ms epoch)
 
 
 class CallRecordingState(BaseModel):

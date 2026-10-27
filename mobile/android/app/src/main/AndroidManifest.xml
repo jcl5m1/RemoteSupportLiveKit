@@ -7,6 +7,11 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <!-- Bluetooth headsets on Android 11 and older (call audio routing). -->
+    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" />
+    <!-- "My location" on maps shared with /show (asked only when tapped). -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
 
@@ -44,6 +49,24 @@
                 <data android:scheme="remotesupport" android:host="join" />
             </intent-filter>
 
+            <!-- Open meetings: remotesupport://call?code={code} -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="remotesupport" android:host="call" />
+            </intent-filter>
+
+            <!-- Open meeting links: https://remotesupport.lgitech.net/livekit/?call={code}
+                 (not autoVerify: no assetlinks.json is served, so Android offers
+                 the app as a choice instead of opening it directly). -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https" android:host="remotesupport.lgitech.net" android:pathPrefix="/livekit" />
+            </intent-filter>
+
             <!-- Android App Links: https://support.example.com/j/{code} -->
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
@@ -67,6 +90,11 @@
         <intent>
             <action android:name="android.intent.action.PROCESS_TEXT"/>
             <data android:mimeType="text/plain"/>
+        </intent>
+        <!-- url_launcher: "Open" on shared links, recording downloads. -->
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" />
         </intent>
     </queries>
 </manifest>

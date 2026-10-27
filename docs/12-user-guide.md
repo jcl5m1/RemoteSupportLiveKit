@@ -115,9 +115,14 @@ lifecycle policy (default 30 days) and can be purged early by an admin.
 When the server has `OPEN_CALLS_ENABLED=true`, anyone can hold a plain group
 video call, like a Google Meet link:
 
-1. Open `https://<host>/call` to start a new call, or make up a name such as
-   `https://<host>/call/team-standup`.
-2. Enter your name and press **Join now**. Use **Copy joining link** to share it.
+1. Open `https://<host>/livekit/` to start a new meeting: the join screen shows
+   a freshly generated meeting code and a **Start meeting** button. The code is
+   editable — type any name (e.g. `team-standup`) to use that instead. Meeting
+   links look like `https://<host>/livekit/?call=team-standup` and open the join
+   screen with that code filled in and a **Join now** button. (`?=team-standup`,
+   `?team-standup`, and `/livekit/call/team-standup` also work and redirect to
+   the `?call=` form.)
+2. Enter your name and press **Join now**. Use the copy icon next to the meeting code to copy the link.
 3. Everyone who opens the same link joins the same room (up to 12 people by default).
 
 If the server has `OPEN_CALL_RECORDING_ENABLED=true`, a record button (circle)
@@ -131,21 +136,66 @@ recorded.
 
 Before joining, the join screen shows a camera preview and lets you pick your
 microphone, camera, and (on desktop browsers that support it) speaker. During
-the call, tap the small arrow on the microphone or camera button to switch
-devices instantly (the microphone menu also lists speakers), or use the gear
-button for all choices at once; on a phone, the Camera list
-includes the front and back cameras. The pause button mutes the microphone and
-camera together (press again to turn both back on); the mic and camera buttons
-still toggle each one separately. Your choices are remembered on that device.
+the call, the gear (Settings) button opens the same choices and switches
+devices instantly; on a phone, the Camera list
+includes the front and back cameras. The mute button (pause icon) mutes the
+microphone and camera together; press it again to turn both back on. Your choices are remembered on that device.
 
-The red hang-up button offers **Leave call** (only you leave; everyone else
-stays) and **End call for everyone** (anyone can use it: recording stops and is
-saved, and everyone sees "<name> ended the call"). The same link starts the
-call again afterwards.
+The red hang-up button leaves the call; everyone else stays. When the last
+person hangs up, the meeting ends: any recording stops and is saved, and the
+room closes. (If the last people simply close the tab or lose their connection,
+the meeting closes on its own about a minute later.) The same link starts the
+meeting again afterwards.
+
+**Sharing media:** type `/show <link>` in chat to share an image, audio file,
+video, YouTube video, Google Maps location, or webpage. The link is checked
+first — if it doesn't load, you see an error (only on your screen) and nothing
+is sent. Everyone else sees it open full screen; they can close it with ✕ and
+reopen it from the **Show** button on the chat message. Pages that refuse to be
+embedded show an **Open** link instead. Maps open as an interactive
+Google map (Map / Satellite) you can drag with one finger and pinch to zoom;
+**Open** goes to the original Google Maps link. (Without a Google Maps API key
+configured, an OpenStreetMap viewer is used instead.) Tap the 📍 button on the map to show where you are
+(a blue dot; your browser asks permission the first time). Your location is
+shown only on your own screen and is never sent to anyone. If a browser blocks autoplay with sound,
+a **Tap to play** button appears.
+
+**Pointing and views:** your own video floats as a small window and the other
+callers fill the screen (side by side when there are several). Click or tap
+any video that isn't already the only big one (a small window, or one of
+several side-by-side videos) to make it fill the screen; everyone else shrinks
+to small windows in the corner. **Show everyone** (bottom-left) returns to the
+side-by-side view. When a video is the only big one, clicking or tapping it
+points: a blinking ring appears at that spot on that person's camera view (and
+on everyone else's view of it), sized to each screen. Small windows play at
+about a quarter of the normal frame rate to save data and battery, and a
+person's camera sends only a small, low-resolution stream while nobody has
+them as the big view (unless the call is being recorded). While your camera is the big view, the switch
+button (top-right of it) cycles through your cameras: front, rear, or a USB
+camera.
+
+**Microphone and camera:** Settings has a switch for each. A device switched
+off there stays off; the mute button only pauses (and restores) the ones that
+are switched on. The switches are remembered on that device.
+
+**Controlling someone's phone camera:** when another person in the call is on a
+phone, their big view shows up to three buttons in its top-right corner:
+**switch camera** (front, rear, or USB, if the phone has more than one),
+**take photo**, and **flashlight** (only if that camera has a light; it turns
+yellow while on). A photo is taken at the camera's full resolution and opens
+full screen for you only, with pinch/double-tap zoom. It is also saved with the
+call's recordings. The phone shows a white flash and a notice whenever someone
+takes a photo, switches its camera, or turns its light on or off.
 
 To watch recordings, use **View recordings** on the join screen or in the gear
 (settings) menu during the call. Anyone with the call link can view and
 download them, so treat the link as private if recordings are sensitive.
+
+Alongside the videos, each call keeps an **Interaction log** (listed in the same
+viewer): a timestamped record of chat messages and `/show` links, pointer
+clicks (who pointed at whose video, and where), mute and camera changes, and
+joins/leaves/recording start and stop. It lets you replay what happened in the
+call against the recordings.
 
 Open calls are not transcribed, have no AI agent, and need no sign-in. Anyone
 who has the link can join, so use the generated ids for anything private.

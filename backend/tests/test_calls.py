@@ -22,19 +22,38 @@ async def test_open_calls_disabled_by_default(client, monkeypatch):
 
 
 @pytest.mark.asyncio
-async def test_new_call_redirects_to_generated_id(client, open_calls):
+async def test_root_serves_join_screen(client, open_calls):
+    """No code: the join screen itself (client generates a code)."""
+    resp = await client.get("/")
+    assert resp.status_code == 200
+    assert resp.headers["content-type"].startswith("text/html")
+    assert "window.APP_CALL_ID = null;" in resp.text
+    assert '<script src="/support-web/app.js' in resp.text
+    # /call is a short alias for the entry point.
     resp = await client.get("/call")
-    assert resp.status_code == 302
-    location = resp.headers["location"]
-    assert location.startswith("/call/")
-    assert calls_module._CALL_ID_RE.match(location.removeprefix("/call/"))
+    assert resp.status_code == 302 and resp.headers["location"] == "/"
 
 
 @pytest.mark.asyncio
-async def test_call_link_redirects_to_web_client(client, open_calls):
-    resp = await client.get("/call/Team-Sync")
+async def test_meeting_link_is_named_call_param(client, open_calls):
+    """Canonical meeting link: /?call=<code>, served directly."""
+    resp = await client.get("/?call=team-sync")
+    assert resp.status_code == 200
+    assert 'window.APP_CALL_ID = "team-sync";' in resp.text
+    assert resp.headers["cache-control"] == "no-cache"
+    # Non-canonical spellings and the path form redirect to it.
+    for path in ("/?call=Team-Sync", "/call/team-sync", "/call/Team-Sync"):
+        resp = await client.get(path)
+        assert resp.status_code == 302, path
+        assert resp.headers["location"] == "/?call=team-sync"
+
+
+@pytest.mark.asyncio
+async def test_support_session_link_uses_named_param(client):
+    """/join/<id> -> /?session=<id>: same entry point, different parameter."""
+    resp = await client.get("/join/abc-123")
     assert resp.status_code == 302
-    assert resp.headers["location"] == "/support-web/?call=team-sync"
+    assert resp.headers["location"] == "/?session=abc-123"
 
 
 @pytest.mark.asyncio
@@ -101,8 +120,15 @@ class _FakeCallRoom:
         return self.api.Room(name=request.name)
 
     async def list_rooms(self, request):
+        if self.deleted:
+            return self.api.ListRoomsResponse(rooms=[])
         return self.api.ListRoomsResponse(
-            rooms=[self.api.Room(name=n, metadata=self.metadata) for n in request.names]
+            rooms=[
+                self.api.Room(
+                    name=n, metadata=self.metadata, num_participants=len(self.participants)
+                )
+                for n in request.names
+            ]
         )
 
     async def update_room_metadata(self, request):
@@ -181,7 +207,9 @@ async def test_recording_toggle_records_each_person_once(client, call_room):
     call_room.participants.append(call_room.api.ParticipantInfo(identity="guest-lurker-3"))
     auth = {"Authorization": f"Bearer {alice}"}
 
-    assert (await client.get("/v1/calls/team-sync")).json()["recording_active"] is False
+    info = (await client.get("/v1/calls/team-sync")).json()
+    assert info["recording_active"] is False
+    assert info["room_active"] is True and info["participant_count"] == 3
     resp = await client.post("/v1/calls/team-sync/recording/start", headers=auth)
     assert resp.status_code == 200
     assert resp.json() == {"recording": True, "started_by": "Alice"}
@@ -280,7 +308,7 @@ def call_room_lkapi(client):
 @pytest.mark.asyncio
 async def test_served_under_base_path(app, open_calls):
     """Behind a shared hostname (e.g. gx10-645d.lgitech.net/livekit) both the
-    prefixed and bare paths work, and redirects keep the prefix."""
+    prefixed and bare paths work, and pages/redirects keep the prefix."""
     import httpx
 
     from app.base_path import BasePathMiddleware
@@ -289,22 +317,27 @@ async def test_served_under_base_path(app, open_calls):
     transport = httpx.ASGITransport(app=wrapped)
     async with httpx.AsyncClient(transport=transport, base_url="http://test") as c:
         resp = await c.get("/livekit/")
-        assert resp.status_code == 302
-        assert resp.headers["location"] == "/livekit/call"
+        assert resp.status_code == 200
+        assert 'window.APP_BASE = "/livekit";' in resp.text
+        assert '<script src="/livekit/support-web/app.js' in resp.text
 
         resp = await c.get("/livekit/call")
-        assert resp.headers["location"].startswith("/livekit/call/")
+        assert resp.headers["location"] == "/livekit/"
 
-        resp = await c.get("/livekit/call/team-sync")
-        assert resp.headers["location"] == "/livekit/support-web/?call=team-sync"
+        resp = await c.get("/livekit/?call=team-sync")
+        assert resp.status_code == 200
+        assert 'window.APP_CALL_ID = "team-sync";' in resp.text
+        resp = await c.get("/livekit/call/Team-Sync")
+        assert resp.headers["location"] == "/livekit/?call=team-sync"
+        assert (await c.get("/livekit/support-web/app.js")).status_code == 200
 
         resp = await c.post("/livekit/v1/calls/team-sync/join", json={"display_name": "A"})
         assert resp.status_code == 200
         assert (await c.get("/livekit/healthz")).json() == {"status": "ok"}
 
-        # Bare paths still work (remote-support.lgitech.net).
-        resp = await c.get("/call/team-sync")
-        assert resp.headers["location"] == "/support-web/?call=team-sync"
+        # Bare paths still work (dev-remotesupport.lgitech.net).
+        resp = await c.get("/?call=team-sync")
+        assert resp.status_code == 200 and 'window.APP_BASE = "";' in resp.text
         # A different prefix-like path is not treated as the prefix.
         assert (await c.get("/livekitx/healthz")).status_code == 404
 
@@ -374,6 +407,8 @@ async def test_end_call_for_everyone(client, call_room):
     assert call_room.recorded() == set()
     assert json.loads(call_room.metadata) == {"recording": False, "ended_by": "Alice"}
     assert call_room.deleted
+    info = (await client.get("/v1/calls/team-sync")).json()
+    assert info["room_active"] is False and info["participant_count"] == 0
 
     # Ending an already-ended call is harmless.
     resp = await client.post("/v1/calls/team-sync/end", headers=auth)
@@ -393,3 +428,51 @@ async def test_end_call_requires_this_calls_token(client, call_room):
     assert resp.status_code == 403
     assert not call_room.deleted
 
+
+
+@pytest.mark.asyncio
+@pytest.mark.parametrize(
+    "path, location",
+    [
+        ("/?=team-standup", "/?call=team-standup"),
+        ("/?team-standup", "/?call=team-standup"),
+        ("/?call=Team%20Standup", "/?call=team-standup"),
+        ("/call?call=team-standup", "/?call=team-standup"),
+        ("/call?=team-standup", "/?call=team-standup"),
+        ("/?=team-standup&name=Ann", "/?call=team-standup&name=Ann"),
+    ],
+)
+async def test_meeting_code_shorthands_redirect_to_named_param(
+    client, open_calls, path, location
+):
+    resp = await client.get(path)
+    assert resp.status_code == 302, path
+    assert resp.headers["location"] == location
+
+
+@pytest.mark.asyncio
+async def test_query_shorthand_edge_cases(client, open_calls):
+    # Other params alone are not a code: new-meeting join screen.
+    resp = await client.get("/?name=Ann")
+    assert resp.status_code == 200 and "window.APP_CALL_ID = null;" in resp.text
+    # Canonical form with extra params is served as-is.
+    resp = await client.get("/?call=team-standup&name=Ann")
+    assert resp.status_code == 200 and 'window.APP_CALL_ID = "team-standup";' in resp.text
+    # A ?session= link is not a meeting code; the client handles it.
+    resp = await client.get("/?session=abc")
+    assert resp.status_code == 200 and "window.APP_CALL_ID = null;" in resp.text
+    # An invalid code is shown on the join screen (with its validation error).
+    resp = await client.get("/?call=-bad-")
+    assert resp.status_code == 200 and 'window.APP_CALL_ID = "-bad-";' in resp.text
+
+
+@pytest.mark.asyncio
+async def test_page_carries_google_maps_config(client, open_calls, monkeypatch):
+    monkeypatch.setattr(calls_module.settings, "google_maps_api_key", "")
+    monkeypatch.setattr(calls_module.settings, "google_maps_map_id", "")
+    resp = await client.get("/?call=team-sync")
+    assert 'window.APP_CONFIG = {"googleMapsKey": null, "googleMapsMapId": null};' in resp.text
+    monkeypatch.setattr(calls_module.settings, "google_maps_api_key", "AIza-test")
+    monkeypatch.setattr(calls_module.settings, "google_maps_map_id", "abc123")
+    resp = await client.get("/?call=team-sync")
+    assert '"googleMapsKey": "AIza-test", "googleMapsMapId": "abc123"' in resp.text

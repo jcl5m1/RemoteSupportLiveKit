@@ -89,10 +89,18 @@ class Settings(BaseSettings):
     # reach a support session room (``rs_``).
     open_calls_enabled: bool = False
     open_call_max_participants: int = 12
+    # Joins per minute from one IP (an office behind one NAT joins together).
+    open_call_join_rate_limit: int = 120
     # When true, any open-call participant can start/stop recording; while on,
     # every published audio/video track is saved as its own file in GCS_BUCKET
     # under calls/<call_id>/.
     open_call_recording_enabled: bool = False
+    # Google Maps JavaScript API for "/show <maps link>" (one-finger drag,
+    # Map/Satellite). A *browser* key: it is served to clients, so restrict it
+    # to the site's HTTP referrers + the Maps JavaScript API in Cloud Console.
+    # Empty -> the OpenStreetMap (Leaflet) viewer is used instead.
+    google_maps_api_key: str = ""
+    google_maps_map_id: str = ""
 
     # --- Rate limits ---------------------------------------------------
     utterance_rate_limit: int = 600

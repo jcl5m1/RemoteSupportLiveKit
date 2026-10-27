@@ -277,27 +277,57 @@ Plain multi-party A/V rooms joined by link only (no sign-in, consent, or agent).
 otherwise. Rooms are named `call_<call_id>`, disjoint from session rooms
 (`rs_<uuid>`). Call ids are 3–64 chars of `[a-z0-9-]`, lowercased.
 
-### `GET /call`
-`302` to `/call/<new id>` (Meet-style `xxx-xxxx-xxx`).
+### `GET /` — web client entry point
+`200` HTML (the join screen; the server injects `window.APP_BASE` /
+`window.APP_CALL_ID` and assets load from `/support-web/`). The **query
+parameter name identifies the kind of link**, so new support types can share
+the entry point:
+- `?call=<code>` — open meeting (canonical meeting link, served directly).
+- `?session=<id>` — support session (Google sign-in flow); `/join/<id>` redirects here.
+- no parameter — new meeting: the client generates an editable `xxx-xxxx-xxx`
+  code and offers "Start meeting".
 
-### `GET /call/{call_id}`
-`302` to `/support-web/?call=<call_id>`, which prompts for a display name and joins.
+Redirects (`302`) to `/?call=<code>`: non-canonical spellings
+(`?call=Team-Sync`), nameless shorthands `?=<code>` and bare `?<code>`, the path
+form `/call/<code>`, and `/call?call=<code>`. `/call` alone redirects to `/`.
+Legacy `/support-web/?call=<code>` still works; the client rewrites the address
+bar to `/?call=<code>`.
 
 ### `GET /v1/calls/{call_id}`
-`{ "call_id", "recording_enabled" }`, so the client can show a recording notice before joining.
+`{ "call_id", "recording_enabled", "recording_active", "room_active",
+"participant_count", "maps_api_key", "maps_map_id" }` — recording notice before
+joining, whether the meeting is currently running, and the browser Maps key the
+native app uses for "/show" maps (its web view loads with the public base URL as
+origin, so the referrer restriction still applies).
 
 ### `POST /v1/calls/{call_id}/join`
-Auth: none. Rate limit: 30/min/IP. Body `{ "display_name"?: string }`.
+Auth: none. Rate limit: `OPEN_CALL_JOIN_RATE_LIMIT`/min/IP (default 120). Body `{ "display_name"?: string }`.
 Creates the room if needed (capped at `OPEN_CALL_MAX_PARTICIPANTS`, default 12)
 and returns `{ "call_id", "livekit": LiveKitCredentials }` with a fresh
 `guest-<name>-xxxxxxxx` identity, plus `recording_enabled`. `400 invalid_call_id`
 on a malformed id.
 
 ### `POST /v1/calls/{call_id}/end`
-Auth: this call's LiveKit token (any participant). Stops all recording egress
+Called by the web client when the **last** participant hangs up (the hang-up
+button otherwise just leaves). Auth: this call's LiveKit token (any participant). Stops all recording egress
 (files finalize), sets room metadata `{"recording": false, "ended_by": <name>}`,
 then deletes the LiveKit room, disconnecting everyone (`ROOM_DELETED`). `202`
 `{ "ended": true, "ended_by" }`; idempotent if the room is already gone.
+
+### `GET /v1/calls/{call_id}/media-check?url=<url>`
+Validates a chat `/show <url>` link before it is sent. Auth: this call's
+LiveKit token; 30/min/IP. Follows up to 5 redirects; every hop must be http(s)
+and resolve only to public IPs (SSRF guard); only headers are read (HEAD, GET
+fallback without reading the body). `200`
+`{ "url", "final_url", "kind", "embed_url", "content_type", "status", "geo" }` with
+`kind` ∈ `youtube | map | image | audio | video | webpage | link`; `embed_url`
+is what receivers load full screen (YouTube/Maps embed URLs; `null` when a page
+forbids framing). For maps, `geo` = `{lat, lng, zoom, label}` (from the link's
+`@lat,lng,zoomz` / coordinate `q`, else OpenStreetMap Nominatim geocoding; `null`
+if not found) drives an interactive Leaflet map; `embed_url` is the fallback. A `429` from the target counts as resolvable. Otherwise `422
+media_unavailable` with a user-facing message (e.g. "Link didn't load (HTTP 404)").
+The chat message carries the result as `show`; receivers re-validate it is
+http(s) before rendering.
 
 ### `POST /v1/calls/{call_id}/recording/{start|stop|sync}`
 Auth: `Authorization: Bearer <LiveKit token from /join>`; the token's room grant
@@ -311,7 +341,47 @@ Auth: none — anyone with the call link may view its recordings (product
 decision). Rate limit 60/min/IP. Returns `{ "call_id", "recordings": [ { "name",
 "participant", "identity", "source", "started_at", "size_bytes", "content_type",
 "url" } ] }`, oldest first; `url` is a V4 signed GCS URL valid for
-`SIGNED_URL_TTL_SECONDS`.
+`SIGNED_URL_TTL_SECONDS`. Also `"event_logs": [ { "name", "started_at",
+"size_bytes", "url" } ]` — the call's interaction logs (below).
+
+### `POST /v1/calls/{call_id}/photos`
+Auth: call token. Raw image body, `Content-Type: image/jpeg | image/png |
+image/webp` (`415` otherwise; magic bytes must match, `400 invalid_photo`), ≤25 MB
+(`413`); 20/min per identity. Query: `requested_by` (identity of who asked),
+`width`, `height`. Stored at `calls/<call_id>/photos/<UTC ms>_<identity>_<hex>.<ext>`
+and logged as a `photo` event. Returns `201 { "name", "participant", "identity",
+"taken_at", "size_bytes", "content_type", "path", "url" }`; `path` is the stable
+link below (relative to the app base), `url` a short-lived signed URL.
+
+### `GET /v1/calls/{call_id}/photos/{filename}`
+Auth: none (anyone with the call link, like recordings). `302` to a fresh signed
+URL; `404` for names that aren't call photos. The recordings list also returns
+`"photos": [...]` (same shape).
+
+**Remote phone camera (data topic `camctl`).** A phone client announces
+`{type:"state", phone, cam, cams, torch, torchOn}` (to everyone on change, to
+newcomers on join). Others send `{type:"cmd", op:"cycle"|"torch"|"photo", id,
+on?}` to the phone only (`destinationIdentities`); it replies `{type:"result", id,
+op, ok, error?}`. For `photo`, the phone captures a full-resolution still
+(`ImageCapture.takePhoto`, else raises the track to its maximum size for one frame),
+uploads it, and sends the requester a `chat` message whose `show` is the image
+(`title: "Photo from <name>"`).
+
+### `POST /v1/calls/{call_id}/events`
+Auth: call token (as for recording). Body `{ "events": [ { "id", "type", "ts",
+"data" } ] (≤100), "sent_at" }`; `ts`/`sent_at` are client epoch ms. Types:
+`chat, pointer, mute, media_toggle, camera_switch, device_switch, stage_focus,
+show_close, leave, data_packet, camera_control, torch`; `data` ≤8 KB; 120 events/min per identity;
+duplicate `id`s are ignored. Returns `202 {"stored"}`. The server time of each
+event is `ts + (received − sent_at)` (removes batching delay and client clock
+skew; clamped to ±10 min).
+
+**Interaction log.** Events (plus server-side `join`, `recording_start`,
+`recording_stop`, `call_end`) are kept in `call_events` and exported as JSONL to
+`calls/<call_id>/<UTC>_<room_sid>_events.jsonl`, one line per event:
+`{ts, received_ts, client_ts, type, identity, name, data}`, sorted by `ts`
+(ISO-8601 UTC, same clock as the recording file names). Re-exported 30 s after
+new events and immediately on recording stop / call end.
 
 **Recording.** State lives in LiveKit room metadata
 (`{"recording", "started_by", "started_at" | "stopped_by", "skipped"}`) so every

@@ -202,12 +202,13 @@ def create_app() -> FastAPI:
 
     @app.get("/")
     async def root_entry(request: Request) -> Response:
-        """Entry point (e.g. https://host/livekit/): start a new open call."""
-        if not get_settings().open_calls_enabled:
+        """Web client entry point (e.g. https://host/livekit/). The query names
+        the kind of link: ``?call=<code>`` meetings, ``?session=<id>`` support
+        sessions; no parameter starts a new meeting."""
+        s = get_settings()
+        if not (s.open_calls_enabled or s.allow_test_endpoints):
             return JSONResponse({"service": "remote-support-backend"})
-        return Response(
-            status_code=302, headers={"Location": url_for_path(request, "/call")}
-        )
+        return calls.meeting_entry(request)
 
     @app.get("/join/{session_id}")
     async def join_short_link(session_id: str, request: Request) -> Response:
@@ -216,7 +217,7 @@ def create_app() -> FastAPI:
         return Response(
             status_code=302,
             headers={
-                "Location": url_for_path(request, f"/support-web/?session={session_id}")
+                "Location": url_for_path(request, f"/?session={session_id}")
             },
         )
 

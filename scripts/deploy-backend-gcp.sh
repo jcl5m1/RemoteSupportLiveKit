@@ -10,6 +10,8 @@
 #   OPEN_CALLS_ENABLED=true, OPEN_CALL_RECORDING_ENABLED=true, PUBLIC_BASE_PATH=/livekit
 #
 # Usage: scripts/deploy-backend-gcp.sh [backend|agent]   (default: backend)
+#   GOOGLE_MAPS_API_KEY / GOOGLE_MAPS_MAP_ID in the environment are written to
+#   the VM's backend.env too (only when set).
 #   agent: same flow for the support agent worker (agent/ + infra/Dockerfile.agent),
 #          recreating only the `agent` container; no env changes.
 # Requires: gcloud logged in with access to project hermes-458420.
@@ -45,6 +47,16 @@ echo "==> Copying to $VM"
 "$GCLOUD" compute scp "$TARBALL" "$VM:/tmp/rs-src.tgz" --project "$PROJECT" --zone "$ZONE"
 
 echo "==> Building image and restarting $COMPONENT on $VM"
+# Optional settings passed through from the deploying shell, e.g.
+#   GOOGLE_MAPS_API_KEY=AIza... scripts/deploy-backend-gcp.sh
+EXTRA_ENV=""
+for name in GOOGLE_MAPS_API_KEY GOOGLE_MAPS_MAP_ID; do
+  if [ -n "${!name:-}" ]; then
+    case "${!name}" in *[!A-Za-z0-9_-]*) echo "$name has unexpected characters" >&2; exit 1 ;; esac
+    EXTRA_ENV="$EXTRA_ENV $name=${!name}"
+  fi
+done
+
 gssh "$(cat <<EOF
 set -euo pipefail
 DEPLOY_DIR=\$(dirname "\$(sudo find /home /root -maxdepth 3 -name docker-compose.prod.yml -path '*remote-support*' | head -1)")
@@ -57,7 +69,7 @@ rm -rf /tmp/rs-src && mkdir -p /tmp/rs-src && tar -C /tmp/rs-src -xzf /tmp/rs-sr
 sudo docker tag $IMAGE ${IMAGE%:*}:rollback
 sudo cp "\$DEPLOY_DIR/$COMPONENT.env" "\$DEPLOY_DIR/$COMPONENT.env.rollback"
 sudo docker build -q -t $IMAGE -f /tmp/rs-src/infra/Dockerfile.$COMPONENT /tmp/rs-src/$COMPONENT
-[ "$COMPONENT" = backend ] && for kv in OPEN_CALLS_ENABLED=true OPEN_CALL_RECORDING_ENABLED=true PUBLIC_BASE_PATH=/livekit; do
+[ "$COMPONENT" = backend ] && for kv in OPEN_CALLS_ENABLED=true OPEN_CALL_RECORDING_ENABLED=true PUBLIC_BASE_PATH=/livekit $EXTRA_ENV; do
   key=\${kv%%=*}
   if sudo grep -q "^\$key=" "\$DEPLOY_DIR/backend.env"; then
     sudo sed -i "s|^\$key=.*|\$kv|" "\$DEPLOY_DIR/backend.env"
@@ -89,5 +101,5 @@ EOF
 
 echo "==> Smoke test"
 curl -fsS "$PUBLIC_URL/healthz" && echo
-curl -fsS -o /dev/null -w "GET /livekit/ -> %{http_code} %{redirect_url}\n" "$PUBLIC_URL/livekit/"
+curl -fsS -o /dev/null -w "GET /livekit/ -> %{http_code}\n" "$PUBLIC_URL/livekit/"
 curl -fsS "$PUBLIC_URL/livekit/v1/calls/deploy-check" && echo

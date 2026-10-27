@@ -307,3 +307,37 @@ class RateLimit(Base):
     count: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
 
     __table_args__ = (Index("ix_rate_limits_window", "window_start"),)
+
+
+class CallEvent(Base):
+    """One interaction in an open call (chat, pointer, control, server event),
+    exported as JSON lines next to the call's recordings.
+
+    ``server_ts`` is when the event happened on the *server* clock (same clock
+    family as the recordings): the sender's timestamp shifted by the per-batch
+    clock offset, so batching delay and clock skew cancel. ``received_ts`` is
+    when the backend got it; ``client_ts`` the sender's raw clock (ms epoch).
+    """
+
+    __tablename__ = "call_events"
+
+    id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    call_id: Mapped[str] = mapped_column(Text, nullable=False)
+    room_sid: Mapped[str | None] = mapped_column(Text)
+    event_id: Mapped[str | None] = mapped_column(Text)  # client-generated, for retries
+    server_ts: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), nullable=False, server_default=func.now()
+    )
+    received_ts: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), nullable=False, server_default=func.now()
+    )
+    client_ts: Mapped[int | None] = mapped_column(BigInteger)
+    identity: Mapped[str | None] = mapped_column(Text)
+    name: Mapped[str | None] = mapped_column(Text)
+    type: Mapped[str] = mapped_column(Text, nullable=False)
+    data: Mapped[dict] = mapped_column(JSONB, nullable=False, server_default=text("'{}'::jsonb"))
+
+    __table_args__ = (
+        Index("ix_call_events_call_time", "call_id", "room_sid", "server_ts"),
+        Index("ux_call_events_event_id", "event_id", unique=True),
+    )

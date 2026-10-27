@@ -135,6 +135,7 @@ def app():
     import app.routers.sessions as sessions_module
     import app.routers.transcripts as transcripts_module
     import app.routers.webhooks as webhooks_module
+    import app.services.call_events as call_events_module
     import app.services.egress as egress_module
     import app.services.rate_limit as rate_limit_module
 
@@ -147,6 +148,7 @@ def app():
         webhooks_module,
         egress_module,
         rate_limit_module,
+        call_events_module,
     ):
         module.AsyncSessionLocal = _TestSessionLocal
     return app

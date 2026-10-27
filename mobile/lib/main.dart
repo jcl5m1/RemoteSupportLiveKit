@@ -1,11 +1,15 @@
-// App entrypoint. One binary, both roles — role is chosen at runtime.
-// Screen flow: docs/07-flutter-app.md.
+// App entrypoint. Home is the open-meeting lobby (same calls as the web client
+// at <base>/?call=<code>); the two-party support flow (docs/07-flutter-app.md)
+// is one tap away.
 
 import 'package:app_links/app_links.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import 'meet/meet_api.dart';
+import 'meet/protocol.dart';
+import 'meet/ui/lobby_screen.dart';
 import 'providers.dart';
 import 'screens/role_select.dart';
 import 'screens/support_join.dart';
@@ -16,9 +20,19 @@ const _appLinkHost = String.fromEnvironment(
   defaultValue: 'remotesupport.lgitech.net',
 );
 
+/// Open-meeting server, including its path prefix (no trailing slash).
+const meetBaseUrl = String.fromEnvironment(
+  'MEET_BASE_URL',
+  defaultValue: 'https://remotesupport.lgitech.net/livekit',
+);
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  try {
+    await Firebase.initializeApp();
+  } catch (_) {
+    // Only the support sign-in needs Firebase; meetings work without it.
+  }
   runApp(const RemoteSupportApp());
 }
 
@@ -32,6 +46,8 @@ class RemoteSupportApp extends ConsumerStatefulWidget {
 class _RemoteSupportAppState extends ConsumerState<RemoteSupportApp> {
   final _appLinks = AppLinks();
   final _navigatorKey = GlobalKey<NavigatorState>();
+  final _meetApi = MeetApi(meetBaseUrl);
+  String? _meetCode;
 
   @override
   void initState() {
@@ -58,7 +74,24 @@ class _RemoteSupportAppState extends ConsumerState<RemoteSupportApp> {
     });
   }
 
+  /// Meeting links: <host>/livekit/?call=<code> (and the web's shorthands),
+  /// remotesupport://call?code=<code>.
+  String? _meetingCode(Uri uri) {
+    if (uri.scheme == 'remotesupport') {
+      return uri.host == 'call' ? callCodeFromText(uri.queryParameters['code'] ?? '') : null;
+    }
+    if (uri.host != _appLinkHost || uri.path.startsWith('/j/')) return null;
+    final code = callCodeFromText(uri.toString());
+    return code != null && callCodeRe.hasMatch(code) ? code : null;
+  }
+
   void _handleLink(Uri uri) {
+    final meeting = _meetingCode(uri);
+    if (meeting != null) {
+      _navigatorKey.currentState?.popUntil((r) => r.isFirst);
+      setState(() => _meetCode = meeting);
+      return;
+    }
     if (uri.host != _appLinkHost && uri.scheme != 'remotesupport') return;
     final code = uri.queryParameters['code'];
     if (code == null || code.isEmpty) return;
@@ -92,7 +125,19 @@ class _RemoteSupportAppState extends ConsumerState<RemoteSupportApp> {
         navigatorKey: _navigatorKey,
         title: 'Remote Support',
         theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.indigo),
-        home: const RoleSelectScreen(),
+        darkTheme: ThemeData(
+          useMaterial3: true,
+          brightness: Brightness.dark,
+          colorSchemeSeed: const Color(0xFF8AB4F8),
+        ),
+        themeMode: ThemeMode.dark,
+        home: LobbyScreen(
+          api: _meetApi,
+          initialCode: _meetCode,
+          onSupportSession: () => _navigatorKey.currentState?.push(
+            MaterialPageRoute<void>(builder: (_) => const RoleSelectScreen()),
+          ),
+        ),
       ),
     );
   }

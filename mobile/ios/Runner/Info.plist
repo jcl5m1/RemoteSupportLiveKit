@@ -47,9 +47,22 @@
 	<true/>
 	<!-- Required for video calls (docs/07-flutter-app.md § platform setup) -->
 	<key>NSCameraUsageDescription</key>
-	<string>This app needs camera access for video support calls.</string>
+	<string>Your camera is shared with the people in your call, and can take photos when someone in the call asks.</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>This app needs microphone access for audio on support calls.</string>
+	<string>Your microphone (or Bluetooth headset) is used for audio in calls.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Shows where you are on maps shared in a call (only when you tap the location button).</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>net.lgitech.remotesupport</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>remotesupport</string>
+			</array>
+		</dict>
+	</array>
 	<key>NSLocalNetworkUsageDescription</key>
 	<string>This app uses the local network to discover the best LiveKit media relay.</string>
 	<key>UIBackgroundModes</key>
