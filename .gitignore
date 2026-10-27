@@ -31,3 +31,6 @@ build/
 google-services.json
 GoogleService-Info.plist
 firebase_options.dart
+
+# ASR benchmark run log
+tests/asr/synthesize.log

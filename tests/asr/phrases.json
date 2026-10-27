@@ -1,0 +1,2032 @@
+{
+  "en": {
+    "name": "English",
+    "voice": "en-US-AriaNeural",
+    "phrases": [
+      {
+        "id": "en_001",
+        "text": "My manager need to review the client email by Friday."
+      },
+      {
+        "id": "en_002",
+        "text": "We need to review the meeting agenda this afternoon."
+      },
+      {
+        "id": "en_003",
+        "text": "We should update the meeting agenda this afternoon."
+      },
+      {
+        "id": "en_004",
+        "text": "The team need to review the project plan before lunch."
+      },
+      {
+        "id": "en_005",
+        "text": "My manager need to review the project plan this afternoon."
+      },
+      {
+        "id": "en_006",
+        "text": "The team should update the project plan before lunch."
+      },
+      {
+        "id": "en_007",
+        "text": "The team will send the meeting agenda this afternoon."
+      },
+      {
+        "id": "en_008",
+        "text": "We have to finish the client email this afternoon."
+      },
+      {
+        "id": "en_009",
+        "text": "My manager will send the budget report by Friday."
+      },
+      {
+        "id": "en_010",
+        "text": "My manager want to schedule the project plan before lunch."
+      },
+      {
+        "id": "en_011",
+        "text": "The team have to finish the budget report before lunch."
+      },
+      {
+        "id": "en_012",
+        "text": "My manager should update the budget report by Friday."
+      },
+      {
+        "id": "en_013",
+        "text": "I have to finish the project plan this afternoon."
+      },
+      {
+        "id": "en_014",
+        "text": "The client will send the budget report this afternoon."
+      },
+      {
+        "id": "en_015",
+        "text": "The client will send the client email tomorrow morning."
+      },
+      {
+        "id": "en_016",
+        "text": "The client have to finish the meeting agenda before lunch."
+      },
+      {
+        "id": "en_017",
+        "text": "I have to finish the client email tomorrow morning."
+      },
+      {
+        "id": "en_018",
+        "text": "The team want to schedule the client email by Friday."
+      },
+      {
+        "id": "en_019",
+        "text": "We will send the budget report tomorrow morning."
+      },
+      {
+        "id": "en_020",
+        "text": "I want to schedule the project plan by Friday."
+      },
+      {
+        "id": "en_021",
+        "text": "My manager will send the meeting agenda tomorrow morning."
+      },
+      {
+        "id": "en_022",
+        "text": "The team need to review the client email by Friday."
+      },
+      {
+        "id": "en_023",
+        "text": "My manager need to review the client email tomorrow morning."
+      },
+      {
+        "id": "en_024",
+        "text": "I should update the meeting agenda by Friday."
+      },
+      {
+        "id": "en_025",
+        "text": "I need to review the client email by Friday."
+      },
+      {
+        "id": "en_026",
+        "text": "I should update the project plan before lunch."
+      },
+      {
+        "id": "en_027",
+        "text": "The team have to finish the project plan this afternoon."
+      },
+      {
+        "id": "en_028",
+        "text": "I need to review the budget report this afternoon."
+      },
+      {
+        "id": "en_029",
+        "text": "The client have to finish the meeting agenda tomorrow morning."
+      },
+      {
+        "id": "en_030",
+        "text": "The client want to schedule the project plan before lunch."
+      },
+      {
+        "id": "en_031",
+        "text": "My manager will send the budget report tomorrow morning."
+      },
+      {
+        "id": "en_032",
+        "text": "My manager need to review the meeting agenda by Friday."
+      },
+      {
+        "id": "en_033",
+        "text": "My manager need to review the project plan before lunch."
+      },
+      {
+        "id": "en_034",
+        "text": "The team want to schedule the budget report by Friday."
+      },
+      {
+        "id": "en_035",
+        "text": "I want to schedule the project plan tomorrow morning."
+      },
+      {
+        "id": "en_036",
+        "text": "I have to finish the budget report this afternoon."
+      },
+      {
+        "id": "en_037",
+        "text": "The client have to finish the budget report this afternoon."
+      },
+      {
+        "id": "en_038",
+        "text": "My manager have to finish the client email before lunch."
+      },
+      {
+        "id": "en_039",
+        "text": "I want to schedule the client email tomorrow morning."
+      },
+      {
+        "id": "en_040",
+        "text": "My manager need to review the budget report tomorrow morning."
+      },
+      {
+        "id": "en_041",
+        "text": "The client should update the budget report this afternoon."
+      },
+      {
+        "id": "en_042",
+        "text": "My manager want to schedule the budget report by Friday."
+      },
+      {
+        "id": "en_043",
+        "text": "The team should update the project plan this afternoon."
+      },
+      {
+        "id": "en_044",
+        "text": "The client want to schedule the meeting agenda before lunch."
+      },
+      {
+        "id": "en_045",
+        "text": "I will send the meeting agenda by Friday."
+      },
+      {
+        "id": "en_046",
+        "text": "The client need to review the client email tomorrow morning."
+      },
+      {
+        "id": "en_047",
+        "text": "My manager need to review the budget report before lunch."
+      },
+      {
+        "id": "en_048",
+        "text": "We will send the budget report by Friday."
+      },
+      {
+        "id": "en_049",
+        "text": "The client need to review the budget report this afternoon."
+      },
+      {
+        "id": "en_050",
+        "text": "We want to schedule the meeting agenda tomorrow morning."
+      },
+      {
+        "id": "en_051",
+        "text": "The team need to review the meeting agenda tomorrow morning."
+      },
+      {
+        "id": "en_052",
+        "text": "I should update the budget report this afternoon."
+      },
+      {
+        "id": "en_053",
+        "text": "The client will send the meeting agenda tomorrow morning."
+      },
+      {
+        "id": "en_054",
+        "text": "I have to finish the meeting agenda by Friday."
+      },
+      {
+        "id": "en_055",
+        "text": "The team should update the budget report tomorrow morning."
+      },
+      {
+        "id": "en_056",
+        "text": "We should update the budget report before lunch."
+      },
+      {
+        "id": "en_057",
+        "text": "The team want to schedule the project plan by Friday."
+      },
+      {
+        "id": "en_058",
+        "text": "I should update the client email tomorrow morning."
+      },
+      {
+        "id": "en_059",
+        "text": "The client want to schedule the project plan this afternoon."
+      },
+      {
+        "id": "en_060",
+        "text": "The client need to review the meeting agenda tomorrow morning."
+      },
+      {
+        "id": "en_061",
+        "text": "We need to review the client email before lunch."
+      },
+      {
+        "id": "en_062",
+        "text": "The client should update the budget report by Friday."
+      },
+      {
+        "id": "en_063",
+        "text": "I will send the client email this afternoon."
+      },
+      {
+        "id": "en_064",
+        "text": "I should update the client email before lunch."
+      },
+      {
+        "id": "en_065",
+        "text": "The team will send the project plan before lunch."
+      },
+      {
+        "id": "en_066",
+        "text": "I will send the meeting agenda tomorrow morning."
+      },
+      {
+        "id": "en_067",
+        "text": "The client need to review the project plan this afternoon."
+      },
+      {
+        "id": "en_068",
+        "text": "We want to schedule the budget report this afternoon."
+      },
+      {
+        "id": "en_069",
+        "text": "We have to finish the meeting agenda tomorrow morning."
+      },
+      {
+        "id": "en_070",
+        "text": "We have to finish the client email tomorrow morning."
+      },
+      {
+        "id": "en_071",
+        "text": "My manager need to review the client email before lunch."
+      },
+      {
+        "id": "en_072",
+        "text": "The client need to review the meeting agenda by Friday."
+      },
+      {
+        "id": "en_073",
+        "text": "I need to review the client email this afternoon."
+      },
+      {
+        "id": "en_074",
+        "text": "I should update the budget report by Friday."
+      },
+      {
+        "id": "en_075",
+        "text": "The client will send the client email by Friday."
+      },
+      {
+        "id": "en_076",
+        "text": "The client will send the meeting agenda by Friday."
+      },
+      {
+        "id": "en_077",
+        "text": "My manager have to finish the meeting agenda before lunch."
+      },
+      {
+        "id": "en_078",
+        "text": "I should update the budget report before lunch."
+      },
+      {
+        "id": "en_079",
+        "text": "The team need to review the budget report this afternoon."
+      },
+      {
+        "id": "en_080",
+        "text": "We need to review the project plan by Friday."
+      },
+      {
+        "id": "en_081",
+        "text": "We should update the client email this afternoon."
+      },
+      {
+        "id": "en_082",
+        "text": "We have to finish the client email before lunch."
+      },
+      {
+        "id": "en_083",
+        "text": "The client need to review the client email this afternoon."
+      },
+      {
+        "id": "en_084",
+        "text": "The team should update the budget report by Friday."
+      },
+      {
+        "id": "en_085",
+        "text": "The team want to schedule the meeting agenda before lunch."
+      },
+      {
+        "id": "en_086",
+        "text": "I should update the client email this afternoon."
+      },
+      {
+        "id": "en_087",
+        "text": "We will send the client email this afternoon."
+      },
+      {
+        "id": "en_088",
+        "text": "The team have to finish the client email tomorrow morning."
+      },
+      {
+        "id": "en_089",
+        "text": "I have to finish the project plan by Friday."
+      },
+      {
+        "id": "en_090",
+        "text": "The team want to schedule the budget report tomorrow morning."
+      },
+      {
+        "id": "en_091",
+        "text": "My manager will send the meeting agenda before lunch."
+      },
+      {
+        "id": "en_092",
+        "text": "The team should update the project plan tomorrow morning."
+      },
+      {
+        "id": "en_093",
+        "text": "The client will send the budget report before lunch."
+      },
+      {
+        "id": "en_094",
+        "text": "The team need to review the project plan tomorrow morning."
+      },
+      {
+        "id": "en_095",
+        "text": "The team need to review the project plan by Friday."
+      },
+      {
+        "id": "en_096",
+        "text": "We need to review the meeting agenda by Friday."
+      },
+      {
+        "id": "en_097",
+        "text": "We need to review the client email by Friday."
+      },
+      {
+        "id": "en_098",
+        "text": "The client have to finish the project plan before lunch."
+      },
+      {
+        "id": "en_099",
+        "text": "My manager should update the meeting agenda this afternoon."
+      },
+      {
+        "id": "en_100",
+        "text": "The team need to review the client email this afternoon."
+      }
+    ]
+  },
+  "zh": {
+    "name": "Chinese Mandarin",
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "phrases": [
+      {
+        "id": "zh_001",
+        "text": "我的经理需要审阅客户邮件周五前。"
+      },
+      {
+        "id": "zh_002",
+        "text": "我们需要审阅会议议程今天下午。"
+      },
+      {
+        "id": "zh_003",
+        "text": "我们应该更新会议议程今天下午。"
+      },
+      {
+        "id": "zh_004",
+        "text": "团队需要审阅项目计划午饭前。"
+      },
+      {
+        "id": "zh_005",
+        "text": "我的经理需要审阅项目计划今天下午。"
+      },
+      {
+        "id": "zh_006",
+        "text": "团队应该更新项目计划午饭前。"
+      },
+      {
+        "id": "zh_007",
+        "text": "团队会发送会议议程今天下午。"
+      },
+      {
+        "id": "zh_008",
+        "text": "我们必须完成客户邮件今天下午。"
+      },
+      {
+        "id": "zh_009",
+        "text": "我的经理会发送预算报告周五前。"
+      },
+      {
+        "id": "zh_010",
+        "text": "我的经理想要安排项目计划午饭前。"
+      },
+      {
+        "id": "zh_011",
+        "text": "团队必须完成预算报告午饭前。"
+      },
+      {
+        "id": "zh_012",
+        "text": "我的经理应该更新预算报告周五前。"
+      },
+      {
+        "id": "zh_013",
+        "text": "我必须完成项目计划今天下午。"
+      },
+      {
+        "id": "zh_014",
+        "text": "客户会发送预算报告今天下午。"
+      },
+      {
+        "id": "zh_015",
+        "text": "客户会发送客户邮件明天上午。"
+      },
+      {
+        "id": "zh_016",
+        "text": "客户必须完成会议议程午饭前。"
+      },
+      {
+        "id": "zh_017",
+        "text": "我必须完成客户邮件明天上午。"
+      },
+      {
+        "id": "zh_018",
+        "text": "团队想要安排客户邮件周五前。"
+      },
+      {
+        "id": "zh_019",
+        "text": "我们会发送预算报告明天上午。"
+      },
+      {
+        "id": "zh_020",
+        "text": "我想要安排项目计划周五前。"
+      },
+      {
+        "id": "zh_021",
+        "text": "我的经理会发送会议议程明天上午。"
+      },
+      {
+        "id": "zh_022",
+        "text": "团队需要审阅客户邮件周五前。"
+      },
+      {
+        "id": "zh_023",
+        "text": "我的经理需要审阅客户邮件明天上午。"
+      },
+      {
+        "id": "zh_024",
+        "text": "我应该更新会议议程周五前。"
+      },
+      {
+        "id": "zh_025",
+        "text": "我需要审阅客户邮件周五前。"
+      },
+      {
+        "id": "zh_026",
+        "text": "我应该更新项目计划午饭前。"
+      },
+      {
+        "id": "zh_027",
+        "text": "团队必须完成项目计划今天下午。"
+      },
+      {
+        "id": "zh_028",
+        "text": "我需要审阅预算报告今天下午。"
+      },
+      {
+        "id": "zh_029",
+        "text": "客户必须完成会议议程明天上午。"
+      },
+      {
+        "id": "zh_030",
+        "text": "客户想要安排项目计划午饭前。"
+      },
+      {
+        "id": "zh_031",
+        "text": "我的经理会发送预算报告明天上午。"
+      },
+      {
+        "id": "zh_032",
+        "text": "我的经理需要审阅会议议程周五前。"
+      },
+      {
+        "id": "zh_033",
+        "text": "我的经理需要审阅项目计划午饭前。"
+      },
+      {
+        "id": "zh_034",
+        "text": "团队想要安排预算报告周五前。"
+      },
+      {
+        "id": "zh_035",
+        "text": "我想要安排项目计划明天上午。"
+      },
+      {
+        "id": "zh_036",
+        "text": "我必须完成预算报告今天下午。"
+      },
+      {
+        "id": "zh_037",
+        "text": "客户必须完成预算报告今天下午。"
+      },
+      {
+        "id": "zh_038",
+        "text": "我的经理必须完成客户邮件午饭前。"
+      },
+      {
+        "id": "zh_039",
+        "text": "我想要安排客户邮件明天上午。"
+      },
+      {
+        "id": "zh_040",
+        "text": "我的经理需要审阅预算报告明天上午。"
+      },
+      {
+        "id": "zh_041",
+        "text": "客户应该更新预算报告今天下午。"
+      },
+      {
+        "id": "zh_042",
+        "text": "我的经理想要安排预算报告周五前。"
+      },
+      {
+        "id": "zh_043",
+        "text": "团队应该更新项目计划今天下午。"
+      },
+      {
+        "id": "zh_044",
+        "text": "客户想要安排会议议程午饭前。"
+      },
+      {
+        "id": "zh_045",
+        "text": "我会发送会议议程周五前。"
+      },
+      {
+        "id": "zh_046",
+        "text": "客户需要审阅客户邮件明天上午。"
+      },
+      {
+        "id": "zh_047",
+        "text": "我的经理需要审阅预算报告午饭前。"
+      },
+      {
+        "id": "zh_048",
+        "text": "我们会发送预算报告周五前。"
+      },
+      {
+        "id": "zh_049",
+        "text": "客户需要审阅预算报告今天下午。"
+      },
+      {
+        "id": "zh_050",
+        "text": "我们想要安排会议议程明天上午。"
+      },
+      {
+        "id": "zh_051",
+        "text": "团队需要审阅会议议程明天上午。"
+      },
+      {
+        "id": "zh_052",
+        "text": "我应该更新预算报告今天下午。"
+      },
+      {
+        "id": "zh_053",
+        "text": "客户会发送会议议程明天上午。"
+      },
+      {
+        "id": "zh_054",
+        "text": "我必须完成会议议程周五前。"
+      },
+      {
+        "id": "zh_055",
+        "text": "团队应该更新预算报告明天上午。"
+      },
+      {
+        "id": "zh_056",
+        "text": "我们应该更新预算报告午饭前。"
+      },
+      {
+        "id": "zh_057",
+        "text": "团队想要安排项目计划周五前。"
+      },
+      {
+        "id": "zh_058",
+        "text": "我应该更新客户邮件明天上午。"
+      },
+      {
+        "id": "zh_059",
+        "text": "客户想要安排项目计划今天下午。"
+      },
+      {
+        "id": "zh_060",
+        "text": "客户需要审阅会议议程明天上午。"
+      },
+      {
+        "id": "zh_061",
+        "text": "我们需要审阅客户邮件午饭前。"
+      },
+      {
+        "id": "zh_062",
+        "text": "客户应该更新预算报告周五前。"
+      },
+      {
+        "id": "zh_063",
+        "text": "我会发送客户邮件今天下午。"
+      },
+      {
+        "id": "zh_064",
+        "text": "我应该更新客户邮件午饭前。"
+      },
+      {
+        "id": "zh_065",
+        "text": "团队会发送项目计划午饭前。"
+      },
+      {
+        "id": "zh_066",
+        "text": "我会发送会议议程明天上午。"
+      },
+      {
+        "id": "zh_067",
+        "text": "客户需要审阅项目计划今天下午。"
+      },
+      {
+        "id": "zh_068",
+        "text": "我们想要安排预算报告今天下午。"
+      },
+      {
+        "id": "zh_069",
+        "text": "我们必须完成会议议程明天上午。"
+      },
+      {
+        "id": "zh_070",
+        "text": "我们必须完成客户邮件明天上午。"
+      },
+      {
+        "id": "zh_071",
+        "text": "我的经理需要审阅客户邮件午饭前。"
+      },
+      {
+        "id": "zh_072",
+        "text": "客户需要审阅会议议程周五前。"
+      },
+      {
+        "id": "zh_073",
+        "text": "我需要审阅客户邮件今天下午。"
+      },
+      {
+        "id": "zh_074",
+        "text": "我应该更新预算报告周五前。"
+      },
+      {
+        "id": "zh_075",
+        "text": "客户会发送客户邮件周五前。"
+      },
+      {
+        "id": "zh_076",
+        "text": "客户会发送会议议程周五前。"
+      },
+      {
+        "id": "zh_077",
+        "text": "我的经理必须完成会议议程午饭前。"
+      },
+      {
+        "id": "zh_078",
+        "text": "我应该更新预算报告午饭前。"
+      },
+      {
+        "id": "zh_079",
+        "text": "团队需要审阅预算报告今天下午。"
+      },
+      {
+        "id": "zh_080",
+        "text": "我们需要审阅项目计划周五前。"
+      },
+      {
+        "id": "zh_081",
+        "text": "我们应该更新客户邮件今天下午。"
+      },
+      {
+        "id": "zh_082",
+        "text": "我们必须完成客户邮件午饭前。"
+      },
+      {
+        "id": "zh_083",
+        "text": "客户需要审阅客户邮件今天下午。"
+      },
+      {
+        "id": "zh_084",
+        "text": "团队应该更新预算报告周五前。"
+      },
+      {
+        "id": "zh_085",
+        "text": "团队想要安排会议议程午饭前。"
+      },
+      {
+        "id": "zh_086",
+        "text": "我应该更新客户邮件今天下午。"
+      },
+      {
+        "id": "zh_087",
+        "text": "我们会发送客户邮件今天下午。"
+      },
+      {
+        "id": "zh_088",
+        "text": "团队必须完成客户邮件明天上午。"
+      },
+      {
+        "id": "zh_089",
+        "text": "我必须完成项目计划周五前。"
+      },
+      {
+        "id": "zh_090",
+        "text": "团队想要安排预算报告明天上午。"
+      },
+      {
+        "id": "zh_091",
+        "text": "我的经理会发送会议议程午饭前。"
+      },
+      {
+        "id": "zh_092",
+        "text": "团队应该更新项目计划明天上午。"
+      },
+      {
+        "id": "zh_093",
+        "text": "客户会发送预算报告午饭前。"
+      },
+      {
+        "id": "zh_094",
+        "text": "团队需要审阅项目计划明天上午。"
+      },
+      {
+        "id": "zh_095",
+        "text": "团队需要审阅项目计划周五前。"
+      },
+      {
+        "id": "zh_096",
+        "text": "我们需要审阅会议议程周五前。"
+      },
+      {
+        "id": "zh_097",
+        "text": "我们需要审阅客户邮件周五前。"
+      },
+      {
+        "id": "zh_098",
+        "text": "客户必须完成项目计划午饭前。"
+      },
+      {
+        "id": "zh_099",
+        "text": "我的经理应该更新会议议程今天下午。"
+      },
+      {
+        "id": "zh_100",
+        "text": "团队需要审阅客户邮件今天下午。"
+      }
+    ]
+  },
+  "zh-tw": {
+    "name": "Taiwan Mandarin",
+    "voice": "zh-TW-HsiaoChenNeural",
+    "phrases": [
+      {
+        "id": "zh-tw_001",
+        "text": "我的經理需要審閱客戶郵件週五前。"
+      },
+      {
+        "id": "zh-tw_002",
+        "text": "我們需要審閱會議議程今天下午。"
+      },
+      {
+        "id": "zh-tw_003",
+        "text": "我們應該更新會議議程今天下午。"
+      },
+      {
+        "id": "zh-tw_004",
+        "text": "團隊需要審閱專案計畫午餐前。"
+      },
+      {
+        "id": "zh-tw_005",
+        "text": "我的經理需要審閱專案計畫今天下午。"
+      },
+      {
+        "id": "zh-tw_006",
+        "text": "團隊應該更新專案計畫午餐前。"
+      },
+      {
+        "id": "zh-tw_007",
+        "text": "團隊會寄送會議議程今天下午。"
+      },
+      {
+        "id": "zh-tw_008",
+        "text": "我們必須完成客戶郵件今天下午。"
+      },
+      {
+        "id": "zh-tw_009",
+        "text": "我的經理會寄送預算報告週五前。"
+      },
+      {
+        "id": "zh-tw_010",
+        "text": "我的經理想要安排專案計畫午餐前。"
+      },
+      {
+        "id": "zh-tw_011",
+        "text": "團隊必須完成預算報告午餐前。"
+      },
+      {
+        "id": "zh-tw_012",
+        "text": "我的經理應該更新預算報告週五前。"
+      },
+      {
+        "id": "zh-tw_013",
+        "text": "我必須完成專案計畫今天下午。"
+      },
+      {
+        "id": "zh-tw_014",
+        "text": "客戶會寄送預算報告今天下午。"
+      },
+      {
+        "id": "zh-tw_015",
+        "text": "客戶會寄送客戶郵件明天上午。"
+      },
+      {
+        "id": "zh-tw_016",
+        "text": "客戶必須完成會議議程午餐前。"
+      },
+      {
+        "id": "zh-tw_017",
+        "text": "我必須完成客戶郵件明天上午。"
+      },
+      {
+        "id": "zh-tw_018",
+        "text": "團隊想要安排客戶郵件週五前。"
+      },
+      {
+        "id": "zh-tw_019",
+        "text": "我們會寄送預算報告明天上午。"
+      },
+      {
+        "id": "zh-tw_020",
+        "text": "我想要安排專案計畫週五前。"
+      },
+      {
+        "id": "zh-tw_021",
+        "text": "我的經理會寄送會議議程明天上午。"
+      },
+      {
+        "id": "zh-tw_022",
+        "text": "團隊需要審閱客戶郵件週五前。"
+      },
+      {
+        "id": "zh-tw_023",
+        "text": "我的經理需要審閱客戶郵件明天上午。"
+      },
+      {
+        "id": "zh-tw_024",
+        "text": "我應該更新會議議程週五前。"
+      },
+      {
+        "id": "zh-tw_025",
+        "text": "我需要審閱客戶郵件週五前。"
+      },
+      {
+        "id": "zh-tw_026",
+        "text": "我應該更新專案計畫午餐前。"
+      },
+      {
+        "id": "zh-tw_027",
+        "text": "團隊必須完成專案計畫今天下午。"
+      },
+      {
+        "id": "zh-tw_028",
+        "text": "我需要審閱預算報告今天下午。"
+      },
+      {
+        "id": "zh-tw_029",
+        "text": "客戶必須完成會議議程明天上午。"
+      },
+      {
+        "id": "zh-tw_030",
+        "text": "客戶想要安排專案計畫午餐前。"
+      },
+      {
+        "id": "zh-tw_031",
+        "text": "我的經理會寄送預算報告明天上午。"
+      },
+      {
+        "id": "zh-tw_032",
+        "text": "我的經理需要審閱會議議程週五前。"
+      },
+      {
+        "id": "zh-tw_033",
+        "text": "我的經理需要審閱專案計畫午餐前。"
+      },
+      {
+        "id": "zh-tw_034",
+        "text": "團隊想要安排預算報告週五前。"
+      },
+      {
+        "id": "zh-tw_035",
+        "text": "我想要安排專案計畫明天上午。"
+      },
+      {
+        "id": "zh-tw_036",
+        "text": "我必須完成預算報告今天下午。"
+      },
+      {
+        "id": "zh-tw_037",
+        "text": "客戶必須完成預算報告今天下午。"
+      },
+      {
+        "id": "zh-tw_038",
+        "text": "我的經理必須完成客戶郵件午餐前。"
+      },
+      {
+        "id": "zh-tw_039",
+        "text": "我想要安排客戶郵件明天上午。"
+      },
+      {
+        "id": "zh-tw_040",
+        "text": "我的經理需要審閱預算報告明天上午。"
+      },
+      {
+        "id": "zh-tw_041",
+        "text": "客戶應該更新預算報告今天下午。"
+      },
+      {
+        "id": "zh-tw_042",
+        "text": "我的經理想要安排預算報告週五前。"
+      },
+      {
+        "id": "zh-tw_043",
+        "text": "團隊應該更新專案計畫今天下午。"
+      },
+      {
+        "id": "zh-tw_044",
+        "text": "客戶想要安排會議議程午餐前。"
+      },
+      {
+        "id": "zh-tw_045",
+        "text": "我會寄送會議議程週五前。"
+      },
+      {
+        "id": "zh-tw_046",
+        "text": "客戶需要審閱客戶郵件明天上午。"
+      },
+      {
+        "id": "zh-tw_047",
+        "text": "我的經理需要審閱預算報告午餐前。"
+      },
+      {
+        "id": "zh-tw_048",
+        "text": "我們會寄送預算報告週五前。"
+      },
+      {
+        "id": "zh-tw_049",
+        "text": "客戶需要審閱預算報告今天下午。"
+      },
+      {
+        "id": "zh-tw_050",
+        "text": "我們想要安排會議議程明天上午。"
+      },
+      {
+        "id": "zh-tw_051",
+        "text": "團隊需要審閱會議議程明天上午。"
+      },
+      {
+        "id": "zh-tw_052",
+        "text": "我應該更新預算報告今天下午。"
+      },
+      {
+        "id": "zh-tw_053",
+        "text": "客戶會寄送會議議程明天上午。"
+      },
+      {
+        "id": "zh-tw_054",
+        "text": "我必須完成會議議程週五前。"
+      },
+      {
+        "id": "zh-tw_055",
+        "text": "團隊應該更新預算報告明天上午。"
+      },
+      {
+        "id": "zh-tw_056",
+        "text": "我們應該更新預算報告午餐前。"
+      },
+      {
+        "id": "zh-tw_057",
+        "text": "團隊想要安排專案計畫週五前。"
+      },
+      {
+        "id": "zh-tw_058",
+        "text": "我應該更新客戶郵件明天上午。"
+      },
+      {
+        "id": "zh-tw_059",
+        "text": "客戶想要安排專案計畫今天下午。"
+      },
+      {
+        "id": "zh-tw_060",
+        "text": "客戶需要審閱會議議程明天上午。"
+      },
+      {
+        "id": "zh-tw_061",
+        "text": "我們需要審閱客戶郵件午餐前。"
+      },
+      {
+        "id": "zh-tw_062",
+        "text": "客戶應該更新預算報告週五前。"
+      },
+      {
+        "id": "zh-tw_063",
+        "text": "我會寄送客戶郵件今天下午。"
+      },
+      {
+        "id": "zh-tw_064",
+        "text": "我應該更新客戶郵件午餐前。"
+      },
+      {
+        "id": "zh-tw_065",
+        "text": "團隊會寄送專案計畫午餐前。"
+      },
+      {
+        "id": "zh-tw_066",
+        "text": "我會寄送會議議程明天上午。"
+      },
+      {
+        "id": "zh-tw_067",
+        "text": "客戶需要審閱專案計畫今天下午。"
+      },
+      {
+        "id": "zh-tw_068",
+        "text": "我們想要安排預算報告今天下午。"
+      },
+      {
+        "id": "zh-tw_069",
+        "text": "我們必須完成會議議程明天上午。"
+      },
+      {
+        "id": "zh-tw_070",
+        "text": "我們必須完成客戶郵件明天上午。"
+      },
+      {
+        "id": "zh-tw_071",
+        "text": "我的經理需要審閱客戶郵件午餐前。"
+      },
+      {
+        "id": "zh-tw_072",
+        "text": "客戶需要審閱會議議程週五前。"
+      },
+      {
+        "id": "zh-tw_073",
+        "text": "我需要審閱客戶郵件今天下午。"
+      },
+      {
+        "id": "zh-tw_074",
+        "text": "我應該更新預算報告週五前。"
+      },
+      {
+        "id": "zh-tw_075",
+        "text": "客戶會寄送客戶郵件週五前。"
+      },
+      {
+        "id": "zh-tw_076",
+        "text": "客戶會寄送會議議程週五前。"
+      },
+      {
+        "id": "zh-tw_077",
+        "text": "我的經理必須完成會議議程午餐前。"
+      },
+      {
+        "id": "zh-tw_078",
+        "text": "我應該更新預算報告午餐前。"
+      },
+      {
+        "id": "zh-tw_079",
+        "text": "團隊需要審閱預算報告今天下午。"
+      },
+      {
+        "id": "zh-tw_080",
+        "text": "我們需要審閱專案計畫週五前。"
+      },
+      {
+        "id": "zh-tw_081",
+        "text": "我們應該更新客戶郵件今天下午。"
+      },
+      {
+        "id": "zh-tw_082",
+        "text": "我們必須完成客戶郵件午餐前。"
+      },
+      {
+        "id": "zh-tw_083",
+        "text": "客戶需要審閱客戶郵件今天下午。"
+      },
+      {
+        "id": "zh-tw_084",
+        "text": "團隊應該更新預算報告週五前。"
+      },
+      {
+        "id": "zh-tw_085",
+        "text": "團隊想要安排會議議程午餐前。"
+      },
+      {
+        "id": "zh-tw_086",
+        "text": "我應該更新客戶郵件今天下午。"
+      },
+      {
+        "id": "zh-tw_087",
+        "text": "我們會寄送客戶郵件今天下午。"
+      },
+      {
+        "id": "zh-tw_088",
+        "text": "團隊必須完成客戶郵件明天上午。"
+      },
+      {
+        "id": "zh-tw_089",
+        "text": "我必須完成專案計畫週五前。"
+      },
+      {
+        "id": "zh-tw_090",
+        "text": "團隊想要安排預算報告明天上午。"
+      },
+      {
+        "id": "zh-tw_091",
+        "text": "我的經理會寄送會議議程午餐前。"
+      },
+      {
+        "id": "zh-tw_092",
+        "text": "團隊應該更新專案計畫明天上午。"
+      },
+      {
+        "id": "zh-tw_093",
+        "text": "客戶會寄送預算報告午餐前。"
+      },
+      {
+        "id": "zh-tw_094",
+        "text": "團隊需要審閱專案計畫明天上午。"
+      },
+      {
+        "id": "zh-tw_095",
+        "text": "團隊需要審閱專案計畫週五前。"
+      },
+      {
+        "id": "zh-tw_096",
+        "text": "我們需要審閱會議議程週五前。"
+      },
+      {
+        "id": "zh-tw_097",
+        "text": "我們需要審閱客戶郵件週五前。"
+      },
+      {
+        "id": "zh-tw_098",
+        "text": "客戶必須完成專案計畫午餐前。"
+      },
+      {
+        "id": "zh-tw_099",
+        "text": "我的經理應該更新會議議程今天下午。"
+      },
+      {
+        "id": "zh-tw_100",
+        "text": "團隊需要審閱客戶郵件今天下午。"
+      }
+    ]
+  },
+  "es": {
+    "name": "Spanish",
+    "voice": "es-ES-ElviraNeural",
+    "phrases": [
+      {
+        "id": "es_001",
+        "text": "Mi jefe tiene que revisar el correo del cliente para el viernes."
+      },
+      {
+        "id": "es_002",
+        "text": "Tenemos que revisar la agenda de la reunión esta tarde."
+      },
+      {
+        "id": "es_003",
+        "text": "Tenemos que actualizar la agenda de la reunión esta tarde."
+      },
+      {
+        "id": "es_004",
+        "text": "El equipo tiene que revisar el plan del proyecto antes del almuerzo."
+      },
+      {
+        "id": "es_005",
+        "text": "Mi jefe tiene que revisar el plan del proyecto esta tarde."
+      },
+      {
+        "id": "es_006",
+        "text": "El equipo tiene que actualizar el plan del proyecto antes del almuerzo."
+      },
+      {
+        "id": "es_007",
+        "text": "El equipo tiene que enviar la agenda de la reunión esta tarde."
+      },
+      {
+        "id": "es_008",
+        "text": "Tenemos que terminar el correo del cliente esta tarde."
+      },
+      {
+        "id": "es_009",
+        "text": "Mi jefe tiene que enviar el informe de presupuesto para el viernes."
+      },
+      {
+        "id": "es_010",
+        "text": "Mi jefe tiene que programar el plan del proyecto antes del almuerzo."
+      },
+      {
+        "id": "es_011",
+        "text": "El equipo tiene que terminar el informe de presupuesto antes del almuerzo."
+      },
+      {
+        "id": "es_012",
+        "text": "Mi jefe tiene que actualizar el informe de presupuesto para el viernes."
+      },
+      {
+        "id": "es_013",
+        "text": "Tengo que terminar el plan del proyecto esta tarde."
+      },
+      {
+        "id": "es_014",
+        "text": "El cliente tiene que enviar el informe de presupuesto esta tarde."
+      },
+      {
+        "id": "es_015",
+        "text": "El cliente tiene que enviar el correo del cliente mañana por la mañana."
+      },
+      {
+        "id": "es_016",
+        "text": "El cliente tiene que terminar la agenda de la reunión antes del almuerzo."
+      },
+      {
+        "id": "es_017",
+        "text": "Tengo que terminar el correo del cliente mañana por la mañana."
+      },
+      {
+        "id": "es_018",
+        "text": "El equipo tiene que programar el correo del cliente para el viernes."
+      },
+      {
+        "id": "es_019",
+        "text": "Tenemos que enviar el informe de presupuesto mañana por la mañana."
+      },
+      {
+        "id": "es_020",
+        "text": "Tengo que programar el plan del proyecto para el viernes."
+      },
+      {
+        "id": "es_021",
+        "text": "Mi jefe tiene que enviar la agenda de la reunión mañana por la mañana."
+      },
+      {
+        "id": "es_022",
+        "text": "El equipo tiene que revisar el correo del cliente para el viernes."
+      },
+      {
+        "id": "es_023",
+        "text": "Mi jefe tiene que revisar el correo del cliente mañana por la mañana."
+      },
+      {
+        "id": "es_024",
+        "text": "Tengo que actualizar la agenda de la reunión para el viernes."
+      },
+      {
+        "id": "es_025",
+        "text": "Tengo que revisar el correo del cliente para el viernes."
+      },
+      {
+        "id": "es_026",
+        "text": "Tengo que actualizar el plan del proyecto antes del almuerzo."
+      },
+      {
+        "id": "es_027",
+        "text": "El equipo tiene que terminar el plan del proyecto esta tarde."
+      },
+      {
+        "id": "es_028",
+        "text": "Tengo que revisar el informe de presupuesto esta tarde."
+      },
+      {
+        "id": "es_029",
+        "text": "El cliente tiene que terminar la agenda de la reunión mañana por la mañana."
+      },
+      {
+        "id": "es_030",
+        "text": "El cliente tiene que programar el plan del proyecto antes del almuerzo."
+      },
+      {
+        "id": "es_031",
+        "text": "Mi jefe tiene que enviar el informe de presupuesto mañana por la mañana."
+      },
+      {
+        "id": "es_032",
+        "text": "Mi jefe tiene que revisar la agenda de la reunión para el viernes."
+      },
+      {
+        "id": "es_033",
+        "text": "Mi jefe tiene que revisar el plan del proyecto antes del almuerzo."
+      },
+      {
+        "id": "es_034",
+        "text": "El equipo tiene que programar el informe de presupuesto para el viernes."
+      },
+      {
+        "id": "es_035",
+        "text": "Tengo que programar el plan del proyecto mañana por la mañana."
+      },
+      {
+        "id": "es_036",
+        "text": "Tengo que terminar el informe de presupuesto esta tarde."
+      },
+      {
+        "id": "es_037",
+        "text": "El cliente tiene que terminar el informe de presupuesto esta tarde."
+      },
+      {
+        "id": "es_038",
+        "text": "Mi jefe tiene que terminar el correo del cliente antes del almuerzo."
+      },
+      {
+        "id": "es_039",
+        "text": "Tengo que programar el correo del cliente mañana por la mañana."
+      },
+      {
+        "id": "es_040",
+        "text": "Mi jefe tiene que revisar el informe de presupuesto mañana por la mañana."
+      },
+      {
+        "id": "es_041",
+        "text": "El cliente tiene que actualizar el informe de presupuesto esta tarde."
+      },
+      {
+        "id": "es_042",
+        "text": "Mi jefe tiene que programar el informe de presupuesto para el viernes."
+      },
+      {
+        "id": "es_043",
+        "text": "El equipo tiene que actualizar el plan del proyecto esta tarde."
+      },
+      {
+        "id": "es_044",
+        "text": "El cliente tiene que programar la agenda de la reunión antes del almuerzo."
+      },
+      {
+        "id": "es_045",
+        "text": "Tengo que enviar la agenda de la reunión para el viernes."
+      },
+      {
+        "id": "es_046",
+        "text": "El cliente tiene que revisar el correo del cliente mañana por la mañana."
+      },
+      {
+        "id": "es_047",
+        "text": "Mi jefe tiene que revisar el informe de presupuesto antes del almuerzo."
+      },
+      {
+        "id": "es_048",
+        "text": "Tenemos que enviar el informe de presupuesto para el viernes."
+      },
+      {
+        "id": "es_049",
+        "text": "El cliente tiene que revisar el informe de presupuesto esta tarde."
+      },
+      {
+        "id": "es_050",
+        "text": "Tenemos que programar la agenda de la reunión mañana por la mañana."
+      },
+      {
+        "id": "es_051",
+        "text": "El equipo tiene que revisar la agenda de la reunión mañana por la mañana."
+      },
+      {
+        "id": "es_052",
+        "text": "Tengo que actualizar el informe de presupuesto esta tarde."
+      },
+      {
+        "id": "es_053",
+        "text": "El cliente tiene que enviar la agenda de la reunión mañana por la mañana."
+      },
+      {
+        "id": "es_054",
+        "text": "Tengo que terminar la agenda de la reunión para el viernes."
+      },
+      {
+        "id": "es_055",
+        "text": "El equipo tiene que actualizar el informe de presupuesto mañana por la mañana."
+      },
+      {
+        "id": "es_056",
+        "text": "Tenemos que actualizar el informe de presupuesto antes del almuerzo."
+      },
+      {
+        "id": "es_057",
+        "text": "El equipo tiene que programar el plan del proyecto para el viernes."
+      },
+      {
+        "id": "es_058",
+        "text": "Tengo que actualizar el correo del cliente mañana por la mañana."
+      },
+      {
+        "id": "es_059",
+        "text": "El cliente tiene que programar el plan del proyecto esta tarde."
+      },
+      {
+        "id": "es_060",
+        "text": "El cliente tiene que revisar la agenda de la reunión mañana por la mañana."
+      },
+      {
+        "id": "es_061",
+        "text": "Tenemos que revisar el correo del cliente antes del almuerzo."
+      },
+      {
+        "id": "es_062",
+        "text": "El cliente tiene que actualizar el informe de presupuesto para el viernes."
+      },
+      {
+        "id": "es_063",
+        "text": "Tengo que enviar el correo del cliente esta tarde."
+      },
+      {
+        "id": "es_064",
+        "text": "Tengo que actualizar el correo del cliente antes del almuerzo."
+      },
+      {
+        "id": "es_065",
+        "text": "El equipo tiene que enviar el plan del proyecto antes del almuerzo."
+      },
+      {
+        "id": "es_066",
+        "text": "Tengo que enviar la agenda de la reunión mañana por la mañana."
+      },
+      {
+        "id": "es_067",
+        "text": "El cliente tiene que revisar el plan del proyecto esta tarde."
+      },
+      {
+        "id": "es_068",
+        "text": "Tenemos que programar el informe de presupuesto esta tarde."
+      },
+      {
+        "id": "es_069",
+        "text": "Tenemos que terminar la agenda de la reunión mañana por la mañana."
+      },
+      {
+        "id": "es_070",
+        "text": "Tenemos que terminar el correo del cliente mañana por la mañana."
+      },
+      {
+        "id": "es_071",
+        "text": "Mi jefe tiene que revisar el correo del cliente antes del almuerzo."
+      },
+      {
+        "id": "es_072",
+        "text": "El cliente tiene que revisar la agenda de la reunión para el viernes."
+      },
+      {
+        "id": "es_073",
+        "text": "Tengo que revisar el correo del cliente esta tarde."
+      },
+      {
+        "id": "es_074",
+        "text": "Tengo que actualizar el informe de presupuesto para el viernes."
+      },
+      {
+        "id": "es_075",
+        "text": "El cliente tiene que enviar el correo del cliente para el viernes."
+      },
+      {
+        "id": "es_076",
+        "text": "El cliente tiene que enviar la agenda de la reunión para el viernes."
+      },
+      {
+        "id": "es_077",
+        "text": "Mi jefe tiene que terminar la agenda de la reunión antes del almuerzo."
+      },
+      {
+        "id": "es_078",
+        "text": "Tengo que actualizar el informe de presupuesto antes del almuerzo."
+      },
+      {
+        "id": "es_079",
+        "text": "El equipo tiene que revisar el informe de presupuesto esta tarde."
+      },
+      {
+        "id": "es_080",
+        "text": "Tenemos que revisar el plan del proyecto para el viernes."
+      },
+      {
+        "id": "es_081",
+        "text": "Tenemos que actualizar el correo del cliente esta tarde."
+      },
+      {
+        "id": "es_082",
+        "text": "Tenemos que terminar el correo del cliente antes del almuerzo."
+      },
+      {
+        "id": "es_083",
+        "text": "El cliente tiene que revisar el correo del cliente esta tarde."
+      },
+      {
+        "id": "es_084",
+        "text": "El equipo tiene que actualizar el informe de presupuesto para el viernes."
+      },
+      {
+        "id": "es_085",
+        "text": "El equipo tiene que programar la agenda de la reunión antes del almuerzo."
+      },
+      {
+        "id": "es_086",
+        "text": "Tengo que actualizar el correo del cliente esta tarde."
+      },
+      {
+        "id": "es_087",
+        "text": "Tenemos que enviar el correo del cliente esta tarde."
+      },
+      {
+        "id": "es_088",
+        "text": "El equipo tiene que terminar el correo del cliente mañana por la mañana."
+      },
+      {
+        "id": "es_089",
+        "text": "Tengo que terminar el plan del proyecto para el viernes."
+      },
+      {
+        "id": "es_090",
+        "text": "El equipo tiene que programar el informe de presupuesto mañana por la mañana."
+      },
+      {
+        "id": "es_091",
+        "text": "Mi jefe tiene que enviar la agenda de la reunión antes del almuerzo."
+      },
+      {
+        "id": "es_092",
+        "text": "El equipo tiene que actualizar el plan del proyecto mañana por la mañana."
+      },
+      {
+        "id": "es_093",
+        "text": "El cliente tiene que enviar el informe de presupuesto antes del almuerzo."
+      },
+      {
+        "id": "es_094",
+        "text": "El equipo tiene que revisar el plan del proyecto mañana por la mañana."
+      },
+      {
+        "id": "es_095",
+        "text": "El equipo tiene que revisar el plan del proyecto para el viernes."
+      },
+      {
+        "id": "es_096",
+        "text": "Tenemos que revisar la agenda de la reunión para el viernes."
+      },
+      {
+        "id": "es_097",
+        "text": "Tenemos que revisar el correo del cliente para el viernes."
+      },
+      {
+        "id": "es_098",
+        "text": "El cliente tiene que terminar el plan del proyecto antes del almuerzo."
+      },
+      {
+        "id": "es_099",
+        "text": "Mi jefe tiene que actualizar la agenda de la reunión esta tarde."
+      },
+      {
+        "id": "es_100",
+        "text": "El equipo tiene que revisar el correo del cliente esta tarde."
+      }
+    ]
+  },
+  "tl": {
+    "name": "Tagalog",
+    "voice": "fil-PH-BlessicaNeural",
+    "phrases": [
+      {
+        "id": "tl_001",
+        "text": "Kailangan ng aking boss na suriin ang email ng kliyente bago matapos ang Biyernes."
+      },
+      {
+        "id": "tl_002",
+        "text": "Kailangan nating suriin ang agenda ng pulong ngayong hapon."
+      },
+      {
+        "id": "tl_003",
+        "text": "Kailangan nating i-update ang agenda ng pulong ngayong hapon."
+      },
+      {
+        "id": "tl_004",
+        "text": "Kailangan ng koponan na suriin ang plano ng proyekto bago magtanghalian."
+      },
+      {
+        "id": "tl_005",
+        "text": "Kailangan ng aking boss na suriin ang plano ng proyekto ngayong hapon."
+      },
+      {
+        "id": "tl_006",
+        "text": "Kailangan ng koponan na i-update ang plano ng proyekto bago magtanghalian."
+      },
+      {
+        "id": "tl_007",
+        "text": "Kailangan ng koponan na ipadala ang agenda ng pulong ngayong hapon."
+      },
+      {
+        "id": "tl_008",
+        "text": "Kailangan nating tapusin ang email ng kliyente ngayong hapon."
+      },
+      {
+        "id": "tl_009",
+        "text": "Kailangan ng aking boss na ipadala ang ulat ng badyet bago matapos ang Biyernes."
+      },
+      {
+        "id": "tl_010",
+        "text": "Kailangan ng aking boss na ayusin ang plano ng proyekto bago magtanghalian."
+      },
+      {
+        "id": "tl_011",
+        "text": "Kailangan ng koponan na tapusin ang ulat ng badyet bago magtanghalian."
+      },
+      {
+        "id": "tl_012",
+        "text": "Kailangan ng aking boss na i-update ang ulat ng badyet bago matapos ang Biyernes."
+      },
+      {
+        "id": "tl_013",
+        "text": "Kailangan kong tapusin ang plano ng proyekto ngayong hapon."
+      },
+      {
+        "id": "tl_014",
+        "text": "Kailangan ng kliyente na ipadala ang ulat ng badyet ngayong hapon."
+      },
+      {
+        "id": "tl_015",
+        "text": "Kailangan ng kliyente na ipadala ang email ng kliyente bukas ng umaga."
+      },
+      {
+        "id": "tl_016",
+        "text": "Kailangan ng kliyente na tapusin ang agenda ng pulong bago magtanghalian."
+      },
+      {
+        "id": "tl_017",
+        "text": "Kailangan kong tapusin ang email ng kliyente bukas ng umaga."
+      },
+      {
+        "id": "tl_018",
+        "text": "Kailangan ng koponan na ayusin ang email ng kliyente bago matapos ang Biyernes."
+      },
+      {
+        "id": "tl_019",
+        "text": "Kailangan nating ipadala ang ulat ng badyet bukas ng umaga."
+      },
+      {
+        "id": "tl_020",
+        "text": "Kailangan kong ayusin ang plano ng proyekto bago matapos ang Biyernes."
+      },
+      {
+        "id": "tl_021",
+        "text": "Kailangan ng aking boss na ipadala ang agenda ng pulong bukas ng umaga."
+      },
+      {
+        "id": "tl_022",
+        "text": "Kailangan ng koponan na suriin ang email ng kliyente bago matapos ang Biyernes."
+      },
+      {
+        "id": "tl_023",
+        "text": "Kailangan ng aking boss na suriin ang email ng kliyente bukas ng umaga."
+      },
+      {
+        "id": "tl_024",
+        "text": "Kailangan kong i-update ang agenda ng pulong bago matapos ang Biyernes."
+      },
+      {
+        "id": "tl_025",
+        "text": "Kailangan kong suriin ang email ng kliyente bago matapos ang Biyernes."
+      },
+      {
+        "id": "tl_026",
+        "text": "Kailangan kong i-update ang plano ng proyekto bago magtanghalian."
+      },
+      {
+        "id": "tl_027",
+        "text": "Kailangan ng koponan na tapusin ang plano ng proyekto ngayong hapon."
+      },
+      {
+        "id": "tl_028",
+        "text": "Kailangan kong suriin ang ulat ng badyet ngayong hapon."
+      },
+      {
+        "id": "tl_029",
+        "text": "Kailangan ng kliyente na tapusin ang agenda ng pulong bukas ng umaga."
+      },
+      {
+        "id": "tl_030",
+        "text": "Kailangan ng kliyente na ayusin ang plano ng proyekto bago magtanghalian."
+      },
+      {
+        "id": "tl_031",
+        "text": "Kailangan ng aking boss na ipadala ang ulat ng badyet bukas ng umaga."
+      },
+      {
+        "id": "tl_032",
+        "text": "Kailangan ng aking boss na suriin ang agenda ng pulong bago matapos ang Biyernes."
+      },
+      {
+        "id": "tl_033",
+        "text": "Kailangan ng aking boss na suriin ang plano ng proyekto bago magtanghalian."
+      },
+      {
+        "id": "tl_034",
+        "text": "Kailangan ng koponan na ayusin ang ulat ng badyet bago matapos ang Biyernes."
+      },
+      {
+        "id": "tl_035",
+        "text": "Kailangan kong ayusin ang plano ng proyekto bukas ng umaga."
+      },
+      {
+        "id": "tl_036",
+        "text": "Kailangan kong tapusin ang ulat ng badyet ngayong hapon."
+      },
+      {
+        "id": "tl_037",
+        "text": "Kailangan ng kliyente na tapusin ang ulat ng badyet ngayong hapon."
+      },
+      {
+        "id": "tl_038",
+        "text": "Kailangan ng aking boss na tapusin ang email ng kliyente bago magtanghalian."
+      },
+      {
+        "id": "tl_039",
+        "text": "Kailangan kong ayusin ang email ng kliyente bukas ng umaga."
+      },
+      {
+        "id": "tl_040",
+        "text": "Kailangan ng aking boss na suriin ang ulat ng badyet bukas ng umaga."
+      },
+      {
+        "id": "tl_041",
+        "text": "Kailangan ng kliyente na i-update ang ulat ng badyet ngayong hapon."
+      },
+      {
+        "id": "tl_042",
+        "text": "Kailangan ng aking boss na ayusin ang ulat ng badyet bago matapos ang Biyernes."
+      },
+      {
+        "id": "tl_043",
+        "text": "Kailangan ng koponan na i-update ang plano ng proyekto ngayong hapon."
+      },
+      {
+        "id": "tl_044",
+        "text": "Kailangan ng kliyente na ayusin ang agenda ng pulong bago magtanghalian."
+      },
+      {
+        "id": "tl_045",
+        "text": "Kailangan kong ipadala ang agenda ng pulong bago matapos ang Biyernes."
+      },
+      {
+        "id": "tl_046",
+        "text": "Kailangan ng kliyente na suriin ang email ng kliyente bukas ng umaga."
+      },
+      {
+        "id": "tl_047",
+        "text": "Kailangan ng aking boss na suriin ang ulat ng badyet bago magtanghalian."
+      },
+      {
+        "id": "tl_048",
+        "text": "Kailangan nating ipadala ang ulat ng badyet bago matapos ang Biyernes."
+      },
+      {
+        "id": "tl_049",
+        "text": "Kailangan ng kliyente na suriin ang ulat ng badyet ngayong hapon."
+      },
+      {
+        "id": "tl_050",
+        "text": "Kailangan nating ayusin ang agenda ng pulong bukas ng umaga."
+      },
+      {
+        "id": "tl_051",
+        "text": "Kailangan ng koponan na suriin ang agenda ng pulong bukas ng umaga."
+      },
+      {
+        "id": "tl_052",
+        "text": "Kailangan kong i-update ang ulat ng badyet ngayong hapon."
+      },
+      {
+        "id": "tl_053",
+        "text": "Kailangan ng kliyente na ipadala ang agenda ng pulong bukas ng umaga."
+      },
+      {
+        "id": "tl_054",
+        "text": "Kailangan kong tapusin ang agenda ng pulong bago matapos ang Biyernes."
+      },
+      {
+        "id": "tl_055",
+        "text": "Kailangan ng koponan na i-update ang ulat ng badyet bukas ng umaga."
+      },
+      {
+        "id": "tl_056",
+        "text": "Kailangan nating i-update ang ulat ng badyet bago magtanghalian."
+      },
+      {
+        "id": "tl_057",
+        "text": "Kailangan ng koponan na ayusin ang plano ng proyekto bago matapos ang Biyernes."
+      },
+      {
+        "id": "tl_058",
+        "text": "Kailangan kong i-update ang email ng kliyente bukas ng umaga."
+      },
+      {
+        "id": "tl_059",
+        "text": "Kailangan ng kliyente na ayusin ang plano ng proyekto ngayong hapon."
+      },
+      {
+        "id": "tl_060",
+        "text": "Kailangan ng kliyente na suriin ang agenda ng pulong bukas ng umaga."
+      },
+      {
+        "id": "tl_061",
+        "text": "Kailangan nating suriin ang email ng kliyente bago magtanghalian."
+      },
+      {
+        "id": "tl_062",
+        "text": "Kailangan ng kliyente na i-update ang ulat ng badyet bago matapos ang Biyernes."
+      },
+      {
+        "id": "tl_063",
+        "text": "Kailangan kong ipadala ang email ng kliyente ngayong hapon."
+      },
+      {
+        "id": "tl_064",
+        "text": "Kailangan kong i-update ang email ng kliyente bago magtanghalian."
+      },
+      {
+        "id": "tl_065",
+        "text": "Kailangan ng koponan na ipadala ang plano ng proyekto bago magtanghalian."
+      },
+      {
+        "id": "tl_066",
+        "text": "Kailangan kong ipadala ang agenda ng pulong bukas ng umaga."
+      },
+      {
+        "id": "tl_067",
+        "text": "Kailangan ng kliyente na suriin ang plano ng proyekto ngayong hapon."
+      },
+      {
+        "id": "tl_068",
+        "text": "Kailangan nating ayusin ang ulat ng badyet ngayong hapon."
+      },
+      {
+        "id": "tl_069",
+        "text": "Kailangan nating tapusin ang agenda ng pulong bukas ng umaga."
+      },
+      {
+        "id": "tl_070",
+        "text": "Kailangan nating tapusin ang email ng kliyente bukas ng umaga."
+      },
+      {
+        "id": "tl_071",
+        "text": "Kailangan ng aking boss na suriin ang email ng kliyente bago magtanghalian."
+      },
+      {
+        "id": "tl_072",
+        "text": "Kailangan ng kliyente na suriin ang agenda ng pulong bago matapos ang Biyernes."
+      },
+      {
+        "id": "tl_073",
+        "text": "Kailangan kong suriin ang email ng kliyente ngayong hapon."
+      },
+      {
+        "id": "tl_074",
+        "text": "Kailangan kong i-update ang ulat ng badyet bago matapos ang Biyernes."
+      },
+      {
+        "id": "tl_075",
+        "text": "Kailangan ng kliyente na ipadala ang email ng kliyente bago matapos ang Biyernes."
+      },
+      {
+        "id": "tl_076",
+        "text": "Kailangan ng kliyente na ipadala ang agenda ng pulong bago matapos ang Biyernes."
+      },
+      {
+        "id": "tl_077",
+        "text": "Kailangan ng aking boss na tapusin ang agenda ng pulong bago magtanghalian."
+      },
+      {
+        "id": "tl_078",
+        "text": "Kailangan kong i-update ang ulat ng badyet bago magtanghalian."
+      },
+      {
+        "id": "tl_079",
+        "text": "Kailangan ng koponan na suriin ang ulat ng badyet ngayong hapon."
+      },
+      {
+        "id": "tl_080",
+        "text": "Kailangan nating suriin ang plano ng proyekto bago matapos ang Biyernes."
+      },
+      {
+        "id": "tl_081",
+        "text": "Kailangan nating i-update ang email ng kliyente ngayong hapon."
+      },
+      {
+        "id": "tl_082",
+        "text": "Kailangan nating tapusin ang email ng kliyente bago magtanghalian."
+      },
+      {
+        "id": "tl_083",
+        "text": "Kailangan ng kliyente na suriin ang email ng kliyente ngayong hapon."
+      },
+      {
+        "id": "tl_084",
+        "text": "Kailangan ng koponan na i-update ang ulat ng badyet bago matapos ang Biyernes."
+      },
+      {
+        "id": "tl_085",
+        "text": "Kailangan ng koponan na ayusin ang agenda ng pulong bago magtanghalian."
+      },
+      {
+        "id": "tl_086",
+        "text": "Kailangan kong i-update ang email ng kliyente ngayong hapon."
+      },
+      {
+        "id": "tl_087",
+        "text": "Kailangan nating ipadala ang email ng kliyente ngayong hapon."
+      },
+      {
+        "id": "tl_088",
+        "text": "Kailangan ng koponan na tapusin ang email ng kliyente bukas ng umaga."
+      },
+      {
+        "id": "tl_089",
+        "text": "Kailangan kong tapusin ang plano ng proyekto bago matapos ang Biyernes."
+      },
+      {
+        "id": "tl_090",
+        "text": "Kailangan ng koponan na ayusin ang ulat ng badyet bukas ng umaga."
+      },
+      {
+        "id": "tl_091",
+        "text": "Kailangan ng aking boss na ipadala ang agenda ng pulong bago magtanghalian."
+      },
+      {
+        "id": "tl_092",
+        "text": "Kailangan ng koponan na i-update ang plano ng proyekto bukas ng umaga."
+      },
+      {
+        "id": "tl_093",
+        "text": "Kailangan ng kliyente na ipadala ang ulat ng badyet bago magtanghalian."
+      },
+      {
+        "id": "tl_094",
+        "text": "Kailangan ng koponan na suriin ang plano ng proyekto bukas ng umaga."
+      },
+      {
+        "id": "tl_095",
+        "text": "Kailangan ng koponan na suriin ang plano ng proyekto bago matapos ang Biyernes."
+      },
+      {
+        "id": "tl_096",
+        "text": "Kailangan nating suriin ang agenda ng pulong bago matapos ang Biyernes."
+      },
+      {
+        "id": "tl_097",
+        "text": "Kailangan nating suriin ang email ng kliyente bago matapos ang Biyernes."
+      },
+      {
+        "id": "tl_098",
+        "text": "Kailangan ng kliyente na tapusin ang plano ng proyekto bago magtanghalian."
+      },
+      {
+        "id": "tl_099",
+        "text": "Kailangan ng aking boss na i-update ang agenda ng pulong ngayong hapon."
+      },
+      {
+        "id": "tl_100",
+        "text": "Kailangan ng koponan na suriin ang email ng kliyente ngayong hapon."
+      }
+    ]
+  }
+}

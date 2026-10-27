@@ -1,0 +1,1301 @@
+id,language,model,reference,hypothesis
+en_001,en,Whisper Large v3 Turbo,My manager need to review the client email by Friday.,My manager need to review the client email by Friday.
+en_001,en,Whisper Medium,My manager need to review the client email by Friday.,My manager need to review the client email by Friday.
+en_002,en,Whisper Large v3 Turbo,We need to review the meeting agenda this afternoon.,We need to review the meeting agenda this afternoon.
+en_002,en,Whisper Medium,We need to review the meeting agenda this afternoon.,We need to review the meeting agenda this afternoon.
+en_003,en,Whisper Large v3 Turbo,We should update the meeting agenda this afternoon.,We should update the meeting agenda this afternoon.
+en_003,en,Whisper Medium,We should update the meeting agenda this afternoon.,We should update the meeting agenda this afternoon.
+en_004,en,Whisper Large v3 Turbo,The team need to review the project plan before lunch.,The team need to review the project plan before lunch.
+en_004,en,Whisper Medium,The team need to review the project plan before lunch.,The team need to review the project plan before lunch.
+en_005,en,Whisper Large v3 Turbo,My manager need to review the project plan this afternoon.,My manager need to review the project plan this afternoon.
+en_005,en,Whisper Medium,My manager need to review the project plan this afternoon.,My manager need to review the project plan this afternoon.
+en_006,en,Whisper Large v3 Turbo,The team should update the project plan before lunch.,The team should update the project plan before lunch.
+en_006,en,Whisper Medium,The team should update the project plan before lunch.,The team should update the project plan before lunch.
+en_007,en,Whisper Large v3 Turbo,The team will send the meeting agenda this afternoon.,The team will send the meeting agenda this afternoon.
+en_007,en,Whisper Medium,The team will send the meeting agenda this afternoon.,The team will send the meeting agenda this afternoon.
+en_008,en,Whisper Large v3 Turbo,We have to finish the client email this afternoon.,We have to finish the client email this afternoon.
+en_008,en,Whisper Medium,We have to finish the client email this afternoon.,We have to finish the client email this afternoon.
+en_009,en,Whisper Large v3 Turbo,My manager will send the budget report by Friday.,My manager will send the budget report by Friday.
+en_009,en,Whisper Medium,My manager will send the budget report by Friday.,My manager will send the budget report by Friday.
+en_010,en,Whisper Large v3 Turbo,My manager want to schedule the project plan before lunch.,My manager want to schedule the project plan before lunch.
+en_010,en,Whisper Medium,My manager want to schedule the project plan before lunch.,My manager want to schedule the project plan before lunch.
+en_011,en,Whisper Large v3 Turbo,The team have to finish the budget report before lunch.,The team have to finish the budget report before lunch.
+en_011,en,Whisper Medium,The team have to finish the budget report before lunch.,The team have to finish the budget report before lunch.
+en_012,en,Whisper Large v3 Turbo,My manager should update the budget report by Friday.,My manager should update the budget report by Friday.
+en_012,en,Whisper Medium,My manager should update the budget report by Friday.,My manager should update the budget report by Friday.
+en_013,en,Whisper Large v3 Turbo,I have to finish the project plan this afternoon.,I have to finish the project plan this afternoon.
+en_013,en,Whisper Medium,I have to finish the project plan this afternoon.,I have to finish the project plan this afternoon.
+en_014,en,Whisper Large v3 Turbo,The client will send the budget report this afternoon.,The client will send the budget report this afternoon.
+en_014,en,Whisper Medium,The client will send the budget report this afternoon.,The client will send the budget report this afternoon.
+en_015,en,Whisper Large v3 Turbo,The client will send the client email tomorrow morning.,The client will send the client email tomorrow morning.
+en_015,en,Whisper Medium,The client will send the client email tomorrow morning.,The client will send the client email tomorrow morning.
+en_016,en,Whisper Large v3 Turbo,The client have to finish the meeting agenda before lunch.,The client have to finish the meeting agenda before lunch.
+en_016,en,Whisper Medium,The client have to finish the meeting agenda before lunch.,The client have to finish the meeting agenda before lunch.
+en_017,en,Whisper Large v3 Turbo,I have to finish the client email tomorrow morning.,I have to finish the client email tomorrow morning.
+en_017,en,Whisper Medium,I have to finish the client email tomorrow morning.,I have to finish the client email tomorrow morning.
+en_018,en,Whisper Large v3 Turbo,The team want to schedule the client email by Friday.,The team want to schedule the client email by Friday.
+en_018,en,Whisper Medium,The team want to schedule the client email by Friday.,The team want to schedule the client email by Friday.
+en_019,en,Whisper Large v3 Turbo,We will send the budget report tomorrow morning.,We will send the budget report tomorrow morning.
+en_019,en,Whisper Medium,We will send the budget report tomorrow morning.,We will send the budget report tomorrow morning.
+en_020,en,Whisper Large v3 Turbo,I want to schedule the project plan by Friday.,I want to schedule the project plan by Friday.
+en_020,en,Whisper Medium,I want to schedule the project plan by Friday.,I want to schedule the project plan by Friday.
+en_021,en,Whisper Large v3 Turbo,My manager will send the meeting agenda tomorrow morning.,My manager will send the meeting agenda tomorrow morning.
+en_021,en,Whisper Medium,My manager will send the meeting agenda tomorrow morning.,My manager will send the meeting agenda tomorrow morning.
+en_022,en,Whisper Large v3 Turbo,The team need to review the client email by Friday.,The teen need to review the client email by Friday.
+en_022,en,Whisper Medium,The team need to review the client email by Friday.,The team need to review the client email by Friday.
+en_023,en,Whisper Large v3 Turbo,My manager need to review the client email tomorrow morning.,My manager need to review the client email tomorrow morning.
+en_023,en,Whisper Medium,My manager need to review the client email tomorrow morning.,My manager need to review the client email tomorrow morning.
+en_024,en,Whisper Large v3 Turbo,I should update the meeting agenda by Friday.,I should update the meeting agenda by Friday.
+en_024,en,Whisper Medium,I should update the meeting agenda by Friday.,I should update the meeting agenda by Friday.
+en_025,en,Whisper Large v3 Turbo,I need to review the client email by Friday.,I need to review the client email by Friday.
+en_025,en,Whisper Medium,I need to review the client email by Friday.,I need to review the client email by Friday.
+en_026,en,Whisper Large v3 Turbo,I should update the project plan before lunch.,I should update the project plan before lunch.
+en_026,en,Whisper Medium,I should update the project plan before lunch.,I should update the project plan before lunch.
+en_027,en,Whisper Large v3 Turbo,The team have to finish the project plan this afternoon.,The team have to finish the project plan this afternoon.
+en_027,en,Whisper Medium,The team have to finish the project plan this afternoon.,The team have to finish the project plan this afternoon.
+en_028,en,Whisper Large v3 Turbo,I need to review the budget report this afternoon.,I need to review the budget report this afternoon.
+en_028,en,Whisper Medium,I need to review the budget report this afternoon.,I need to review the budget report this afternoon.
+en_029,en,Whisper Large v3 Turbo,The client have to finish the meeting agenda tomorrow morning.,The client have to finish the meeting agenda tomorrow morning.
+en_029,en,Whisper Medium,The client have to finish the meeting agenda tomorrow morning.,The client have to finish the meeting agenda tomorrow morning.
+en_030,en,Whisper Large v3 Turbo,The client want to schedule the project plan before lunch.,The client want to schedule the project plan before lunch.
+en_030,en,Whisper Medium,The client want to schedule the project plan before lunch.,The client want to schedule the project plan before lunch.
+en_031,en,Whisper Large v3 Turbo,My manager will send the budget report tomorrow morning.,My manager will send the budget report tomorrow morning.
+en_031,en,Whisper Medium,My manager will send the budget report tomorrow morning.,My manager will send the budget report tomorrow morning.
+en_032,en,Whisper Large v3 Turbo,My manager need to review the meeting agenda by Friday.,My manager need to review the meeting agenda by Friday.
+en_032,en,Whisper Medium,My manager need to review the meeting agenda by Friday.,My manager need to review the meeting agenda by Friday.
+en_033,en,Whisper Large v3 Turbo,My manager need to review the project plan before lunch.,My manager need to review the project plan before lunch.
+en_033,en,Whisper Medium,My manager need to review the project plan before lunch.,My manager need to review the project plan before lunch.
+en_034,en,Whisper Large v3 Turbo,The team want to schedule the budget report by Friday.,The team want to schedule the budget report by Friday.
+en_034,en,Whisper Medium,The team want to schedule the budget report by Friday.,The team want to schedule the budget report by Friday.
+en_035,en,Whisper Large v3 Turbo,I want to schedule the project plan tomorrow morning.,I want to schedule the project plan tomorrow morning.
+en_035,en,Whisper Medium,I want to schedule the project plan tomorrow morning.,I want to schedule the project plan tomorrow morning.
+en_036,en,Whisper Large v3 Turbo,I have to finish the budget report this afternoon.,I have to finish the budget report this afternoon.
+en_036,en,Whisper Medium,I have to finish the budget report this afternoon.,I have to finish the budget report this afternoon.
+en_037,en,Whisper Large v3 Turbo,The client have to finish the budget report this afternoon.,The client have to finish the budget report this afternoon.
+en_037,en,Whisper Medium,The client have to finish the budget report this afternoon.,The client have to finish the budget report this afternoon.
+en_038,en,Whisper Large v3 Turbo,My manager have to finish the client email before lunch.,My manager have to finish the client email before lunch.
+en_038,en,Whisper Medium,My manager have to finish the client email before lunch.,My manager have to finish the client email before lunch.
+en_039,en,Whisper Large v3 Turbo,I want to schedule the client email tomorrow morning.,I want to schedule the client email tomorrow morning.
+en_039,en,Whisper Medium,I want to schedule the client email tomorrow morning.,I want to schedule the client email tomorrow morning.
+en_040,en,Whisper Large v3 Turbo,My manager need to review the budget report tomorrow morning.,My manager need to review the budget report tomorrow morning.
+en_040,en,Whisper Medium,My manager need to review the budget report tomorrow morning.,My manager need to review the budget report tomorrow morning.
+en_041,en,Whisper Large v3 Turbo,The client should update the budget report this afternoon.,The client should update the budget report this afternoon.
+en_041,en,Whisper Medium,The client should update the budget report this afternoon.,The client should update the budget report this afternoon.
+en_042,en,Whisper Large v3 Turbo,My manager want to schedule the budget report by Friday.,My manager want to schedule the budget report by Friday.
+en_042,en,Whisper Medium,My manager want to schedule the budget report by Friday.,My manager want to schedule the budget report by Friday.
+en_043,en,Whisper Large v3 Turbo,The team should update the project plan this afternoon.,The team should update the project plan this afternoon.
+en_043,en,Whisper Medium,The team should update the project plan this afternoon.,The team should update the project plan this afternoon.
+en_044,en,Whisper Large v3 Turbo,The client want to schedule the meeting agenda before lunch.,The client want to schedule the meeting agenda before lunch.
+en_044,en,Whisper Medium,The client want to schedule the meeting agenda before lunch.,The client want to schedule the meeting agenda before lunch.
+en_045,en,Whisper Large v3 Turbo,I will send the meeting agenda by Friday.,I will send the meeting agenda by Friday.
+en_045,en,Whisper Medium,I will send the meeting agenda by Friday.,I will send the meeting agenda by Friday.
+en_046,en,Whisper Large v3 Turbo,The client need to review the client email tomorrow morning.,The client need to review the client email tomorrow morning.
+en_046,en,Whisper Medium,The client need to review the client email tomorrow morning.,The client need to review the client email tomorrow morning.
+en_047,en,Whisper Large v3 Turbo,My manager need to review the budget report before lunch.,My manager need to review the budget report before lunch.
+en_047,en,Whisper Medium,My manager need to review the budget report before lunch.,My manager need to review the budget report before lunch.
+en_048,en,Whisper Large v3 Turbo,We will send the budget report by Friday.,We will send the budget report by Friday.
+en_048,en,Whisper Medium,We will send the budget report by Friday.,We will send the budget report by Friday.
+en_049,en,Whisper Large v3 Turbo,The client need to review the budget report this afternoon.,The client need to review the budget report this afternoon.
+en_049,en,Whisper Medium,The client need to review the budget report this afternoon.,The client need to review the budget report this afternoon.
+en_050,en,Whisper Large v3 Turbo,We want to schedule the meeting agenda tomorrow morning.,We want to schedule the meeting agenda tomorrow morning.
+en_050,en,Whisper Medium,We want to schedule the meeting agenda tomorrow morning.,We want to schedule the meeting agenda tomorrow morning.
+en_051,en,Whisper Large v3 Turbo,The team need to review the meeting agenda tomorrow morning.,The team need to review the meeting agenda tomorrow morning.
+en_051,en,Whisper Medium,The team need to review the meeting agenda tomorrow morning.,The teen need to review the meeting agenda tomorrow morning
+en_052,en,Whisper Large v3 Turbo,I should update the budget report this afternoon.,I should update the budget report this afternoon.
+en_052,en,Whisper Medium,I should update the budget report this afternoon.,I should update the budget report this afternoon.
+en_053,en,Whisper Large v3 Turbo,The client will send the meeting agenda tomorrow morning.,The client will send the meeting agenda tomorrow morning.
+en_053,en,Whisper Medium,The client will send the meeting agenda tomorrow morning.,The client will send the meeting agenda tomorrow morning.
+en_054,en,Whisper Large v3 Turbo,I have to finish the meeting agenda by Friday.,I have to finish the meeting agenda by Friday.
+en_054,en,Whisper Medium,I have to finish the meeting agenda by Friday.,I have to finish the meeting agenda by Friday.
+en_055,en,Whisper Large v3 Turbo,The team should update the budget report tomorrow morning.,The team should update the budget report tomorrow morning.
+en_055,en,Whisper Medium,The team should update the budget report tomorrow morning.,The team should update the budget report tomorrow morning.
+en_056,en,Whisper Large v3 Turbo,We should update the budget report before lunch.,We should update the budget report before lunch.
+en_056,en,Whisper Medium,We should update the budget report before lunch.,We should update the budget report before lunch.
+en_057,en,Whisper Large v3 Turbo,The team want to schedule the project plan by Friday.,The team want to schedule the project plan by Friday.
+en_057,en,Whisper Medium,The team want to schedule the project plan by Friday.,The team want to schedule the project plan by Friday.
+en_058,en,Whisper Large v3 Turbo,I should update the client email tomorrow morning.,I should update the client email tomorrow morning.
+en_058,en,Whisper Medium,I should update the client email tomorrow morning.,I should update the client email tomorrow morning.
+en_059,en,Whisper Large v3 Turbo,The client want to schedule the project plan this afternoon.,The client want to schedule the project plan this afternoon.
+en_059,en,Whisper Medium,The client want to schedule the project plan this afternoon.,The client want to schedule the project plan this afternoon.
+en_060,en,Whisper Large v3 Turbo,The client need to review the meeting agenda tomorrow morning.,The client need to review the meeting agenda tomorrow morning.
+en_060,en,Whisper Medium,The client need to review the meeting agenda tomorrow morning.,The client need to review the meeting agenda tomorrow morning.
+en_061,en,Whisper Large v3 Turbo,We need to review the client email before lunch.,We need to review the client email before lunch.
+en_061,en,Whisper Medium,We need to review the client email before lunch.,We need to review the client email before lunch.
+en_062,en,Whisper Large v3 Turbo,The client should update the budget report by Friday.,The client should update the budget report by Friday.
+en_062,en,Whisper Medium,The client should update the budget report by Friday.,The client should update the budget report by Friday.
+en_063,en,Whisper Large v3 Turbo,I will send the client email this afternoon.,I will send the client email this afternoon.
+en_063,en,Whisper Medium,I will send the client email this afternoon.,I will send the client email this afternoon.
+en_064,en,Whisper Large v3 Turbo,I should update the client email before lunch.,I should update the client email before lunch.
+en_064,en,Whisper Medium,I should update the client email before lunch.,I should update the client email before lunch.
+en_065,en,Whisper Large v3 Turbo,The team will send the project plan before lunch.,The team will send the project plan before lunch.
+en_065,en,Whisper Medium,The team will send the project plan before lunch.,The team will send the project plan before lunch.
+en_066,en,Whisper Large v3 Turbo,I will send the meeting agenda tomorrow morning.,I will send the meeting agenda tomorrow morning.
+en_066,en,Whisper Medium,I will send the meeting agenda tomorrow morning.,I will send the meeting agenda tomorrow morning.
+en_067,en,Whisper Large v3 Turbo,The client need to review the project plan this afternoon.,The client need to review the project plan this afternoon.
+en_067,en,Whisper Medium,The client need to review the project plan this afternoon.,The client need to review the project plan this afternoon.
+en_068,en,Whisper Large v3 Turbo,We want to schedule the budget report this afternoon.,We want to schedule the budget report this afternoon.
+en_068,en,Whisper Medium,We want to schedule the budget report this afternoon.,We want to schedule the budget report this afternoon.
+en_069,en,Whisper Large v3 Turbo,We have to finish the meeting agenda tomorrow morning.,We have to finish the meeting agenda tomorrow morning.
+en_069,en,Whisper Medium,We have to finish the meeting agenda tomorrow morning.,We have to finish the meeting agenda tomorrow morning.
+en_070,en,Whisper Large v3 Turbo,We have to finish the client email tomorrow morning.,We have to finish the client email tomorrow morning.
+en_070,en,Whisper Medium,We have to finish the client email tomorrow morning.,We have to finish the client email tomorrow morning.
+en_071,en,Whisper Large v3 Turbo,My manager need to review the client email before lunch.,My manager need to review the client email before lunch.
+en_071,en,Whisper Medium,My manager need to review the client email before lunch.,My manager need to review the client email before lunch.
+en_072,en,Whisper Large v3 Turbo,The client need to review the meeting agenda by Friday.,The client need to review the meeting agenda by Friday.
+en_072,en,Whisper Medium,The client need to review the meeting agenda by Friday.,The client need to review the meeting agenda by Friday.
+en_073,en,Whisper Large v3 Turbo,I need to review the client email this afternoon.,I need to review the client email this afternoon.
+en_073,en,Whisper Medium,I need to review the client email this afternoon.,I need to review the client email this afternoon.
+en_074,en,Whisper Large v3 Turbo,I should update the budget report by Friday.,I should update the budget report by Friday.
+en_074,en,Whisper Medium,I should update the budget report by Friday.,I should update the budget report by Friday.
+en_075,en,Whisper Large v3 Turbo,The client will send the client email by Friday.,The client will send the client email by Friday.
+en_075,en,Whisper Medium,The client will send the client email by Friday.,The client will send the client email by Friday.
+en_076,en,Whisper Large v3 Turbo,The client will send the meeting agenda by Friday.,The client will send the meeting agenda by Friday.
+en_076,en,Whisper Medium,The client will send the meeting agenda by Friday.,The client will send the meeting agenda by Friday.
+en_077,en,Whisper Large v3 Turbo,My manager have to finish the meeting agenda before lunch.,My manager have to finish the meeting agenda before lunch.
+en_077,en,Whisper Medium,My manager have to finish the meeting agenda before lunch.,My manager have to finish the meeting agenda before lunch.
+en_078,en,Whisper Large v3 Turbo,I should update the budget report before lunch.,I should update the budget report before lunch.
+en_078,en,Whisper Medium,I should update the budget report before lunch.,I should update the budget report before lunch.
+en_079,en,Whisper Large v3 Turbo,The team need to review the budget report this afternoon.,The team need to review the budget report this afternoon.
+en_079,en,Whisper Medium,The team need to review the budget report this afternoon.,The team need to review the budget report this afternoon.
+en_080,en,Whisper Large v3 Turbo,We need to review the project plan by Friday.,We need to review the project plan by Friday.
+en_080,en,Whisper Medium,We need to review the project plan by Friday.,We need to review the project plan by Friday.
+en_081,en,Whisper Large v3 Turbo,We should update the client email this afternoon.,We should update the client email this afternoon.
+en_081,en,Whisper Medium,We should update the client email this afternoon.,We should update the client email this afternoon.
+en_082,en,Whisper Large v3 Turbo,We have to finish the client email before lunch.,We have to finish the client email before lunch.
+en_082,en,Whisper Medium,We have to finish the client email before lunch.,We have to finish the client email before lunch.
+en_083,en,Whisper Large v3 Turbo,The client need to review the client email this afternoon.,The client need to review the client email this afternoon.
+en_083,en,Whisper Medium,The client need to review the client email this afternoon.,The client need to review the client email this afternoon.
+en_084,en,Whisper Large v3 Turbo,The team should update the budget report by Friday.,The team should update the budget report by Friday.
+en_084,en,Whisper Medium,The team should update the budget report by Friday.,The team should update the budget report by Friday.
+en_085,en,Whisper Large v3 Turbo,The team want to schedule the meeting agenda before lunch.,The team want to schedule the meeting agenda before lunch.
+en_085,en,Whisper Medium,The team want to schedule the meeting agenda before lunch.,The team want to schedule the meeting agenda before lunch.
+en_086,en,Whisper Large v3 Turbo,I should update the client email this afternoon.,I should update the client email this afternoon.
+en_086,en,Whisper Medium,I should update the client email this afternoon.,I should update the client email this afternoon.
+en_087,en,Whisper Large v3 Turbo,We will send the client email this afternoon.,We will send the client email this afternoon.
+en_087,en,Whisper Medium,We will send the client email this afternoon.,We will send the client email this afternoon.
+en_088,en,Whisper Large v3 Turbo,The team have to finish the client email tomorrow morning.,The team have to finish the client email tomorrow morning.
+en_088,en,Whisper Medium,The team have to finish the client email tomorrow morning.,The team have to finish the client email tomorrow morning.
+en_089,en,Whisper Large v3 Turbo,I have to finish the project plan by Friday.,I have to finish the project plan by Friday.
+en_089,en,Whisper Medium,I have to finish the project plan by Friday.,I have to finish the project plan by Friday.
+en_090,en,Whisper Large v3 Turbo,The team want to schedule the budget report tomorrow morning.,The team want to schedule the budget report tomorrow morning.
+en_090,en,Whisper Medium,The team want to schedule the budget report tomorrow morning.,The team want to schedule the budget report tomorrow morning.
+en_091,en,Whisper Large v3 Turbo,My manager will send the meeting agenda before lunch.,My manager will send the meeting agenda before lunch.
+en_091,en,Whisper Medium,My manager will send the meeting agenda before lunch.,My manager will send the meeting agenda before lunch.
+en_092,en,Whisper Large v3 Turbo,The team should update the project plan tomorrow morning.,The team should update the project plan tomorrow morning.
+en_092,en,Whisper Medium,The team should update the project plan tomorrow morning.,The team should update the project plan tomorrow morning.
+en_093,en,Whisper Large v3 Turbo,The client will send the budget report before lunch.,The client will send the budget report before lunch.
+en_093,en,Whisper Medium,The client will send the budget report before lunch.,The client will send the budget report before lunch.
+en_094,en,Whisper Large v3 Turbo,The team need to review the project plan tomorrow morning.,The team need to review the project plan tomorrow morning.
+en_094,en,Whisper Medium,The team need to review the project plan tomorrow morning.,The team need to review the project plan tomorrow morning.
+en_095,en,Whisper Large v3 Turbo,The team need to review the project plan by Friday.,The teen need to review the project plan by Friday.
+en_095,en,Whisper Medium,The team need to review the project plan by Friday.,The team need to review the project plan by Friday.
+en_096,en,Whisper Large v3 Turbo,We need to review the meeting agenda by Friday.,We need to review the meeting agenda by Friday.
+en_096,en,Whisper Medium,We need to review the meeting agenda by Friday.,We need to review the meeting agenda by Friday.
+en_097,en,Whisper Large v3 Turbo,We need to review the client email by Friday.,We need to review the client email by Friday.
+en_097,en,Whisper Medium,We need to review the client email by Friday.,We need to review the client email by Friday.
+en_098,en,Whisper Large v3 Turbo,The client have to finish the project plan before lunch.,The client have to finish the project plan before lunch.
+en_098,en,Whisper Medium,The client have to finish the project plan before lunch.,The client have to finish the project plan before lunch.
+en_099,en,Whisper Large v3 Turbo,My manager should update the meeting agenda this afternoon.,My manager should update the meeting agenda this afternoon.
+en_099,en,Whisper Medium,My manager should update the meeting agenda this afternoon.,My manager should update the meeting agenda this afternoon.
+en_100,en,Whisper Large v3 Turbo,The team need to review the client email this afternoon.,The team need to review the client email this afternoon.
+en_100,en,Whisper Medium,The team need to review the client email this afternoon.,The team need to review the client email this afternoon.
+es_001,es,Whisper Large v3 Turbo,Mi jefe tiene que revisar el correo del cliente para el viernes.,Mi jefe tiene que revisar el correo del cliente para el viernes.
+es_001,es,Whisper Medium,Mi jefe tiene que revisar el correo del cliente para el viernes.,Mi jefe tiene que revisar el correo del cliente para el viernes.
+es_002,es,Whisper Large v3 Turbo,Tenemos que revisar la agenda de la reunión esta tarde.,Tenemos que revisar la agenda de la reunión esta tarde.
+es_002,es,Whisper Medium,Tenemos que revisar la agenda de la reunión esta tarde.,Tenemos que revisar la agenda de la reunión esta tarde.
+es_003,es,Whisper Large v3 Turbo,Tenemos que actualizar la agenda de la reunión esta tarde.,Tenemos que actualizar la agenda de la reunión esta tarde.
+es_003,es,Whisper Medium,Tenemos que actualizar la agenda de la reunión esta tarde.,Tenemos que actualizar la agenda de la reunión esta tarde.
+es_004,es,Whisper Large v3 Turbo,El equipo tiene que revisar el plan del proyecto antes del almuerzo.,El equipo tiene que revisar el plan del proyecto antes del almuerzo.
+es_004,es,Whisper Medium,El equipo tiene que revisar el plan del proyecto antes del almuerzo.,El equipo tiene que revisar el plan del proyecto antes del almuerzo.
+es_005,es,Whisper Large v3 Turbo,Mi jefe tiene que revisar el plan del proyecto esta tarde.,Mi jefe tiene que revisar el plan del proyecto esta tarde.
+es_005,es,Whisper Medium,Mi jefe tiene que revisar el plan del proyecto esta tarde.,Mi jefe tiene que revisar el plan del proyecto esta tarde.
+es_006,es,Whisper Large v3 Turbo,El equipo tiene que actualizar el plan del proyecto antes del almuerzo.,El equipo tiene que actualizar el plan del proyecto antes del almuerzo.
+es_006,es,Whisper Medium,El equipo tiene que actualizar el plan del proyecto antes del almuerzo.,El equipo tiene que actualizar el plan del proyecto antes del almuerzo.
+es_007,es,Whisper Large v3 Turbo,El equipo tiene que enviar la agenda de la reunión esta tarde.,El equipo tiene que enviar la agenda de la reunión esta tarde.
+es_007,es,Whisper Medium,El equipo tiene que enviar la agenda de la reunión esta tarde.,El equipo tiene que enviar la agenda de la reunión esta tarde.
+es_008,es,Whisper Large v3 Turbo,Tenemos que terminar el correo del cliente esta tarde.,Tenemos que terminar el correo del cliente esta tarde.
+es_008,es,Whisper Medium,Tenemos que terminar el correo del cliente esta tarde.,Tenemos que terminar el correo del cliente esta tarde.
+es_009,es,Whisper Large v3 Turbo,Mi jefe tiene que enviar el informe de presupuesto para el viernes.,Mi jefe tiene que enviar el informe de presupuesto para el viernes.
+es_009,es,Whisper Medium,Mi jefe tiene que enviar el informe de presupuesto para el viernes.,Mi jefe tiene que enviar el informe de presupuesto para el viernes.
+es_010,es,Whisper Large v3 Turbo,Mi jefe tiene que programar el plan del proyecto antes del almuerzo.,Mi jefe tiene que programar el plan del proyecto antes del almuerzo.
+es_010,es,Whisper Medium,Mi jefe tiene que programar el plan del proyecto antes del almuerzo.,Mi jefe tiene que programar el plan del proyecto antes del almuerzo.
+es_011,es,Whisper Large v3 Turbo,El equipo tiene que terminar el informe de presupuesto antes del almuerzo.,El equipo tiene que terminar el informe de presupuesto antes del almuerzo.
+es_011,es,Whisper Medium,El equipo tiene que terminar el informe de presupuesto antes del almuerzo.,El equipo tiene que terminar el informe de presupuesto antes del almuerzo.
+es_012,es,Whisper Large v3 Turbo,Mi jefe tiene que actualizar el informe de presupuesto para el viernes.,Mi jefe tiene que actualizar el informe de presupuesto para el viernes.
+es_012,es,Whisper Medium,Mi jefe tiene que actualizar el informe de presupuesto para el viernes.,Mi jefe tiene que actualizar el informe de presupuesto para el viernes.
+es_013,es,Whisper Large v3 Turbo,Tengo que terminar el plan del proyecto esta tarde.,Tengo que terminar el plan del proyecto esta tarde.
+es_013,es,Whisper Medium,Tengo que terminar el plan del proyecto esta tarde.,Tengo que terminar el plan del proyecto esta tarde.
+es_014,es,Whisper Large v3 Turbo,El cliente tiene que enviar el informe de presupuesto esta tarde.,El cliente tiene que enviar el informe de presupuesto esta tarde.
+es_014,es,Whisper Medium,El cliente tiene que enviar el informe de presupuesto esta tarde.,El cliente tiene que enviar el informe de presupuesto esta tarde.
+es_015,es,Whisper Large v3 Turbo,El cliente tiene que enviar el correo del cliente mañana por la mañana.,El cliente tiene que enviar el correo del cliente mañana por la mañana.
+es_015,es,Whisper Medium,El cliente tiene que enviar el correo del cliente mañana por la mañana.,El cliente tiene que enviar el correo del cliente mañana por la mañana.
+es_016,es,Whisper Large v3 Turbo,El cliente tiene que terminar la agenda de la reunión antes del almuerzo.,El cliente tiene que terminar la agenda de la reunión antes del almuerzo.
+es_016,es,Whisper Medium,El cliente tiene que terminar la agenda de la reunión antes del almuerzo.,El cliente tiene que terminar la agenda de la reunión antes del almuerzo.
+es_017,es,Whisper Large v3 Turbo,Tengo que terminar el correo del cliente mañana por la mañana.,Tengo que terminar el correo del cliente mañana por la mañana.
+es_017,es,Whisper Medium,Tengo que terminar el correo del cliente mañana por la mañana.,Tengo que terminar el correo del cliente mañana por la mañana.
+es_018,es,Whisper Large v3 Turbo,El equipo tiene que programar el correo del cliente para el viernes.,El equipo tiene que programar el correo del cliente para el viernes.
+es_018,es,Whisper Medium,El equipo tiene que programar el correo del cliente para el viernes.,El equipo tiene que programar el correo del cliente para el viernes.
+es_019,es,Whisper Large v3 Turbo,Tenemos que enviar el informe de presupuesto mañana por la mañana.,Tenemos que enviar el informe de presupuesto mañana por la mañana.
+es_019,es,Whisper Medium,Tenemos que enviar el informe de presupuesto mañana por la mañana.,Tenemos que enviar el informe de presupuesto mañana por la mañana.
+es_020,es,Whisper Large v3 Turbo,Tengo que programar el plan del proyecto para el viernes.,Tengo que programar el plan del proyecto para el viernes.
+es_020,es,Whisper Medium,Tengo que programar el plan del proyecto para el viernes.,Tengo que programar el plan del proyecto para el viernes.
+es_021,es,Whisper Large v3 Turbo,Mi jefe tiene que enviar la agenda de la reunión mañana por la mañana.,Mi jefe tiene que enviar la agenda de la reunión mañana por la mañana.
+es_021,es,Whisper Medium,Mi jefe tiene que enviar la agenda de la reunión mañana por la mañana.,Mi jefe tiene que enviar la agenda de la reunión mañana por la mañana.
+es_022,es,Whisper Large v3 Turbo,El equipo tiene que revisar el correo del cliente para el viernes.,El equipo tiene que revisar el correo del cliente para el viernes.
+es_022,es,Whisper Medium,El equipo tiene que revisar el correo del cliente para el viernes.,El equipo tiene que revisar el correo del cliente para el viernes.
+es_023,es,Whisper Large v3 Turbo,Mi jefe tiene que revisar el correo del cliente mañana por la mañana.,Mi jefe tiene que revisar el correo del cliente mañana por la mañana.
+es_023,es,Whisper Medium,Mi jefe tiene que revisar el correo del cliente mañana por la mañana.,Mi jefe tiene que revisar el correo del cliente mañana por la mañana.
+es_024,es,Whisper Large v3 Turbo,Tengo que actualizar la agenda de la reunión para el viernes.,Tengo que actualizar la agenda de la reunión para el viernes.
+es_024,es,Whisper Medium,Tengo que actualizar la agenda de la reunión para el viernes.,Tengo que actualizar la agenda de la reunión para el viernes.
+es_025,es,Whisper Large v3 Turbo,Tengo que revisar el correo del cliente para el viernes.,Tengo que revisar el correo del cliente para el viernes.
+es_025,es,Whisper Medium,Tengo que revisar el correo del cliente para el viernes.,Tengo que revisar el correo del cliente para el viernes.
+es_026,es,Whisper Large v3 Turbo,Tengo que actualizar el plan del proyecto antes del almuerzo.,Tengo que actualizar el plan del proyecto antes del almuerzo.
+es_026,es,Whisper Medium,Tengo que actualizar el plan del proyecto antes del almuerzo.,Tengo que actualizar el plan del proyecto antes del almuerzo.
+es_027,es,Whisper Large v3 Turbo,El equipo tiene que terminar el plan del proyecto esta tarde.,El equipo tiene que terminar el plan del proyecto esta tarde.
+es_027,es,Whisper Medium,El equipo tiene que terminar el plan del proyecto esta tarde.,El equipo tiene que terminar el plan del proyecto esta tarde.
+es_028,es,Whisper Large v3 Turbo,Tengo que revisar el informe de presupuesto esta tarde.,Tengo que revisar el informe de presupuesto esta tarde.
+es_028,es,Whisper Medium,Tengo que revisar el informe de presupuesto esta tarde.,Tengo que revisar el informe de presupuesto esta tarde.
+es_029,es,Whisper Large v3 Turbo,El cliente tiene que terminar la agenda de la reunión mañana por la mañana.,El cliente tiene que terminar la agenda de la reunión mañana por la mañana.
+es_029,es,Whisper Medium,El cliente tiene que terminar la agenda de la reunión mañana por la mañana.,El cliente tiene que terminar la agenda de la reunión mañana por la mañana.
+es_030,es,Whisper Large v3 Turbo,El cliente tiene que programar el plan del proyecto antes del almuerzo.,El cliente tiene que programar el plan del proyecto antes del almuerzo.
+es_030,es,Whisper Medium,El cliente tiene que programar el plan del proyecto antes del almuerzo.,El cliente tiene que programar el plan del proyecto antes del almuerzo.
+es_031,es,Whisper Large v3 Turbo,Mi jefe tiene que enviar el informe de presupuesto mañana por la mañana.,Mi jefe tiene que enviar el informe de presupuesto mañana por la mañana.
+es_031,es,Whisper Medium,Mi jefe tiene que enviar el informe de presupuesto mañana por la mañana.,Mi jefe tiene que enviar el informe de presupuesto mañana por la mañana.
+es_032,es,Whisper Large v3 Turbo,Mi jefe tiene que revisar la agenda de la reunión para el viernes.,Mi jefe tiene que revisar la agenda de la reunión para el viernes.
+es_032,es,Whisper Medium,Mi jefe tiene que revisar la agenda de la reunión para el viernes.,Mi jefe tiene que revisar la agenda de la reunión para el viernes.
+es_033,es,Whisper Large v3 Turbo,Mi jefe tiene que revisar el plan del proyecto antes del almuerzo.,Mi jefe tiene que revisar el plan del proyecto antes del almuerzo.
+es_033,es,Whisper Medium,Mi jefe tiene que revisar el plan del proyecto antes del almuerzo.,Mi jefe tiene que revisar el plan del proyecto antes del almuerzo.
+es_034,es,Whisper Large v3 Turbo,El equipo tiene que programar el informe de presupuesto para el viernes.,El equipo tiene que programar el informe de presupuesto para el viernes.
+es_034,es,Whisper Medium,El equipo tiene que programar el informe de presupuesto para el viernes.,El equipo tiene que programar el informe de presupuesto para el viernes.
+es_035,es,Whisper Large v3 Turbo,Tengo que programar el plan del proyecto mañana por la mañana.,Tengo que programar el plan del proyecto mañana por la mañana.
+es_035,es,Whisper Medium,Tengo que programar el plan del proyecto mañana por la mañana.,Tengo que programar el plan del proyecto mañana por la mañana.
+es_036,es,Whisper Large v3 Turbo,Tengo que terminar el informe de presupuesto esta tarde.,Tengo que terminar el informe de presupuesto esta tarde.
+es_036,es,Whisper Medium,Tengo que terminar el informe de presupuesto esta tarde.,Tengo que terminar el informe de presupuesto esta tarde.
+es_037,es,Whisper Large v3 Turbo,El cliente tiene que terminar el informe de presupuesto esta tarde.,El cliente tiene que terminar el informe de presupuesto esta tarde.
+es_037,es,Whisper Medium,El cliente tiene que terminar el informe de presupuesto esta tarde.,El cliente tiene que terminar el informe de presupuesto esta tarde.
+es_038,es,Whisper Large v3 Turbo,Mi jefe tiene que terminar el correo del cliente antes del almuerzo.,Mi jefe tiene que terminar el correo del cliente antes del almuerzo.
+es_038,es,Whisper Medium,Mi jefe tiene que terminar el correo del cliente antes del almuerzo.,Mi jefe tiene que terminar el correo del cliente antes del almuerzo.
+es_039,es,Whisper Large v3 Turbo,Tengo que programar el correo del cliente mañana por la mañana.,Tengo que programar el correo del cliente mañana por la mañana.
+es_039,es,Whisper Medium,Tengo que programar el correo del cliente mañana por la mañana.,Tengo que programar el correo del cliente mañana por la mañana.
+es_040,es,Whisper Large v3 Turbo,Mi jefe tiene que revisar el informe de presupuesto mañana por la mañana.,Mi jefe tiene que revisar el informe de presupuesto mañana por la mañana.
+es_040,es,Whisper Medium,Mi jefe tiene que revisar el informe de presupuesto mañana por la mañana.,Mi jefe tiene que revisar el informe de presupuesto mañana por la mañana.
+es_041,es,Whisper Large v3 Turbo,El cliente tiene que actualizar el informe de presupuesto esta tarde.,El cliente tiene que actualizar el informe de presupuesto esta tarde.
+es_041,es,Whisper Medium,El cliente tiene que actualizar el informe de presupuesto esta tarde.,El cliente tiene que actualizar el informe de presupuesto esta tarde.
+es_042,es,Whisper Large v3 Turbo,Mi jefe tiene que programar el informe de presupuesto para el viernes.,Mi jefe tiene que programar el informe de presupuesto para el viernes.
+es_042,es,Whisper Medium,Mi jefe tiene que programar el informe de presupuesto para el viernes.,Mi jefe tiene que programar el informe de presupuesto para el viernes.
+es_043,es,Whisper Large v3 Turbo,El equipo tiene que actualizar el plan del proyecto esta tarde.,El equipo tiene que actualizar el plan del proyecto esta tarde.
+es_043,es,Whisper Medium,El equipo tiene que actualizar el plan del proyecto esta tarde.,El equipo tiene que actualizar el plan del proyecto esta tarde.
+es_044,es,Whisper Large v3 Turbo,El cliente tiene que programar la agenda de la reunión antes del almuerzo.,El cliente tiene que programar la agenda de la reunión antes del almuerzo.
+es_044,es,Whisper Medium,El cliente tiene que programar la agenda de la reunión antes del almuerzo.,El cliente tiene que programar la agenda de la reunión antes del almuerzo.
+es_045,es,Whisper Large v3 Turbo,Tengo que enviar la agenda de la reunión para el viernes.,Tengo que enviar la agenda de la reunión para el viernes.
+es_045,es,Whisper Medium,Tengo que enviar la agenda de la reunión para el viernes.,Tengo que enviar la agenda de la reunión para el viernes.
+es_046,es,Whisper Large v3 Turbo,El cliente tiene que revisar el correo del cliente mañana por la mañana.,El cliente tiene que revisar el correo del cliente mañana por la mañana.
+es_046,es,Whisper Medium,El cliente tiene que revisar el correo del cliente mañana por la mañana.,El cliente tiene que revisar el correo del cliente mañana por la mañana.
+es_047,es,Whisper Large v3 Turbo,Mi jefe tiene que revisar el informe de presupuesto antes del almuerzo.,Mi jefe tiene que revisar el informe de presupuesto antes del almuerzo.
+es_047,es,Whisper Medium,Mi jefe tiene que revisar el informe de presupuesto antes del almuerzo.,Mi jefe tiene que revisar el informe de presupuesto antes del almuerzo.
+es_048,es,Whisper Large v3 Turbo,Tenemos que enviar el informe de presupuesto para el viernes.,Tenemos que enviar el informe de presupuesto para el viernes.
+es_048,es,Whisper Medium,Tenemos que enviar el informe de presupuesto para el viernes.,Tenemos que enviar el informe de presupuesto para el viernes.
+es_049,es,Whisper Large v3 Turbo,El cliente tiene que revisar el informe de presupuesto esta tarde.,El cliente tiene que revisar el informe de presupuesto esta tarde.
+es_049,es,Whisper Medium,El cliente tiene que revisar el informe de presupuesto esta tarde.,El cliente tiene que revisar el informe de presupuesto esta tarde.
+es_050,es,Whisper Large v3 Turbo,Tenemos que programar la agenda de la reunión mañana por la mañana.,Tenemos que programar la agenda de la reunión mañana por la mañana.
+es_050,es,Whisper Medium,Tenemos que programar la agenda de la reunión mañana por la mañana.,Tenemos que programar la agenda de la reunión mañana por la mañana.
+es_051,es,Whisper Large v3 Turbo,El equipo tiene que revisar la agenda de la reunión mañana por la mañana.,El equipo tiene que revisar la agenda de la reunión mañana por la mañana.
+es_051,es,Whisper Medium,El equipo tiene que revisar la agenda de la reunión mañana por la mañana.,El equipo tiene que revisar la agenda de la reunión mañana por la mañana.
+es_052,es,Whisper Large v3 Turbo,Tengo que actualizar el informe de presupuesto esta tarde.,Tengo que actualizar el informe de presupuesto esta tarde.
+es_052,es,Whisper Medium,Tengo que actualizar el informe de presupuesto esta tarde.,Tengo que actualizar el informe de presupuesto esta tarde.
+es_053,es,Whisper Large v3 Turbo,El cliente tiene que enviar la agenda de la reunión mañana por la mañana.,El cliente tiene que enviar la agenda de la reunión mañana por la mañana.
+es_053,es,Whisper Medium,El cliente tiene que enviar la agenda de la reunión mañana por la mañana.,El cliente tiene que enviar la agenda de la reunión mañana por la mañana.
+es_054,es,Whisper Large v3 Turbo,Tengo que terminar la agenda de la reunión para el viernes.,Tengo que terminar la agenda de la reunión para el viernes.
+es_054,es,Whisper Medium,Tengo que terminar la agenda de la reunión para el viernes.,Tengo que terminar la agenda de la reunión para el viernes.
+es_055,es,Whisper Large v3 Turbo,El equipo tiene que actualizar el informe de presupuesto mañana por la mañana.,El equipo tiene que actualizar el informe de presupuesto mañana por la mañana.
+es_055,es,Whisper Medium,El equipo tiene que actualizar el informe de presupuesto mañana por la mañana.,El equipo tiene que actualizar el informe de presupuesto mañana por la mañana.
+es_056,es,Whisper Large v3 Turbo,Tenemos que actualizar el informe de presupuesto antes del almuerzo.,Tenemos que actualizar el informe de presupuesto antes del almuerzo.
+es_056,es,Whisper Medium,Tenemos que actualizar el informe de presupuesto antes del almuerzo.,Tenemos que actualizar el informe de presupuesto antes del almuerzo.
+es_057,es,Whisper Large v3 Turbo,El equipo tiene que programar el plan del proyecto para el viernes.,El equipo tiene que programar el plan del proyecto para el viernes.
+es_057,es,Whisper Medium,El equipo tiene que programar el plan del proyecto para el viernes.,El equipo tiene que programar el plan del proyecto para el viernes.
+es_058,es,Whisper Large v3 Turbo,Tengo que actualizar el correo del cliente mañana por la mañana.,Tengo que actualizar el correo del cliente mañana por la mañana.
+es_058,es,Whisper Medium,Tengo que actualizar el correo del cliente mañana por la mañana.,Tengo que actualizar el correo del cliente mañana por la mañana.
+es_059,es,Whisper Large v3 Turbo,El cliente tiene que programar el plan del proyecto esta tarde.,El cliente tiene que programar el plan del proyecto esta tarde.
+es_059,es,Whisper Medium,El cliente tiene que programar el plan del proyecto esta tarde.,El cliente tiene que programar el plan del proyecto esta tarde.
+es_060,es,Whisper Large v3 Turbo,El cliente tiene que revisar la agenda de la reunión mañana por la mañana.,El cliente tiene que revisar la agenda de la reunión mañana por la mañana.
+es_060,es,Whisper Medium,El cliente tiene que revisar la agenda de la reunión mañana por la mañana.,El cliente tiene que revisar la agenda de la reunión mañana por la mañana.
+es_061,es,Whisper Large v3 Turbo,Tenemos que revisar el correo del cliente antes del almuerzo.,Tenemos que revisar el correo del cliente antes del almuerzo.
+es_061,es,Whisper Medium,Tenemos que revisar el correo del cliente antes del almuerzo.,Tenemos que revisar el correo del cliente antes del almuerzo.
+es_062,es,Whisper Large v3 Turbo,El cliente tiene que actualizar el informe de presupuesto para el viernes.,El cliente tiene que actualizar el informe de presupuesto para el viernes.
+es_062,es,Whisper Medium,El cliente tiene que actualizar el informe de presupuesto para el viernes.,El cliente tiene que actualizar el informe de presupuesto para el viernes.
+es_063,es,Whisper Large v3 Turbo,Tengo que enviar el correo del cliente esta tarde.,Tengo que enviar el correo del cliente esta tarde.
+es_063,es,Whisper Medium,Tengo que enviar el correo del cliente esta tarde.,Tengo que enviar el correo del cliente esta tarde.
+es_064,es,Whisper Large v3 Turbo,Tengo que actualizar el correo del cliente antes del almuerzo.,Tengo que actualizar el correo del cliente antes del almuerzo.
+es_064,es,Whisper Medium,Tengo que actualizar el correo del cliente antes del almuerzo.,Tengo que actualizar el correo del cliente antes del almuerzo.
+es_065,es,Whisper Large v3 Turbo,El equipo tiene que enviar el plan del proyecto antes del almuerzo.,El equipo tiene que enviar el plan del proyecto antes del almuerzo.
+es_065,es,Whisper Medium,El equipo tiene que enviar el plan del proyecto antes del almuerzo.,El equipo tiene que enviar el plan del proyecto antes del almuerzo.
+es_066,es,Whisper Large v3 Turbo,Tengo que enviar la agenda de la reunión mañana por la mañana.,Tengo que enviar la agenda de la reunión mañana por la mañana.
+es_066,es,Whisper Medium,Tengo que enviar la agenda de la reunión mañana por la mañana.,Tengo que enviar la agenda de la reunión mañana por la mañana.
+es_067,es,Whisper Large v3 Turbo,El cliente tiene que revisar el plan del proyecto esta tarde.,El cliente tiene que revisar el plan del proyecto esta tarde.
+es_067,es,Whisper Medium,El cliente tiene que revisar el plan del proyecto esta tarde.,El cliente tiene que revisar el plan del proyecto esta tarde.
+es_068,es,Whisper Large v3 Turbo,Tenemos que programar el informe de presupuesto esta tarde.,Tenemos que programar el informe de presupuesto esta tarde.
+es_068,es,Whisper Medium,Tenemos que programar el informe de presupuesto esta tarde.,Tenemos que programar el informe de presupuesto esta tarde.
+es_069,es,Whisper Large v3 Turbo,Tenemos que terminar la agenda de la reunión mañana por la mañana.,Tenemos que terminar la agenda de la reunión mañana por la mañana.
+es_069,es,Whisper Medium,Tenemos que terminar la agenda de la reunión mañana por la mañana.,Tenemos que terminar la agenda de la reunión mañana por la mañana.
+es_070,es,Whisper Large v3 Turbo,Tenemos que terminar el correo del cliente mañana por la mañana.,Tenemos que terminar el correo del cliente mañana por la mañana.
+es_070,es,Whisper Medium,Tenemos que terminar el correo del cliente mañana por la mañana.,Tenemos que terminar el correo del cliente mañana por la mañana.
+es_071,es,Whisper Large v3 Turbo,Mi jefe tiene que revisar el correo del cliente antes del almuerzo.,Mi jefe tiene que revisar el correo del cliente antes del almuerzo.
+es_071,es,Whisper Medium,Mi jefe tiene que revisar el correo del cliente antes del almuerzo.,Mi jefe tiene que revisar el correo del cliente antes del almuerzo.
+es_072,es,Whisper Large v3 Turbo,El cliente tiene que revisar la agenda de la reunión para el viernes.,El cliente tiene que revisar la agenda de la reunión para el viernes.
+es_072,es,Whisper Medium,El cliente tiene que revisar la agenda de la reunión para el viernes.,El cliente tiene que revisar la agenda de la reunión para el viernes.
+es_073,es,Whisper Large v3 Turbo,Tengo que revisar el correo del cliente esta tarde.,Tengo que revisar el correo del cliente esta tarde.
+es_073,es,Whisper Medium,Tengo que revisar el correo del cliente esta tarde.,Tengo que revisar el correo del cliente esta tarde.
+es_074,es,Whisper Large v3 Turbo,Tengo que actualizar el informe de presupuesto para el viernes.,Tengo que actualizar el informe de presupuesto para el viernes.
+es_074,es,Whisper Medium,Tengo que actualizar el informe de presupuesto para el viernes.,Tengo que actualizar el informe de presupuesto para el viernes.
+es_075,es,Whisper Large v3 Turbo,El cliente tiene que enviar el correo del cliente para el viernes.,El cliente tiene que enviar el correo del cliente para el viernes.
+es_075,es,Whisper Medium,El cliente tiene que enviar el correo del cliente para el viernes.,El cliente tiene que enviar el correo del cliente para el viernes.
+es_076,es,Whisper Large v3 Turbo,El cliente tiene que enviar la agenda de la reunión para el viernes.,El cliente tiene que enviar la agenda de la reunión para el viernes.
+es_076,es,Whisper Medium,El cliente tiene que enviar la agenda de la reunión para el viernes.,El cliente tiene que enviar la agenda de la reunión para el viernes.
+es_077,es,Whisper Large v3 Turbo,Mi jefe tiene que terminar la agenda de la reunión antes del almuerzo.,Mi jefe tiene que terminar la agenda de la reunión antes del almuerzo.
+es_077,es,Whisper Medium,Mi jefe tiene que terminar la agenda de la reunión antes del almuerzo.,Mi jefe tiene que terminar la agenda de la reunión antes del almuerzo.
+es_078,es,Whisper Large v3 Turbo,Tengo que actualizar el informe de presupuesto antes del almuerzo.,Tengo que actualizar el informe de presupuesto antes del almuerzo.
+es_078,es,Whisper Medium,Tengo que actualizar el informe de presupuesto antes del almuerzo.,Tengo que actualizar el informe de presupuesto antes del almuerzo.
+es_079,es,Whisper Large v3 Turbo,El equipo tiene que revisar el informe de presupuesto esta tarde.,El equipo tiene que revisar el informe de presupuesto esta tarde.
+es_079,es,Whisper Medium,El equipo tiene que revisar el informe de presupuesto esta tarde.,El equipo tiene que revisar el informe de presupuesto esta tarde.
+es_080,es,Whisper Large v3 Turbo,Tenemos que revisar el plan del proyecto para el viernes.,Tenemos que revisar el plan del proyecto para el viernes.
+es_080,es,Whisper Medium,Tenemos que revisar el plan del proyecto para el viernes.,Tenemos que revisar el plan del proyecto para el viernes.
+es_081,es,Whisper Large v3 Turbo,Tenemos que actualizar el correo del cliente esta tarde.,Tenemos que actualizar el correo del cliente esta tarde.
+es_081,es,Whisper Medium,Tenemos que actualizar el correo del cliente esta tarde.,Tenemos que actualizar el correo del cliente esta tarde.
+es_082,es,Whisper Large v3 Turbo,Tenemos que terminar el correo del cliente antes del almuerzo.,Tenemos que terminar el correo del cliente antes del almuerzo.
+es_082,es,Whisper Medium,Tenemos que terminar el correo del cliente antes del almuerzo.,Tenemos que terminar el correo del cliente antes del almuerzo.
+es_083,es,Whisper Large v3 Turbo,El cliente tiene que revisar el correo del cliente esta tarde.,El cliente tiene que revisar el correo del cliente esta tarde.
+es_083,es,Whisper Medium,El cliente tiene que revisar el correo del cliente esta tarde.,El cliente tiene que revisar el correo del cliente esta tarde.
+es_084,es,Whisper Large v3 Turbo,El equipo tiene que actualizar el informe de presupuesto para el viernes.,El equipo tiene que actualizar el informe de presupuesto para el viernes.
+es_084,es,Whisper Medium,El equipo tiene que actualizar el informe de presupuesto para el viernes.,El equipo tiene que actualizar el informe de presupuesto para el viernes.
+es_085,es,Whisper Large v3 Turbo,El equipo tiene que programar la agenda de la reunión antes del almuerzo.,El equipo tiene que programar la agenda de la reunión antes del almuerzo.
+es_085,es,Whisper Medium,El equipo tiene que programar la agenda de la reunión antes del almuerzo.,El equipo tiene que programar la agenda de la reunión antes del almuerzo.
+es_086,es,Whisper Large v3 Turbo,Tengo que actualizar el correo del cliente esta tarde.,Tengo que actualizar el correo del cliente esta tarde.
+es_086,es,Whisper Medium,Tengo que actualizar el correo del cliente esta tarde.,Tengo que actualizar el correo del cliente esta tarde.
+es_087,es,Whisper Large v3 Turbo,Tenemos que enviar el correo del cliente esta tarde.,Tenemos que enviar el correo del cliente esta tarde.
+es_087,es,Whisper Medium,Tenemos que enviar el correo del cliente esta tarde.,Tenemos que enviar el correo del cliente esta tarde.
+es_088,es,Whisper Large v3 Turbo,El equipo tiene que terminar el correo del cliente mañana por la mañana.,El equipo tiene que terminar el correo del cliente mañana por la mañana.
+es_088,es,Whisper Medium,El equipo tiene que terminar el correo del cliente mañana por la mañana.,El equipo tiene que terminar el correo del cliente mañana por la mañana.
+es_089,es,Whisper Large v3 Turbo,Tengo que terminar el plan del proyecto para el viernes.,Tengo que terminar el plan del proyecto para el viernes.
+es_089,es,Whisper Medium,Tengo que terminar el plan del proyecto para el viernes.,Tengo que terminar el plan del proyecto para el viernes.
+es_090,es,Whisper Large v3 Turbo,El equipo tiene que programar el informe de presupuesto mañana por la mañana.,El equipo tiene que programar el informe de presupuesto mañana por la mañana.
+es_090,es,Whisper Medium,El equipo tiene que programar el informe de presupuesto mañana por la mañana.,El equipo tiene que programar el informe de presupuesto mañana por la mañana.
+es_091,es,Whisper Large v3 Turbo,Mi jefe tiene que enviar la agenda de la reunión antes del almuerzo.,Mi jefe tiene que enviar la agenda de la reunión antes del almuerzo.
+es_091,es,Whisper Medium,Mi jefe tiene que enviar la agenda de la reunión antes del almuerzo.,Mi jefe tiene que enviar la agenda de la reunión antes del almuerzo.
+es_092,es,Whisper Large v3 Turbo,El equipo tiene que actualizar el plan del proyecto mañana por la mañana.,El equipo tiene que actualizar el plan del proyecto mañana por la mañana.
+es_092,es,Whisper Medium,El equipo tiene que actualizar el plan del proyecto mañana por la mañana.,El equipo tiene que actualizar el plan del proyecto mañana por la mañana.
+es_093,es,Whisper Large v3 Turbo,El cliente tiene que enviar el informe de presupuesto antes del almuerzo.,El cliente tiene que enviar el informe de presupuesto antes del almuerzo.
+es_093,es,Whisper Medium,El cliente tiene que enviar el informe de presupuesto antes del almuerzo.,El cliente tiene que enviar el informe de presupuesto antes del almuerzo.
+es_094,es,Whisper Large v3 Turbo,El equipo tiene que revisar el plan del proyecto mañana por la mañana.,El equipo tiene que revisar el plan del proyecto mañana por la mañana.
+es_094,es,Whisper Medium,El equipo tiene que revisar el plan del proyecto mañana por la mañana.,El equipo tiene que revisar el plan del proyecto mañana por la mañana.
+es_095,es,Whisper Large v3 Turbo,El equipo tiene que revisar el plan del proyecto para el viernes.,El equipo tiene que revisar el plan del proyecto para el viernes.
+es_095,es,Whisper Medium,El equipo tiene que revisar el plan del proyecto para el viernes.,El equipo tiene que revisar el plan del proyecto para el viernes.
+es_096,es,Whisper Large v3 Turbo,Tenemos que revisar la agenda de la reunión para el viernes.,Tenemos que revisar la agenda de la reunión para el viernes.
+es_096,es,Whisper Medium,Tenemos que revisar la agenda de la reunión para el viernes.,Tenemos que revisar la agenda de la reunión para el viernes.
+es_097,es,Whisper Large v3 Turbo,Tenemos que revisar el correo del cliente para el viernes.,Tenemos que revisar el correo del cliente para el viernes.
+es_097,es,Whisper Medium,Tenemos que revisar el correo del cliente para el viernes.,Tenemos que revisar el correo del cliente para el viernes.
+es_098,es,Whisper Large v3 Turbo,El cliente tiene que terminar el plan del proyecto antes del almuerzo.,El cliente tiene que terminar el plan del proyecto antes del almuerzo.
+es_098,es,Whisper Medium,El cliente tiene que terminar el plan del proyecto antes del almuerzo.,El cliente tiene que terminar el plan del proyecto antes del almuerzo.
+es_099,es,Whisper Large v3 Turbo,Mi jefe tiene que actualizar la agenda de la reunión esta tarde.,Mi jefe tiene que actualizar la agenda de la reunión esta tarde.
+es_099,es,Whisper Medium,Mi jefe tiene que actualizar la agenda de la reunión esta tarde.,Mi jefe tiene que actualizar la agenda de la reunión esta tarde.
+es_100,es,Whisper Large v3 Turbo,El equipo tiene que revisar el correo del cliente esta tarde.,El equipo tiene que revisar el correo del cliente esta tarde.
+es_100,es,Whisper Medium,El equipo tiene que revisar el correo del cliente esta tarde.,El equipo tiene que revisar el correo del cliente esta tarde.
+es_001,es,Wav2Vec2-XLSR-Spanish,Mi jefe tiene que revisar el correo del cliente para el viernes.,mi jefe tiene que revisar el correo del cliente para el viernes
+es_002,es,Wav2Vec2-XLSR-Spanish,Tenemos que revisar la agenda de la reunión esta tarde.,tenemos que revisar la agenda de la reunión esta tarde
+es_003,es,Wav2Vec2-XLSR-Spanish,Tenemos que actualizar la agenda de la reunión esta tarde.,tenemos que actualizar la agenda de la reunión esta tarde
+es_004,es,Wav2Vec2-XLSR-Spanish,El equipo tiene que revisar el plan del proyecto antes del almuerzo.,el equipo tiene que revisar el plan del proyecto antes del almuerzo
+es_005,es,Wav2Vec2-XLSR-Spanish,Mi jefe tiene que revisar el plan del proyecto esta tarde.,mi jefe tiene que revisar el plan del proyecto esta tarde
+es_006,es,Wav2Vec2-XLSR-Spanish,El equipo tiene que actualizar el plan del proyecto antes del almuerzo.,el equipo tiene que actualizar el plan del proyecto antes del almuerzo
+es_007,es,Wav2Vec2-XLSR-Spanish,El equipo tiene que enviar la agenda de la reunión esta tarde.,el equipo tiene que enviar la agenda de la reunión esta tarde
+es_008,es,Wav2Vec2-XLSR-Spanish,Tenemos que terminar el correo del cliente esta tarde.,tenemos que terminar el correo del cliente esta tarde
+es_009,es,Wav2Vec2-XLSR-Spanish,Mi jefe tiene que enviar el informe de presupuesto para el viernes.,mi jefe tiene que enviar el informe de presupuesto para el viernes
+es_010,es,Wav2Vec2-XLSR-Spanish,Mi jefe tiene que programar el plan del proyecto antes del almuerzo.,mi jefe tiene que programar el plan del proyecto antes del almuerzo
+es_011,es,Wav2Vec2-XLSR-Spanish,El equipo tiene que terminar el informe de presupuesto antes del almuerzo.,el equipo tiene que terminar el informe de presupuesto antes del almuerzo
+es_012,es,Wav2Vec2-XLSR-Spanish,Mi jefe tiene que actualizar el informe de presupuesto para el viernes.,mi jefe tiene que actualizar el informe de presupuesto para el viernes
+es_013,es,Wav2Vec2-XLSR-Spanish,Tengo que terminar el plan del proyecto esta tarde.,tengo que terminar el plan del proyecto esta tarde
+es_014,es,Wav2Vec2-XLSR-Spanish,El cliente tiene que enviar el informe de presupuesto esta tarde.,el cliente tiene que enviar el informe de presupuesto esta tarde
+es_015,es,Wav2Vec2-XLSR-Spanish,El cliente tiene que enviar el correo del cliente mañana por la mañana.,el cliente tiene que enviar el correo del cliente mañana por la mañana
+es_016,es,Wav2Vec2-XLSR-Spanish,El cliente tiene que terminar la agenda de la reunión antes del almuerzo.,el cliente tiene que terminar la agenda de la reunión antes del almuerzo
+es_017,es,Wav2Vec2-XLSR-Spanish,Tengo que terminar el correo del cliente mañana por la mañana.,tengo que terminar el correo del cliente mañana por la mañana
+es_018,es,Wav2Vec2-XLSR-Spanish,El equipo tiene que programar el correo del cliente para el viernes.,el equipo tiene que programar el correo del cliente para el viernes
+es_019,es,Wav2Vec2-XLSR-Spanish,Tenemos que enviar el informe de presupuesto mañana por la mañana.,tenemos que enviar el informe de presupuesto mañana por la mañana
+es_020,es,Wav2Vec2-XLSR-Spanish,Tengo que programar el plan del proyecto para el viernes.,tengo que programar el plan del proyecto para el viernes
+es_021,es,Wav2Vec2-XLSR-Spanish,Mi jefe tiene que enviar la agenda de la reunión mañana por la mañana.,mi jefe tiene que enviar la agenda de la reunión mañana por la mañana
+es_022,es,Wav2Vec2-XLSR-Spanish,El equipo tiene que revisar el correo del cliente para el viernes.,el equipo tiene que revisar el correo del cliente para el viernes
+es_023,es,Wav2Vec2-XLSR-Spanish,Mi jefe tiene que revisar el correo del cliente mañana por la mañana.,mi jefe tiene que revisar el correo del cliente mañana por la mañana
+es_024,es,Wav2Vec2-XLSR-Spanish,Tengo que actualizar la agenda de la reunión para el viernes.,tengo que actualizar la agenda de la reunión para el viernes
+es_025,es,Wav2Vec2-XLSR-Spanish,Tengo que revisar el correo del cliente para el viernes.,tengo que revisar el correo del cliente para el viernes
+es_026,es,Wav2Vec2-XLSR-Spanish,Tengo que actualizar el plan del proyecto antes del almuerzo.,tengo que actualizar el plan del proyecto antes del almuerzo
+es_027,es,Wav2Vec2-XLSR-Spanish,El equipo tiene que terminar el plan del proyecto esta tarde.,el equipo tiene que terminar el plan del proyecto esta tarde
+es_028,es,Wav2Vec2-XLSR-Spanish,Tengo que revisar el informe de presupuesto esta tarde.,tengo que revisar el informe de presupuesto esta tarde
+es_029,es,Wav2Vec2-XLSR-Spanish,El cliente tiene que terminar la agenda de la reunión mañana por la mañana.,el cliente tiene que terminar la agenda de la reunión mañana por la mañana
+es_030,es,Wav2Vec2-XLSR-Spanish,El cliente tiene que programar el plan del proyecto antes del almuerzo.,el cliente tiene que programar el plan del proyecto antes del almuerzo
+es_031,es,Wav2Vec2-XLSR-Spanish,Mi jefe tiene que enviar el informe de presupuesto mañana por la mañana.,mi jefe tiene que enviar el informe de presupuesto mañana por la mañana
+es_032,es,Wav2Vec2-XLSR-Spanish,Mi jefe tiene que revisar la agenda de la reunión para el viernes.,mi jefe tiene que revisar la agenda de la reunión para el viernes
+es_033,es,Wav2Vec2-XLSR-Spanish,Mi jefe tiene que revisar el plan del proyecto antes del almuerzo.,mi jefe tiene que revisar el plan del proyecto antes del almuerzo
+es_034,es,Wav2Vec2-XLSR-Spanish,El equipo tiene que programar el informe de presupuesto para el viernes.,el equipo tiene que programar el informe de presupuesto para el viernes
+es_035,es,Wav2Vec2-XLSR-Spanish,Tengo que programar el plan del proyecto mañana por la mañana.,tengo que programar el plan del proyecto mañana por la mañana
+es_036,es,Wav2Vec2-XLSR-Spanish,Tengo que terminar el informe de presupuesto esta tarde.,tengo que terminar el informe de presupuesto esta tarde
+es_037,es,Wav2Vec2-XLSR-Spanish,El cliente tiene que terminar el informe de presupuesto esta tarde.,el cliente tiene que terminar el informe de presupuesto esta tarde
+es_038,es,Wav2Vec2-XLSR-Spanish,Mi jefe tiene que terminar el correo del cliente antes del almuerzo.,mi jefe tiene que terminar el correo del cliente antes del almuerzo
+es_039,es,Wav2Vec2-XLSR-Spanish,Tengo que programar el correo del cliente mañana por la mañana.,tengo que programar el correo del cliente mañana por la mañana
+es_040,es,Wav2Vec2-XLSR-Spanish,Mi jefe tiene que revisar el informe de presupuesto mañana por la mañana.,mi jefe tiene que revisar el informe de presupuesto mañana por la mañana
+es_041,es,Wav2Vec2-XLSR-Spanish,El cliente tiene que actualizar el informe de presupuesto esta tarde.,el cliente tiene que actualizar el informe de presupuesto esta tarde
+es_042,es,Wav2Vec2-XLSR-Spanish,Mi jefe tiene que programar el informe de presupuesto para el viernes.,mi jefe tiene que programar el informe de presupuesto para el viernes
+es_043,es,Wav2Vec2-XLSR-Spanish,El equipo tiene que actualizar el plan del proyecto esta tarde.,el equipo tiene que actualizar el plan del proyecto esta tarde
+es_044,es,Wav2Vec2-XLSR-Spanish,El cliente tiene que programar la agenda de la reunión antes del almuerzo.,el cliente tiene que programar la agenda de la reunión antes del almuerzo
+es_045,es,Wav2Vec2-XLSR-Spanish,Tengo que enviar la agenda de la reunión para el viernes.,tengo que enviar la agenda de la reunión para el viernes
+es_046,es,Wav2Vec2-XLSR-Spanish,El cliente tiene que revisar el correo del cliente mañana por la mañana.,el cliente tiene que revisar el correo del cliente mañana por la mañana
+es_047,es,Wav2Vec2-XLSR-Spanish,Mi jefe tiene que revisar el informe de presupuesto antes del almuerzo.,mi jefe tiene que revisar el informe de presupuesto antes del almuerzo
+es_048,es,Wav2Vec2-XLSR-Spanish,Tenemos que enviar el informe de presupuesto para el viernes.,tenemos que enviar el informe de presupuesto para el viernes
+es_049,es,Wav2Vec2-XLSR-Spanish,El cliente tiene que revisar el informe de presupuesto esta tarde.,el cliente tiene que revisar el informe de presupuesto esta tarde
+es_050,es,Wav2Vec2-XLSR-Spanish,Tenemos que programar la agenda de la reunión mañana por la mañana.,tenemos que programar la agenda de la reunión mañana por la mañana
+es_051,es,Wav2Vec2-XLSR-Spanish,El equipo tiene que revisar la agenda de la reunión mañana por la mañana.,el equipo tiene que revisar la agenda de la reunión mañana por la mañana
+es_052,es,Wav2Vec2-XLSR-Spanish,Tengo que actualizar el informe de presupuesto esta tarde.,tengo que actualizar el informe de presupuesto esta tarde
+es_053,es,Wav2Vec2-XLSR-Spanish,El cliente tiene que enviar la agenda de la reunión mañana por la mañana.,el cliente tiene que enviar la agenda de la reunión mañana por la mañana
+es_054,es,Wav2Vec2-XLSR-Spanish,Tengo que terminar la agenda de la reunión para el viernes.,tengo que terminar la agenda de la reunión para el viernes
+es_055,es,Wav2Vec2-XLSR-Spanish,El equipo tiene que actualizar el informe de presupuesto mañana por la mañana.,el equipo tiene que actualizar el informe de presupuesto mañana por la mañana
+es_056,es,Wav2Vec2-XLSR-Spanish,Tenemos que actualizar el informe de presupuesto antes del almuerzo.,tenemos que actualizar el informe de presupuesto antes del almuerzo
+es_057,es,Wav2Vec2-XLSR-Spanish,El equipo tiene que programar el plan del proyecto para el viernes.,el equipo tiene que programar el plan del proyecto para el viernes
+es_058,es,Wav2Vec2-XLSR-Spanish,Tengo que actualizar el correo del cliente mañana por la mañana.,tengo que actualizar el correo del cliente mañana por la mañana
+es_059,es,Wav2Vec2-XLSR-Spanish,El cliente tiene que programar el plan del proyecto esta tarde.,el cliente tiene que programar el plan del proyecto esta tarde
+es_060,es,Wav2Vec2-XLSR-Spanish,El cliente tiene que revisar la agenda de la reunión mañana por la mañana.,el cliente tiene que revisar la agenda de la reunión mañana por la mañana
+es_061,es,Wav2Vec2-XLSR-Spanish,Tenemos que revisar el correo del cliente antes del almuerzo.,tenemos que revisar el correo del cliente antes del almuerzo
+es_062,es,Wav2Vec2-XLSR-Spanish,El cliente tiene que actualizar el informe de presupuesto para el viernes.,el cliente tiene que actualizar el informe de presupuesto para el viernes
+es_063,es,Wav2Vec2-XLSR-Spanish,Tengo que enviar el correo del cliente esta tarde.,tengo que enviar el correo del cliente esta tarde
+es_064,es,Wav2Vec2-XLSR-Spanish,Tengo que actualizar el correo del cliente antes del almuerzo.,tengo que actualizar el correo del cliente antes del almuerzo
+es_065,es,Wav2Vec2-XLSR-Spanish,El equipo tiene que enviar el plan del proyecto antes del almuerzo.,el equipo tiene que enviar el plan del proyecto antes del almuerzo
+es_066,es,Wav2Vec2-XLSR-Spanish,Tengo que enviar la agenda de la reunión mañana por la mañana.,tengo que enviar la agenda de la reunión mañana por la mañana
+es_067,es,Wav2Vec2-XLSR-Spanish,El cliente tiene que revisar el plan del proyecto esta tarde.,el cliente tiene que revisar el plan del proyecto esta tarde
+es_068,es,Wav2Vec2-XLSR-Spanish,Tenemos que programar el informe de presupuesto esta tarde.,tenemos que programar el informe de presupuesto esta tarde
+es_069,es,Wav2Vec2-XLSR-Spanish,Tenemos que terminar la agenda de la reunión mañana por la mañana.,tenemos que terminar la agenda de la reunión mañana por la mañana
+es_070,es,Wav2Vec2-XLSR-Spanish,Tenemos que terminar el correo del cliente mañana por la mañana.,tenemos que terminar el correo del cliente mañana por la mañana
+es_071,es,Wav2Vec2-XLSR-Spanish,Mi jefe tiene que revisar el correo del cliente antes del almuerzo.,mi jefe tiene que revisar el correo del cliente antes del almuerzo
+es_072,es,Wav2Vec2-XLSR-Spanish,El cliente tiene que revisar la agenda de la reunión para el viernes.,el cliente tiene que revisar la agenda de la reunión para el viernes
+es_073,es,Wav2Vec2-XLSR-Spanish,Tengo que revisar el correo del cliente esta tarde.,tengo que revisar el correo del cliente esta tarde
+es_074,es,Wav2Vec2-XLSR-Spanish,Tengo que actualizar el informe de presupuesto para el viernes.,tengo que actualizar el informe de presupuesto para el viernes
+es_075,es,Wav2Vec2-XLSR-Spanish,El cliente tiene que enviar el correo del cliente para el viernes.,el cliente tiene que enviar el correo del cliente para el viernes
+es_076,es,Wav2Vec2-XLSR-Spanish,El cliente tiene que enviar la agenda de la reunión para el viernes.,el cliente tiene que enviar la agenda de la reunión para el viernes
+es_077,es,Wav2Vec2-XLSR-Spanish,Mi jefe tiene que terminar la agenda de la reunión antes del almuerzo.,mi jefe tiene que terminar la agenda de la reunión antes del almuerzo
+es_078,es,Wav2Vec2-XLSR-Spanish,Tengo que actualizar el informe de presupuesto antes del almuerzo.,tengo que actualizar el informe de presupuesto antes del almuerzo
+es_079,es,Wav2Vec2-XLSR-Spanish,El equipo tiene que revisar el informe de presupuesto esta tarde.,el equipo tiene que revisar el informe de presupuesto esta tarde
+es_080,es,Wav2Vec2-XLSR-Spanish,Tenemos que revisar el plan del proyecto para el viernes.,tenemos que revisar el plan del proyecto para el viernes
+es_081,es,Wav2Vec2-XLSR-Spanish,Tenemos que actualizar el correo del cliente esta tarde.,tenemos que actualizar el correo del cliente esta tarde
+es_082,es,Wav2Vec2-XLSR-Spanish,Tenemos que terminar el correo del cliente antes del almuerzo.,tenemos que terminar el correo del cliente antes del almuerzo
+es_083,es,Wav2Vec2-XLSR-Spanish,El cliente tiene que revisar el correo del cliente esta tarde.,el cliente tiene que revisar el correo del cliente esta tarde
+es_084,es,Wav2Vec2-XLSR-Spanish,El equipo tiene que actualizar el informe de presupuesto para el viernes.,el equipo tiene que actualizar el informe de presupuesto para el viernes
+es_085,es,Wav2Vec2-XLSR-Spanish,El equipo tiene que programar la agenda de la reunión antes del almuerzo.,el equipo tiene que programar la agenda de la reunión antes del almuerzo
+es_086,es,Wav2Vec2-XLSR-Spanish,Tengo que actualizar el correo del cliente esta tarde.,tengo que actualizar el correo del cliente esta tarde
+es_087,es,Wav2Vec2-XLSR-Spanish,Tenemos que enviar el correo del cliente esta tarde.,tenemos que enviar el correo del cliente esta tarde
+es_088,es,Wav2Vec2-XLSR-Spanish,El equipo tiene que terminar el correo del cliente mañana por la mañana.,el equipo tiene que terminar el correo del cliente mañana por la mañana
+es_089,es,Wav2Vec2-XLSR-Spanish,Tengo que terminar el plan del proyecto para el viernes.,tengo que terminar el plan del proyecto para el viernes
+es_090,es,Wav2Vec2-XLSR-Spanish,El equipo tiene que programar el informe de presupuesto mañana por la mañana.,el equipo tiene que programar el informe de presupuesto mañana por la mañana
+es_091,es,Wav2Vec2-XLSR-Spanish,Mi jefe tiene que enviar la agenda de la reunión antes del almuerzo.,mi jefe tiene que enviar la agenda de la reunión antes del almuerzo
+es_092,es,Wav2Vec2-XLSR-Spanish,El equipo tiene que actualizar el plan del proyecto mañana por la mañana.,el equipo tiene que actualizar el plan del proyecto mañana por la mañana
+es_093,es,Wav2Vec2-XLSR-Spanish,El cliente tiene que enviar el informe de presupuesto antes del almuerzo.,el cliente tiene que enviar el informe de presupuesto antes del almuerzo
+es_094,es,Wav2Vec2-XLSR-Spanish,El equipo tiene que revisar el plan del proyecto mañana por la mañana.,el equipo tiene que revisar el plan del proyecto mañana por la mañana
+es_095,es,Wav2Vec2-XLSR-Spanish,El equipo tiene que revisar el plan del proyecto para el viernes.,el equipo tiene que revisar el plan del proyecto para el viernes
+es_096,es,Wav2Vec2-XLSR-Spanish,Tenemos que revisar la agenda de la reunión para el viernes.,tenemos que revisar la agenda de la reunión para el viernes
+es_097,es,Wav2Vec2-XLSR-Spanish,Tenemos que revisar el correo del cliente para el viernes.,tenemos que revisar el correo del cliente para el viernes
+es_098,es,Wav2Vec2-XLSR-Spanish,El cliente tiene que terminar el plan del proyecto antes del almuerzo.,el cliente tiene que terminar el plan del proyecto antes del almuerzo
+es_099,es,Wav2Vec2-XLSR-Spanish,Mi jefe tiene que actualizar la agenda de la reunión esta tarde.,mi jefe tiene que actualizar la agenda de la reunión esta tarde
+es_100,es,Wav2Vec2-XLSR-Spanish,El equipo tiene que revisar el correo del cliente esta tarde.,el equipo tiene que revisar el correo del cliente esta tarde
+tl_001,tl,Whisper Large v3 Turbo,Kailangan ng aking boss na suriin ang email ng kliyente bago matapos ang Biyernes.,Kailangan ng aking boss na suriin ang email ng kliyente bago matapos ang biyernes.
+tl_001,tl,Whisper Medium,Kailangan ng aking boss na suriin ang email ng kliyente bago matapos ang Biyernes.,Kailangan ang aking boss na suriin ang email ng kliente bago matapos ang biernes.
+tl_002,tl,Whisper Large v3 Turbo,Kailangan nating suriin ang agenda ng pulong ngayong hapon.,Kailangan nating suriin ang agenda ng pulong ngayong hapon.
+tl_002,tl,Whisper Medium,Kailangan nating suriin ang agenda ng pulong ngayong hapon.,Kailangan nating suriin ang agenda ng pulong ayong hapon.
+tl_003,tl,Whisper Large v3 Turbo,Kailangan nating i-update ang agenda ng pulong ngayong hapon.,Kailangan natin i-update ang agenda ng pulong ngayong hapon.
+tl_003,tl,Whisper Medium,Kailangan nating i-update ang agenda ng pulong ngayong hapon.,Kailangan nating i-update ang agenda ng pulong ngayong hapon.
+tl_004,tl,Whisper Large v3 Turbo,Kailangan ng koponan na suriin ang plano ng proyekto bago magtanghalian.,Kailangan ako po na nasuriin ang plano ng proyekto bago magtanghalian.
+tl_004,tl,Whisper Medium,Kailangan ng koponan na suriin ang plano ng proyekto bago magtanghalian.,Kailangan ako po na nasuriin ang plano ng proyekto bago magtanghalian.
+tl_005,tl,Whisper Large v3 Turbo,Kailangan ng aking boss na suriin ang plano ng proyekto ngayong hapon.,Kailangan ng aking boss na suriin ang plano ng proyekto ngayong hapon.
+tl_005,tl,Whisper Medium,Kailangan ng aking boss na suriin ang plano ng proyekto ngayong hapon.,Kailangan ang aking boss na suriin ang plano ng proyektong ngayong hapon.
+tl_006,tl,Whisper Large v3 Turbo,Kailangan ng koponan na i-update ang plano ng proyekto bago magtanghalian.,Kailangan ng kuponan na i-update ang plano ng proyekto bago magtanghalian.
+tl_006,tl,Whisper Medium,Kailangan ng koponan na i-update ang plano ng proyekto bago magtanghalian.,Kailangan ang kupona na i-update ang plano ng proyekto bago magtanghalian.
+tl_007,tl,Whisper Large v3 Turbo,Kailangan ng koponan na ipadala ang agenda ng pulong ngayong hapon.,Kailangan ng kuponan na ipadala ang agenda ng pulong ngayong hapon.
+tl_007,tl,Whisper Medium,Kailangan ng koponan na ipadala ang agenda ng pulong ngayong hapon.,Kailangan ang kupona na ipadala ang agenda ng pulong ngayong hapon.
+tl_008,tl,Whisper Large v3 Turbo,Kailangan nating tapusin ang email ng kliyente ngayong hapon.,Kailangan natin tapusin ang email ng kliyente ngayong hapon.
+tl_008,tl,Whisper Medium,Kailangan nating tapusin ang email ng kliyente ngayong hapon.,Kailangan nating tapusin ang email ng klienteng ngayong hapon.
+tl_009,tl,Whisper Large v3 Turbo,Kailangan ng aking boss na ipadala ang ulat ng badyet bago matapos ang Biyernes.,Kailangan ng aking boss na ipadala ang ulat ng budget bago matapos ang biyernes.
+tl_009,tl,Whisper Medium,Kailangan ng aking boss na ipadala ang ulat ng badyet bago matapos ang Biyernes.,Kailangan ang aking boss na ipadala ang ulat ng budget bago matapos ang biernis.
+tl_010,tl,Whisper Large v3 Turbo,Kailangan ng aking boss na ayusin ang plano ng proyekto bago magtanghalian.,Kailangan ng aking boss na ayusin ang plano ng proyekto bago magtanghalian.
+tl_010,tl,Whisper Medium,Kailangan ng aking boss na ayusin ang plano ng proyekto bago magtanghalian.,Kailangan ang aking boss na ayusin ang plano ng proyekto bago magtanghalian.
+tl_011,tl,Whisper Large v3 Turbo,Kailangan ng koponan na tapusin ang ulat ng badyet bago magtanghalian.,Kailangan ako po na natapusin ang ulat ng budget bago magtanghalian.
+tl_011,tl,Whisper Medium,Kailangan ng koponan na tapusin ang ulat ng badyet bago magtanghalian.,Kailangan ang kupona natapusin ang ulat ng budget bago magtanghalian.
+tl_012,tl,Whisper Large v3 Turbo,Kailangan ng aking boss na i-update ang ulat ng badyet bago matapos ang Biyernes.,Kailangan ng aking boss na i-update ang ulat ng budget bago matapos ang biyernes.
+tl_012,tl,Whisper Medium,Kailangan ng aking boss na i-update ang ulat ng badyet bago matapos ang Biyernes.,Kailangan ang aking boss na i-update ang ulat ng budget bago matapos ang biyernes.
+tl_013,tl,Whisper Large v3 Turbo,Kailangan kong tapusin ang plano ng proyekto ngayong hapon.,Kailangan kong tapusin ang plano ng proyekto ngayong hapon.
+tl_013,tl,Whisper Medium,Kailangan kong tapusin ang plano ng proyekto ngayong hapon.,Kailangan kong tapusin ang plano ng proyektong ngayong hapon.
+tl_014,tl,Whisper Large v3 Turbo,Kailangan ng kliyente na ipadala ang ulat ng badyet ngayong hapon.,Kailangan ng kliyente na ipadala ang ulat ng budget ngayong hapon.
+tl_014,tl,Whisper Medium,Kailangan ng kliyente na ipadala ang ulat ng badyet ngayong hapon.,Kailangan ng kliente na ipadala ang ulat ng budget ngayong hapon.
+tl_015,tl,Whisper Large v3 Turbo,Kailangan ng kliyente na ipadala ang email ng kliyente bukas ng umaga.,Kailangan ng kliyente na ipadala ang email ng kliyente bukas ng umaga.
+tl_015,tl,Whisper Medium,Kailangan ng kliyente na ipadala ang email ng kliyente bukas ng umaga.,Kailangan ng kliente na ipadala ang email ng kliente bukas ng umaga.
+tl_016,tl,Whisper Large v3 Turbo,Kailangan ng kliyente na tapusin ang agenda ng pulong bago magtanghalian.,Kailangan ng kliyente na tapusin ang agenda ng pulong bago magtanghalian.
+tl_016,tl,Whisper Medium,Kailangan ng kliyente na tapusin ang agenda ng pulong bago magtanghalian.,Kailangan ang kliente natapusin ang agenda ng pulong bago magtanghalian.
+tl_017,tl,Whisper Large v3 Turbo,Kailangan kong tapusin ang email ng kliyente bukas ng umaga.,Kailangan kong tapusin ang email ng kliyente bukas ng umaga.
+tl_017,tl,Whisper Medium,Kailangan kong tapusin ang email ng kliyente bukas ng umaga.,Kailangan kong tapusin ang email ng kliente bukas ng umaga.
+tl_018,tl,Whisper Large v3 Turbo,Kailangan ng koponan na ayusin ang email ng kliyente bago matapos ang Biyernes.,Kailangan ng kuponan na ayusin ang email ng kliyente bago matapos ang biyernes.
+tl_018,tl,Whisper Medium,Kailangan ng koponan na ayusin ang email ng kliyente bago matapos ang Biyernes.,Kailangan ang kupona na ayusin ang email ng kliente bago matapos ang biernis.
+tl_019,tl,Whisper Large v3 Turbo,Kailangan nating ipadala ang ulat ng badyet bukas ng umaga.,Kailangan natin ipadala ang ulat ng budget bukas ng umaga.
+tl_019,tl,Whisper Medium,Kailangan nating ipadala ang ulat ng badyet bukas ng umaga.,Kailangan natin ipadala ang ulat ng budget bukas ng umaga.
+tl_020,tl,Whisper Large v3 Turbo,Kailangan kong ayusin ang plano ng proyekto bago matapos ang Biyernes.,Kailangan kong ayusin ang plano ng proyekto bago matapos ang biyernes.
+tl_020,tl,Whisper Medium,Kailangan kong ayusin ang plano ng proyekto bago matapos ang Biyernes.,Kailangan kong ayusin ang plano ng proyekto bago matapos ang biernis.
+tl_021,tl,Whisper Large v3 Turbo,Kailangan ng aking boss na ipadala ang agenda ng pulong bukas ng umaga.,Kailangan ng aking boss na ipadala ang agenda ng pulong bukas ng umaga.
+tl_021,tl,Whisper Medium,Kailangan ng aking boss na ipadala ang agenda ng pulong bukas ng umaga.,Kailangan ang aking boss na ipadala ang agenda ng pulong bukas ng umaga.
+tl_022,tl,Whisper Large v3 Turbo,Kailangan ng koponan na suriin ang email ng kliyente bago matapos ang Biyernes.,Kailangan ng kuponan na suriin ang email ng kliyente bago matapos ang biyernes.
+tl_022,tl,Whisper Medium,Kailangan ng koponan na suriin ang email ng kliyente bago matapos ang Biyernes.,Kailangan ang kupona nasuriin ang email ng kliente bago matapos ang biernis.
+tl_023,tl,Whisper Large v3 Turbo,Kailangan ng aking boss na suriin ang email ng kliyente bukas ng umaga.,Kailangan ng aking boss na suriin ang email ng kliyente bukas ng umaga.
+tl_023,tl,Whisper Medium,Kailangan ng aking boss na suriin ang email ng kliyente bukas ng umaga.,Kailangan ang aking boss na suriin ang email ng kliente bukas ng umaga.
+tl_024,tl,Whisper Large v3 Turbo,Kailangan kong i-update ang agenda ng pulong bago matapos ang Biyernes.,Kailangan kong i-update ang agenda ng pulong bago matapos ang biyernes.
+tl_024,tl,Whisper Medium,Kailangan kong i-update ang agenda ng pulong bago matapos ang Biyernes.,Kailangan kong i-update ang agenda ng pulong bago matapos ang biernis.
+tl_025,tl,Whisper Large v3 Turbo,Kailangan kong suriin ang email ng kliyente bago matapos ang Biyernes.,Kailangan kong suriin ang email ng kliyente bago matapos ang biyernes.
+tl_025,tl,Whisper Medium,Kailangan kong suriin ang email ng kliyente bago matapos ang Biyernes.,Kailangan kong suriin ang email ng kliente bago matapos ang biernis.
+tl_026,tl,Whisper Large v3 Turbo,Kailangan kong i-update ang plano ng proyekto bago magtanghalian.,Kailangan kong i-update ang plano ng proyekto bago magtanghalian.
+tl_026,tl,Whisper Medium,Kailangan kong i-update ang plano ng proyekto bago magtanghalian.,Kailangan kong i-update ang plano ng proyekto bago magtanghalian.
+tl_027,tl,Whisper Large v3 Turbo,Kailangan ng koponan na tapusin ang plano ng proyekto ngayong hapon.,Kailangan ako po na natapusin ang plano ng proyekto ngayong hapon.
+tl_027,tl,Whisper Medium,Kailangan ng koponan na tapusin ang plano ng proyekto ngayong hapon.,Kailangan ang kupo na natapusin ang plano ng proyektong ngayong hapon.
+tl_028,tl,Whisper Large v3 Turbo,Kailangan kong suriin ang ulat ng badyet ngayong hapon.,Kailangan kong suriin ang ulat ng budget ngayong hapon.
+tl_028,tl,Whisper Medium,Kailangan kong suriin ang ulat ng badyet ngayong hapon.,Kailangan kong suriin ang ulat ng budget ngayong hapon.
+tl_029,tl,Whisper Large v3 Turbo,Kailangan ng kliyente na tapusin ang agenda ng pulong bukas ng umaga.,Kailangan ng kliyente na tapusin ang agenda ng pulong bukas ng umaga.
+tl_029,tl,Whisper Medium,Kailangan ng kliyente na tapusin ang agenda ng pulong bukas ng umaga.,Kailangan ang kliente natapusin ang agenda ng pulong bukas ng umaga.
+tl_030,tl,Whisper Large v3 Turbo,Kailangan ng kliyente na ayusin ang plano ng proyekto bago magtanghalian.,Kailangan ng kliyente na ayusin ang plano ng proyekto bago magtanghalian.
+tl_030,tl,Whisper Medium,Kailangan ng kliyente na ayusin ang plano ng proyekto bago magtanghalian.,Kailangan ang kliente na ayusin ang plano ng proyekto bago magtanghalian.
+tl_031,tl,Whisper Large v3 Turbo,Kailangan ng aking boss na ipadala ang ulat ng badyet bukas ng umaga.,Kailangan ng aking boss na ipadala ang ulat ng budget bukas ng umaga.
+tl_031,tl,Whisper Medium,Kailangan ng aking boss na ipadala ang ulat ng badyet bukas ng umaga.,Kailangan ang aking boss na ipadala ang ulat ng budget bukas ng umaga.
+tl_032,tl,Whisper Large v3 Turbo,Kailangan ng aking boss na suriin ang agenda ng pulong bago matapos ang Biyernes.,Kailangan ng aking boss na suriin ang agenda ng pulong bago matapos ang biyernes.
+tl_032,tl,Whisper Medium,Kailangan ng aking boss na suriin ang agenda ng pulong bago matapos ang Biyernes.,Kailangan ang aking boss na suriin ang agenda ng pulong bago matapos ang biernis.
+tl_033,tl,Whisper Large v3 Turbo,Kailangan ng aking boss na suriin ang plano ng proyekto bago magtanghalian.,Kailangan ng aking boss na suriin ang plano ng proyekto bago magtanghalian.
+tl_033,tl,Whisper Medium,Kailangan ng aking boss na suriin ang plano ng proyekto bago magtanghalian.,Kailangan ng aking boss na suriin ang plano ng proyekto bago magtanghalian.
+tl_034,tl,Whisper Large v3 Turbo,Kailangan ng koponan na ayusin ang ulat ng badyet bago matapos ang Biyernes.,Kailangan ng kuponan na ayusin ang ulat ng budget bago matapos ang biyernes.
+tl_034,tl,Whisper Medium,Kailangan ng koponan na ayusin ang ulat ng badyet bago matapos ang Biyernes.,Kailangan ang kupona na ayusin ang ulat ng budget bago matapos ang biernes.
+tl_035,tl,Whisper Large v3 Turbo,Kailangan kong ayusin ang plano ng proyekto bukas ng umaga.,Kailangan kong ayusin ang plano ng proyekto bukas ng umaga.
+tl_035,tl,Whisper Medium,Kailangan kong ayusin ang plano ng proyekto bukas ng umaga.,Kailangan kong ayusin ang plano ng proyekto bukas ng umaga.
+tl_036,tl,Whisper Large v3 Turbo,Kailangan kong tapusin ang ulat ng badyet ngayong hapon.,Kailangan kong tapusin ang ulat ng budget ngayong hapon.
+tl_036,tl,Whisper Medium,Kailangan kong tapusin ang ulat ng badyet ngayong hapon.,Kailangan kong tapusin ang ulat ng budget na yung hapon.
+tl_037,tl,Whisper Large v3 Turbo,Kailangan ng kliyente na tapusin ang ulat ng badyet ngayong hapon.,Kailangan ng kliyente na tapusin ang ulat ng budget ngayong hapon.
+tl_037,tl,Whisper Medium,Kailangan ng kliyente na tapusin ang ulat ng badyet ngayong hapon.,Kailangan ang kliente natapusin ang ulat ng budget ngayong hapon.
+tl_038,tl,Whisper Large v3 Turbo,Kailangan ng aking boss na tapusin ang email ng kliyente bago magtanghalian.,Kailangan ng aking boss na tapusin ang email ng kliyente bago magtanghalian.
+tl_038,tl,Whisper Medium,Kailangan ng aking boss na tapusin ang email ng kliyente bago magtanghalian.,Kailangan ang aking boss natapusin ang email ng kliente bago magtanghalian.
+tl_039,tl,Whisper Large v3 Turbo,Kailangan kong ayusin ang email ng kliyente bukas ng umaga.,Kailangan kong ayusin ang email ng kliyente bukas ng umaga.
+tl_039,tl,Whisper Medium,Kailangan kong ayusin ang email ng kliyente bukas ng umaga.,Kailangan kong ayusin ang email ng kliente bukas ng umaga.
+tl_040,tl,Whisper Large v3 Turbo,Kailangan ng aking boss na suriin ang ulat ng badyet bukas ng umaga.,Kailangan ng aking boss na suriin ang ulat ng budget bukas ng umaga.
+tl_040,tl,Whisper Medium,Kailangan ng aking boss na suriin ang ulat ng badyet bukas ng umaga.,Kailangan ang aking boss na suriin ang ulat ng budget bukas ng umaga.
+tl_041,tl,Whisper Large v3 Turbo,Kailangan ng kliyente na i-update ang ulat ng badyet ngayong hapon.,Kailangan ng kliyente na i-update ang ulat ng budget ngayong hapon.
+tl_041,tl,Whisper Medium,Kailangan ng kliyente na i-update ang ulat ng badyet ngayong hapon.,Kailangan ang kliente na i-update ang ulat ng budget ngayong hapon.
+tl_042,tl,Whisper Large v3 Turbo,Kailangan ng aking boss na ayusin ang ulat ng badyet bago matapos ang Biyernes.,Kailangan ng aking boss na ayusin ang ulat ng budget bago matapos ang biyernes.
+tl_042,tl,Whisper Medium,Kailangan ng aking boss na ayusin ang ulat ng badyet bago matapos ang Biyernes.,Kailangan ang aking boss na ayusin ang ulat ng budget bago matapos ang biyernes.
+tl_043,tl,Whisper Large v3 Turbo,Kailangan ng koponan na i-update ang plano ng proyekto ngayong hapon.,Kailangan nang kuponan na i-update ang plano ng proyekto ngayong hapon.
+tl_043,tl,Whisper Medium,Kailangan ng koponan na i-update ang plano ng proyekto ngayong hapon.,Kailangan ang kupon na nai-update ang plano ng proyektong ngayong hapon.
+tl_044,tl,Whisper Large v3 Turbo,Kailangan ng kliyente na ayusin ang agenda ng pulong bago magtanghalian.,Kailangan ng kliyente na ayusin ang agenda ng pulong bago magtanghalian.
+tl_044,tl,Whisper Medium,Kailangan ng kliyente na ayusin ang agenda ng pulong bago magtanghalian.,Kailangan ang kliente na ayusin ang agenda ng pulong bago magtanghalian.
+tl_045,tl,Whisper Large v3 Turbo,Kailangan kong ipadala ang agenda ng pulong bago matapos ang Biyernes.,Kailangan kong ipadala ang agenda ng pulong bago matapos ang biyernes.
+tl_045,tl,Whisper Medium,Kailangan kong ipadala ang agenda ng pulong bago matapos ang Biyernes.,Kailangan kong ipadala ang agenda ng pulong bago matapos ang biernis.
+tl_046,tl,Whisper Large v3 Turbo,Kailangan ng kliyente na suriin ang email ng kliyente bukas ng umaga.,Kailangan ng kliyente na suriin ang email ng kliyente bukas ng umaga.
+tl_046,tl,Whisper Medium,Kailangan ng kliyente na suriin ang email ng kliyente bukas ng umaga.,Kailangan ng kliente na suriin ang email ng kliente bukas ng umaga.
+tl_047,tl,Whisper Large v3 Turbo,Kailangan ng aking boss na suriin ang ulat ng badyet bago magtanghalian.,Kailangan ng aking boss na suriin ang ulat ng budget bago magtanghalian.
+tl_047,tl,Whisper Medium,Kailangan ng aking boss na suriin ang ulat ng badyet bago magtanghalian.,Kailangan ang aking boss na suriin ang ulat ng budget bago magtanghalian.
+tl_048,tl,Whisper Large v3 Turbo,Kailangan nating ipadala ang ulat ng badyet bago matapos ang Biyernes.,Kailangan natin ipadala ang ulat ng budget bago matapos ang biyernes.
+tl_048,tl,Whisper Medium,Kailangan nating ipadala ang ulat ng badyet bago matapos ang Biyernes.,Kailangan nating ipadala ang ulat ng budget bago matapos ang biernis.
+tl_049,tl,Whisper Large v3 Turbo,Kailangan ng kliyente na suriin ang ulat ng badyet ngayong hapon.,Kailangan ng kliyente na suriin ang ulat ng budget ngayong hapon.
+tl_049,tl,Whisper Medium,Kailangan ng kliyente na suriin ang ulat ng badyet ngayong hapon.,Kailangan ang kliente na suriin ang ulat ng budget ngayong hapon.
+tl_050,tl,Whisper Large v3 Turbo,Kailangan nating ayusin ang agenda ng pulong bukas ng umaga.,Kailangan natin ayusin ang agenda ng pulong bukas ng umaga.
+tl_050,tl,Whisper Medium,Kailangan nating ayusin ang agenda ng pulong bukas ng umaga.,Kailangan nating ayusin ang agenda ng pulong bukas ng umaga.
+tl_051,tl,Whisper Large v3 Turbo,Kailangan ng koponan na suriin ang agenda ng pulong bukas ng umaga.,Kailangan ng kuponan na suriin ang agenda ng pulong bukas ng umaga.
+tl_051,tl,Whisper Medium,Kailangan ng koponan na suriin ang agenda ng pulong bukas ng umaga.,Kailangan ang kupona nasuriin ang agenda ng pulong bukas ng umaga.
+tl_052,tl,Whisper Large v3 Turbo,Kailangan kong i-update ang ulat ng badyet ngayong hapon.,Kailangan kong i-update ang ulat ng budget ngayong hapon.
+tl_052,tl,Whisper Medium,Kailangan kong i-update ang ulat ng badyet ngayong hapon.,Kailangan kong i-update ang ulat ng budget na yung hapon.
+tl_053,tl,Whisper Large v3 Turbo,Kailangan ng kliyente na ipadala ang agenda ng pulong bukas ng umaga.,Kailangan ng kliyente na ipadala ang agenda ng pulong bukas ng umaga.
+tl_053,tl,Whisper Medium,Kailangan ng kliyente na ipadala ang agenda ng pulong bukas ng umaga.,Kailangan ng kliente na ipadala ang agenda ng pulong bukas ng umaga.
+tl_054,tl,Whisper Large v3 Turbo,Kailangan kong tapusin ang agenda ng pulong bago matapos ang Biyernes.,Kailangan kong tapusin ang agenda ng pulong bago matapos ang biyernes.
+tl_054,tl,Whisper Medium,Kailangan kong tapusin ang agenda ng pulong bago matapos ang Biyernes.,Kailangan kong tapusin ang agenda ng pulong bago matapos ang biernis.
+tl_055,tl,Whisper Large v3 Turbo,Kailangan ng koponan na i-update ang ulat ng badyet bukas ng umaga.,Kailangan nang kuponan na i-update ang ulat ng budget bukas ng umaga.
+tl_055,tl,Whisper Medium,Kailangan ng koponan na i-update ang ulat ng badyet bukas ng umaga.,Kailangan ang kupona na i-update ang ulat ng budget bukas ng umaga.
+tl_056,tl,Whisper Large v3 Turbo,Kailangan nating i-update ang ulat ng badyet bago magtanghalian.,Kailangan natin i-update ang ulat ng budget bago magtanghalian.
+tl_056,tl,Whisper Medium,Kailangan nating i-update ang ulat ng badyet bago magtanghalian.,Kailangan natin i-update ang ulat ng budget bago magtanghalian.
+tl_057,tl,Whisper Large v3 Turbo,Kailangan ng koponan na ayusin ang plano ng proyekto bago matapos ang Biyernes.,Kailangan ng kuponan na ayusin ang plano ng proyekto bago matapos ang biyernes.
+tl_057,tl,Whisper Medium,Kailangan ng koponan na ayusin ang plano ng proyekto bago matapos ang Biyernes.,Kailangan ang kuponan na ayusin ang plano ng proyekto bago matapos ang biernis.
+tl_058,tl,Whisper Large v3 Turbo,Kailangan kong i-update ang email ng kliyente bukas ng umaga.,Kailangan kong i-update ang email ng kliyente bukas ng umaga.
+tl_058,tl,Whisper Medium,Kailangan kong i-update ang email ng kliyente bukas ng umaga.,Kailangan kong i-update ang email ng kliente bukas ng umaga.
+tl_059,tl,Whisper Large v3 Turbo,Kailangan ng kliyente na ayusin ang plano ng proyekto ngayong hapon.,Kailangan ng kliyente na ayusin ang plano ng proyekto ngayong hapon.
+tl_059,tl,Whisper Medium,Kailangan ng kliyente na ayusin ang plano ng proyekto ngayong hapon.,Kailangan ang kliente na ayusin ang plano ng proyektong ngayong hapon.
+tl_060,tl,Whisper Large v3 Turbo,Kailangan ng kliyente na suriin ang agenda ng pulong bukas ng umaga.,Kailangan ng kliyente na suriin ang agenda ng pulong bukas ng umaga.
+tl_060,tl,Whisper Medium,Kailangan ng kliyente na suriin ang agenda ng pulong bukas ng umaga.,Kailangan ang kliente na suriin ang agenda ng pulong bukas ng umaga.
+tl_061,tl,Whisper Large v3 Turbo,Kailangan nating suriin ang email ng kliyente bago magtanghalian.,Kailangan nating suriin ang email ng kliyente bago magtanghalian.
+tl_061,tl,Whisper Medium,Kailangan nating suriin ang email ng kliyente bago magtanghalian.,Kailangan nating suriin ang email ng kliente bago magtanghalian.
+tl_062,tl,Whisper Large v3 Turbo,Kailangan ng kliyente na i-update ang ulat ng badyet bago matapos ang Biyernes.,Kailangan ng kliyente na i-update ang ulat ng budget bago matapos ang biyernes.
+tl_062,tl,Whisper Medium,Kailangan ng kliyente na i-update ang ulat ng badyet bago matapos ang Biyernes.,Kailangan ang kliente na i-update ang ulat ng budget bago matapos ang biyernes.
+tl_063,tl,Whisper Large v3 Turbo,Kailangan kong ipadala ang email ng kliyente ngayong hapon.,Kailangan kong ipadala ang email ng kliyente ngayong hapon.
+tl_063,tl,Whisper Medium,Kailangan kong ipadala ang email ng kliyente ngayong hapon.,Kailangan kong ipadala ang email ng klienteng ngayong hapon.
+tl_064,tl,Whisper Large v3 Turbo,Kailangan kong i-update ang email ng kliyente bago magtanghalian.,Kailangan kong i-update ang email ng kliyente bago magtanghalian.
+tl_064,tl,Whisper Medium,Kailangan kong i-update ang email ng kliyente bago magtanghalian.,Kailangan kong i-update ang email ng kliente bago magtanghalian.
+tl_065,tl,Whisper Large v3 Turbo,Kailangan ng koponan na ipadala ang plano ng proyekto bago magtanghalian.,Kailangan ng kuponan na ipadala ang plano ng proyekto bago magtanghalian.
+tl_065,tl,Whisper Medium,Kailangan ng koponan na ipadala ang plano ng proyekto bago magtanghalian.,Kailangan ang kupon na naipadala ang plano ng proyekto bago magtanghalian.
+tl_066,tl,Whisper Large v3 Turbo,Kailangan kong ipadala ang agenda ng pulong bukas ng umaga.,Kailangan kong ipadala ang agenda ng pulong bukas ng umaga.
+tl_066,tl,Whisper Medium,Kailangan kong ipadala ang agenda ng pulong bukas ng umaga.,Kailangan kong ipadala ang agenda ng pulong bukas ng umaga.
+tl_067,tl,Whisper Large v3 Turbo,Kailangan ng kliyente na suriin ang plano ng proyekto ngayong hapon.,Kailangan ng kliyente na suriin ang plano ng proyektong ngayong hapon.
+tl_067,tl,Whisper Medium,Kailangan ng kliyente na suriin ang plano ng proyekto ngayong hapon.,Kailangan ang kliente na suriin ang plano ng proyektong ngayong hapon.
+tl_068,tl,Whisper Large v3 Turbo,Kailangan nating ayusin ang ulat ng badyet ngayong hapon.,Kailangan nating ayusin ang ulat ng budget ngayong hapon.
+tl_068,tl,Whisper Medium,Kailangan nating ayusin ang ulat ng badyet ngayong hapon.,Kailangan nating ayusin ang ulat ng budget ngayong hapon.
+tl_069,tl,Whisper Large v3 Turbo,Kailangan nating tapusin ang agenda ng pulong bukas ng umaga.,Kailangan natin tapusin ang agenda ng pulong bukas ng umaga.
+tl_069,tl,Whisper Medium,Kailangan nating tapusin ang agenda ng pulong bukas ng umaga.,Kailangan nating tapusin ang agenda ng pulong bukas ng umaga.
+tl_070,tl,Whisper Large v3 Turbo,Kailangan nating tapusin ang email ng kliyente bukas ng umaga.,Kailangan natin tapusin ang email ng kliyente bukas ng umaga.
+tl_070,tl,Whisper Medium,Kailangan nating tapusin ang email ng kliyente bukas ng umaga.,Kailangan nating tapusin ang email ng kliente bukas ng umaga.
+tl_071,tl,Whisper Large v3 Turbo,Kailangan ng aking boss na suriin ang email ng kliyente bago magtanghalian.,Kailangan ng aking boss na suriin ang email ng kliyente bago magtanghalian.
+tl_071,tl,Whisper Medium,Kailangan ng aking boss na suriin ang email ng kliyente bago magtanghalian.,Kailangan ang aking boss na suriin ang email ng kliente bago magtanghalian.
+tl_072,tl,Whisper Large v3 Turbo,Kailangan ng kliyente na suriin ang agenda ng pulong bago matapos ang Biyernes.,Kailangan ng kliyente na suriin ang agenda ng pulong bago matapos ang biyernes.
+tl_072,tl,Whisper Medium,Kailangan ng kliyente na suriin ang agenda ng pulong bago matapos ang Biyernes.,Kailangan ang kliente na suriin ang agenda ng pulong bago matapos ang biernis.
+tl_073,tl,Whisper Large v3 Turbo,Kailangan kong suriin ang email ng kliyente ngayong hapon.,Kailangan kong suriin ang email ng kliyente ngayong hapon.
+tl_073,tl,Whisper Medium,Kailangan kong suriin ang email ng kliyente ngayong hapon.,Kailangan kong suriin ang email ng klienteng ngayong hapon.
+tl_074,tl,Whisper Large v3 Turbo,Kailangan kong i-update ang ulat ng badyet bago matapos ang Biyernes.,Kailangan kong i-update ang ulat ng budget bago matapos ang biyernes.
+tl_074,tl,Whisper Medium,Kailangan kong i-update ang ulat ng badyet bago matapos ang Biyernes.,Kailangan kong i-update ang ulat ng budget bago matapos ang biyernes.
+tl_075,tl,Whisper Large v3 Turbo,Kailangan ng kliyente na ipadala ang email ng kliyente bago matapos ang Biyernes.,Kailangan ng kliyente na ipadala ang email ng kliyente bago matapos ang biyernes.
+tl_075,tl,Whisper Medium,Kailangan ng kliyente na ipadala ang email ng kliyente bago matapos ang Biyernes.,Kailangan ng kliente na ipadala ang email ng kliente bago matapos ang biernis.
+tl_076,tl,Whisper Large v3 Turbo,Kailangan ng kliyente na ipadala ang agenda ng pulong bago matapos ang Biyernes.,Kailangan ng kliyente na ipadala ang agenda ng pulong bago matapos ang biyernes.
+tl_076,tl,Whisper Medium,Kailangan ng kliyente na ipadala ang agenda ng pulong bago matapos ang Biyernes.,Kailangan ang kliente na ipadala ang agenda ng pulong bago matapos ang biyernes.
+tl_077,tl,Whisper Large v3 Turbo,Kailangan ng aking boss na tapusin ang agenda ng pulong bago magtanghalian.,Kailangan ng aking boss na tapusin ang agenda ng pulong bago magtanghalian.
+tl_077,tl,Whisper Medium,Kailangan ng aking boss na tapusin ang agenda ng pulong bago magtanghalian.,Kailangan ang aking boss natapusin ang agenda ng pulong bago magtanghalian.
+tl_078,tl,Whisper Large v3 Turbo,Kailangan kong i-update ang ulat ng badyet bago magtanghalian.,Kailangan kong i-update ang ulat ng budget bago magtanghalian.
+tl_078,tl,Whisper Medium,Kailangan kong i-update ang ulat ng badyet bago magtanghalian.,Kailangan kong i-update ang ulat ng budget bago magtanghalian.
+tl_079,tl,Whisper Large v3 Turbo,Kailangan ng koponan na suriin ang ulat ng badyet ngayong hapon.,Kailangan ng kuponan na suriin ang ulat ng budget ngayong hapon.
+tl_079,tl,Whisper Medium,Kailangan ng koponan na suriin ang ulat ng badyet ngayong hapon.,Kailangan ang kupona nasuriin ang ulat ng budget ngayong hapon.
+tl_080,tl,Whisper Large v3 Turbo,Kailangan nating suriin ang plano ng proyekto bago matapos ang Biyernes.,Kailangan nating suriin ang plano ng proyekto bago matapos ang biyernes.
+tl_080,tl,Whisper Medium,Kailangan nating suriin ang plano ng proyekto bago matapos ang Biyernes.,Kailangan nating suriin ang plano ng proyekto bago matapos ang biernes.
+tl_081,tl,Whisper Large v3 Turbo,Kailangan nating i-update ang email ng kliyente ngayong hapon.,Kailangan natin i-update ang email ng kliyente ngayong hapon.
+tl_081,tl,Whisper Medium,Kailangan nating i-update ang email ng kliyente ngayong hapon.,Kailangan nating i-update ang email ng kliente ngayong hapon.
+tl_082,tl,Whisper Large v3 Turbo,Kailangan nating tapusin ang email ng kliyente bago magtanghalian.,Kailangan natin tapusin ang email ng kliyente bago magtanghalian.
+tl_082,tl,Whisper Medium,Kailangan nating tapusin ang email ng kliyente bago magtanghalian.,Kailangan nating tapusin ang email ng kliente bago magtanghalian.
+tl_083,tl,Whisper Large v3 Turbo,Kailangan ng kliyente na suriin ang email ng kliyente ngayong hapon.,Kailangan ng kliyente na suriin ang email ng kliyente ngayong hapon.
+tl_083,tl,Whisper Medium,Kailangan ng kliyente na suriin ang email ng kliyente ngayong hapon.,Kailangan ng kliente na suriin ang email ng kliente ngayong hapon.
+tl_084,tl,Whisper Large v3 Turbo,Kailangan ng koponan na i-update ang ulat ng badyet bago matapos ang Biyernes.,Kailangan ng kuponan na i-update ang ulat ng budget bago matapos ang biyernes.
+tl_084,tl,Whisper Medium,Kailangan ng koponan na i-update ang ulat ng badyet bago matapos ang Biyernes.,Kailangan ang kupona na i-update ang ulat ng budget bago matapos ang biyernes.
+tl_085,tl,Whisper Large v3 Turbo,Kailangan ng koponan na ayusin ang agenda ng pulong bago magtanghalian.,Kailangan ng kuponan naayusin ang agenda ng pulong bago magtanghalian.
+tl_085,tl,Whisper Medium,Kailangan ng koponan na ayusin ang agenda ng pulong bago magtanghalian.,Kailangan ang kupona na ayusin ang agenda ng pulong bago magtanghalian.
+tl_086,tl,Whisper Large v3 Turbo,Kailangan kong i-update ang email ng kliyente ngayong hapon.,Kailangan kong i-update ang email ng kliyente ngayong hapon.
+tl_086,tl,Whisper Medium,Kailangan kong i-update ang email ng kliyente ngayong hapon.,Kailangan kong i-update ang email ng klienteng ngayong hapon.
+tl_087,tl,Whisper Large v3 Turbo,Kailangan nating ipadala ang email ng kliyente ngayong hapon.,Kailangan natin ipadala ang email ng kliyente ngayong hapon.
+tl_087,tl,Whisper Medium,Kailangan nating ipadala ang email ng kliyente ngayong hapon.,Kailangan nating ipadala ang email ng klienteng ngayong hapon.
+tl_088,tl,Whisper Large v3 Turbo,Kailangan ng koponan na tapusin ang email ng kliyente bukas ng umaga.,Kailangan nang kupo na natapusin ang email ng kliyente bukas ng umaga.
+tl_088,tl,Whisper Medium,Kailangan ng koponan na tapusin ang email ng kliyente bukas ng umaga.,Kailangan ang kupona natapusin ang email ng kliente bukas ng umaga.
+tl_089,tl,Whisper Large v3 Turbo,Kailangan kong tapusin ang plano ng proyekto bago matapos ang Biyernes.,Kailangan kong tapusin ang plano ng proyekto bago matapos ang biyernes.
+tl_089,tl,Whisper Medium,Kailangan kong tapusin ang plano ng proyekto bago matapos ang Biyernes.,Kailangan kong tapusin ang plano ng proyekto bago matapos ang biernis.
+tl_090,tl,Whisper Large v3 Turbo,Kailangan ng koponan na ayusin ang ulat ng badyet bukas ng umaga.,Kailangan nang ko po na naayusin ang ulat ng budget bukas ng umaga.
+tl_090,tl,Whisper Medium,Kailangan ng koponan na ayusin ang ulat ng badyet bukas ng umaga.,Kailangan ang kupona na ayusin ang ulat ng budget bukas ng umaga.
+tl_091,tl,Whisper Large v3 Turbo,Kailangan ng aking boss na ipadala ang agenda ng pulong bago magtanghalian.,Kailangan ng aking boss na ipadala ang agenda ng pulong bago magtanghalian.
+tl_091,tl,Whisper Medium,Kailangan ng aking boss na ipadala ang agenda ng pulong bago magtanghalian.,Kailangan ng aking boss na ipadala ang agenda ng pulong bago magtanghalian.
+tl_092,tl,Whisper Large v3 Turbo,Kailangan ng koponan na i-update ang plano ng proyekto bukas ng umaga.,Kailangan ng kuponan na i-update ang plano ng proyekto bukas ng umaga.
+tl_092,tl,Whisper Medium,Kailangan ng koponan na i-update ang plano ng proyekto bukas ng umaga.,Kailangan ang kupona na i-update ang plano ng proyekto bukas ng umaga.
+tl_093,tl,Whisper Large v3 Turbo,Kailangan ng kliyente na ipadala ang ulat ng badyet bago magtanghalian.,Kailangan ng kliyente na ipadala ang ulat ng budget bago magtanghalian.
+tl_093,tl,Whisper Medium,Kailangan ng kliyente na ipadala ang ulat ng badyet bago magtanghalian.,Kailangan ang kliente na ipadala ang ulat ng budget bago magtanghalian.
+tl_094,tl,Whisper Large v3 Turbo,Kailangan ng koponan na suriin ang plano ng proyekto bukas ng umaga.,Kailangan ng kuponan na suriin ang plano ng proyekto bukas ng umaga.
+tl_094,tl,Whisper Medium,Kailangan ng koponan na suriin ang plano ng proyekto bukas ng umaga.,Kailangan ang kupona nasuriin ang plano ng proyekto bukas ng umaga.
+tl_095,tl,Whisper Large v3 Turbo,Kailangan ng koponan na suriin ang plano ng proyekto bago matapos ang Biyernes.,Kailangan ng kuponan na suriin ang plano ng proyekto bago matapos ang biyernes.
+tl_095,tl,Whisper Medium,Kailangan ng koponan na suriin ang plano ng proyekto bago matapos ang Biyernes.,Kailangan ang kupona nasuriin ang plano ng proyekto bago matapos ang biernis.
+tl_096,tl,Whisper Large v3 Turbo,Kailangan nating suriin ang agenda ng pulong bago matapos ang Biyernes.,Kailangan nating suriin ang agenda ng pulong bago matapos ang biyernes.
+tl_096,tl,Whisper Medium,Kailangan nating suriin ang agenda ng pulong bago matapos ang Biyernes.,Kailangan nating suriin ang agenda ng pulong bago matapos ang biernis.
+tl_097,tl,Whisper Large v3 Turbo,Kailangan nating suriin ang email ng kliyente bago matapos ang Biyernes.,Kailangan natin suriin ang email ng kliyente bago matapos ang biyernes.
+tl_097,tl,Whisper Medium,Kailangan nating suriin ang email ng kliyente bago matapos ang Biyernes.,Kailangan nating suriin ang email ng kliente bago matapos ang biernis.
+tl_098,tl,Whisper Large v3 Turbo,Kailangan ng kliyente na tapusin ang plano ng proyekto bago magtanghalian.,Kailangan ng kliyente na tapusin ang plano ng proyekto bago magtanghalian.
+tl_098,tl,Whisper Medium,Kailangan ng kliyente na tapusin ang plano ng proyekto bago magtanghalian.,Kailangan ang kliente natapusin ang plano ng proyekto bago magtanghalian.
+tl_099,tl,Whisper Large v3 Turbo,Kailangan ng aking boss na i-update ang agenda ng pulong ngayong hapon.,Kailangan ng aking boss na i-update ang agenda ng pulong ngayong hapon.
+tl_099,tl,Whisper Medium,Kailangan ng aking boss na i-update ang agenda ng pulong ngayong hapon.,Kailangan ang aking boss na i-update ang agenda ng pulong ngayong hapon.
+tl_100,tl,Whisper Large v3 Turbo,Kailangan ng koponan na suriin ang email ng kliyente ngayong hapon.,Kailangan ng kuponan na suriin ang email ng kliyente ngayong hapon.
+tl_100,tl,Whisper Medium,Kailangan ng koponan na suriin ang email ng kliyente ngayong hapon.,Kailangan ang kupona nasuriin ang email ng kliente ngayong hapon.
+zh-tw_001,zh-tw,Whisper Large v3 Turbo,我的經理需要審閱客戶郵件週五前。,我的經理需要審閱客戶郵件週五前
+zh-tw_001,zh-tw,Whisper Medium,我的經理需要審閱客戶郵件週五前。,我的經歷需要審閱客戶郵件週五前
+zh-tw_002,zh-tw,Whisper Large v3 Turbo,我們需要審閱會議議程今天下午。,我们需要审阅会议一成今天下午
+zh-tw_002,zh-tw,Whisper Medium,我們需要審閱會議議程今天下午。,我們需要審閱會議議程今天下午
+zh-tw_003,zh-tw,Whisper Large v3 Turbo,我們應該更新會議議程今天下午。,我们应该更新会议一成今天下午
+zh-tw_003,zh-tw,Whisper Medium,我們應該更新會議議程今天下午。,我們應該更新會議議程今天下午
+zh-tw_004,zh-tw,Whisper Large v3 Turbo,團隊需要審閱專案計畫午餐前。,团队需要审阅专案计划午餐前
+zh-tw_004,zh-tw,Whisper Medium,團隊需要審閱專案計畫午餐前。,團隊需要審閱專案計劃午餐錢
+zh-tw_005,zh-tw,Whisper Large v3 Turbo,我的經理需要審閱專案計畫今天下午。,我的经理需要审阅专案计划今天下午
+zh-tw_005,zh-tw,Whisper Medium,我的經理需要審閱專案計畫今天下午。,我的經歷需要審閱專案計劃今天下午
+zh-tw_006,zh-tw,Whisper Large v3 Turbo,團隊應該更新專案計畫午餐前。,团队应该更新专案计划午餐前
+zh-tw_006,zh-tw,Whisper Medium,團隊應該更新專案計畫午餐前。,團隊應該更新專案計劃午餐前
+zh-tw_007,zh-tw,Whisper Large v3 Turbo,團隊會寄送會議議程今天下午。,团队会计送会议一成今天下午
+zh-tw_007,zh-tw,Whisper Medium,團隊會寄送會議議程今天下午。,團隊會計送會議呈今天下午
+zh-tw_008,zh-tw,Whisper Large v3 Turbo,我們必須完成客戶郵件今天下午。,我們必須完成客戶郵件今天下午
+zh-tw_008,zh-tw,Whisper Medium,我們必須完成客戶郵件今天下午。,我們必須完成客戶郵件今天下午
+zh-tw_009,zh-tw,Whisper Large v3 Turbo,我的經理會寄送預算報告週五前。,我的經理會寄送預算報告週五前
+zh-tw_009,zh-tw,Whisper Medium,我的經理會寄送預算報告週五前。,我的經理會寄送預算報告週五前
+zh-tw_010,zh-tw,Whisper Large v3 Turbo,我的經理想要安排專案計畫午餐前。,我的经理想要安排专案计划午餐前
+zh-tw_010,zh-tw,Whisper Medium,我的經理想要安排專案計畫午餐前。,我的經理想要安排專案計劃午餐前
+zh-tw_011,zh-tw,Whisper Large v3 Turbo,團隊必須完成預算報告午餐前。,团队必须完成预算报告午餐前
+zh-tw_011,zh-tw,Whisper Medium,團隊必須完成預算報告午餐前。,團隊必須完成預算報告午餐前
+zh-tw_012,zh-tw,Whisper Large v3 Turbo,我的經理應該更新預算報告週五前。,我的经理应该更新预算报告周五前
+zh-tw_012,zh-tw,Whisper Medium,我的經理應該更新預算報告週五前。,我的經理應該更新預算報告週五前
+zh-tw_013,zh-tw,Whisper Large v3 Turbo,我必須完成專案計畫今天下午。,我必須完成專案計劃今天下午
+zh-tw_013,zh-tw,Whisper Medium,我必須完成專案計畫今天下午。,我必須完成專案計劃今天下午
+zh-tw_014,zh-tw,Whisper Large v3 Turbo,客戶會寄送預算報告今天下午。,客户会计送预算报告今天下午
+zh-tw_014,zh-tw,Whisper Medium,客戶會寄送預算報告今天下午。,客戶匯寄送預算報告今天下午
+zh-tw_015,zh-tw,Whisper Large v3 Turbo,客戶會寄送客戶郵件明天上午。,客户会寄送客户邮件明天上午
+zh-tw_015,zh-tw,Whisper Medium,客戶會寄送客戶郵件明天上午。,客戶會寄送客戶郵件明天上午
+zh-tw_016,zh-tw,Whisper Large v3 Turbo,客戶必須完成會議議程午餐前。,客户必须完成会议一层午餐前
+zh-tw_016,zh-tw,Whisper Medium,客戶必須完成會議議程午餐前。,客戶必須完成會議一成午餐前
+zh-tw_017,zh-tw,Whisper Large v3 Turbo,我必須完成客戶郵件明天上午。,我必須完成客戶郵件明天上午
+zh-tw_017,zh-tw,Whisper Medium,我必須完成客戶郵件明天上午。,我必須完成客戶郵件明天上午
+zh-tw_018,zh-tw,Whisper Large v3 Turbo,團隊想要安排客戶郵件週五前。,团队想要安排客户邮件周五前
+zh-tw_018,zh-tw,Whisper Medium,團隊想要安排客戶郵件週五前。,團隊想要安排客戶郵件週五前
+zh-tw_019,zh-tw,Whisper Large v3 Turbo,我們會寄送預算報告明天上午。,我们会寄送预算报告明天上午
+zh-tw_019,zh-tw,Whisper Medium,我們會寄送預算報告明天上午。,我們會計送預算報告明天上午
+zh-tw_020,zh-tw,Whisper Large v3 Turbo,我想要安排專案計畫週五前。,我想要安排专案计划周五前
+zh-tw_020,zh-tw,Whisper Medium,我想要安排專案計畫週五前。,我想要安排專案計劃週五前
+zh-tw_021,zh-tw,Whisper Large v3 Turbo,我的經理會寄送會議議程明天上午。,我的经理会寄送会议一成明天上午
+zh-tw_021,zh-tw,Whisper Medium,我的經理會寄送會議議程明天上午。,我的經理會寄送會議一晨明天上午
+zh-tw_022,zh-tw,Whisper Large v3 Turbo,團隊需要審閱客戶郵件週五前。,团队需要审阅客户邮件周五前
+zh-tw_022,zh-tw,Whisper Medium,團隊需要審閱客戶郵件週五前。,團隊需要審閱客戶郵件週五前
+zh-tw_023,zh-tw,Whisper Large v3 Turbo,我的經理需要審閱客戶郵件明天上午。,我的经理需要审阅客户邮件明天上午
+zh-tw_023,zh-tw,Whisper Medium,我的經理需要審閱客戶郵件明天上午。,我的經歷需要審閱客戶郵件明天上午
+zh-tw_024,zh-tw,Whisper Large v3 Turbo,我應該更新會議議程週五前。,我应该更新会议议程周五前
+zh-tw_024,zh-tw,Whisper Medium,我應該更新會議議程週五前。,我應該更新會議議程周五前
+zh-tw_025,zh-tw,Whisper Large v3 Turbo,我需要審閱客戶郵件週五前。,我需要审阅客户邮件周五前
+zh-tw_025,zh-tw,Whisper Medium,我需要審閱客戶郵件週五前。,我需要审閱客戶邮件周五前
+zh-tw_026,zh-tw,Whisper Large v3 Turbo,我應該更新專案計畫午餐前。,我应该更新专案计划午餐前
+zh-tw_026,zh-tw,Whisper Medium,我應該更新專案計畫午餐前。,我應該更新專案計畫午餐前
+zh-tw_027,zh-tw,Whisper Large v3 Turbo,團隊必須完成專案計畫今天下午。,团队必须完成专案计划今天下午
+zh-tw_027,zh-tw,Whisper Medium,團隊必須完成專案計畫今天下午。,團隊必須完成專案計劃今天下午
+zh-tw_028,zh-tw,Whisper Large v3 Turbo,我需要審閱預算報告今天下午。,我需要省月預算報告今天下午
+zh-tw_028,zh-tw,Whisper Medium,我需要審閱預算報告今天下午。,我需要審閱預算報告今天下午
+zh-tw_029,zh-tw,Whisper Large v3 Turbo,客戶必須完成會議議程明天上午。,客户必须完成会议议程明天上午
+zh-tw_029,zh-tw,Whisper Medium,客戶必須完成會議議程明天上午。,客戶必須完成會議一成明天上午
+zh-tw_030,zh-tw,Whisper Large v3 Turbo,客戶想要安排專案計畫午餐前。,客户想要安排专案计划午餐前
+zh-tw_030,zh-tw,Whisper Medium,客戶想要安排專案計畫午餐前。,客戶想要安排專案計劃午餐前
+zh-tw_031,zh-tw,Whisper Large v3 Turbo,我的經理會寄送預算報告明天上午。,我的經理會寄送預算報告明天上午
+zh-tw_031,zh-tw,Whisper Medium,我的經理會寄送預算報告明天上午。,我的經理會寄送預算報告明天上午
+zh-tw_032,zh-tw,Whisper Large v3 Turbo,我的經理需要審閱會議議程週五前。,我的經理需要審閱會議一成週五前
+zh-tw_032,zh-tw,Whisper Medium,我的經理需要審閱會議議程週五前。,我的經歷需要審閱會議一成週五前
+zh-tw_033,zh-tw,Whisper Large v3 Turbo,我的經理需要審閱專案計畫午餐前。,我的经理需要审阅专案计划午餐前
+zh-tw_033,zh-tw,Whisper Medium,我的經理需要審閱專案計畫午餐前。,我的經歷需要審閱專案計劃午餐前
+zh-tw_034,zh-tw,Whisper Large v3 Turbo,團隊想要安排預算報告週五前。,团队想要安排预算报告周五前
+zh-tw_034,zh-tw,Whisper Medium,團隊想要安排預算報告週五前。,團隊想要安排預算報告週五前
+zh-tw_035,zh-tw,Whisper Large v3 Turbo,我想要安排專案計畫明天上午。,我想要安排專案計劃明天上午
+zh-tw_035,zh-tw,Whisper Medium,我想要安排專案計畫明天上午。,我想要安排專案計劃明天上午
+zh-tw_036,zh-tw,Whisper Large v3 Turbo,我必須完成預算報告今天下午。,我必須完成預算報告今天下午
+zh-tw_036,zh-tw,Whisper Medium,我必須完成預算報告今天下午。,我必須完成預算報告今天下午
+zh-tw_037,zh-tw,Whisper Large v3 Turbo,客戶必須完成預算報告今天下午。,客户必须完成预算报告今天下午
+zh-tw_037,zh-tw,Whisper Medium,客戶必須完成預算報告今天下午。,客戶必須完成預算報告今天下午
+zh-tw_038,zh-tw,Whisper Large v3 Turbo,我的經理必須完成客戶郵件午餐前。,我的经理必须完成客户邮件午餐前
+zh-tw_038,zh-tw,Whisper Medium,我的經理必須完成客戶郵件午餐前。,我的經歷必須完成客戶郵件午餐前
+zh-tw_039,zh-tw,Whisper Large v3 Turbo,我想要安排客戶郵件明天上午。,我想要安排客戶邮件明天上午
+zh-tw_039,zh-tw,Whisper Medium,我想要安排客戶郵件明天上午。,我想要安排客戶郵件明天上午
+zh-tw_040,zh-tw,Whisper Large v3 Turbo,我的經理需要審閱預算報告明天上午。,我的经理需要审阅预算报告明天上午
+zh-tw_040,zh-tw,Whisper Medium,我的經理需要審閱預算報告明天上午。,我的經歷需要審閱預算報告明天上午
+zh-tw_041,zh-tw,Whisper Large v3 Turbo,客戶應該更新預算報告今天下午。,客户应该更新预算报告今天下午
+zh-tw_041,zh-tw,Whisper Medium,客戶應該更新預算報告今天下午。,客戶應該更新預算報告今天下午
+zh-tw_042,zh-tw,Whisper Large v3 Turbo,我的經理想要安排預算報告週五前。,我的经理想要安排预算报告周五前
+zh-tw_042,zh-tw,Whisper Medium,我的經理想要安排預算報告週五前。,我的經理想要安排預算報告週五前
+zh-tw_043,zh-tw,Whisper Large v3 Turbo,團隊應該更新專案計畫今天下午。,团队应该更新专案计划今天下午
+zh-tw_043,zh-tw,Whisper Medium,團隊應該更新專案計畫今天下午。,團隊應該更新專案計劃今天下午
+zh-tw_044,zh-tw,Whisper Large v3 Turbo,客戶想要安排會議議程午餐前。,客户想要安排会议一晨午餐前
+zh-tw_044,zh-tw,Whisper Medium,客戶想要安排會議議程午餐前。,客戶想要安排會議一成午餐前
+zh-tw_045,zh-tw,Whisper Large v3 Turbo,我會寄送會議議程週五前。,我會繼送會議一成週五前
+zh-tw_045,zh-tw,Whisper Medium,我會寄送會議議程週五前。,我會寄送會議一成周五前
+zh-tw_046,zh-tw,Whisper Large v3 Turbo,客戶需要審閱客戶郵件明天上午。,客户需要审阅客户邮件明天上午
+zh-tw_046,zh-tw,Whisper Medium,客戶需要審閱客戶郵件明天上午。,客戶需要審閱客戶郵件明天上午
+zh-tw_047,zh-tw,Whisper Large v3 Turbo,我的經理需要審閱預算報告午餐前。,我的经理需要审阅预算报告午餐前
+zh-tw_047,zh-tw,Whisper Medium,我的經理需要審閱預算報告午餐前。,我的經歷需要審閱預算報告午餐前
+zh-tw_048,zh-tw,Whisper Large v3 Turbo,我們會寄送預算報告週五前。,我们会寄送预算报告周五前
+zh-tw_048,zh-tw,Whisper Medium,我們會寄送預算報告週五前。,我們會計送預算報告週五前
+zh-tw_049,zh-tw,Whisper Large v3 Turbo,客戶需要審閱預算報告今天下午。,客户需要省月預算報告今天下午
+zh-tw_049,zh-tw,Whisper Medium,客戶需要審閱預算報告今天下午。,客戶需要審閱預算報告今天下午
+zh-tw_050,zh-tw,Whisper Large v3 Turbo,我們想要安排會議議程明天上午。,我们想要安排会议一成明天上午
+zh-tw_050,zh-tw,Whisper Medium,我們想要安排會議議程明天上午。,我們想要安排會議一成明天上午
+zh-tw_051,zh-tw,Whisper Large v3 Turbo,團隊需要審閱會議議程明天上午。,团队需要审阅会议一成明天上午
+zh-tw_051,zh-tw,Whisper Medium,團隊需要審閱會議議程明天上午。,團隊需要審閱會議一成明天上午
+zh-tw_052,zh-tw,Whisper Large v3 Turbo,我應該更新預算報告今天下午。,我應該更新預算報告今天下午
+zh-tw_052,zh-tw,Whisper Medium,我應該更新預算報告今天下午。,我應該更新預算報告今天下午
+zh-tw_053,zh-tw,Whisper Large v3 Turbo,客戶會寄送會議議程明天上午。,客户会计送会议一成明天上午
+zh-tw_053,zh-tw,Whisper Medium,客戶會寄送會議議程明天上午。,客戶會計送會議一成明天上午
+zh-tw_054,zh-tw,Whisper Large v3 Turbo,我必須完成會議議程週五前。,我必須完成會議議程週五前
+zh-tw_054,zh-tw,Whisper Medium,我必須完成會議議程週五前。,我必須完成會議一成周五前
+zh-tw_055,zh-tw,Whisper Large v3 Turbo,團隊應該更新預算報告明天上午。,團隊應該更新預算報告明天上午
+zh-tw_055,zh-tw,Whisper Medium,團隊應該更新預算報告明天上午。,團隊應該更新預算報告明天上午
+zh-tw_056,zh-tw,Whisper Large v3 Turbo,我們應該更新預算報告午餐前。,我们应该更新预算报告午餐前
+zh-tw_056,zh-tw,Whisper Medium,我們應該更新預算報告午餐前。,我們應該更新預算報告午餐前
+zh-tw_057,zh-tw,Whisper Large v3 Turbo,團隊想要安排專案計畫週五前。,团队想要安排专案计划周五前
+zh-tw_057,zh-tw,Whisper Medium,團隊想要安排專案計畫週五前。,團隊想要安排專案計劃週五前
+zh-tw_058,zh-tw,Whisper Large v3 Turbo,我應該更新客戶郵件明天上午。,我應該更新客戶郵件明天上午
+zh-tw_058,zh-tw,Whisper Medium,我應該更新客戶郵件明天上午。,我應該更新客戶郵件明天上午
+zh-tw_059,zh-tw,Whisper Large v3 Turbo,客戶想要安排專案計畫今天下午。,客户想要安排专案计划今天下午
+zh-tw_059,zh-tw,Whisper Medium,客戶想要安排專案計畫今天下午。,客戶想要安排專案計劃今天下午
+zh-tw_060,zh-tw,Whisper Large v3 Turbo,客戶需要審閱會議議程明天上午。,客户需要审阅会议一成明天上午
+zh-tw_060,zh-tw,Whisper Medium,客戶需要審閱會議議程明天上午。,客戶需要審閱會議一成明天上午
+zh-tw_061,zh-tw,Whisper Large v3 Turbo,我們需要審閱客戶郵件午餐前。,我们需要审阅客户邮件午餐前。
+zh-tw_061,zh-tw,Whisper Medium,我們需要審閱客戶郵件午餐前。,我們需要審閱客戶郵件午餐錢
+zh-tw_062,zh-tw,Whisper Large v3 Turbo,客戶應該更新預算報告週五前。,客户应该更新预算报告周五前
+zh-tw_062,zh-tw,Whisper Medium,客戶應該更新預算報告週五前。,客戶應該更新預算報告週五前
+zh-tw_063,zh-tw,Whisper Large v3 Turbo,我會寄送客戶郵件今天下午。,我會寄送客戶郵件今天下午
+zh-tw_063,zh-tw,Whisper Medium,我會寄送客戶郵件今天下午。,我會寄送客戶郵件今天下午
+zh-tw_064,zh-tw,Whisper Large v3 Turbo,我應該更新客戶郵件午餐前。,我应该更新客户邮件午餐前
+zh-tw_064,zh-tw,Whisper Medium,我應該更新客戶郵件午餐前。,我應該更新客戶郵件午餐前
+zh-tw_065,zh-tw,Whisper Large v3 Turbo,團隊會寄送專案計畫午餐前。,团队会寄送专案计划午餐前
+zh-tw_065,zh-tw,Whisper Medium,團隊會寄送專案計畫午餐前。,團隊會計送專案計劃午餐錢
+zh-tw_066,zh-tw,Whisper Large v3 Turbo,我會寄送會議議程明天上午。,我會繼送會議一成明天上午
+zh-tw_066,zh-tw,Whisper Medium,我會寄送會議議程明天上午。,我會寄送會議一程明天上午
+zh-tw_067,zh-tw,Whisper Large v3 Turbo,客戶需要審閱專案計畫今天下午。,客户需要审阅专案计划今天下午
+zh-tw_067,zh-tw,Whisper Medium,客戶需要審閱專案計畫今天下午。,客戶需要審閱專案計劃今天下午
+zh-tw_068,zh-tw,Whisper Large v3 Turbo,我們想要安排預算報告今天下午。,我们想要安排预算报告今天下午
+zh-tw_068,zh-tw,Whisper Medium,我們想要安排預算報告今天下午。,我們想要安排預算報告今天下午
+zh-tw_069,zh-tw,Whisper Large v3 Turbo,我們必須完成會議議程明天上午。,我们必须完成会议一成明天上午
+zh-tw_069,zh-tw,Whisper Medium,我們必須完成會議議程明天上午。,我們必須完成會議一成明天上午
+zh-tw_070,zh-tw,Whisper Large v3 Turbo,我們必須完成客戶郵件明天上午。,我們必須完成客戶郵件明天上午
+zh-tw_070,zh-tw,Whisper Medium,我們必須完成客戶郵件明天上午。,我們必須完成客戶郵件明天上午
+zh-tw_071,zh-tw,Whisper Large v3 Turbo,我的經理需要審閱客戶郵件午餐前。,我的經理需要審閱客戶郵件午餐前
+zh-tw_071,zh-tw,Whisper Medium,我的經理需要審閱客戶郵件午餐前。,我的經歷需要審閱客戶郵件午餐錢
+zh-tw_072,zh-tw,Whisper Large v3 Turbo,客戶需要審閱會議議程週五前。,客户需要审阅会议议程周五前
+zh-tw_072,zh-tw,Whisper Medium,客戶需要審閱會議議程週五前。,客戶需要審閱會議一成週五前
+zh-tw_073,zh-tw,Whisper Large v3 Turbo,我需要審閱客戶郵件今天下午。,我需要审阅客户邮件今天下午
+zh-tw_073,zh-tw,Whisper Medium,我需要審閱客戶郵件今天下午。,我需要审閱客戶邮件今天下午
+zh-tw_074,zh-tw,Whisper Large v3 Turbo,我應該更新預算報告週五前。,我應該更新預算報告週五前
+zh-tw_074,zh-tw,Whisper Medium,我應該更新預算報告週五前。,我應該更新預算報告週五前
+zh-tw_075,zh-tw,Whisper Large v3 Turbo,客戶會寄送客戶郵件週五前。,客户会寄送客户邮件周五前
+zh-tw_075,zh-tw,Whisper Medium,客戶會寄送客戶郵件週五前。,客戶會寄送客戶郵件週五前
+zh-tw_076,zh-tw,Whisper Large v3 Turbo,客戶會寄送會議議程週五前。,客户会计送会议一成周五前
+zh-tw_076,zh-tw,Whisper Medium,客戶會寄送會議議程週五前。,客戶會計送會議一成週五前
+zh-tw_077,zh-tw,Whisper Large v3 Turbo,我的經理必須完成會議議程午餐前。,我的经理必须完成会议一成午餐前
+zh-tw_077,zh-tw,Whisper Medium,我的經理必須完成會議議程午餐前。,我的精力必須完成會議一成午餐前
+zh-tw_078,zh-tw,Whisper Large v3 Turbo,我應該更新預算報告午餐前。,我应该更新预算报告午餐前
+zh-tw_078,zh-tw,Whisper Medium,我應該更新預算報告午餐前。,我應該更新預算報告午餐前
+zh-tw_079,zh-tw,Whisper Large v3 Turbo,團隊需要審閱預算報告今天下午。,團隊需要審閱預算報告今天下午
+zh-tw_079,zh-tw,Whisper Medium,團隊需要審閱預算報告今天下午。,團隊需要審閱預算報告今天下午
+zh-tw_080,zh-tw,Whisper Large v3 Turbo,我們需要審閱專案計畫週五前。,我们需要审阅专案计划周五前。
+zh-tw_080,zh-tw,Whisper Medium,我們需要審閱專案計畫週五前。,我們需要審閱專案計劃週五前
+zh-tw_081,zh-tw,Whisper Large v3 Turbo,我們應該更新客戶郵件今天下午。,我们应该更新客户邮件今天下午
+zh-tw_081,zh-tw,Whisper Medium,我們應該更新客戶郵件今天下午。,我們應該更新客戶郵件今天下午
+zh-tw_082,zh-tw,Whisper Large v3 Turbo,我們必須完成客戶郵件午餐前。,我们必须完成客户邮件午餐前
+zh-tw_082,zh-tw,Whisper Medium,我們必須完成客戶郵件午餐前。,我们必须完成客户邮件午餐前。
+zh-tw_083,zh-tw,Whisper Large v3 Turbo,客戶需要審閱客戶郵件今天下午。,客户需要审阅客户邮件今天下午
+zh-tw_083,zh-tw,Whisper Medium,客戶需要審閱客戶郵件今天下午。,客戶需要審閱客戶郵件今天下午
+zh-tw_084,zh-tw,Whisper Large v3 Turbo,團隊應該更新預算報告週五前。,團隊應該更新預算報告週五前
+zh-tw_084,zh-tw,Whisper Medium,團隊應該更新預算報告週五前。,團隊應該更新預算報告週五前
+zh-tw_085,zh-tw,Whisper Large v3 Turbo,團隊想要安排會議議程午餐前。,团队想要安排会议议成午餐前
+zh-tw_085,zh-tw,Whisper Medium,團隊想要安排會議議程午餐前。,團隊想要安排會議一成午餐前
+zh-tw_086,zh-tw,Whisper Large v3 Turbo,我應該更新客戶郵件今天下午。,我应该更新客户邮件今天下午
+zh-tw_086,zh-tw,Whisper Medium,我應該更新客戶郵件今天下午。,我應該更新客戶郵件今天下午
+zh-tw_087,zh-tw,Whisper Large v3 Turbo,我們會寄送客戶郵件今天下午。,我们会寄送客户邮件今天下午
+zh-tw_087,zh-tw,Whisper Medium,我們會寄送客戶郵件今天下午。,我們會計送客戶郵件今天下午
+zh-tw_088,zh-tw,Whisper Large v3 Turbo,團隊必須完成客戶郵件明天上午。,团队必须完成客户邮件明天上午
+zh-tw_088,zh-tw,Whisper Medium,團隊必須完成客戶郵件明天上午。,團隊必須完成客戶郵件明天上午
+zh-tw_089,zh-tw,Whisper Large v3 Turbo,我必須完成專案計畫週五前。,我必須完成專案計畫週五前
+zh-tw_089,zh-tw,Whisper Medium,我必須完成專案計畫週五前。,我必須完成專案計劃週五前
+zh-tw_090,zh-tw,Whisper Large v3 Turbo,團隊想要安排預算報告明天上午。,团队想要安排预算报告明天上午
+zh-tw_090,zh-tw,Whisper Medium,團隊想要安排預算報告明天上午。,團隊想要安排預算報告明天上午
+zh-tw_091,zh-tw,Whisper Large v3 Turbo,我的經理會寄送會議議程午餐前。,我的经理会寄送会议一乘午餐前
+zh-tw_091,zh-tw,Whisper Medium,我的經理會寄送會議議程午餐前。,我的經理會寄送會議一成午餐錢
+zh-tw_092,zh-tw,Whisper Large v3 Turbo,團隊應該更新專案計畫明天上午。,团队应该更新专案计划明天上午
+zh-tw_092,zh-tw,Whisper Medium,團隊應該更新專案計畫明天上午。,團隊應該更新專案計劃明天上午
+zh-tw_093,zh-tw,Whisper Large v3 Turbo,客戶會寄送預算報告午餐前。,客户会计送预算报告午餐前
+zh-tw_093,zh-tw,Whisper Medium,客戶會寄送預算報告午餐前。,客戶會計送預算報告午餐前
+zh-tw_094,zh-tw,Whisper Large v3 Turbo,團隊需要審閱專案計畫明天上午。,团队需要审阅专案计划明天上午
+zh-tw_094,zh-tw,Whisper Medium,團隊需要審閱專案計畫明天上午。,團隊需要審閱專案計劃明天上午
+zh-tw_095,zh-tw,Whisper Large v3 Turbo,團隊需要審閱專案計畫週五前。,团队需要审阅专案计划周五前
+zh-tw_095,zh-tw,Whisper Medium,團隊需要審閱專案計畫週五前。,團隊需要審閱專案計劃週五前
+zh-tw_096,zh-tw,Whisper Large v3 Turbo,我們需要審閱會議議程週五前。,我们需要审阅会议一成周五前。
+zh-tw_096,zh-tw,Whisper Medium,我們需要審閱會議議程週五前。,我們需要審閱會議議程週五前
+zh-tw_097,zh-tw,Whisper Large v3 Turbo,我們需要審閱客戶郵件週五前。,我們需要審閱客戶郵件週五前
+zh-tw_097,zh-tw,Whisper Medium,我們需要審閱客戶郵件週五前。,我們需要審閱客戶郵件週五前
+zh-tw_098,zh-tw,Whisper Large v3 Turbo,客戶必須完成專案計畫午餐前。,客户必须完成专案计划午餐前
+zh-tw_098,zh-tw,Whisper Medium,客戶必須完成專案計畫午餐前。,客戶必須完成專案計劃午餐前
+zh-tw_099,zh-tw,Whisper Large v3 Turbo,我的經理應該更新會議議程今天下午。,我的经理应该更新会议一成今天下午
+zh-tw_099,zh-tw,Whisper Medium,我的經理應該更新會議議程今天下午。,我的經理應該更新會議一成今天下午
+zh-tw_100,zh-tw,Whisper Large v3 Turbo,團隊需要審閱客戶郵件今天下午。,团队需要审阅客户邮件今天下午
+zh-tw_100,zh-tw,Whisper Medium,團隊需要審閱客戶郵件今天下午。,團隊需要審閱客戶郵件今天下午
+zh-tw_001,zh-tw,Paraformer-zh,我的經理需要審閱客戶郵件週五前。,我的经理需要审阅客户邮件周五前
+zh-tw_002,zh-tw,Paraformer-zh,我們需要審閱會議議程今天下午。,我们需要审阅会议议程今天下午
+zh-tw_003,zh-tw,Paraformer-zh,我們應該更新會議議程今天下午。,我们应该更新会议成今天下午
+zh-tw_004,zh-tw,Paraformer-zh,團隊需要審閱專案計畫午餐前。,团队需要审阅专案计划午餐前
+zh-tw_005,zh-tw,Paraformer-zh,我的經理需要審閱專案計畫今天下午。,我的经理需要审阅专案计划今天下午
+zh-tw_006,zh-tw,Paraformer-zh,團隊應該更新專案計畫午餐前。,团队应该更新专案计划午餐前
+zh-tw_007,zh-tw,Paraformer-zh,團隊會寄送會議議程今天下午。,团队会寄送会议议程今天下午
+zh-tw_008,zh-tw,Paraformer-zh,我們必須完成客戶郵件今天下午。,我们必须完成客户邮件今天下午
+zh-tw_009,zh-tw,Paraformer-zh,我的經理會寄送預算報告週五前。,我的经理会寄送预算报告周五前
+zh-tw_010,zh-tw,Paraformer-zh,我的經理想要安排專案計畫午餐前。,我的经理想要安排专案计划午餐前
+zh-tw_011,zh-tw,Paraformer-zh,團隊必須完成預算報告午餐前。,团队必须完成预算报告午餐前
+zh-tw_012,zh-tw,Paraformer-zh,我的經理應該更新預算報告週五前。,我的经理应该更新预算报告周五前
+zh-tw_013,zh-tw,Paraformer-zh,我必須完成專案計畫今天下午。,我必须完成专案计划今天下午
+zh-tw_014,zh-tw,Paraformer-zh,客戶會寄送預算報告今天下午。,客户汇寄送预算报告今天下午
+zh-tw_015,zh-tw,Paraformer-zh,客戶會寄送客戶郵件明天上午。,客户会寄送客户邮件明天上午
+zh-tw_016,zh-tw,Paraformer-zh,客戶必須完成會議議程午餐前。,客户必须完成会议一程午餐前
+zh-tw_017,zh-tw,Paraformer-zh,我必須完成客戶郵件明天上午。,我必须完成客户邮件明天上午
+zh-tw_018,zh-tw,Paraformer-zh,團隊想要安排客戶郵件週五前。,团队想要安排客户邮件周五前
+zh-tw_019,zh-tw,Paraformer-zh,我們會寄送預算報告明天上午。,我们会寄送预算报告明天上午
+zh-tw_020,zh-tw,Paraformer-zh,我想要安排專案計畫週五前。,我想要安排专案计划周五前
+zh-tw_021,zh-tw,Paraformer-zh,我的經理會寄送會議議程明天上午。,我的经理会寄送会议议成明天上午
+zh-tw_022,zh-tw,Paraformer-zh,團隊需要審閱客戶郵件週五前。,团队需要审阅客户邮件周五前
+zh-tw_023,zh-tw,Paraformer-zh,我的經理需要審閱客戶郵件明天上午。,我的经理需要审阅客户邮件明天上午
+zh-tw_024,zh-tw,Paraformer-zh,我應該更新會議議程週五前。,我应该更新会议议程周五前
+zh-tw_025,zh-tw,Paraformer-zh,我需要審閱客戶郵件週五前。,我需要审阅客户邮件周五前
+zh-tw_026,zh-tw,Paraformer-zh,我應該更新專案計畫午餐前。,我应该更新专案计划午餐前
+zh-tw_027,zh-tw,Paraformer-zh,團隊必須完成專案計畫今天下午。,团队必须完成专案计划今天下午
+zh-tw_028,zh-tw,Paraformer-zh,我需要審閱預算報告今天下午。,我需要审阅预算报告今天下午
+zh-tw_029,zh-tw,Paraformer-zh,客戶必須完成會議議程明天上午。,客户必须完成会议议程明天上午
+zh-tw_030,zh-tw,Paraformer-zh,客戶想要安排專案計畫午餐前。,客户想要安排专案计划午餐前
+zh-tw_031,zh-tw,Paraformer-zh,我的經理會寄送預算報告明天上午。,我的经理会寄送预算报告明天上午
+zh-tw_032,zh-tw,Paraformer-zh,我的經理需要審閱會議議程週五前。,我的经理需要审阅会议呈周五前
+zh-tw_033,zh-tw,Paraformer-zh,我的經理需要審閱專案計畫午餐前。,我的经理需要审阅专案计划午餐前
+zh-tw_034,zh-tw,Paraformer-zh,團隊想要安排預算報告週五前。,团队想要安排预算报告周五前
+zh-tw_035,zh-tw,Paraformer-zh,我想要安排專案計畫明天上午。,我想要安排专案计划明天上午
+zh-tw_036,zh-tw,Paraformer-zh,我必須完成預算報告今天下午。,我必须完成预算报告今天下午
+zh-tw_037,zh-tw,Paraformer-zh,客戶必須完成預算報告今天下午。,客户必须完成预算报告今天下午
+zh-tw_038,zh-tw,Paraformer-zh,我的經理必須完成客戶郵件午餐前。,我的经理必须完成客户邮件午餐前
+zh-tw_039,zh-tw,Paraformer-zh,我想要安排客戶郵件明天上午。,我想要安排客户邮件明天上午
+zh-tw_040,zh-tw,Paraformer-zh,我的經理需要審閱預算報告明天上午。,我的经理需要审阅预算报告明天上午
+zh-tw_041,zh-tw,Paraformer-zh,客戶應該更新預算報告今天下午。,客户更新预算预算报告今天下午
+zh-tw_042,zh-tw,Paraformer-zh,我的經理想要安排預算報告週五前。,我的经理想要安排预算报告周五前
+zh-tw_043,zh-tw,Paraformer-zh,團隊應該更新專案計畫今天下午。,团队应该更新专案计划今天下午
+zh-tw_044,zh-tw,Paraformer-zh,客戶想要安排會議議程午餐前。,客户想要安排会议一程午餐前
+zh-tw_045,zh-tw,Paraformer-zh,我會寄送會議議程週五前。,我会寄送会议议程周五前
+zh-tw_046,zh-tw,Paraformer-zh,客戶需要審閱客戶郵件明天上午。,客户需要审阅客户邮件明天上午
+zh-tw_047,zh-tw,Paraformer-zh,我的經理需要審閱預算報告午餐前。,我的经理需要审阅预算报告午餐前
+zh-tw_048,zh-tw,Paraformer-zh,我們會寄送預算報告週五前。,我们会寄送预算报告周五前
+zh-tw_049,zh-tw,Paraformer-zh,客戶需要審閱預算報告今天下午。,客户需要审阅预算报告今天下午
+zh-tw_050,zh-tw,Paraformer-zh,我們想要安排會議議程明天上午。,我们想要安排会议议程明天上午
+zh-tw_051,zh-tw,Paraformer-zh,團隊需要審閱會議議程明天上午。,团队需要审阅会议议成明天上午
+zh-tw_052,zh-tw,Paraformer-zh,我應該更新預算報告今天下午。,我应该更新预算报告今天下午
+zh-tw_053,zh-tw,Paraformer-zh,客戶會寄送會議議程明天上午。,客户会寄送会议议程明天上午
+zh-tw_054,zh-tw,Paraformer-zh,我必須完成會議議程週五前。,我必须完成会议议程周五前
+zh-tw_055,zh-tw,Paraformer-zh,團隊應該更新預算報告明天上午。,团队应该更新预算报告明天上午
+zh-tw_056,zh-tw,Paraformer-zh,我們應該更新預算報告午餐前。,我们应该更新预算报告午餐前
+zh-tw_057,zh-tw,Paraformer-zh,團隊想要安排專案計畫週五前。,团队想要安排专案计划周五前
+zh-tw_058,zh-tw,Paraformer-zh,我應該更新客戶郵件明天上午。,我应该更新客户邮件明天上午
+zh-tw_059,zh-tw,Paraformer-zh,客戶想要安排專案計畫今天下午。,客户想要安排专案计划今天下午
+zh-tw_060,zh-tw,Paraformer-zh,客戶需要審閱會議議程明天上午。,客户需要审阅会议成明天上午
+zh-tw_061,zh-tw,Paraformer-zh,我們需要審閱客戶郵件午餐前。,我们需要审阅客户邮件午餐前
+zh-tw_062,zh-tw,Paraformer-zh,客戶應該更新預算報告週五前。,客户应该更新预算报告周五前
+zh-tw_063,zh-tw,Paraformer-zh,我會寄送客戶郵件今天下午。,我会寄送客户邮件今天下午
+zh-tw_064,zh-tw,Paraformer-zh,我應該更新客戶郵件午餐前。,我应该更新客户邮件午餐前
+zh-tw_065,zh-tw,Paraformer-zh,團隊會寄送專案計畫午餐前。,团队会寄送专案计划午餐前
+zh-tw_066,zh-tw,Paraformer-zh,我會寄送會議議程明天上午。,我会寄送会议议程明天上午
+zh-tw_067,zh-tw,Paraformer-zh,客戶需要審閱專案計畫今天下午。,客户需要审阅专案计划今天下午
+zh-tw_068,zh-tw,Paraformer-zh,我們想要安排預算報告今天下午。,我们想要安排预算报告今天下午
+zh-tw_069,zh-tw,Paraformer-zh,我們必須完成會議議程明天上午。,我们必须完成会议议程明天上午
+zh-tw_070,zh-tw,Paraformer-zh,我們必須完成客戶郵件明天上午。,我们必须完成客户邮件明天上午
+zh-tw_071,zh-tw,Paraformer-zh,我的經理需要審閱客戶郵件午餐前。,我的经理需要审阅客户邮件午餐前
+zh-tw_072,zh-tw,Paraformer-zh,客戶需要審閱會議議程週五前。,客户需要审阅会议议程周五前
+zh-tw_073,zh-tw,Paraformer-zh,我需要審閱客戶郵件今天下午。,我需要审阅客户邮件今天下午
+zh-tw_074,zh-tw,Paraformer-zh,我應該更新預算報告週五前。,我应该更新预算报告周五前
+zh-tw_075,zh-tw,Paraformer-zh,客戶會寄送客戶郵件週五前。,客户会寄送客户邮件周五前
+zh-tw_076,zh-tw,Paraformer-zh,客戶會寄送會議議程週五前。,客户会寄送会议议程周五前
+zh-tw_077,zh-tw,Paraformer-zh,我的經理必須完成會議議程午餐前。,我的经理必须完成会议一程午餐前
+zh-tw_078,zh-tw,Paraformer-zh,我應該更新預算報告午餐前。,我应该更新预算报告午餐前
+zh-tw_079,zh-tw,Paraformer-zh,團隊需要審閱預算報告今天下午。,团队需要预算预算报告今天下午
+zh-tw_080,zh-tw,Paraformer-zh,我們需要審閱專案計畫週五前。,我们需要审阅专案计划周五前
+zh-tw_081,zh-tw,Paraformer-zh,我們應該更新客戶郵件今天下午。,我们应该更新客户邮件今天下午
+zh-tw_082,zh-tw,Paraformer-zh,我們必須完成客戶郵件午餐前。,我们必须完成客户邮件午餐前
+zh-tw_083,zh-tw,Paraformer-zh,客戶需要審閱客戶郵件今天下午。,客户需要审阅客户邮件今天下午
+zh-tw_084,zh-tw,Paraformer-zh,團隊應該更新預算報告週五前。,团队应该更新预算报告周五前
+zh-tw_085,zh-tw,Paraformer-zh,團隊想要安排會議議程午餐前。,团队想要安排会议一程午餐前
+zh-tw_086,zh-tw,Paraformer-zh,我應該更新客戶郵件今天下午。,我应该更新客户邮件今天下午
+zh-tw_087,zh-tw,Paraformer-zh,我們會寄送客戶郵件今天下午。,我们会寄送客户邮件今天下午
+zh-tw_088,zh-tw,Paraformer-zh,團隊必須完成客戶郵件明天上午。,团队必须完成客户邮件明天上午
+zh-tw_089,zh-tw,Paraformer-zh,我必須完成專案計畫週五前。,我必须完成专案计划周五前
+zh-tw_090,zh-tw,Paraformer-zh,團隊想要安排預算報告明天上午。,团队想要安排预算报告明天上午
+zh-tw_091,zh-tw,Paraformer-zh,我的經理會寄送會議議程午餐前。,我的经理会寄送会议一程午餐前
+zh-tw_092,zh-tw,Paraformer-zh,團隊應該更新專案計畫明天上午。,团队应该更新专案计划明天上午
+zh-tw_093,zh-tw,Paraformer-zh,客戶會寄送預算報告午餐前。,客户会寄送预算报告午餐前
+zh-tw_094,zh-tw,Paraformer-zh,團隊需要審閱專案計畫明天上午。,团队需要审阅专案计划明天上午
+zh-tw_095,zh-tw,Paraformer-zh,團隊需要審閱專案計畫週五前。,团队需要审阅专案计划周五前
+zh-tw_096,zh-tw,Paraformer-zh,我們需要審閱會議議程週五前。,我们需要审阅会议议程周五前
+zh-tw_097,zh-tw,Paraformer-zh,我們需要審閱客戶郵件週五前。,我们需要审阅客户邮件周五前
+zh-tw_098,zh-tw,Paraformer-zh,客戶必須完成專案計畫午餐前。,客户必须完成专案计划午餐前
+zh-tw_099,zh-tw,Paraformer-zh,我的經理應該更新會議議程今天下午。,我的经理应该更新会议议程今天下午
+zh-tw_100,zh-tw,Paraformer-zh,團隊需要審閱客戶郵件今天下午。,团队需要审阅客户邮件今天下午
+zh_001,zh,Whisper Large v3 Turbo,我的经理需要审阅客户邮件周五前。,我的经理需要审阅客户邮件周五前
+zh_001,zh,Whisper Medium,我的经理需要审阅客户邮件周五前。,我的經理需要審閱客戶郵件周五前
+zh_002,zh,Whisper Large v3 Turbo,我们需要审阅会议议程今天下午。,"我们需要审阅会议议程,今天下午。"
+zh_002,zh,Whisper Medium,我们需要审阅会议议程今天下午。,我們需要審閱會議議程今天下午
+zh_003,zh,Whisper Large v3 Turbo,我们应该更新会议议程今天下午。,我们应该更新会议议程今天下午。
+zh_003,zh,Whisper Medium,我们应该更新会议议程今天下午。,我們應該更新會議議程今天下午
+zh_004,zh,Whisper Large v3 Turbo,团队需要审阅项目计划午饭前。,团队需要审阅项目计划午饭前。
+zh_004,zh,Whisper Medium,团队需要审阅项目计划午饭前。,團隊需要審閱項目計劃午飯前
+zh_005,zh,Whisper Large v3 Turbo,我的经理需要审阅项目计划今天下午。,我的经理需要审阅项目计划今天下午
+zh_005,zh,Whisper Medium,我的经理需要审阅项目计划今天下午。,我的經理需要審閱項目計劃今天下午
+zh_006,zh,Whisper Large v3 Turbo,团队应该更新项目计划午饭前。,团队应该更新项目计划午饭前
+zh_006,zh,Whisper Medium,团队应该更新项目计划午饭前。,團隊應該更新項目計劃午飯前
+zh_007,zh,Whisper Large v3 Turbo,团队会发送会议议程今天下午。,团队会发送会议议程今天下午
+zh_007,zh,Whisper Medium,团队会发送会议议程今天下午。,團隊會發送會議議程今天下午
+zh_008,zh,Whisper Large v3 Turbo,我们必须完成客户邮件今天下午。,我们必须完成客户邮件今天下午
+zh_008,zh,Whisper Medium,我们必须完成客户邮件今天下午。,我们必须完成客户邮件今天下午。
+zh_009,zh,Whisper Large v3 Turbo,我的经理会发送预算报告周五前。,我的经理会发送预算报告周五前
+zh_009,zh,Whisper Medium,我的经理会发送预算报告周五前。,我的經理會發送預算報告周五前
+zh_010,zh,Whisper Large v3 Turbo,我的经理想要安排项目计划午饭前。,我的经理想要安排项目计划午饭前
+zh_010,zh,Whisper Medium,我的经理想要安排项目计划午饭前。,我的經理想要安排項目計劃午飯前
+zh_011,zh,Whisper Large v3 Turbo,团队必须完成预算报告午饭前。,团队必须完成预算报告午饭前
+zh_011,zh,Whisper Medium,团队必须完成预算报告午饭前。,團隊必須完成預算報告午飯前
+zh_012,zh,Whisper Large v3 Turbo,我的经理应该更新预算报告周五前。,我的经理应该更新预算报告周五前
+zh_012,zh,Whisper Medium,我的经理应该更新预算报告周五前。,我的經理應該更新預算報告周五前
+zh_013,zh,Whisper Large v3 Turbo,我必须完成项目计划今天下午。,我必须完成项目计划今天下午
+zh_013,zh,Whisper Medium,我必须完成项目计划今天下午。,我必須完成項目計劃今天下午
+zh_014,zh,Whisper Large v3 Turbo,客户会发送预算报告今天下午。,客户会发送预算报告今天下午
+zh_014,zh,Whisper Medium,客户会发送预算报告今天下午。,客户會發送預算報告今天下午
+zh_015,zh,Whisper Large v3 Turbo,客户会发送客户邮件明天上午。,客户会发送客户邮件明天上午
+zh_015,zh,Whisper Medium,客户会发送客户邮件明天上午。,客户会发送客户邮件明天上午。
+zh_016,zh,Whisper Large v3 Turbo,客户必须完成会议议程午饭前。,客户必须完成会议一乘五饭前
+zh_016,zh,Whisper Medium,客户必须完成会议议程午饭前。,客戶必須完成會議一成午飯前
+zh_017,zh,Whisper Large v3 Turbo,我必须完成客户邮件明天上午。,我必须完成客户邮件明天上午
+zh_017,zh,Whisper Medium,我必须完成客户邮件明天上午。,我必须完成客户邮件明天上午
+zh_018,zh,Whisper Large v3 Turbo,团队想要安排客户邮件周五前。,团队想要安排客户邮件周五前
+zh_018,zh,Whisper Medium,团队想要安排客户邮件周五前。,團隊想要安排客戶郵件周五前
+zh_019,zh,Whisper Large v3 Turbo,我们会发送预算报告明天上午。,我们会发送预算报告明天上午
+zh_019,zh,Whisper Medium,我们会发送预算报告明天上午。,我們會發送預算報告明天上午
+zh_020,zh,Whisper Large v3 Turbo,我想要安排项目计划周五前。,我想要安排项目计划周五前
+zh_020,zh,Whisper Medium,我想要安排项目计划周五前。,我想要安排項目計劃周五前
+zh_021,zh,Whisper Large v3 Turbo,我的经理会发送会议议程明天上午。,我的经理会发送会议议程明天上午
+zh_021,zh,Whisper Medium,我的经理会发送会议议程明天上午。,我的經理會發送會議議程明天上午
+zh_022,zh,Whisper Large v3 Turbo,团队需要审阅客户邮件周五前。,团队需要审阅客户邮件周五前
+zh_022,zh,Whisper Medium,团队需要审阅客户邮件周五前。,團隊需要審閱客戶郵件周五前
+zh_023,zh,Whisper Large v3 Turbo,我的经理需要审阅客户邮件明天上午。,我的经理需要审阅客户邮件明天上午。
+zh_023,zh,Whisper Medium,我的经理需要审阅客户邮件明天上午。,我的经理需要审阅客户邮件明天上午
+zh_024,zh,Whisper Large v3 Turbo,我应该更新会议议程周五前。,我应该更新会议一成周五前
+zh_024,zh,Whisper Medium,我应该更新会议议程周五前。,我應該更新會議議程周五前
+zh_025,zh,Whisper Large v3 Turbo,我需要审阅客户邮件周五前。,我需要审阅客户邮件周五前
+zh_025,zh,Whisper Medium,我需要审阅客户邮件周五前。,我需要审阅客户邮件周五前。
+zh_026,zh,Whisper Large v3 Turbo,我应该更新项目计划午饭前。,我应该更新项目计划午饭前
+zh_026,zh,Whisper Medium,我应该更新项目计划午饭前。,我應該更新項目計劃午飯前
+zh_027,zh,Whisper Large v3 Turbo,团队必须完成项目计划今天下午。,"团队必须完成项目计划,今天下午。"
+zh_027,zh,Whisper Medium,团队必须完成项目计划今天下午。,團隊必須完成項目計劃今天下午
+zh_028,zh,Whisper Large v3 Turbo,我需要审阅预算报告今天下午。,我需要审阅预算报告今天下午
+zh_028,zh,Whisper Medium,我需要审阅预算报告今天下午。,我需要審閱預算報告今天下午
+zh_029,zh,Whisper Large v3 Turbo,客户必须完成会议议程明天上午。,客户必须完成会议议程明天上午
+zh_029,zh,Whisper Medium,客户必须完成会议议程明天上午。,客戶必須完成會議議程明天上午
+zh_030,zh,Whisper Large v3 Turbo,客户想要安排项目计划午饭前。,客户想要安排项目计划午饭前
+zh_030,zh,Whisper Medium,客户想要安排项目计划午饭前。,客户想要安排项目计划午饭前
+zh_031,zh,Whisper Large v3 Turbo,我的经理会发送预算报告明天上午。,我的经理会发送预算报告明天上午
+zh_031,zh,Whisper Medium,我的经理会发送预算报告明天上午。,我的經理會發送預算報告明天上午
+zh_032,zh,Whisper Large v3 Turbo,我的经理需要审阅会议议程周五前。,我的经理需要审阅会议议程周五前
+zh_032,zh,Whisper Medium,我的经理需要审阅会议议程周五前。,我的經理需要審閱會議一成周五前
+zh_033,zh,Whisper Large v3 Turbo,我的经理需要审阅项目计划午饭前。,我的经理需要审阅项目计划午饭前
+zh_033,zh,Whisper Medium,我的经理需要审阅项目计划午饭前。,我的經理需要審閱項目計劃午飯前
+zh_034,zh,Whisper Large v3 Turbo,团队想要安排预算报告周五前。,团队想要安排预算报告周五前
+zh_034,zh,Whisper Medium,团队想要安排预算报告周五前。,團隊想要安排預算報告周五前
+zh_035,zh,Whisper Large v3 Turbo,我想要安排项目计划明天上午。,我想要安排项目计划明天上午。
+zh_035,zh,Whisper Medium,我想要安排项目计划明天上午。,我想要安排项目计划明天上午
+zh_036,zh,Whisper Large v3 Turbo,我必须完成预算报告今天下午。,我必须完成预算报告今天下午
+zh_036,zh,Whisper Medium,我必须完成预算报告今天下午。,我必須完成預算報告今天下午
+zh_037,zh,Whisper Large v3 Turbo,客户必须完成预算报告今天下午。,客户必须完成预算报告今天下午
+zh_037,zh,Whisper Medium,客户必须完成预算报告今天下午。,客户必須完成預算報告今天下午
+zh_038,zh,Whisper Large v3 Turbo,我的经理必须完成客户邮件午饭前。,我的经理必须完成客户邮件午饭前
+zh_038,zh,Whisper Medium,我的经理必须完成客户邮件午饭前。,我的經理必須完成客戶郵件午飯前
+zh_039,zh,Whisper Large v3 Turbo,我想要安排客户邮件明天上午。,我想要安排客户邮件明天上午。
+zh_039,zh,Whisper Medium,我想要安排客户邮件明天上午。,我想要安排客户邮件明天上午。
+zh_040,zh,Whisper Large v3 Turbo,我的经理需要审阅预算报告明天上午。,我的经理需要审阅预算报告明天上午
+zh_040,zh,Whisper Medium,我的经理需要审阅预算报告明天上午。,我的經理需要審約預算報告明天上午
+zh_041,zh,Whisper Large v3 Turbo,客户应该更新预算报告今天下午。,客户应该更新预算报告今天下午
+zh_041,zh,Whisper Medium,客户应该更新预算报告今天下午。,客户应该更新预算报告今天下午
+zh_042,zh,Whisper Large v3 Turbo,我的经理想要安排预算报告周五前。,我的经理想要安排预算报告周五前
+zh_042,zh,Whisper Medium,我的经理想要安排预算报告周五前。,我的經理想要安排預算報告周五前
+zh_043,zh,Whisper Large v3 Turbo,团队应该更新项目计划今天下午。,团队应该更新项目计划今天下午
+zh_043,zh,Whisper Medium,团队应该更新项目计划今天下午。,團隊應該更新項目計劃今天下午
+zh_044,zh,Whisper Large v3 Turbo,客户想要安排会议议程午饭前。,客户想要安排会议一成五饭前
+zh_044,zh,Whisper Medium,客户想要安排会议议程午饭前。,客户想要安排会议一成午饭前
+zh_045,zh,Whisper Large v3 Turbo,我会发送会议议程周五前。,我会发送会议一成周五前
+zh_045,zh,Whisper Medium,我会发送会议议程周五前。,我會發送會議一成周五前
+zh_046,zh,Whisper Large v3 Turbo,客户需要审阅客户邮件明天上午。,客户需要审阅客户邮件明天上午
+zh_046,zh,Whisper Medium,客户需要审阅客户邮件明天上午。,客户需要审阅客户邮件明天上午
+zh_047,zh,Whisper Large v3 Turbo,我的经理需要审阅预算报告午饭前。,我的经理需要审阅预算报告午饭前
+zh_047,zh,Whisper Medium,我的经理需要审阅预算报告午饭前。,我的經理需要審閱預算報告午飯前
+zh_048,zh,Whisper Large v3 Turbo,我们会发送预算报告周五前。,我们会发送预算报告周五前
+zh_048,zh,Whisper Medium,我们会发送预算报告周五前。,我們會發送預算報告週五前
+zh_049,zh,Whisper Large v3 Turbo,客户需要审阅预算报告今天下午。,客户需要审阅预算报告今天下午
+zh_049,zh,Whisper Medium,客户需要审阅预算报告今天下午。,客户需要审阅预算报告今天下午
+zh_050,zh,Whisper Large v3 Turbo,我们想要安排会议议程明天上午。,我们想要安排会议议程明天上午。
+zh_050,zh,Whisper Medium,我们想要安排会议议程明天上午。,我們想要安排會議議程明天上午
+zh_051,zh,Whisper Large v3 Turbo,团队需要审阅会议议程明天上午。,团队需要审阅会议议程明天上午
+zh_051,zh,Whisper Medium,团队需要审阅会议议程明天上午。,團隊需要審閱會議議程明天上午
+zh_052,zh,Whisper Large v3 Turbo,我应该更新预算报告今天下午。,我應該更新預算報告今天下午
+zh_052,zh,Whisper Medium,我应该更新预算报告今天下午。,我應該更新預算報告今天下午
+zh_053,zh,Whisper Large v3 Turbo,客户会发送会议议程明天上午。,客户会发送会议议程明天上午
+zh_053,zh,Whisper Medium,客户会发送会议议程明天上午。,客户會發送會議議程明天上午
+zh_054,zh,Whisper Large v3 Turbo,我必须完成会议议程周五前。,我必须完成会议议程周五前
+zh_054,zh,Whisper Medium,我必须完成会议议程周五前。,我必須完成會議一成周五前
+zh_055,zh,Whisper Large v3 Turbo,团队应该更新预算报告明天上午。,团队应该更新预算报告明天上午
+zh_055,zh,Whisper Medium,团队应该更新预算报告明天上午。,團隊應該更新預算報告明天上午
+zh_056,zh,Whisper Large v3 Turbo,我们应该更新预算报告午饭前。,我们应该更新预算报告午饭前
+zh_056,zh,Whisper Medium,我们应该更新预算报告午饭前。,我們應該更新預算報告午飯前
+zh_057,zh,Whisper Large v3 Turbo,团队想要安排项目计划周五前。,团队想要安排项目计划周五前
+zh_057,zh,Whisper Medium,团队想要安排项目计划周五前。,團隊想要安排項目計劃周五前
+zh_058,zh,Whisper Large v3 Turbo,我应该更新客户邮件明天上午。,我应该更新客户邮件明天上午
+zh_058,zh,Whisper Medium,我应该更新客户邮件明天上午。,我應該更新客戶郵件明天上午。
+zh_059,zh,Whisper Large v3 Turbo,客户想要安排项目计划今天下午。,"客户想要安排项目计划,今天下午。"
+zh_059,zh,Whisper Medium,客户想要安排项目计划今天下午。,"客户想要安排项目计划,今天下午。"
+zh_060,zh,Whisper Large v3 Turbo,客户需要审阅会议议程明天上午。,客户需要审阅会议议程明天上午
+zh_060,zh,Whisper Medium,客户需要审阅会议议程明天上午。,客户需要审閱會議一成明天上午
+zh_061,zh,Whisper Large v3 Turbo,我们需要审阅客户邮件午饭前。,我们需要审阅客户邮件午饭前
+zh_061,zh,Whisper Medium,我们需要审阅客户邮件午饭前。,我们需要审阅客户邮件午饭前。
+zh_062,zh,Whisper Large v3 Turbo,客户应该更新预算报告周五前。,客户应该更新预算报告周五前
+zh_062,zh,Whisper Medium,客户应该更新预算报告周五前。,客户应该更新预算报告周五前
+zh_063,zh,Whisper Large v3 Turbo,我会发送客户邮件今天下午。,我会发送客户邮件今天下午
+zh_063,zh,Whisper Medium,我会发送客户邮件今天下午。,我會發送客戶郵件今天下午。
+zh_064,zh,Whisper Large v3 Turbo,我应该更新客户邮件午饭前。,我應該更新客戶郵件午飯前
+zh_064,zh,Whisper Medium,我应该更新客户邮件午饭前。,我應該更新客戶郵件午飯前
+zh_065,zh,Whisper Large v3 Turbo,团队会发送项目计划午饭前。,团队会发送项目计划午饭前
+zh_065,zh,Whisper Medium,团队会发送项目计划午饭前。,團隊會發送項目計劃午飯前
+zh_066,zh,Whisper Large v3 Turbo,我会发送会议议程明天上午。,我会发送会议议程明天上午
+zh_066,zh,Whisper Medium,我会发送会议议程明天上午。,我會發送會議一程明天上午
+zh_067,zh,Whisper Large v3 Turbo,客户需要审阅项目计划今天下午。,客户需要审阅项目计划今天下午
+zh_067,zh,Whisper Medium,客户需要审阅项目计划今天下午。,客户需要审阅项目计划今天下午
+zh_068,zh,Whisper Large v3 Turbo,我们想要安排预算报告今天下午。,我们想要安排预算报告今天下午。
+zh_068,zh,Whisper Medium,我们想要安排预算报告今天下午。,我們想要安排預算報告今天下午
+zh_069,zh,Whisper Large v3 Turbo,我们必须完成会议议程明天上午。,我们必须完成会议议程明天上午。
+zh_069,zh,Whisper Medium,我们必须完成会议议程明天上午。,我們必須完成會議議程明天上午
+zh_070,zh,Whisper Large v3 Turbo,我们必须完成客户邮件明天上午。,我们必须完成客户邮件明天上午。
+zh_070,zh,Whisper Medium,我们必须完成客户邮件明天上午。,我们必须完成客户邮件明天上午
+zh_071,zh,Whisper Large v3 Turbo,我的经理需要审阅客户邮件午饭前。,我的经理需要审阅客户邮件午饭前
+zh_071,zh,Whisper Medium,我的经理需要审阅客户邮件午饭前。,我的经理需要审阅客户邮件午饭前
+zh_072,zh,Whisper Large v3 Turbo,客户需要审阅会议议程周五前。,客户需要审阅会议议程周五前
+zh_072,zh,Whisper Medium,客户需要审阅会议议程周五前。,客户需要审閱會議一成周五前
+zh_073,zh,Whisper Large v3 Turbo,我需要审阅客户邮件今天下午。,我需要审阅客户邮件今天下午
+zh_073,zh,Whisper Medium,我需要审阅客户邮件今天下午。,我需要审阅客户邮件今天下午
+zh_074,zh,Whisper Large v3 Turbo,我应该更新预算报告周五前。,我应该更新预算报告周五前
+zh_074,zh,Whisper Medium,我应该更新预算报告周五前。,我應該更新預算報告周五前
+zh_075,zh,Whisper Large v3 Turbo,客户会发送客户邮件周五前。,客户会发送客户邮件周五前
+zh_075,zh,Whisper Medium,客户会发送客户邮件周五前。,客户會發送客戶郵件周五前
+zh_076,zh,Whisper Large v3 Turbo,客户会发送会议议程周五前。,客户会发送会议议程周五前
+zh_076,zh,Whisper Medium,客户会发送会议议程周五前。,客户會發送會議一成周五前
+zh_077,zh,Whisper Large v3 Turbo,我的经理必须完成会议议程午饭前。,我的经理必须完成会议一成五饭前。
+zh_077,zh,Whisper Medium,我的经理必须完成会议议程午饭前。,我的經理必須完成會議一成午飯前
+zh_078,zh,Whisper Large v3 Turbo,我应该更新预算报告午饭前。,我应该更新预算报告午饭前
+zh_078,zh,Whisper Medium,我应该更新预算报告午饭前。,我應該更新預算報告午飯前
+zh_079,zh,Whisper Large v3 Turbo,团队需要审阅预算报告今天下午。,"团队需要审阅预算报告,今天下午"
+zh_079,zh,Whisper Medium,团队需要审阅预算报告今天下午。,團隊需要審閱預算報告 今天下午
+zh_080,zh,Whisper Large v3 Turbo,我们需要审阅项目计划周五前。,我们需要审阅项目计划周五前
+zh_080,zh,Whisper Medium,我们需要审阅项目计划周五前。,我們需要審閱項目計劃周五前
+zh_081,zh,Whisper Large v3 Turbo,我们应该更新客户邮件今天下午。,我们应该更新客户邮件今天下午
+zh_081,zh,Whisper Medium,我们应该更新客户邮件今天下午。,我們應該更新客戶郵件今天下午。
+zh_082,zh,Whisper Large v3 Turbo,我们必须完成客户邮件午饭前。,我们必须完成客户邮件午饭前
+zh_082,zh,Whisper Medium,我们必须完成客户邮件午饭前。,我们必须完成客户邮件午饭前。
+zh_083,zh,Whisper Large v3 Turbo,客户需要审阅客户邮件今天下午。,客户需要审阅客户邮件今天下午
+zh_083,zh,Whisper Medium,客户需要审阅客户邮件今天下午。,客户需要审阅客户邮件今天下午
+zh_084,zh,Whisper Large v3 Turbo,团队应该更新预算报告周五前。,团队应该更新预算报告周五前
+zh_084,zh,Whisper Medium,团队应该更新预算报告周五前。,團隊應該更新預算報告周五前
+zh_085,zh,Whisper Large v3 Turbo,团队想要安排会议议程午饭前。,团队想要安排会议一成五饭前
+zh_085,zh,Whisper Medium,团队想要安排会议议程午饭前。,團隊想要安排會議一成午飯前
+zh_086,zh,Whisper Large v3 Turbo,我应该更新客户邮件今天下午。,我应该更新客户邮件今天下午
+zh_086,zh,Whisper Medium,我应该更新客户邮件今天下午。,我應該更新客戶郵件今天下午
+zh_087,zh,Whisper Large v3 Turbo,我们会发送客户邮件今天下午。,我们会发送客户邮件今天下午。
+zh_087,zh,Whisper Medium,我们会发送客户邮件今天下午。,我们会发送客户邮件今天下午。
+zh_088,zh,Whisper Large v3 Turbo,团队必须完成客户邮件明天上午。,团队必须完成客户邮件明天上午
+zh_088,zh,Whisper Medium,团队必须完成客户邮件明天上午。,團隊必須完成客戶郵件明天上午
+zh_089,zh,Whisper Large v3 Turbo,我必须完成项目计划周五前。,我必须完成项目计划周五前
+zh_089,zh,Whisper Medium,我必须完成项目计划周五前。,我必須完成項目計劃周五前
+zh_090,zh,Whisper Large v3 Turbo,团队想要安排预算报告明天上午。,团队想要安排预算报告明天上午
+zh_090,zh,Whisper Medium,团队想要安排预算报告明天上午。,團隊想要安排預算報告明天上午
+zh_091,zh,Whisper Large v3 Turbo,我的经理会发送会议议程午饭前。,我的经理会发送会议一乘五饭前
+zh_091,zh,Whisper Medium,我的经理会发送会议议程午饭前。,我的經理會發送會議一成午飯前
+zh_092,zh,Whisper Large v3 Turbo,团队应该更新项目计划明天上午。,团队应该更新项目计划明天上午
+zh_092,zh,Whisper Medium,团队应该更新项目计划明天上午。,團隊應該更新項目計劃明天上午
+zh_093,zh,Whisper Large v3 Turbo,客户会发送预算报告午饭前。,客户会发送预算报告午饭前
+zh_093,zh,Whisper Medium,客户会发送预算报告午饭前。,客户會發送預算報告午飯前
+zh_094,zh,Whisper Large v3 Turbo,团队需要审阅项目计划明天上午。,团队需要审阅项目计划明天上午
+zh_094,zh,Whisper Medium,团队需要审阅项目计划明天上午。,團隊需要審閱項目計劃明天上午
+zh_095,zh,Whisper Large v3 Turbo,团队需要审阅项目计划周五前。,团队需要审阅项目计划周五前
+zh_095,zh,Whisper Medium,团队需要审阅项目计划周五前。,團隊需要審閱項目計劃周五前
+zh_096,zh,Whisper Large v3 Turbo,我们需要审阅会议议程周五前。,我们需要审阅会议议程周五前
+zh_096,zh,Whisper Medium,我们需要审阅会议议程周五前。,我們需要審閱會議議程周五前
+zh_097,zh,Whisper Large v3 Turbo,我们需要审阅客户邮件周五前。,我们需要审阅客户邮件周五前。
+zh_097,zh,Whisper Medium,我们需要审阅客户邮件周五前。,我们需要审阅客户邮件周五前。
+zh_098,zh,Whisper Large v3 Turbo,客户必须完成项目计划午饭前。,客户必须完成项目计划午饭前
+zh_098,zh,Whisper Medium,客户必须完成项目计划午饭前。,客户必须完成项目计划午饭前
+zh_099,zh,Whisper Large v3 Turbo,我的经理应该更新会议议程今天下午。,我的经理应该更新会议议程今天下午
+zh_099,zh,Whisper Medium,我的经理应该更新会议议程今天下午。,"我的經理應該更新會議議程,今天下午"
+zh_100,zh,Whisper Large v3 Turbo,团队需要审阅客户邮件今天下午。,团队需要审阅客户邮件今天下午
+zh_100,zh,Whisper Medium,团队需要审阅客户邮件今天下午。,團隊需要審閱客戶郵件今天下午
+zh_001,zh,Paraformer-zh,我的经理需要审阅客户邮件周五前。,我的经理需要审阅客户邮件周五前
+zh_002,zh,Paraformer-zh,我们需要审阅会议议程今天下午。,我们需要审阅会议议程今天下午
+zh_003,zh,Paraformer-zh,我们应该更新会议议程今天下午。,我们应该更新会议议程今天下午
+zh_004,zh,Paraformer-zh,团队需要审阅项目计划午饭前。,团队需要审阅项目计划午饭前
+zh_005,zh,Paraformer-zh,我的经理需要审阅项目计划今天下午。,我的经理需要审阅项目计划今天下午
+zh_006,zh,Paraformer-zh,团队应该更新项目计划午饭前。,团队应该更新项目计划午饭前
+zh_007,zh,Paraformer-zh,团队会发送会议议程今天下午。,团队会发送会议议程今天下午
+zh_008,zh,Paraformer-zh,我们必须完成客户邮件今天下午。,我们必须完成客户邮件今天下午
+zh_009,zh,Paraformer-zh,我的经理会发送预算报告周五前。,我的经理会发送预算报告周五前
+zh_010,zh,Paraformer-zh,我的经理想要安排项目计划午饭前。,我的经理想要安排项目计划午饭前
+zh_011,zh,Paraformer-zh,团队必须完成预算报告午饭前。,团队必须完成预算报告午饭前
+zh_012,zh,Paraformer-zh,我的经理应该更新预算报告周五前。,我的经理应该更新预算报告周五前
+zh_013,zh,Paraformer-zh,我必须完成项目计划今天下午。,我必须完成项目计划今天下午
+zh_014,zh,Paraformer-zh,客户会发送预算报告今天下午。,客户会发送预算报告今天下午
+zh_015,zh,Paraformer-zh,客户会发送客户邮件明天上午。,客户会发送客户邮件明天上午
+zh_016,zh,Paraformer-zh,客户必须完成会议议程午饭前。,客户必须完成会议一程午饭前
+zh_017,zh,Paraformer-zh,我必须完成客户邮件明天上午。,我必须完成客户邮件明天上午
+zh_018,zh,Paraformer-zh,团队想要安排客户邮件周五前。,团队想要安排客户邮件周五前
+zh_019,zh,Paraformer-zh,我们会发送预算报告明天上午。,我们会发送预算报告明天上午
+zh_020,zh,Paraformer-zh,我想要安排项目计划周五前。,我想要安排项目计划周五前
+zh_021,zh,Paraformer-zh,我的经理会发送会议议程明天上午。,我的经理会发送会议议程明天上午
+zh_022,zh,Paraformer-zh,团队需要审阅客户邮件周五前。,团队需要审阅客户邮件周五前
+zh_023,zh,Paraformer-zh,我的经理需要审阅客户邮件明天上午。,我的经理需要审阅客户邮件明天上午
+zh_024,zh,Paraformer-zh,我应该更新会议议程周五前。,我应该更新会议议程周五前
+zh_025,zh,Paraformer-zh,我需要审阅客户邮件周五前。,我需要审阅客户邮件周五前
+zh_026,zh,Paraformer-zh,我应该更新项目计划午饭前。,我应该更新项目计划午饭前
+zh_027,zh,Paraformer-zh,团队必须完成项目计划今天下午。,团队必须完成项目计划今天下午
+zh_028,zh,Paraformer-zh,我需要审阅预算报告今天下午。,我需要审阅预算报告今天下午
+zh_029,zh,Paraformer-zh,客户必须完成会议议程明天上午。,客户必须完成会议议程明天上午
+zh_030,zh,Paraformer-zh,客户想要安排项目计划午饭前。,客户想要安排项目计划午饭前
+zh_031,zh,Paraformer-zh,我的经理会发送预算报告明天上午。,我的经理会发送预算报告明天上午
+zh_032,zh,Paraformer-zh,我的经理需要审阅会议议程周五前。,我的经理需要审阅会议议程周五前
+zh_033,zh,Paraformer-zh,我的经理需要审阅项目计划午饭前。,我的经理需要审阅项目计划午饭前
+zh_034,zh,Paraformer-zh,团队想要安排预算报告周五前。,团队想要安排预算报告周五前
+zh_035,zh,Paraformer-zh,我想要安排项目计划明天上午。,我想要安排项目计划明天上午
+zh_036,zh,Paraformer-zh,我必须完成预算报告今天下午。,我必须完成预算报告今天下午
+zh_037,zh,Paraformer-zh,客户必须完成预算报告今天下午。,客户必须完成预算报告今天下午
+zh_038,zh,Paraformer-zh,我的经理必须完成客户邮件午饭前。,我的经理必须完成客户邮件午饭前
+zh_039,zh,Paraformer-zh,我想要安排客户邮件明天上午。,我想要安排客户邮件明天上午
+zh_040,zh,Paraformer-zh,我的经理需要审阅预算报告明天上午。,我的经理需要审阅预算报告明天上午
+zh_041,zh,Paraformer-zh,客户应该更新预算报告今天下午。,客户应该更新预算报告今天下午
+zh_042,zh,Paraformer-zh,我的经理想要安排预算报告周五前。,我的经理想要安排预算报告周五前
+zh_043,zh,Paraformer-zh,团队应该更新项目计划今天下午。,团队应该更新项目计划今天下午
+zh_044,zh,Paraformer-zh,客户想要安排会议议程午饭前。,客户想要安排会议一程午饭前
+zh_045,zh,Paraformer-zh,我会发送会议议程周五前。,我会发送会议议程周五前
+zh_046,zh,Paraformer-zh,客户需要审阅客户邮件明天上午。,客户需要审阅客户邮件明天上午
+zh_047,zh,Paraformer-zh,我的经理需要审阅预算报告午饭前。,我的经理需要审阅预算报告午饭钱
+zh_048,zh,Paraformer-zh,我们会发送预算报告周五前。,我们会发送预算报告周五前
+zh_049,zh,Paraformer-zh,客户需要审阅预算报告今天下午。,客户需要审阅预算报告今天下午
+zh_050,zh,Paraformer-zh,我们想要安排会议议程明天上午。,我们想要安排会议议程明天上午
+zh_051,zh,Paraformer-zh,团队需要审阅会议议程明天上午。,团队需要审阅会议议程明天上午
+zh_052,zh,Paraformer-zh,我应该更新预算报告今天下午。,我应该更新预算报告今天下午
+zh_053,zh,Paraformer-zh,客户会发送会议议程明天上午。,客户会发送会议议程明天上午
+zh_054,zh,Paraformer-zh,我必须完成会议议程周五前。,我必须完成会议议程周五前
+zh_055,zh,Paraformer-zh,团队应该更新预算报告明天上午。,团队应该更新预算报告明天上午
+zh_056,zh,Paraformer-zh,我们应该更新预算报告午饭前。,我们应该更新预算报告午饭前
+zh_057,zh,Paraformer-zh,团队想要安排项目计划周五前。,团队想要安排项目计划周五前
+zh_058,zh,Paraformer-zh,我应该更新客户邮件明天上午。,我应该更新客户邮件明天上午
+zh_059,zh,Paraformer-zh,客户想要安排项目计划今天下午。,客户想要安排项目计划今天下午
+zh_060,zh,Paraformer-zh,客户需要审阅会议议程明天上午。,客户需要审阅会议议程明天上午
+zh_061,zh,Paraformer-zh,我们需要审阅客户邮件午饭前。,我们需要审阅客户邮件午饭前
+zh_062,zh,Paraformer-zh,客户应该更新预算报告周五前。,客户应该更新预算报告周五前
+zh_063,zh,Paraformer-zh,我会发送客户邮件今天下午。,我会发送客户邮件今天下午
+zh_064,zh,Paraformer-zh,我应该更新客户邮件午饭前。,我应该更新客户邮件午饭前
+zh_065,zh,Paraformer-zh,团队会发送项目计划午饭前。,团队会发送项目计划午饭前
+zh_066,zh,Paraformer-zh,我会发送会议议程明天上午。,我会发送会议议程明天上午
+zh_067,zh,Paraformer-zh,客户需要审阅项目计划今天下午。,客户需要审阅项目计划今天下午
+zh_068,zh,Paraformer-zh,我们想要安排预算报告今天下午。,我们想要安排预算报告今天下午
+zh_069,zh,Paraformer-zh,我们必须完成会议议程明天上午。,我们必须完成会议议程明天上午
+zh_070,zh,Paraformer-zh,我们必须完成客户邮件明天上午。,我们必须完成客户邮件明天上午
+zh_071,zh,Paraformer-zh,我的经理需要审阅客户邮件午饭前。,我的经理需要审阅客户邮件午饭钱
+zh_072,zh,Paraformer-zh,客户需要审阅会议议程周五前。,客户需要审阅会议议程周五前
+zh_073,zh,Paraformer-zh,我需要审阅客户邮件今天下午。,我需要审阅客户邮件今天下午
+zh_074,zh,Paraformer-zh,我应该更新预算报告周五前。,我应该更新预算报告周五前
+zh_075,zh,Paraformer-zh,客户会发送客户邮件周五前。,客户会发送客户邮件周五前
+zh_076,zh,Paraformer-zh,客户会发送会议议程周五前。,客户会发送会议议程周五前
+zh_077,zh,Paraformer-zh,我的经理必须完成会议议程午饭前。,我的经理必须完成会议一程午饭前
+zh_078,zh,Paraformer-zh,我应该更新预算报告午饭前。,我应该更新预算报告午饭钱
+zh_079,zh,Paraformer-zh,团队需要审阅预算报告今天下午。,团队需要审阅预算报告今天下午
+zh_080,zh,Paraformer-zh,我们需要审阅项目计划周五前。,我们需要审阅项目计划周五前
+zh_081,zh,Paraformer-zh,我们应该更新客户邮件今天下午。,我们应该更新客户邮件今天下午
+zh_082,zh,Paraformer-zh,我们必须完成客户邮件午饭前。,我们必须完成客户邮件午饭前
+zh_083,zh,Paraformer-zh,客户需要审阅客户邮件今天下午。,客户需要审阅客户邮件今天下午
+zh_084,zh,Paraformer-zh,团队应该更新预算报告周五前。,团队应该更新预算报告周五前
+zh_085,zh,Paraformer-zh,团队想要安排会议议程午饭前。,团队想要安排会议一程午饭前
+zh_086,zh,Paraformer-zh,我应该更新客户邮件今天下午。,我应该更新客户邮件今天下午
+zh_087,zh,Paraformer-zh,我们会发送客户邮件今天下午。,我们会发送客户邮件今天下午
+zh_088,zh,Paraformer-zh,团队必须完成客户邮件明天上午。,团队必须完成客户邮件明天上午
+zh_089,zh,Paraformer-zh,我必须完成项目计划周五前。,我必须完成项目计划周五前
+zh_090,zh,Paraformer-zh,团队想要安排预算报告明天上午。,团队想要安排预算报告明天上午
+zh_091,zh,Paraformer-zh,我的经理会发送会议议程午饭前。,我的经理会发送会议一程午饭钱
+zh_092,zh,Paraformer-zh,团队应该更新项目计划明天上午。,团队应该更新项目计划明天上午
+zh_093,zh,Paraformer-zh,客户会发送预算报告午饭前。,客户会发送预算报告午饭钱
+zh_094,zh,Paraformer-zh,团队需要审阅项目计划明天上午。,团队需要审阅项目计划明天上午
+zh_095,zh,Paraformer-zh,团队需要审阅项目计划周五前。,团队需要审阅项目计划周五前
+zh_096,zh,Paraformer-zh,我们需要审阅会议议程周五前。,我们需要审阅会议议程周五前
+zh_097,zh,Paraformer-zh,我们需要审阅客户邮件周五前。,我们需要审阅客户邮件周五前
+zh_098,zh,Paraformer-zh,客户必须完成项目计划午饭前。,客户必须完成项目计划午饭前
+zh_099,zh,Paraformer-zh,我的经理应该更新会议议程今天下午。,我的经理应该更新会议议程今天下午
+zh_100,zh,Paraformer-zh,团队需要审阅客户邮件今天下午。,团队需要审阅客户邮件今天下午
