@@ -627,13 +627,20 @@ def test_caller_speech_agent_response(
         _wait_for_state(caller_page, "connected")
         _wait_for_state(caller_page, "remoteAudioReady")
 
-        # Wait for agent greeting, caller speech transcription, and agent reply.
+        # Wait for caller speech transcription and an agent reply after it. The
+        # greeting is not required: if the caller starts talking first it
+        # interrupts the greeting, and the agent answers in a single turn.
         deadline = time.monotonic() + 90
         while time.monotonic() < deadline:
             utterances = client.all_utterances(session_id)
             caller_speech = [u for u in utterances if u["role"] == "caller" and u["source"] == "agent_stt"]
-            agent_replies = [u for u in utterances if u["role"] == "agent" and u["source"] == "agent_llm"]
-            if caller_speech and len(agent_replies) >= 2:
+            first_heard = min((u["seq"] for u in caller_speech), default=None)
+            agent_replies = [
+                u for u in utterances
+                if u["role"] == "agent" and u["source"] == "agent_llm"
+                and first_heard is not None and u["seq"] > first_heard
+            ]
+            if caller_speech and agent_replies:
                 break
             time.sleep(3)
         else:
@@ -643,7 +650,7 @@ def test_caller_speech_agent_response(
             )
 
         assert caller_speech, "Caller speech was not transcribed"
-        assert len(agent_replies) >= 2, "Agent did not respond to caller speech"
+        assert agent_replies, "Agent did not respond to caller speech"
         print(f"Caller heard: {caller_speech[0]['text'][:120]}")
         print(f"Agent reply: {agent_replies[-1]['text'][:120]}")
 
