@@ -76,10 +76,17 @@ class HarnessClient:
         r.raise_for_status()
         return r.json()
 
-    def record_consent(self, session_id: str, caller_token: str) -> dict[str, Any]:
+    def record_consent(
+        self, session_id: str, caller_token: str, skip_metered: bool = False
+    ) -> dict[str, Any]:
+        """skip_metered: no AI agent and no recording for this session, so the
+        test spends no LiveKit Cloud quota (test-only, needs the service key)."""
+        headers = {"Authorization": f"Bearer {caller_token}"}
+        if skip_metered:
+            headers |= {"X-Test-Skip-Metered": "1", "X-Service-Key": self.service_key}
         r = self.session.post(
             f"{self.base_url}/v1/sessions/{session_id}/consent",
-            headers={"Authorization": f"Bearer {caller_token}"},
+            headers=headers,
             json={"accepted": True, "consent_text_version": "v1.0"},
             timeout=30,
         )
@@ -339,7 +346,7 @@ def test_two_web_clients(client: HarnessClient, browser: Browser) -> None:
     support_ctx = None
 
     try:
-        consent = client.record_consent(session_id, caller_token)
+        consent = client.record_consent(session_id, caller_token, skip_metered=True)
         caller_creds = consent["livekit"]
         support_creds = client.support_token(session_id)
 
@@ -389,7 +396,7 @@ def test_lifecycle_reconnect(client: HarnessClient, browser: Browser) -> None:
     support_ctx = None
 
     try:
-        consent = client.record_consent(session_id, caller_token)
+        consent = client.record_consent(session_id, caller_token, skip_metered=True)
         caller_creds = consent["livekit"]
         support_creds = client.support_token(session_id)
 
@@ -454,6 +461,7 @@ def test_lifecycle_reconnect(client: HarnessClient, browser: Browser) -> None:
             print(f"end_session failed: {exc}")
 
 
+@pytest.mark.quota
 def test_recordings_and_transcript_after_session_end(
     client: HarnessClient, browser: Browser
 ) -> None:
@@ -546,6 +554,7 @@ def test_recordings_and_transcript_after_session_end(
             pass
 
 
+@pytest.mark.quota
 def test_agent_joins_and_greets(client: HarnessClient, browser: Browser) -> None:
     """Confirm the AI agent joins the room after caller consent and produces a transcript utterance."""
     created = client.create_session()
@@ -597,6 +606,7 @@ def test_agent_joins_and_greets(client: HarnessClient, browser: Browser) -> None
             pass
 
 
+@pytest.mark.quota
 def test_caller_speech_agent_response(
     client: HarnessClient, browser: Browser, audio_server: str
 ) -> None:

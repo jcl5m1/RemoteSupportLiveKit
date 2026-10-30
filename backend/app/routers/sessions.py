@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hmac
 import logging
 import uuid
 from datetime import UTC, datetime, timedelta
@@ -178,12 +179,31 @@ async def record_consent(
             )
 
         session.state = SessionState.ACTIVE
-        await _start_room(lkapi, session)
+        skip_metered = _test_skip_metered(request)
+        if skip_metered:
+            session.recording_enabled = False
+        await _start_room(lkapi, session, dispatch_agent=not skip_metered)
         await db.commit()
         return await _consent_response(lkapi, session)
 
 
-async def _start_room(lkapi: api.LiveKitAPI, session: Session) -> None:
+def _test_skip_metered(request: Request) -> bool:
+    """Test-only: run a support session without the AI agent or recording.
+
+    The agent (LiveKit Inference STT/LLM/TTS) and recording (egress) spend
+    LiveKit Cloud's monthly quota, which on the free plan is a hard cap shared
+    with real calls. Regression tests that only check calling itself send
+    ``X-Test-Skip-Metered: 1`` with the service key; honoured only where test
+    endpoints are enabled (ALLOW_TEST_ENDPOINTS).
+    """
+    return (
+        settings.allow_test_endpoints
+        and request.headers.get("X-Test-Skip-Metered") == "1"
+        and hmac.compare_digest(request.headers.get("X-Service-Key", ""), settings.service_api_key)
+    )
+
+
+async def _start_room(lkapi: api.LiveKitAPI, session: Session, dispatch_agent: bool = True) -> None:
     """Create the LiveKit room, dispatch the agent, and publish metadata."""
     logger.info("_start_room: creating room %s", session.room_name)
     await lkapi.room.create_room(
@@ -193,8 +213,11 @@ async def _start_room(lkapi: api.LiveKitAPI, session: Session) -> None:
             departure_timeout=settings.room_departure_timeout_seconds,
         )
     )
-    logger.info("_start_room: dispatching agent for %s", session.room_name)
-    await dispatch.dispatch_agent(lkapi, session)
+    if dispatch_agent:
+        logger.info("_start_room: dispatching agent for %s", session.room_name)
+        await dispatch.dispatch_agent(lkapi, session)
+    else:
+        logger.info("_start_room: no agent for %s (test, metered features off)", session.room_name)
     logger.info("_start_room: updating room metadata for %s", session.room_name)
     await dispatch.update_room_metadata(lkapi, session)
 

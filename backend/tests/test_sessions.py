@@ -321,3 +321,44 @@ async def test_end_session_when_room_already_gone(db, client, app):
     app.state.lkapi.room.delete_room = server_down
     with pytest.raises(TwirpError):
         await client.post(f"/v1/sessions/{session_id}/end", headers=auth)
+
+
+@pytest.mark.asyncio
+async def test_test_sessions_can_skip_agent_and_recording(db, client, monkeypatch):
+    """X-Test-Skip-Metered (service key + test endpoints on) runs a session with
+    no agent dispatch and no recording, so regression tests don't spend
+    LiveKit Cloud quota. Without the service key the header is ignored."""
+    from app.routers import sessions as sessions_module
+    from app.services import dispatch
+
+    calls = []
+    real = dispatch.dispatch_agent
+
+    async def spy(lkapi, session):
+        calls.append(session.room_name)
+        return await real(lkapi, session)
+
+    monkeypatch.setattr(dispatch, "dispatch_agent", spy)
+    monkeypatch.setattr(sessions_module.settings, "allow_test_endpoints", True)
+
+    async def consent(headers):
+        device = f"d-{len(calls)}-{headers['X-Service-Key'][:4]}-{uuid.uuid4().hex[:6]}"
+        created = (await client.post("/v1/sessions", json={"device_id": device})).json()
+        r = await client.post(
+            f"/v1/sessions/{created['session_id']}/consent",
+            json={"accepted": True, "consent_text_version": "v1.0"},
+            headers={"Authorization": f"Bearer {created['caller_session_token']}", **headers},
+        )
+        assert r.status_code == 200
+        return r.json()
+
+    key = sessions_module.settings.service_api_key
+    skipped = await consent({"X-Test-Skip-Metered": "1", "X-Service-Key": key})
+    assert skipped["recording_enabled"] is False and calls == []
+
+    ignored = await consent({"X-Test-Skip-Metered": "1", "X-Service-Key": "wrong"})
+    assert ignored["recording_enabled"] is True and len(calls) == 1
+
+    monkeypatch.setattr(sessions_module.settings, "allow_test_endpoints", False)
+    prod_like = await consent({"X-Test-Skip-Metered": "1", "X-Service-Key": key})
+    assert prod_like["recording_enabled"] is True and len(calls) == 2

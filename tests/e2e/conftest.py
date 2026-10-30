@@ -26,3 +26,11 @@ def browser_context_args(browser_context_args):
         **browser_context_args,
         "permissions": [*(browser_context_args.get("permissions") or []), "camera", "microphone"],
     }
+
+
+def pytest_configure(config):
+    config.addinivalue_line(
+        "markers",
+        "quota: spends finite LiveKit Cloud quota (AI agent inference, recording egress); "
+        "run weekly, not nightly -- select with -m quota / exclude with -m 'not quota'",
+    )

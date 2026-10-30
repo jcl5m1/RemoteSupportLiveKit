@@ -1,5 +1,14 @@
 # ASR benchmark (synthetic speech)
 
+> **LiveKit Cloud quota:** `bench_cloud.py` streams audio to LiveKit Inference,
+> whose free Build-plan credit (~$2.50/month) is shared with the production
+> support agent -- using it up silences the agent until the 1st. The script
+> estimates the usage and asks before sending anything; no "yes" within 30 s
+> (or no terminal) skips it. Defaults are small (5 clips per language and
+> condition, ≤10 audio-minutes, 3 streams) and it stops at the first refusal.
+> `--approved-livekit-usage` skips the prompt -- only after the owner approved.
+> All other scripts here run locally and use no LiveKit quota.
+
 **Results and recommendation: [ANALYSIS.md](ANALYSIS.md).** The hardened
 benchmark (Taglish, phone-line audio, real recordings, cloud vs local, batch vs
 streaming) is run with `make_harder.py`, `make_real.py`, `bench_cloud.py`,

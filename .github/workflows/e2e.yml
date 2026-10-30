@@ -1,11 +1,18 @@
 name: E2E regression — two web clients
 
+# Tests marked `quota` (AI agent inference, recording egress) spend LiveKit
+# Cloud's monthly quota -- a hard cap on the free plan, shared with real calls --
+# so they run weekly; the rest run nightly with the agent and recording off.
 on:
-  # Nightly regression against the live backend.
   schedule:
-    - cron: "17 7 * * *"
-  # Manual trigger for ad-hoc verification.
+    - cron: "17 7 * * *"   # nightly: calling tests only
+    - cron: "43 8 * * 1"   # weekly (Monday): everything, incl. quota tests
   workflow_dispatch:
+    inputs:
+      include_quota:
+        description: "Also run tests that spend LiveKit Cloud quota (agent, recording)"
+        type: boolean
+        default: false
 
 jobs:
   two-web-clients:
@@ -25,4 +32,15 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements.txt
       - run: playwright install chromium
-      - run: pytest test_two_web_clients.py -q
+      - name: Run e2e tests
+        env:
+          WEEKLY: ${{ github.event.schedule == '43 8 * * 1' }}
+          INCLUDE_QUOTA: ${{ inputs.include_quota }}
+        run: |
+          if [ "$WEEKLY" = true ] || [ "$INCLUDE_QUOTA" = true ]; then
+            echo "Running all tests, including those that spend LiveKit Cloud quota"
+            pytest test_two_web_clients.py -q
+          else
+            echo "Running calling tests only (quota tests run weekly)"
+            pytest test_two_web_clients.py -q -m "not quota"
+          fi
