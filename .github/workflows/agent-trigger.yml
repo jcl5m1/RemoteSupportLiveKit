@@ -1,0 +1,48 @@
+# When CI or the nightly E2E run fails on main, notify the Discord agent
+# harness (github.com/jcl5m1/discord_agent, "External triggers"). The harness
+# runs the event as a turn of the `ci-remotesupportlivekit` Claude instance --
+# creating its Discord channel on first use -- which fixes clear-cut failures
+# or asks in that channel.
+#
+# Secrets: AGENT_TRIGGER_URL (…/agents/_triggers/remotesupport-ci) and
+# AGENT_TRIGGER_TOKEN (from `python -m harness.triggers add/rotate`).
+name: Agent trigger on failure
+
+on:
+  workflow_run:
+    workflows: ["CI", "E2E regression — two web clients"]
+    types: [completed]
+
+permissions: {}
+
+jobs:
+  notify:
+    # Failures on main only, never for pull requests (no secrets for fork code).
+    if: >-
+      github.event.workflow_run.conclusion == 'failure' &&
+      github.event.workflow_run.head_branch == 'main' &&
+      github.event.workflow_run.event != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Send the failure to the agent harness
+        env:
+          URL: ${{ secrets.AGENT_TRIGGER_URL }}
+          TOKEN: ${{ secrets.AGENT_TRIGGER_TOKEN }}
+          WORKFLOW: ${{ github.event.workflow_run.name }}
+          RUN_ID: ${{ github.event.workflow_run.id }}
+          RUN_URL: ${{ github.event.workflow_run.html_url }}
+          ATTEMPT: ${{ github.event.workflow_run.run_attempt }}
+          SHA: ${{ github.event.workflow_run.head_sha }}
+          BRANCH: ${{ github.event.workflow_run.head_branch }}
+          EVENT: ${{ github.event.workflow_run.event }}
+        run: |
+          body=$(jq -n --arg repo "$GITHUB_REPOSITORY" --arg workflow "$WORKFLOW" \
+            --arg run_id "$RUN_ID" --arg url "$RUN_URL" --arg attempt "$ATTEMPT" \
+            --arg sha "${SHA:0:12}" --arg branch "$BRANCH" --arg event "$EVENT" \
+            '{repo:$repo, workflow:$workflow, run_id:$run_id, url:$url, attempt:$attempt,
+              sha:$sha, branch:$branch, event:$event}')
+          code=$(curl -sS -o resp.json -w '%{http_code}' --max-time 30 --retry 3 --retry-all-errors \
+            -X POST "$URL" -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" -d "$body")
+          echo "harness answered $code: $(cat resp.json)"
+          case "$code" in 200|202) ;; *) exit 1 ;; esac
