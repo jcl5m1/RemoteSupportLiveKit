@@ -1299,3 +1299,503 @@ zh_097,zh,Paraformer-zh,我们需要审阅客户邮件周五前。,我们需要�
 zh_098,zh,Paraformer-zh,客户必须完成项目计划午饭前。,客户必须完成项目计划午饭前
 zh_099,zh,Paraformer-zh,我的经理应该更新会议议程今天下午。,我的经理应该更新会议议程今天下午
 zh_100,zh,Paraformer-zh,团队需要审阅客户邮件今天下午。,团队需要审阅客户邮件今天下午
+en_001,en,Qwen3-ASR-1.7B,My manager need to review the client email by Friday.,My manager need to review the client email by Friday.
+en_002,en,Qwen3-ASR-1.7B,We need to review the meeting agenda this afternoon.,We need to review the meeting agenda this afternoon.
+en_003,en,Qwen3-ASR-1.7B,We should update the meeting agenda this afternoon.,We should update the meeting agenda this afternoon.
+en_004,en,Qwen3-ASR-1.7B,The team need to review the project plan before lunch.,The team need to review the project plan before lunch.
+en_005,en,Qwen3-ASR-1.7B,My manager need to review the project plan this afternoon.,My manager need to review the project plan this afternoon.
+en_006,en,Qwen3-ASR-1.7B,The team should update the project plan before lunch.,The team should update the project plan before lunch.
+en_007,en,Qwen3-ASR-1.7B,The team will send the meeting agenda this afternoon.,The team will send the meeting agenda this afternoon.
+en_008,en,Qwen3-ASR-1.7B,We have to finish the client email this afternoon.,We have to finish the client email this afternoon.
+en_009,en,Qwen3-ASR-1.7B,My manager will send the budget report by Friday.,My manager will send the budget report by Friday.
+en_010,en,Qwen3-ASR-1.7B,My manager want to schedule the project plan before lunch.,My manager wants to schedule the project plan before lunch.
+en_011,en,Qwen3-ASR-1.7B,The team have to finish the budget report before lunch.,The team have to finish the budget report before lunch.
+en_012,en,Qwen3-ASR-1.7B,My manager should update the budget report by Friday.,My manager should update the budget report by Friday.
+en_013,en,Qwen3-ASR-1.7B,I have to finish the project plan this afternoon.,I have to finish the project plan this afternoon.
+en_014,en,Qwen3-ASR-1.7B,The client will send the budget report this afternoon.,The client will send the budget report this afternoon.
+en_015,en,Qwen3-ASR-1.7B,The client will send the client email tomorrow morning.,The client will send the client email tomorrow morning.
+en_016,en,Qwen3-ASR-1.7B,The client have to finish the meeting agenda before lunch.,The client have to finish the meeting agenda before lunch.
+en_017,en,Qwen3-ASR-1.7B,I have to finish the client email tomorrow morning.,I have to finish the client email tomorrow morning.
+en_018,en,Qwen3-ASR-1.7B,The team want to schedule the client email by Friday.,The team want to schedule the client email by Friday.
+en_019,en,Qwen3-ASR-1.7B,We will send the budget report tomorrow morning.,We will send the budget report tomorrow morning.
+en_020,en,Qwen3-ASR-1.7B,I want to schedule the project plan by Friday.,I want to schedule the project plan by Friday.
+en_021,en,Qwen3-ASR-1.7B,My manager will send the meeting agenda tomorrow morning.,My manager will send the meeting agenda tomorrow morning.
+en_022,en,Qwen3-ASR-1.7B,The team need to review the client email by Friday.,The team need to review the client email by Friday.
+en_023,en,Qwen3-ASR-1.7B,My manager need to review the client email tomorrow morning.,My manager need to review the client email tomorrow morning.
+en_024,en,Qwen3-ASR-1.7B,I should update the meeting agenda by Friday.,I should update the meeting agenda by Friday.
+en_025,en,Qwen3-ASR-1.7B,I need to review the client email by Friday.,I need to review the client email by Friday.
+en_026,en,Qwen3-ASR-1.7B,I should update the project plan before lunch.,I should update the project plan before lunch.
+en_027,en,Qwen3-ASR-1.7B,The team have to finish the project plan this afternoon.,The team have to finish the project plan this afternoon.
+en_028,en,Qwen3-ASR-1.7B,I need to review the budget report this afternoon.,I need to review the budget report this afternoon.
+en_029,en,Qwen3-ASR-1.7B,The client have to finish the meeting agenda tomorrow morning.,The client have to finish the meeting agenda tomorrow morning.
+en_030,en,Qwen3-ASR-1.7B,The client want to schedule the project plan before lunch.,The client wants to schedule the project plan before lunch.
+en_031,en,Qwen3-ASR-1.7B,My manager will send the budget report tomorrow morning.,My manager will send the budget report tomorrow morning.
+en_032,en,Qwen3-ASR-1.7B,My manager need to review the meeting agenda by Friday.,My manager need to review the meeting agenda by Friday.
+en_033,en,Qwen3-ASR-1.7B,My manager need to review the project plan before lunch.,My manager need to review the project plan before lunch.
+en_034,en,Qwen3-ASR-1.7B,The team want to schedule the budget report by Friday.,The team want to schedule the budget report by Friday.
+en_035,en,Qwen3-ASR-1.7B,I want to schedule the project plan tomorrow morning.,I want to schedule the project plan tomorrow morning.
+en_036,en,Qwen3-ASR-1.7B,I have to finish the budget report this afternoon.,I have to finish the budget report this afternoon.
+en_037,en,Qwen3-ASR-1.7B,The client have to finish the budget report this afternoon.,The client have to finish the budget report this afternoon.
+en_038,en,Qwen3-ASR-1.7B,My manager have to finish the client email before lunch.,My manager have to finish the client email before lunch.
+en_039,en,Qwen3-ASR-1.7B,I want to schedule the client email tomorrow morning.,I want to schedule the client email tomorrow morning.
+en_040,en,Qwen3-ASR-1.7B,My manager need to review the budget report tomorrow morning.,My manager need to review the budget report tomorrow morning.
+en_041,en,Qwen3-ASR-1.7B,The client should update the budget report this afternoon.,The client should update the budget report this afternoon.
+en_042,en,Qwen3-ASR-1.7B,My manager want to schedule the budget report by Friday.,My manager wants to schedule the budget report by Friday.
+en_043,en,Qwen3-ASR-1.7B,The team should update the project plan this afternoon.,The team should update the project plan this afternoon.
+en_044,en,Qwen3-ASR-1.7B,The client want to schedule the meeting agenda before lunch.,The client wants to schedule the meeting agenda before lunch.
+en_045,en,Qwen3-ASR-1.7B,I will send the meeting agenda by Friday.,I will send the meeting agenda by Friday.
+en_046,en,Qwen3-ASR-1.7B,The client need to review the client email tomorrow morning.,The client need to review the client email tomorrow morning.
+en_047,en,Qwen3-ASR-1.7B,My manager need to review the budget report before lunch.,My manager need to review the budget report before lunch.
+en_048,en,Qwen3-ASR-1.7B,We will send the budget report by Friday.,We will send the budget report by Friday.
+en_049,en,Qwen3-ASR-1.7B,The client need to review the budget report this afternoon.,The client need to review the budget report this afternoon.
+en_050,en,Qwen3-ASR-1.7B,We want to schedule the meeting agenda tomorrow morning.,We want to schedule the meeting agenda tomorrow morning.
+en_051,en,Qwen3-ASR-1.7B,The team need to review the meeting agenda tomorrow morning.,The team need to review the meeting agenda tomorrow morning.
+en_052,en,Qwen3-ASR-1.7B,I should update the budget report this afternoon.,I should update the budget report this afternoon.
+en_053,en,Qwen3-ASR-1.7B,The client will send the meeting agenda tomorrow morning.,The client will send the meeting agenda tomorrow morning.
+en_054,en,Qwen3-ASR-1.7B,I have to finish the meeting agenda by Friday.,I have to finish the meeting agenda by Friday.
+en_055,en,Qwen3-ASR-1.7B,The team should update the budget report tomorrow morning.,The team should update the budget report tomorrow morning.
+en_056,en,Qwen3-ASR-1.7B,We should update the budget report before lunch.,We should update the budget report before lunch.
+en_057,en,Qwen3-ASR-1.7B,The team want to schedule the project plan by Friday.,The team want to schedule the project plan by Friday.
+en_058,en,Qwen3-ASR-1.7B,I should update the client email tomorrow morning.,I should update the client email tomorrow morning.
+en_059,en,Qwen3-ASR-1.7B,The client want to schedule the project plan this afternoon.,The client wants to schedule the project plan this afternoon.
+en_060,en,Qwen3-ASR-1.7B,The client need to review the meeting agenda tomorrow morning.,The client need to review the meeting agenda tomorrow morning.
+en_061,en,Qwen3-ASR-1.7B,We need to review the client email before lunch.,We need to review the client email before lunch.
+en_062,en,Qwen3-ASR-1.7B,The client should update the budget report by Friday.,The client should update the budget report by Friday.
+en_063,en,Qwen3-ASR-1.7B,I will send the client email this afternoon.,I will send the client email this afternoon.
+en_064,en,Qwen3-ASR-1.7B,I should update the client email before lunch.,I should update the client email before lunch.
+en_065,en,Qwen3-ASR-1.7B,The team will send the project plan before lunch.,The team will send the project plan before lunch.
+en_066,en,Qwen3-ASR-1.7B,I will send the meeting agenda tomorrow morning.,I will send the meeting agenda tomorrow morning.
+en_067,en,Qwen3-ASR-1.7B,The client need to review the project plan this afternoon.,The client need to review the project plan this afternoon.
+en_068,en,Qwen3-ASR-1.7B,We want to schedule the budget report this afternoon.,We want to schedule the budget report this afternoon.
+en_069,en,Qwen3-ASR-1.7B,We have to finish the meeting agenda tomorrow morning.,We have to finish the meeting agenda tomorrow morning.
+en_070,en,Qwen3-ASR-1.7B,We have to finish the client email tomorrow morning.,We have to finish the client email tomorrow morning.
+en_071,en,Qwen3-ASR-1.7B,My manager need to review the client email before lunch.,My manager need to review the client email before lunch.
+en_072,en,Qwen3-ASR-1.7B,The client need to review the meeting agenda by Friday.,The client need to review the meeting agenda by Friday.
+en_073,en,Qwen3-ASR-1.7B,I need to review the client email this afternoon.,I need to review the client email this afternoon.
+en_074,en,Qwen3-ASR-1.7B,I should update the budget report by Friday.,I should update the budget report by Friday.
+en_075,en,Qwen3-ASR-1.7B,The client will send the client email by Friday.,The client will send the client email by Friday.
+en_076,en,Qwen3-ASR-1.7B,The client will send the meeting agenda by Friday.,The client will send the meeting agenda by Friday.
+en_077,en,Qwen3-ASR-1.7B,My manager have to finish the meeting agenda before lunch.,My manager have to finish the meeting agenda before lunch.
+en_078,en,Qwen3-ASR-1.7B,I should update the budget report before lunch.,I should update the budget report before lunch.
+en_079,en,Qwen3-ASR-1.7B,The team need to review the budget report this afternoon.,The team need to review the budget report this afternoon.
+en_080,en,Qwen3-ASR-1.7B,We need to review the project plan by Friday.,We need to review the project plan by Friday.
+en_081,en,Qwen3-ASR-1.7B,We should update the client email this afternoon.,We should update the client email this afternoon.
+en_082,en,Qwen3-ASR-1.7B,We have to finish the client email before lunch.,We have to finish the client email before lunch.
+en_083,en,Qwen3-ASR-1.7B,The client need to review the client email this afternoon.,The client need to review the client email this afternoon.
+en_084,en,Qwen3-ASR-1.7B,The team should update the budget report by Friday.,The team should update the budget report by Friday.
+en_085,en,Qwen3-ASR-1.7B,The team want to schedule the meeting agenda before lunch.,The team want to schedule the meeting agenda before lunch.
+en_086,en,Qwen3-ASR-1.7B,I should update the client email this afternoon.,I should update the client email this afternoon.
+en_087,en,Qwen3-ASR-1.7B,We will send the client email this afternoon.,We will send the client email this afternoon.
+en_088,en,Qwen3-ASR-1.7B,The team have to finish the client email tomorrow morning.,The team have to finish the client email tomorrow morning.
+en_089,en,Qwen3-ASR-1.7B,I have to finish the project plan by Friday.,I have to finish the project plan by Friday.
+en_090,en,Qwen3-ASR-1.7B,The team want to schedule the budget report tomorrow morning.,The team want to schedule the budget report tomorrow morning.
+en_091,en,Qwen3-ASR-1.7B,My manager will send the meeting agenda before lunch.,My manager will send the meeting agenda before lunch.
+en_092,en,Qwen3-ASR-1.7B,The team should update the project plan tomorrow morning.,The team should update the project plan tomorrow morning.
+en_093,en,Qwen3-ASR-1.7B,The client will send the budget report before lunch.,The client will send the budget report before lunch.
+en_094,en,Qwen3-ASR-1.7B,The team need to review the project plan tomorrow morning.,The team need to review the project plan tomorrow morning.
+en_095,en,Qwen3-ASR-1.7B,The team need to review the project plan by Friday.,The team need to review the project plan by Friday.
+en_096,en,Qwen3-ASR-1.7B,We need to review the meeting agenda by Friday.,We need to review the meeting agenda by Friday.
+en_097,en,Qwen3-ASR-1.7B,We need to review the client email by Friday.,We need to review the client email by Friday.
+en_098,en,Qwen3-ASR-1.7B,The client have to finish the project plan before lunch.,The client have to finish the project plan before lunch.
+en_099,en,Qwen3-ASR-1.7B,My manager should update the meeting agenda this afternoon.,My manager should update the meeting agenda this afternoon.
+en_100,en,Qwen3-ASR-1.7B,The team need to review the client email this afternoon.,The team need to review the client email this afternoon.
+zh_001,zh,Qwen3-ASR-1.7B,我的经理需要审阅客户邮件周五前。,我的经理需要审阅客户邮件，周五前。
+zh_002,zh,Qwen3-ASR-1.7B,我们需要审阅会议议程今天下午。,我们需要审阅会议议程。今天下午。
+zh_003,zh,Qwen3-ASR-1.7B,我们应该更新会议议程今天下午。,我们应该更新会议议程。今天下午。
+zh_004,zh,Qwen3-ASR-1.7B,团队需要审阅项目计划午饭前。,团队需要审阅项目计划。午饭前。
+zh_005,zh,Qwen3-ASR-1.7B,我的经理需要审阅项目计划今天下午。,我的经理需要审阅项目计划，今天下午。
+zh_006,zh,Qwen3-ASR-1.7B,团队应该更新项目计划午饭前。,团队应该更新项目计划。午饭前。
+zh_007,zh,Qwen3-ASR-1.7B,团队会发送会议议程今天下午。,团队会发送会议议程。今天下午。
+zh_008,zh,Qwen3-ASR-1.7B,我们必须完成客户邮件今天下午。,我们必须完成客户邮件，今天下午。
+zh_009,zh,Qwen3-ASR-1.7B,我的经理会发送预算报告周五前。,我的经理会发送预算报告，周五前。
+zh_010,zh,Qwen3-ASR-1.7B,我的经理想要安排项目计划午饭前。,我的经理想要安排项目计划，午饭前。
+zh_011,zh,Qwen3-ASR-1.7B,团队必须完成预算报告午饭前。,团队必须完成预算报告，午饭前。
+zh_012,zh,Qwen3-ASR-1.7B,我的经理应该更新预算报告周五前。,我的经理应该更新预算报告，周五前。
+zh_013,zh,Qwen3-ASR-1.7B,我必须完成项目计划今天下午。,我必须完成项目计划。今天下午。
+zh_014,zh,Qwen3-ASR-1.7B,客户会发送预算报告今天下午。,客户会发送预算报告。今天下午。
+zh_015,zh,Qwen3-ASR-1.7B,客户会发送客户邮件明天上午。,客户会发送客户邮件，明天上午。
+zh_016,zh,Qwen3-ASR-1.7B,客户必须完成会议议程午饭前。,客户必须完成会议议程，午饭前。
+zh_017,zh,Qwen3-ASR-1.7B,我必须完成客户邮件明天上午。,我必须完成客户邮件，明天上午。
+zh_018,zh,Qwen3-ASR-1.7B,团队想要安排客户邮件周五前。,团队想要安排客户邮件周五前。
+zh_019,zh,Qwen3-ASR-1.7B,我们会发送预算报告明天上午。,我们会发送预算报告，明天上午。
+zh_020,zh,Qwen3-ASR-1.7B,我想要安排项目计划周五前。,我想要安排项目计划，周五前。
+zh_021,zh,Qwen3-ASR-1.7B,我的经理会发送会议议程明天上午。,我的经理会发送会议议程，明天上午。
+zh_022,zh,Qwen3-ASR-1.7B,团队需要审阅客户邮件周五前。,团队需要审阅客户邮件，周五前。
+zh_023,zh,Qwen3-ASR-1.7B,我的经理需要审阅客户邮件明天上午。,我的经理需要审阅客户邮件，明天上午。
+zh_024,zh,Qwen3-ASR-1.7B,我应该更新会议议程周五前。,我应该更新会议议程，周五前。
+zh_025,zh,Qwen3-ASR-1.7B,我需要审阅客户邮件周五前。,我需要审阅客户邮件，周五前。
+zh_026,zh,Qwen3-ASR-1.7B,我应该更新项目计划午饭前。,我应该更新项目计划。午饭前。
+zh_027,zh,Qwen3-ASR-1.7B,团队必须完成项目计划今天下午。,团队必须完成项目计划。今天下午。
+zh_028,zh,Qwen3-ASR-1.7B,我需要审阅预算报告今天下午。,我需要审阅预算报告，今天下午。
+zh_029,zh,Qwen3-ASR-1.7B,客户必须完成会议议程明天上午。,客户必须完成会议议程。明天上午。
+zh_030,zh,Qwen3-ASR-1.7B,客户想要安排项目计划午饭前。,客户想要安排项目计划，午饭前。
+zh_031,zh,Qwen3-ASR-1.7B,我的经理会发送预算报告明天上午。,我的经理会发送预算报告，明天上午。
+zh_032,zh,Qwen3-ASR-1.7B,我的经理需要审阅会议议程周五前。,我的经理需要审阅会议议程，周五前。
+zh_033,zh,Qwen3-ASR-1.7B,我的经理需要审阅项目计划午饭前。,我的经理需要审阅项目计划。午饭前。
+zh_034,zh,Qwen3-ASR-1.7B,团队想要安排预算报告周五前。,团队想要安排预算报告周五前。
+zh_035,zh,Qwen3-ASR-1.7B,我想要安排项目计划明天上午。,我想要安排项目计划，明天上午。
+zh_036,zh,Qwen3-ASR-1.7B,我必须完成预算报告今天下午。,我必须完成预算报告，今天下午。
+zh_037,zh,Qwen3-ASR-1.7B,客户必须完成预算报告今天下午。,客户必须完成预算报告。今天下午。
+zh_038,zh,Qwen3-ASR-1.7B,我的经理必须完成客户邮件午饭前。,我的经理必须完成客户邮件，午饭前。
+zh_039,zh,Qwen3-ASR-1.7B,我想要安排客户邮件明天上午。,我想要安排客户邮件，明天上午。
+zh_040,zh,Qwen3-ASR-1.7B,我的经理需要审阅预算报告明天上午。,我的经理需要审阅预算报告，明天上午。
+zh_041,zh,Qwen3-ASR-1.7B,客户应该更新预算报告今天下午。,客户应该更新预算报告。今天下午。
+zh_042,zh,Qwen3-ASR-1.7B,我的经理想要安排预算报告周五前。,我的经理想要安排预算报告周五前。
+zh_043,zh,Qwen3-ASR-1.7B,团队应该更新项目计划今天下午。,团队应该更新项目计划。今天下午。
+zh_044,zh,Qwen3-ASR-1.7B,客户想要安排会议议程午饭前。,客户想要安排会议，一成午饭钱。
+zh_045,zh,Qwen3-ASR-1.7B,我会发送会议议程周五前。,我会发送会议议程，周五前。
+zh_046,zh,Qwen3-ASR-1.7B,客户需要审阅客户邮件明天上午。,客户需要审阅客户邮件，明天上午。
+zh_047,zh,Qwen3-ASR-1.7B,我的经理需要审阅预算报告午饭前。,我的经理需要审阅预算报告。午饭前。
+zh_048,zh,Qwen3-ASR-1.7B,我们会发送预算报告周五前。,我们会发送预算报告，周五前。
+zh_049,zh,Qwen3-ASR-1.7B,客户需要审阅预算报告今天下午。,客户需要审阅预算报告，今天下午。
+zh_050,zh,Qwen3-ASR-1.7B,我们想要安排会议议程明天上午。,我们想要安排会议议程，明天上午。
+zh_051,zh,Qwen3-ASR-1.7B,团队需要审阅会议议程明天上午。,团队需要审阅会议议程，明天上午。
+zh_052,zh,Qwen3-ASR-1.7B,我应该更新预算报告今天下午。,我应该更新预算报告。今天下午。
+zh_053,zh,Qwen3-ASR-1.7B,客户会发送会议议程明天上午。,客户会发送会议议程，明天上午。
+zh_054,zh,Qwen3-ASR-1.7B,我必须完成会议议程周五前。,我必须完成会议议程，周五前。
+zh_055,zh,Qwen3-ASR-1.7B,团队应该更新预算报告明天上午。,团队应该更新预算报告，明天上午。
+zh_056,zh,Qwen3-ASR-1.7B,我们应该更新预算报告午饭前。,我们应该更新预算报告。午饭前。
+zh_057,zh,Qwen3-ASR-1.7B,团队想要安排项目计划周五前。,团队想要安排项目计划，周五前。
+zh_058,zh,Qwen3-ASR-1.7B,我应该更新客户邮件明天上午。,我应该更新客户邮件，明天上午。
+zh_059,zh,Qwen3-ASR-1.7B,客户想要安排项目计划今天下午。,客户想要安排项目计划，今天下午。
+zh_060,zh,Qwen3-ASR-1.7B,客户需要审阅会议议程明天上午。,客户需要审阅会议议程，明天上午。
+zh_061,zh,Qwen3-ASR-1.7B,我们需要审阅客户邮件午饭前。,我们需要审阅客户邮件。午饭前。
+zh_062,zh,Qwen3-ASR-1.7B,客户应该更新预算报告周五前。,客户应该更新预算报告，周五前。
+zh_063,zh,Qwen3-ASR-1.7B,我会发送客户邮件今天下午。,我会发送客户邮件。今天下午。
+zh_064,zh,Qwen3-ASR-1.7B,我应该更新客户邮件午饭前。,我应该更新客户邮件。午饭前。
+zh_065,zh,Qwen3-ASR-1.7B,团队会发送项目计划午饭前。,团队会发送项目计划，午饭前。
+zh_066,zh,Qwen3-ASR-1.7B,我会发送会议议程明天上午。,我会发送会议议程，明天上午。
+zh_067,zh,Qwen3-ASR-1.7B,客户需要审阅项目计划今天下午。,客户需要审阅项目计划，今天下午。
+zh_068,zh,Qwen3-ASR-1.7B,我们想要安排预算报告今天下午。,我们想要安排预算报告今天下午。
+zh_069,zh,Qwen3-ASR-1.7B,我们必须完成会议议程明天上午。,我们必须完成会议议程。明天上午。
+zh_070,zh,Qwen3-ASR-1.7B,我们必须完成客户邮件明天上午。,我们必须完成客户邮件，明天上午。
+zh_071,zh,Qwen3-ASR-1.7B,我的经理需要审阅客户邮件午饭前。,我的经理需要审阅客户邮件。午饭前。
+zh_072,zh,Qwen3-ASR-1.7B,客户需要审阅会议议程周五前。,客户需要审阅会议议程，周五前。
+zh_073,zh,Qwen3-ASR-1.7B,我需要审阅客户邮件今天下午。,我需要审阅客户邮件，今天下午。
+zh_074,zh,Qwen3-ASR-1.7B,我应该更新预算报告周五前。,我应该更新预算报告，周五前。
+zh_075,zh,Qwen3-ASR-1.7B,客户会发送客户邮件周五前。,客户会发送客户邮件，周五前。
+zh_076,zh,Qwen3-ASR-1.7B,客户会发送会议议程周五前。,客户会发送会议议程，周五前。
+zh_077,zh,Qwen3-ASR-1.7B,我的经理必须完成会议议程午饭前。,我的经理必须完成会议议程，午饭前。
+zh_078,zh,Qwen3-ASR-1.7B,我应该更新预算报告午饭前。,我应该更新预算报告。午饭前。
+zh_079,zh,Qwen3-ASR-1.7B,团队需要审阅预算报告今天下午。,团队需要审阅预算报告。今天下午。
+zh_080,zh,Qwen3-ASR-1.7B,我们需要审阅项目计划周五前。,我们需要审阅项目计划，周五前。
+zh_081,zh,Qwen3-ASR-1.7B,我们应该更新客户邮件今天下午。,我们应该更新客户邮件。今天下午。
+zh_082,zh,Qwen3-ASR-1.7B,我们必须完成客户邮件午饭前。,我们必须完成客户邮件，午饭前。
+zh_083,zh,Qwen3-ASR-1.7B,客户需要审阅客户邮件今天下午。,客户需要审阅客户邮件。今天下午。
+zh_084,zh,Qwen3-ASR-1.7B,团队应该更新预算报告周五前。,团队应该更新预算报告，周五前。
+zh_085,zh,Qwen3-ASR-1.7B,团队想要安排会议议程午饭前。,团队想要安排会议，一成午饭钱。
+zh_086,zh,Qwen3-ASR-1.7B,我应该更新客户邮件今天下午。,我应该更新客户邮件。今天下午。
+zh_087,zh,Qwen3-ASR-1.7B,我们会发送客户邮件今天下午。,我们会发送客户邮件。今天下午。
+zh_088,zh,Qwen3-ASR-1.7B,团队必须完成客户邮件明天上午。,团队必须完成客户邮件，明天上午。
+zh_089,zh,Qwen3-ASR-1.7B,我必须完成项目计划周五前。,我必须完成项目计划，周五前。
+zh_090,zh,Qwen3-ASR-1.7B,团队想要安排预算报告明天上午。,团队想要安排预算报告，明天上午。
+zh_091,zh,Qwen3-ASR-1.7B,我的经理会发送会议议程午饭前。,我的经理会发送会议议程，午饭前。
+zh_092,zh,Qwen3-ASR-1.7B,团队应该更新项目计划明天上午。,团队应该更新项目计划。明天上午。
+zh_093,zh,Qwen3-ASR-1.7B,客户会发送预算报告午饭前。,客户会发送预算报告。午饭前。
+zh_094,zh,Qwen3-ASR-1.7B,团队需要审阅项目计划明天上午。,团队需要审阅项目计划，明天上午。
+zh_095,zh,Qwen3-ASR-1.7B,团队需要审阅项目计划周五前。,团队需要审阅项目计划，周五前。
+zh_096,zh,Qwen3-ASR-1.7B,我们需要审阅会议议程周五前。,我们需要审阅会议议程，周五前。
+zh_097,zh,Qwen3-ASR-1.7B,我们需要审阅客户邮件周五前。,我们需要审阅客户邮件，周五前。
+zh_098,zh,Qwen3-ASR-1.7B,客户必须完成项目计划午饭前。,客户必须完成项目计划。午饭前。
+zh_099,zh,Qwen3-ASR-1.7B,我的经理应该更新会议议程今天下午。,我的经理应该更新会议议程。今天下午。
+zh_100,zh,Qwen3-ASR-1.7B,团队需要审阅客户邮件今天下午。,团队需要审阅客户邮件。今天下午。
+zh-tw_001,zh-tw,Qwen3-ASR-1.7B,我的經理需要審閱客戶郵件週五前。,我的经理需要审阅客户邮件，周五前。
+zh-tw_002,zh-tw,Qwen3-ASR-1.7B,我們需要審閱會議議程今天下午。,我們需要審閱會議議程。今天下午。
+zh-tw_003,zh-tw,Qwen3-ASR-1.7B,我們應該更新會議議程今天下午。,我們應該更新會議議程，今天下午。
+zh-tw_004,zh-tw,Qwen3-ASR-1.7B,團隊需要審閱專案計畫午餐前。,團隊需要審閱專案計畫，午餐前。
+zh-tw_005,zh-tw,Qwen3-ASR-1.7B,我的經理需要審閱專案計畫今天下午。,我的經理需要審閱專案計畫，今天下午。
+zh-tw_006,zh-tw,Qwen3-ASR-1.7B,團隊應該更新專案計畫午餐前。,團隊應該更新專案計畫。午餐前。
+zh-tw_007,zh-tw,Qwen3-ASR-1.7B,團隊會寄送會議議程今天下午。,團隊會寄送會議議程，今天下午。
+zh-tw_008,zh-tw,Qwen3-ASR-1.7B,我們必須完成客戶郵件今天下午。,我們必須完成客戶郵件，今天下午。
+zh-tw_009,zh-tw,Qwen3-ASR-1.7B,我的經理會寄送預算報告週五前。,我的經理會寄送預算報告，週五前。
+zh-tw_010,zh-tw,Qwen3-ASR-1.7B,我的經理想要安排專案計畫午餐前。,我的經理想要安排專案計畫午餐前。
+zh-tw_011,zh-tw,Qwen3-ASR-1.7B,團隊必須完成預算報告午餐前。,團隊必須完成預算報告，午餐前。
+zh-tw_012,zh-tw,Qwen3-ASR-1.7B,我的經理應該更新預算報告週五前。,我的經理應該更新預算報告，週五前。
+zh-tw_013,zh-tw,Qwen3-ASR-1.7B,我必須完成專案計畫今天下午。,我必須完成專案計劃，今天下午。
+zh-tw_014,zh-tw,Qwen3-ASR-1.7B,客戶會寄送預算報告今天下午。,客戶會寄送預算報告，今天下午。
+zh-tw_015,zh-tw,Qwen3-ASR-1.7B,客戶會寄送客戶郵件明天上午。,客戶會寄送客戶郵件，明天上午。
+zh-tw_016,zh-tw,Qwen3-ASR-1.7B,客戶必須完成會議議程午餐前。,客戶必須完成會議議程，午餐前。
+zh-tw_017,zh-tw,Qwen3-ASR-1.7B,我必須完成客戶郵件明天上午。,我必須完成客戶郵件，明天上午。
+zh-tw_018,zh-tw,Qwen3-ASR-1.7B,團隊想要安排客戶郵件週五前。,團隊想要安排客戶郵件週五前。
+zh-tw_019,zh-tw,Qwen3-ASR-1.7B,我們會寄送預算報告明天上午。,我們會寄送預算報告，明天上午。
+zh-tw_020,zh-tw,Qwen3-ASR-1.7B,我想要安排專案計畫週五前。,我想要安排專案計畫，週五前。
+zh-tw_021,zh-tw,Qwen3-ASR-1.7B,我的經理會寄送會議議程明天上午。,我的經理會寄送會議議程，明天上午。
+zh-tw_022,zh-tw,Qwen3-ASR-1.7B,團隊需要審閱客戶郵件週五前。,團隊需要審閱客戶郵件，週五前。
+zh-tw_023,zh-tw,Qwen3-ASR-1.7B,我的經理需要審閱客戶郵件明天上午。,我的经理需要审阅客户邮件，明天上午。
+zh-tw_024,zh-tw,Qwen3-ASR-1.7B,我應該更新會議議程週五前。,我應該更新會議議程，週五前。
+zh-tw_025,zh-tw,Qwen3-ASR-1.7B,我需要審閱客戶郵件週五前。,我需要審閱客戶郵件，週五前。
+zh-tw_026,zh-tw,Qwen3-ASR-1.7B,我應該更新專案計畫午餐前。,我應該更新專案計畫。午餐前。
+zh-tw_027,zh-tw,Qwen3-ASR-1.7B,團隊必須完成專案計畫今天下午。,團隊必須完成專案計畫，今天下午。
+zh-tw_028,zh-tw,Qwen3-ASR-1.7B,我需要審閱預算報告今天下午。,我需要審閱預算報告，今天下午。
+zh-tw_029,zh-tw,Qwen3-ASR-1.7B,客戶必須完成會議議程明天上午。,客戶必須完成會議議程，明天上午。
+zh-tw_030,zh-tw,Qwen3-ASR-1.7B,客戶想要安排專案計畫午餐前。,客戶想要安排專案計畫午餐前。
+zh-tw_031,zh-tw,Qwen3-ASR-1.7B,我的經理會寄送預算報告明天上午。,我的經理會寄送預算報告，明天上午。
+zh-tw_032,zh-tw,Qwen3-ASR-1.7B,我的經理需要審閱會議議程週五前。,我的經理需要審閱會議議程，週五前。
+zh-tw_033,zh-tw,Qwen3-ASR-1.7B,我的經理需要審閱專案計畫午餐前。,我的经理需要审阅专案计划。午餐前。
+zh-tw_034,zh-tw,Qwen3-ASR-1.7B,團隊想要安排預算報告週五前。,團隊想要安排預算報告週五前。
+zh-tw_035,zh-tw,Qwen3-ASR-1.7B,我想要安排專案計畫明天上午。,我想要安排專案計劃，明天上午。
+zh-tw_036,zh-tw,Qwen3-ASR-1.7B,我必須完成預算報告今天下午。,我必須完成預算報告，今天下午。
+zh-tw_037,zh-tw,Qwen3-ASR-1.7B,客戶必須完成預算報告今天下午。,客戶必須完成預算報告，今天下午。
+zh-tw_038,zh-tw,Qwen3-ASR-1.7B,我的經理必須完成客戶郵件午餐前。,我的经理必须完成客户邮件，午餐前。
+zh-tw_039,zh-tw,Qwen3-ASR-1.7B,我想要安排客戶郵件明天上午。,我想要安排客户邮件，明天上午。
+zh-tw_040,zh-tw,Qwen3-ASR-1.7B,我的經理需要審閱預算報告明天上午。,我的经理需要审阅预算报告，明天上午。
+zh-tw_041,zh-tw,Qwen3-ASR-1.7B,客戶應該更新預算報告今天下午。,客戶應該更新預算報告，今天下午。
+zh-tw_042,zh-tw,Qwen3-ASR-1.7B,我的經理想要安排預算報告週五前。,我的经理想要安排预算报告周五前。
+zh-tw_043,zh-tw,Qwen3-ASR-1.7B,團隊應該更新專案計畫今天下午。,團隊應該更新專案計畫。今天下午。
+zh-tw_044,zh-tw,Qwen3-ASR-1.7B,客戶想要安排會議議程午餐前。,客戶想要安排會議，一程午餐前。
+zh-tw_045,zh-tw,Qwen3-ASR-1.7B,我會寄送會議議程週五前。,我會寄送會議議程，週五前。
+zh-tw_046,zh-tw,Qwen3-ASR-1.7B,客戶需要審閱客戶郵件明天上午。,客戶需要審閱客戶郵件，明天上午。
+zh-tw_047,zh-tw,Qwen3-ASR-1.7B,我的經理需要審閱預算報告午餐前。,我的经理需要审阅预算报告，午餐前。
+zh-tw_048,zh-tw,Qwen3-ASR-1.7B,我們會寄送預算報告週五前。,我們會寄送預算報告，週五前。
+zh-tw_049,zh-tw,Qwen3-ASR-1.7B,客戶需要審閱預算報告今天下午。,客戶需要審閱預算報告，今天下午。
+zh-tw_050,zh-tw,Qwen3-ASR-1.7B,我們想要安排會議議程明天上午。,我們想要安排會議議程，明天上午。
+zh-tw_051,zh-tw,Qwen3-ASR-1.7B,團隊需要審閱會議議程明天上午。,團隊需要審閱會議議程，明天上午。
+zh-tw_052,zh-tw,Qwen3-ASR-1.7B,我應該更新預算報告今天下午。,我應該更新預算報告，今天下午。
+zh-tw_053,zh-tw,Qwen3-ASR-1.7B,客戶會寄送會議議程明天上午。,客戶會寄送會議議程，明天上午。
+zh-tw_054,zh-tw,Qwen3-ASR-1.7B,我必須完成會議議程週五前。,我必須完成會議議程，週五前。
+zh-tw_055,zh-tw,Qwen3-ASR-1.7B,團隊應該更新預算報告明天上午。,團隊應該更新預算報告，明天上午。
+zh-tw_056,zh-tw,Qwen3-ASR-1.7B,我們應該更新預算報告午餐前。,我們應該更新預算報告。午餐前。
+zh-tw_057,zh-tw,Qwen3-ASR-1.7B,團隊想要安排專案計畫週五前。,團隊想要安排專案計畫，週五前。
+zh-tw_058,zh-tw,Qwen3-ASR-1.7B,我應該更新客戶郵件明天上午。,我應該更新客戶郵件，明天上午。
+zh-tw_059,zh-tw,Qwen3-ASR-1.7B,客戶想要安排專案計畫今天下午。,客戶想要安排專案計畫，今天下午。
+zh-tw_060,zh-tw,Qwen3-ASR-1.7B,客戶需要審閱會議議程明天上午。,客戶需要審閱會議議程，明天上午。
+zh-tw_061,zh-tw,Qwen3-ASR-1.7B,我們需要審閱客戶郵件午餐前。,我們需要審閱客戶郵件，午餐前。
+zh-tw_062,zh-tw,Qwen3-ASR-1.7B,客戶應該更新預算報告週五前。,客戶應該更新預算報告，週五前。
+zh-tw_063,zh-tw,Qwen3-ASR-1.7B,我會寄送客戶郵件今天下午。,我會寄送客戶郵件，今天下午。
+zh-tw_064,zh-tw,Qwen3-ASR-1.7B,我應該更新客戶郵件午餐前。,我應該更新客戶郵件，午餐前。
+zh-tw_065,zh-tw,Qwen3-ASR-1.7B,團隊會寄送專案計畫午餐前。,團隊會寄送專案計畫午餐前。
+zh-tw_066,zh-tw,Qwen3-ASR-1.7B,我會寄送會議議程明天上午。,我會寄送會議議程，明天上午。
+zh-tw_067,zh-tw,Qwen3-ASR-1.7B,客戶需要審閱專案計畫今天下午。,客戶需要審閱專案計畫，今天下午。
+zh-tw_068,zh-tw,Qwen3-ASR-1.7B,我們想要安排預算報告今天下午。,我們想要安排預算報告今天下午。
+zh-tw_069,zh-tw,Qwen3-ASR-1.7B,我們必須完成會議議程明天上午。,我們必須完成會議議程，明天上午。
+zh-tw_070,zh-tw,Qwen3-ASR-1.7B,我們必須完成客戶郵件明天上午。,我們必須完成客戶郵件，明天上午。
+zh-tw_071,zh-tw,Qwen3-ASR-1.7B,我的經理需要審閱客戶郵件午餐前。,我的經理需要審閱客戶郵件，午餐前。
+zh-tw_072,zh-tw,Qwen3-ASR-1.7B,客戶需要審閱會議議程週五前。,客戶需要審閱會議議程，週五前。
+zh-tw_073,zh-tw,Qwen3-ASR-1.7B,我需要審閱客戶郵件今天下午。,我需要審閱客戶郵件，今天下午。
+zh-tw_074,zh-tw,Qwen3-ASR-1.7B,我應該更新預算報告週五前。,我應該更新預算報告，週五前。
+zh-tw_075,zh-tw,Qwen3-ASR-1.7B,客戶會寄送客戶郵件週五前。,客戶會寄送客戶郵件，週五前。
+zh-tw_076,zh-tw,Qwen3-ASR-1.7B,客戶會寄送會議議程週五前。,客戶會寄送會議議程，週五前。
+zh-tw_077,zh-tw,Qwen3-ASR-1.7B,我的經理必須完成會議議程午餐前。,我的经理必须完成会议议程，午餐前。
+zh-tw_078,zh-tw,Qwen3-ASR-1.7B,我應該更新預算報告午餐前。,我應該更新預算報告。午餐前。
+zh-tw_079,zh-tw,Qwen3-ASR-1.7B,團隊需要審閱預算報告今天下午。,團隊需要審閱預算報告，今天下午。
+zh-tw_080,zh-tw,Qwen3-ASR-1.7B,我們需要審閱專案計畫週五前。,我們需要審閱專案計畫，週五前。
+zh-tw_081,zh-tw,Qwen3-ASR-1.7B,我們應該更新客戶郵件今天下午。,我們應該更新客戶郵件，今天下午。
+zh-tw_082,zh-tw,Qwen3-ASR-1.7B,我們必須完成客戶郵件午餐前。,我們必須完成客戶郵件，午餐前。
+zh-tw_083,zh-tw,Qwen3-ASR-1.7B,客戶需要審閱客戶郵件今天下午。,客戶需要審閱客戶郵件，今天下午。
+zh-tw_084,zh-tw,Qwen3-ASR-1.7B,團隊應該更新預算報告週五前。,團隊應該更新預算報告，週五前。
+zh-tw_085,zh-tw,Qwen3-ASR-1.7B,團隊想要安排會議議程午餐前。,團隊想要安排會議，一成午餐前。
+zh-tw_086,zh-tw,Qwen3-ASR-1.7B,我應該更新客戶郵件今天下午。,我應該更新客戶郵件，今天下午。
+zh-tw_087,zh-tw,Qwen3-ASR-1.7B,我們會寄送客戶郵件今天下午。,我們會寄送客戶郵件，今天下午。
+zh-tw_088,zh-tw,Qwen3-ASR-1.7B,團隊必須完成客戶郵件明天上午。,團隊必須完成客戶郵件，明天上午。
+zh-tw_089,zh-tw,Qwen3-ASR-1.7B,我必須完成專案計畫週五前。,我必須完成專案計劃，週五前。
+zh-tw_090,zh-tw,Qwen3-ASR-1.7B,團隊想要安排預算報告明天上午。,團隊想要安排預算報告，明天上午。
+zh-tw_091,zh-tw,Qwen3-ASR-1.7B,我的經理會寄送會議議程午餐前。,我的經理會寄送會議一成午餐錢。
+zh-tw_092,zh-tw,Qwen3-ASR-1.7B,團隊應該更新專案計畫明天上午。,團隊應該更新專案計畫，明天上午。
+zh-tw_093,zh-tw,Qwen3-ASR-1.7B,客戶會寄送預算報告午餐前。,客戶會寄送預算報告，午餐前。
+zh-tw_094,zh-tw,Qwen3-ASR-1.7B,團隊需要審閱專案計畫明天上午。,團隊需要審閱專案計畫，明天上午。
+zh-tw_095,zh-tw,Qwen3-ASR-1.7B,團隊需要審閱專案計畫週五前。,團隊需要審閱專案計畫，週五前。
+zh-tw_096,zh-tw,Qwen3-ASR-1.7B,我們需要審閱會議議程週五前。,我們需要審閱會議議程，週五前。
+zh-tw_097,zh-tw,Qwen3-ASR-1.7B,我們需要審閱客戶郵件週五前。,我們需要審閱客戶郵件，週五前。
+zh-tw_098,zh-tw,Qwen3-ASR-1.7B,客戶必須完成專案計畫午餐前。,客戶必須完成專案計畫，午餐前。
+zh-tw_099,zh-tw,Qwen3-ASR-1.7B,我的經理應該更新會議議程今天下午。,我的經理應該更新會議議程，今天下午。
+zh-tw_100,zh-tw,Qwen3-ASR-1.7B,團隊需要審閱客戶郵件今天下午。,團隊需要審閱客戶郵件，今天下午。
+es_001,es,Qwen3-ASR-1.7B,Mi jefe tiene que revisar el correo del cliente para el viernes.,Mi jefe tiene que revisar el correo del cliente para el viernes.
+es_002,es,Qwen3-ASR-1.7B,Tenemos que revisar la agenda de la reunión esta tarde.,Tenemos que revisar la agenda de la reunión esta tarde.
+es_003,es,Qwen3-ASR-1.7B,Tenemos que actualizar la agenda de la reunión esta tarde.,Tenemos que actualizar la agenda de la reunión esta tarde.
+es_004,es,Qwen3-ASR-1.7B,El equipo tiene que revisar el plan del proyecto antes del almuerzo.,El equipo tiene que revisar el plan del proyecto antes del almuerzo.
+es_005,es,Qwen3-ASR-1.7B,Mi jefe tiene que revisar el plan del proyecto esta tarde.,Mi jefe tiene que revisar el plan del proyecto esta tarde.
+es_006,es,Qwen3-ASR-1.7B,El equipo tiene que actualizar el plan del proyecto antes del almuerzo.,El equipo tiene que actualizar el plan del proyecto antes del almuerzo.
+es_007,es,Qwen3-ASR-1.7B,El equipo tiene que enviar la agenda de la reunión esta tarde.,El equipo tiene que enviar la agenda de la reunión esta tarde.
+es_008,es,Qwen3-ASR-1.7B,Tenemos que terminar el correo del cliente esta tarde.,Tenemos que terminar el correo del cliente esta tarde.
+es_009,es,Qwen3-ASR-1.7B,Mi jefe tiene que enviar el informe de presupuesto para el viernes.,Mi jefe tiene que enviar el informe de presupuesto para el viernes.
+es_010,es,Qwen3-ASR-1.7B,Mi jefe tiene que programar el plan del proyecto antes del almuerzo.,Mi jefe tiene que programar el plan del proyecto antes del almuerzo.
+es_011,es,Qwen3-ASR-1.7B,El equipo tiene que terminar el informe de presupuesto antes del almuerzo.,El equipo tiene que terminar el informe de presupuesto antes del almuerzo.
+es_012,es,Qwen3-ASR-1.7B,Mi jefe tiene que actualizar el informe de presupuesto para el viernes.,Mi jefe tiene que actualizar el informe de presupuesto para el viernes.
+es_013,es,Qwen3-ASR-1.7B,Tengo que terminar el plan del proyecto esta tarde.,Tengo que terminar el plan del proyecto esta tarde.
+es_014,es,Qwen3-ASR-1.7B,El cliente tiene que enviar el informe de presupuesto esta tarde.,El cliente tiene que enviar el informe de presupuesto esta tarde.
+es_015,es,Qwen3-ASR-1.7B,El cliente tiene que enviar el correo del cliente mañana por la mañana.,El cliente tiene que enviar el correo del cliente mañana por la mañana.
+es_016,es,Qwen3-ASR-1.7B,El cliente tiene que terminar la agenda de la reunión antes del almuerzo.,El cliente tiene que terminar la agenda de la reunión antes del almuerzo.
+es_017,es,Qwen3-ASR-1.7B,Tengo que terminar el correo del cliente mañana por la mañana.,Tengo que terminar el correo del cliente mañana por la mañana.
+es_018,es,Qwen3-ASR-1.7B,El equipo tiene que programar el correo del cliente para el viernes.,El equipo tiene que programar el correo del cliente para el viernes.
+es_019,es,Qwen3-ASR-1.7B,Tenemos que enviar el informe de presupuesto mañana por la mañana.,Tenemos que enviar el informe de presupuesto mañana por la mañana.
+es_020,es,Qwen3-ASR-1.7B,Tengo que programar el plan del proyecto para el viernes.,Tengo que programar el plan del proyecto para el viernes.
+es_021,es,Qwen3-ASR-1.7B,Mi jefe tiene que enviar la agenda de la reunión mañana por la mañana.,Mi jefe tiene que enviar la agenda de la reunión mañana por la mañana.
+es_022,es,Qwen3-ASR-1.7B,El equipo tiene que revisar el correo del cliente para el viernes.,El equipo tiene que revisar el correo del cliente para el viernes.
+es_023,es,Qwen3-ASR-1.7B,Mi jefe tiene que revisar el correo del cliente mañana por la mañana.,Mi jefe tiene que revisar el correo del cliente mañana por la mañana.
+es_024,es,Qwen3-ASR-1.7B,Tengo que actualizar la agenda de la reunión para el viernes.,Tengo que actualizar la agenda de la reunión para el viernes.
+es_025,es,Qwen3-ASR-1.7B,Tengo que revisar el correo del cliente para el viernes.,Tengo que revisar el correo del cliente para el viernes.
+es_026,es,Qwen3-ASR-1.7B,Tengo que actualizar el plan del proyecto antes del almuerzo.,Tengo que actualizar el plan del proyecto antes del almuerzo.
+es_027,es,Qwen3-ASR-1.7B,El equipo tiene que terminar el plan del proyecto esta tarde.,El equipo tiene que terminar el plan del proyecto esta tarde.
+es_028,es,Qwen3-ASR-1.7B,Tengo que revisar el informe de presupuesto esta tarde.,Tengo que revisar el informe de presupuesto esta tarde.
+es_029,es,Qwen3-ASR-1.7B,El cliente tiene que terminar la agenda de la reunión mañana por la mañana.,El cliente tiene que terminar la agenda de la reunión mañana por la mañana.
+es_030,es,Qwen3-ASR-1.7B,El cliente tiene que programar el plan del proyecto antes del almuerzo.,El cliente tiene que programar el plan del proyecto antes del almuerzo.
+es_031,es,Qwen3-ASR-1.7B,Mi jefe tiene que enviar el informe de presupuesto mañana por la mañana.,Mi jefe tiene que enviar el informe de presupuesto mañana por la mañana.
+es_032,es,Qwen3-ASR-1.7B,Mi jefe tiene que revisar la agenda de la reunión para el viernes.,Mi jefe tiene que revisar la agenda de la reunión para el viernes.
+es_033,es,Qwen3-ASR-1.7B,Mi jefe tiene que revisar el plan del proyecto antes del almuerzo.,Mi jefe tiene que revisar el plan del proyecto antes del almuerzo.
+es_034,es,Qwen3-ASR-1.7B,El equipo tiene que programar el informe de presupuesto para el viernes.,El equipo tiene que programar el informe de presupuesto para el viernes.
+es_035,es,Qwen3-ASR-1.7B,Tengo que programar el plan del proyecto mañana por la mañana.,Tengo que programar el plan del proyecto mañana por la mañana.
+es_036,es,Qwen3-ASR-1.7B,Tengo que terminar el informe de presupuesto esta tarde.,Tengo que terminar el informe de presupuesto esta tarde.
+es_037,es,Qwen3-ASR-1.7B,El cliente tiene que terminar el informe de presupuesto esta tarde.,El cliente tiene que terminar el informe de presupuesto esta tarde.
+es_038,es,Qwen3-ASR-1.7B,Mi jefe tiene que terminar el correo del cliente antes del almuerzo.,Mi jefe tiene que terminar el correo del cliente antes del almuerzo.
+es_039,es,Qwen3-ASR-1.7B,Tengo que programar el correo del cliente mañana por la mañana.,Tengo que programar el correo del cliente mañana por la mañana.
+es_040,es,Qwen3-ASR-1.7B,Mi jefe tiene que revisar el informe de presupuesto mañana por la mañana.,Mi jefe tiene que revisar el informe de presupuesto mañana por la mañana.
+es_041,es,Qwen3-ASR-1.7B,El cliente tiene que actualizar el informe de presupuesto esta tarde.,El cliente tiene que actualizar el informe de presupuesto esta tarde.
+es_042,es,Qwen3-ASR-1.7B,Mi jefe tiene que programar el informe de presupuesto para el viernes.,Mi jefe tiene que programar el informe de presupuesto para el viernes.
+es_043,es,Qwen3-ASR-1.7B,El equipo tiene que actualizar el plan del proyecto esta tarde.,El equipo tiene que actualizar el plan del proyecto esta tarde.
+es_044,es,Qwen3-ASR-1.7B,El cliente tiene que programar la agenda de la reunión antes del almuerzo.,El cliente tiene que programar la agenda de la reunión antes del almuerzo.
+es_045,es,Qwen3-ASR-1.7B,Tengo que enviar la agenda de la reunión para el viernes.,Tengo que enviar la agenda de la reunión para el viernes.
+es_046,es,Qwen3-ASR-1.7B,El cliente tiene que revisar el correo del cliente mañana por la mañana.,El cliente tiene que revisar el correo del cliente mañana por la mañana.
+es_047,es,Qwen3-ASR-1.7B,Mi jefe tiene que revisar el informe de presupuesto antes del almuerzo.,Mi jefe tiene que revisar el informe de presupuesto antes del almuerzo.
+es_048,es,Qwen3-ASR-1.7B,Tenemos que enviar el informe de presupuesto para el viernes.,Tenemos que enviar el informe de presupuesto para el viernes.
+es_049,es,Qwen3-ASR-1.7B,El cliente tiene que revisar el informe de presupuesto esta tarde.,El cliente tiene que revisar el informe de presupuesto esta tarde.
+es_050,es,Qwen3-ASR-1.7B,Tenemos que programar la agenda de la reunión mañana por la mañana.,Tenemos que programar la agenda de la reunión mañana por la mañana.
+es_051,es,Qwen3-ASR-1.7B,El equipo tiene que revisar la agenda de la reunión mañana por la mañana.,El equipo tiene que revisar la agenda de la reunión mañana por la mañana.
+es_052,es,Qwen3-ASR-1.7B,Tengo que actualizar el informe de presupuesto esta tarde.,Tengo que actualizar el informe de presupuesto esta tarde.
+es_053,es,Qwen3-ASR-1.7B,El cliente tiene que enviar la agenda de la reunión mañana por la mañana.,El cliente tiene que enviar la agenda de la reunión mañana por la mañana.
+es_054,es,Qwen3-ASR-1.7B,Tengo que terminar la agenda de la reunión para el viernes.,Tengo que terminar la agenda de la reunión para el viernes.
+es_055,es,Qwen3-ASR-1.7B,El equipo tiene que actualizar el informe de presupuesto mañana por la mañana.,El equipo tiene que actualizar el informe de presupuesto mañana por la mañana.
+es_056,es,Qwen3-ASR-1.7B,Tenemos que actualizar el informe de presupuesto antes del almuerzo.,Tenemos que actualizar el informe de presupuesto antes del almuerzo.
+es_057,es,Qwen3-ASR-1.7B,El equipo tiene que programar el plan del proyecto para el viernes.,El equipo tiene que programar el plan del proyecto para el viernes.
+es_058,es,Qwen3-ASR-1.7B,Tengo que actualizar el correo del cliente mañana por la mañana.,Tengo que actualizar el correo del cliente mañana por la mañana.
+es_059,es,Qwen3-ASR-1.7B,El cliente tiene que programar el plan del proyecto esta tarde.,El cliente tiene que programar el plan del proyecto esta tarde.
+es_060,es,Qwen3-ASR-1.7B,El cliente tiene que revisar la agenda de la reunión mañana por la mañana.,El cliente tiene que revisar la agenda de la reunión mañana por la mañana.
+es_061,es,Qwen3-ASR-1.7B,Tenemos que revisar el correo del cliente antes del almuerzo.,Tenemos que revisar el correo del cliente antes del almuerzo.
+es_062,es,Qwen3-ASR-1.7B,El cliente tiene que actualizar el informe de presupuesto para el viernes.,El cliente tiene que actualizar el informe de presupuesto para el viernes.
+es_063,es,Qwen3-ASR-1.7B,Tengo que enviar el correo del cliente esta tarde.,Tengo que enviar el correo del cliente esta tarde.
+es_064,es,Qwen3-ASR-1.7B,Tengo que actualizar el correo del cliente antes del almuerzo.,Tengo que actualizar el correo del cliente antes del almuerzo.
+es_065,es,Qwen3-ASR-1.7B,El equipo tiene que enviar el plan del proyecto antes del almuerzo.,El equipo tiene que enviar el plan del proyecto antes del almuerzo.
+es_066,es,Qwen3-ASR-1.7B,Tengo que enviar la agenda de la reunión mañana por la mañana.,Tengo que enviar la agenda de la reunión mañana por la mañana.
+es_067,es,Qwen3-ASR-1.7B,El cliente tiene que revisar el plan del proyecto esta tarde.,El cliente tiene que revisar el plan del proyecto esta tarde.
+es_068,es,Qwen3-ASR-1.7B,Tenemos que programar el informe de presupuesto esta tarde.,Tenemos que programar el informe de presupuesto esta tarde.
+es_069,es,Qwen3-ASR-1.7B,Tenemos que terminar la agenda de la reunión mañana por la mañana.,Tenemos que terminar la agenda de la reunión mañana por la mañana.
+es_070,es,Qwen3-ASR-1.7B,Tenemos que terminar el correo del cliente mañana por la mañana.,Tenemos que terminar el correo del cliente mañana por la mañana.
+es_071,es,Qwen3-ASR-1.7B,Mi jefe tiene que revisar el correo del cliente antes del almuerzo.,Mi jefe tiene que revisar el correo del cliente antes del almuerzo.
+es_072,es,Qwen3-ASR-1.7B,El cliente tiene que revisar la agenda de la reunión para el viernes.,El cliente tiene que revisar la agenda de la reunión para el viernes.
+es_073,es,Qwen3-ASR-1.7B,Tengo que revisar el correo del cliente esta tarde.,Tengo que revisar el correo del cliente esta tarde.
+es_074,es,Qwen3-ASR-1.7B,Tengo que actualizar el informe de presupuesto para el viernes.,Tengo que actualizar el informe de presupuesto para el viernes.
+es_075,es,Qwen3-ASR-1.7B,El cliente tiene que enviar el correo del cliente para el viernes.,El cliente tiene que enviar el correo del cliente para el viernes.
+es_076,es,Qwen3-ASR-1.7B,El cliente tiene que enviar la agenda de la reunión para el viernes.,El cliente tiene que enviar la agenda de la reunión para el viernes.
+es_077,es,Qwen3-ASR-1.7B,Mi jefe tiene que terminar la agenda de la reunión antes del almuerzo.,Mi jefe tiene que terminar la agenda de la reunión antes del almuerzo.
+es_078,es,Qwen3-ASR-1.7B,Tengo que actualizar el informe de presupuesto antes del almuerzo.,Tengo que actualizar el informe de presupuesto antes del almuerzo.
+es_079,es,Qwen3-ASR-1.7B,El equipo tiene que revisar el informe de presupuesto esta tarde.,El equipo tiene que revisar el informe de presupuesto esta tarde.
+es_080,es,Qwen3-ASR-1.7B,Tenemos que revisar el plan del proyecto para el viernes.,Tenemos que revisar el plan del proyecto para el viernes.
+es_081,es,Qwen3-ASR-1.7B,Tenemos que actualizar el correo del cliente esta tarde.,Tenemos que actualizar el correo del cliente esta tarde.
+es_082,es,Qwen3-ASR-1.7B,Tenemos que terminar el correo del cliente antes del almuerzo.,Tenemos que terminar el correo del cliente antes del almuerzo.
+es_083,es,Qwen3-ASR-1.7B,El cliente tiene que revisar el correo del cliente esta tarde.,El cliente tiene que revisar el correo del cliente esta tarde.
+es_084,es,Qwen3-ASR-1.7B,El equipo tiene que actualizar el informe de presupuesto para el viernes.,El equipo tiene que actualizar el informe de presupuesto para el viernes.
+es_085,es,Qwen3-ASR-1.7B,El equipo tiene que programar la agenda de la reunión antes del almuerzo.,El equipo tiene que programar la agenda de la reunión antes del almuerzo.
+es_086,es,Qwen3-ASR-1.7B,Tengo que actualizar el correo del cliente esta tarde.,Tengo que actualizar el correo del cliente esta tarde.
+es_087,es,Qwen3-ASR-1.7B,Tenemos que enviar el correo del cliente esta tarde.,Tenemos que enviar el correo del cliente esta tarde.
+es_088,es,Qwen3-ASR-1.7B,El equipo tiene que terminar el correo del cliente mañana por la mañana.,El equipo tiene que terminar el correo del cliente mañana por la mañana.
+es_089,es,Qwen3-ASR-1.7B,Tengo que terminar el plan del proyecto para el viernes.,Tengo que terminar el plan del proyecto para el viernes.
+es_090,es,Qwen3-ASR-1.7B,El equipo tiene que programar el informe de presupuesto mañana por la mañana.,El equipo tiene que programar el informe de presupuesto mañana por la mañana.
+es_091,es,Qwen3-ASR-1.7B,Mi jefe tiene que enviar la agenda de la reunión antes del almuerzo.,Mi jefe tiene que enviar la agenda de la reunión antes del almuerzo.
+es_092,es,Qwen3-ASR-1.7B,El equipo tiene que actualizar el plan del proyecto mañana por la mañana.,El equipo tiene que actualizar el plan del proyecto mañana por la mañana.
+es_093,es,Qwen3-ASR-1.7B,El cliente tiene que enviar el informe de presupuesto antes del almuerzo.,El cliente tiene que enviar el informe de presupuesto antes del almuerzo.
+es_094,es,Qwen3-ASR-1.7B,El equipo tiene que revisar el plan del proyecto mañana por la mañana.,El equipo tiene que revisar el plan del proyecto mañana por la mañana.
+es_095,es,Qwen3-ASR-1.7B,El equipo tiene que revisar el plan del proyecto para el viernes.,El equipo tiene que revisar el plan del proyecto para el viernes.
+es_096,es,Qwen3-ASR-1.7B,Tenemos que revisar la agenda de la reunión para el viernes.,Tenemos que revisar la agenda de la reunión para el viernes.
+es_097,es,Qwen3-ASR-1.7B,Tenemos que revisar el correo del cliente para el viernes.,Tenemos que revisar el correo del cliente para el viernes.
+es_098,es,Qwen3-ASR-1.7B,El cliente tiene que terminar el plan del proyecto antes del almuerzo.,El cliente tiene que terminar el plan del proyecto antes del almuerzo.
+es_099,es,Qwen3-ASR-1.7B,Mi jefe tiene que actualizar la agenda de la reunión esta tarde.,Mi jefe tiene que actualizar la agenda de la reunión esta tarde.
+es_100,es,Qwen3-ASR-1.7B,El equipo tiene que revisar el correo del cliente esta tarde.,El equipo tiene que revisar el correo del cliente esta tarde.
+tl_001,tl,Qwen3-ASR-1.7B,Kailangan ng aking boss na suriin ang email ng kliyente bago matapos ang Biyernes.,Kailangan ng aking boss na suriin ang email ng cliente bago matapos ang business.
+tl_002,tl,Qwen3-ASR-1.7B,Kailangan nating suriin ang agenda ng pulong ngayong hapon.,Kailangan nating suriin ang agenda ng pulong ayon hapon.
+tl_003,tl,Qwen3-ASR-1.7B,Kailangan nating i-update ang agenda ng pulong ngayong hapon.,Kailangan nating i-update ang agenda ng pulong ngayong hapon.
+tl_004,tl,Qwen3-ASR-1.7B,Kailangan ng koponan na suriin ang plano ng proyekto bago magtanghalian.,Kailangan ng koponan na suriin ang plano ng proyekto bago magtanghalian.
+tl_005,tl,Qwen3-ASR-1.7B,Kailangan ng aking boss na suriin ang plano ng proyekto ngayong hapon.,Kailangan ng aking boss na suriin ang plano ng proyekto ngayong hapon.
+tl_006,tl,Qwen3-ASR-1.7B,Kailangan ng koponan na i-update ang plano ng proyekto bago magtanghalian.,Kailangan ng koponan na i-update ang plano ng proyekto bago magtanghalian.
+tl_007,tl,Qwen3-ASR-1.7B,Kailangan ng koponan na ipadala ang agenda ng pulong ngayong hapon.,Kailangan ng koponan na ipadala ang agenda ng pulong ayon sa hapon.
+tl_008,tl,Qwen3-ASR-1.7B,Kailangan nating tapusin ang email ng kliyente ngayong hapon.,Kailangan nating tapusin ang email ng client tignayong hapon.
+tl_009,tl,Qwen3-ASR-1.7B,Kailangan ng aking boss na ipadala ang ulat ng badyet bago matapos ang Biyernes.,Kailangan ng aking boss na ipadala ang ulat ng budget bago matapos ang biernes.
+tl_010,tl,Qwen3-ASR-1.7B,Kailangan ng aking boss na ayusin ang plano ng proyekto bago magtanghalian.,Kailangan ng aking boss na ayusin ang plano ng proyekto bago magtanghalian.
+tl_011,tl,Qwen3-ASR-1.7B,Kailangan ng koponan na tapusin ang ulat ng badyet bago magtanghalian.,Kailangan ng koponan na tapusin ang ulat ng budget bago magtanghalian.
+tl_012,tl,Qwen3-ASR-1.7B,Kailangan ng aking boss na i-update ang ulat ng badyet bago matapos ang Biyernes.,Kailangan ng aking boss na i-update ang ulat ng budget bago matapos ang biernes.
+tl_013,tl,Qwen3-ASR-1.7B,Kailangan kong tapusin ang plano ng proyekto ngayong hapon.,Kailangan kong tapusin ang plano ng proyekto ngayong hapon.
+tl_014,tl,Qwen3-ASR-1.7B,Kailangan ng kliyente na ipadala ang ulat ng badyet ngayong hapon.,Kailangan ng kliyente na ipadala ang ulat ng budget ngayong hapon.
+tl_015,tl,Qwen3-ASR-1.7B,Kailangan ng kliyente na ipadala ang email ng kliyente bukas ng umaga.,Kailangan ng cliente na ipadala ang email ng cliente bukas ng umaga.
+tl_016,tl,Qwen3-ASR-1.7B,Kailangan ng kliyente na tapusin ang agenda ng pulong bago magtanghalian.,Kailangan ng cliente na tapusin ang agenda ng pulong bago magtanghalian.
+tl_017,tl,Qwen3-ASR-1.7B,Kailangan kong tapusin ang email ng kliyente bukas ng umaga.,Kailangan kong tapusin ang email ng kliyente bukas ng umaga.
+tl_018,tl,Qwen3-ASR-1.7B,Kailangan ng koponan na ayusin ang email ng kliyente bago matapos ang Biyernes.,Kailangan ng koponan na ayusin ang email ng kliyente bago matapos ang biernes.
+tl_019,tl,Qwen3-ASR-1.7B,Kailangan nating ipadala ang ulat ng badyet bukas ng umaga.,Kailangan nating ipadala ang ulat ng budget bukas ng umaga.
+tl_020,tl,Qwen3-ASR-1.7B,Kailangan kong ayusin ang plano ng proyekto bago matapos ang Biyernes.,Kailangan kong ayusin ang plano ng proyekto bago matapos ang biernes.
+tl_021,tl,Qwen3-ASR-1.7B,Kailangan ng aking boss na ipadala ang agenda ng pulong bukas ng umaga.,Kailangan ng aking boss na ipadala ang agenda ng pulong bukas ng umaga.
+tl_022,tl,Qwen3-ASR-1.7B,Kailangan ng koponan na suriin ang email ng kliyente bago matapos ang Biyernes.,Kailangan ng koponan na suriin ang email ng kliyente bago matapos ang biernes.
+tl_023,tl,Qwen3-ASR-1.7B,Kailangan ng aking boss na suriin ang email ng kliyente bukas ng umaga.,Kailangan ng aking boss na suriin ang email ng kliyente bukas ng umaga.
+tl_024,tl,Qwen3-ASR-1.7B,Kailangan kong i-update ang agenda ng pulong bago matapos ang Biyernes.,Kailangan kong i-update ang agenda ng pulong bago matapos ang biernes.
+tl_025,tl,Qwen3-ASR-1.7B,Kailangan kong suriin ang email ng kliyente bago matapos ang Biyernes.,Kailangan kong suriin ang email ng kliyente bago matapos ang business.
+tl_026,tl,Qwen3-ASR-1.7B,Kailangan kong i-update ang plano ng proyekto bago magtanghalian.,Kailangan kong i-update ang plano ng proyekto bago magtanghalian.
+tl_027,tl,Qwen3-ASR-1.7B,Kailangan ng koponan na tapusin ang plano ng proyekto ngayong hapon.,Kailangan ng kuponan na tapusin ang plano ng proyekto ngayong hapon.
+tl_028,tl,Qwen3-ASR-1.7B,Kailangan kong suriin ang ulat ng badyet ngayong hapon.,Kailangan kong suriin ang ulat ng budget ngayong hapon.
+tl_029,tl,Qwen3-ASR-1.7B,Kailangan ng kliyente na tapusin ang agenda ng pulong bukas ng umaga.,Kailangan ng cliente na tapusin ang agenda ng pulong bukas ng umaga.
+tl_030,tl,Qwen3-ASR-1.7B,Kailangan ng kliyente na ayusin ang plano ng proyekto bago magtanghalian.,Kailangan ng client na ayusin ang plano ng proyekto bago magtanghalian.
+tl_031,tl,Qwen3-ASR-1.7B,Kailangan ng aking boss na ipadala ang ulat ng badyet bukas ng umaga.,Kailangan ng aking boss na ipadala ang ulat ng budget bukas ng umaga.
+tl_032,tl,Qwen3-ASR-1.7B,Kailangan ng aking boss na suriin ang agenda ng pulong bago matapos ang Biyernes.,Kailangan ng aking boss na suriin ang agenda ng pulong bago matapos ang biernes.
+tl_033,tl,Qwen3-ASR-1.7B,Kailangan ng aking boss na suriin ang plano ng proyekto bago magtanghalian.,Kailangan ng aking boss na suriin ang plano ng proyekto bago magtanghalian.
+tl_034,tl,Qwen3-ASR-1.7B,Kailangan ng koponan na ayusin ang ulat ng badyet bago matapos ang Biyernes.,Kailangan ng koponan na ayusin ang ulat ng budget bago matapos ang business.
+tl_035,tl,Qwen3-ASR-1.7B,Kailangan kong ayusin ang plano ng proyekto bukas ng umaga.,Kailangan kong ayusin ang plano ng proyekto bukas ng umaga.
+tl_036,tl,Qwen3-ASR-1.7B,Kailangan kong tapusin ang ulat ng badyet ngayong hapon.,Kailangan kong tapusin ang ulat ng budget ngayong hapon.
+tl_037,tl,Qwen3-ASR-1.7B,Kailangan ng kliyente na tapusin ang ulat ng badyet ngayong hapon.,Kailangan ng cliente na tapusin ang ulat ng budget ngayong hapon.
+tl_038,tl,Qwen3-ASR-1.7B,Kailangan ng aking boss na tapusin ang email ng kliyente bago magtanghalian.,Kailangan ng aking boss na tapusin ang email ng kliyente bago magtanghalian.
+tl_039,tl,Qwen3-ASR-1.7B,Kailangan kong ayusin ang email ng kliyente bukas ng umaga.,Kailangan kong ayusin ang email ng kliyente bukas ng umaga.
+tl_040,tl,Qwen3-ASR-1.7B,Kailangan ng aking boss na suriin ang ulat ng badyet bukas ng umaga.,Kailangan ng aking boss na suriin ang ulat ng budget bukas ng umaga.
+tl_041,tl,Qwen3-ASR-1.7B,Kailangan ng kliyente na i-update ang ulat ng badyet ngayong hapon.,Kailangan ng cliente na i-update ang ulat ng budget ngayong hapon.
+tl_042,tl,Qwen3-ASR-1.7B,Kailangan ng aking boss na ayusin ang ulat ng badyet bago matapos ang Biyernes.,Kailangan ng aking boss na ayusin ang ulat ng budget bago matapos ang biernes.
+tl_043,tl,Qwen3-ASR-1.7B,Kailangan ng koponan na i-update ang plano ng proyekto ngayong hapon.,Kailangan ng koponan na i-update ang plano ng proyekto ngayong hapon.
+tl_044,tl,Qwen3-ASR-1.7B,Kailangan ng kliyente na ayusin ang agenda ng pulong bago magtanghalian.,Kailangan ng kliyente na ayusin ang agenda ng pulong bago magtanghalian.
+tl_045,tl,Qwen3-ASR-1.7B,Kailangan kong ipadala ang agenda ng pulong bago matapos ang Biyernes.,Kailangan kong ipadala ang agenda ng pulong bago matapos ang biernes.
+tl_046,tl,Qwen3-ASR-1.7B,Kailangan ng kliyente na suriin ang email ng kliyente bukas ng umaga.,Kailangan ng cliente na suriin ang email ng cliente bukas ng umaga.
+tl_047,tl,Qwen3-ASR-1.7B,Kailangan ng aking boss na suriin ang ulat ng badyet bago magtanghalian.,Kailangan ng aking boss na suriin ang ulat ng budget bago magtanghalian.
+tl_048,tl,Qwen3-ASR-1.7B,Kailangan nating ipadala ang ulat ng badyet bago matapos ang Biyernes.,Kailangan nating ipadala ang ulat ng budget bago matapos ang biernes.
+tl_049,tl,Qwen3-ASR-1.7B,Kailangan ng kliyente na suriin ang ulat ng badyet ngayong hapon.,Kailangan ng cliente na suriin ang ulat ng budget ngayong hapon.
+tl_050,tl,Qwen3-ASR-1.7B,Kailangan nating ayusin ang agenda ng pulong bukas ng umaga.,Kailangan nating ayusin ang agenda ng pulong bukas ng umaga.
+tl_051,tl,Qwen3-ASR-1.7B,Kailangan ng koponan na suriin ang agenda ng pulong bukas ng umaga.,Kailangan ng koponan na suriin ang agenda ng pulong bukas ng umaga.
+tl_052,tl,Qwen3-ASR-1.7B,Kailangan kong i-update ang ulat ng badyet ngayong hapon.,Kailangan kong i-update ang ulat ng budget na yung hapon.
+tl_053,tl,Qwen3-ASR-1.7B,Kailangan ng kliyente na ipadala ang agenda ng pulong bukas ng umaga.,Kailangan ng cliente na ipadala ang agenda ng pulong bukas ng umaga.
+tl_054,tl,Qwen3-ASR-1.7B,Kailangan kong tapusin ang agenda ng pulong bago matapos ang Biyernes.,Kailangan kong tapusin ang agenda ng pulong bago matapos ang biernes.
+tl_055,tl,Qwen3-ASR-1.7B,Kailangan ng koponan na i-update ang ulat ng badyet bukas ng umaga.,Kailangan ng koponan na i-update ang ulat ng budget bukas ng umaga.
+tl_056,tl,Qwen3-ASR-1.7B,Kailangan nating i-update ang ulat ng badyet bago magtanghalian.,Kailangan nating i-update ang ulat ng budget bago magtanghalian.
+tl_057,tl,Qwen3-ASR-1.7B,Kailangan ng koponan na ayusin ang plano ng proyekto bago matapos ang Biyernes.,Kailangan ng koponan na ayusin ang plano ng proyekto bago matapos ang biernes.
+tl_058,tl,Qwen3-ASR-1.7B,Kailangan kong i-update ang email ng kliyente bukas ng umaga.,Kailangan kong i-update ang email ng client bukas ng umaga.
+tl_059,tl,Qwen3-ASR-1.7B,Kailangan ng kliyente na ayusin ang plano ng proyekto ngayong hapon.,Kailangan ng cliente na ayusin ang plano ng proyekto ngayong hapon.
+tl_060,tl,Qwen3-ASR-1.7B,Kailangan ng kliyente na suriin ang agenda ng pulong bukas ng umaga.,Kailangan ng cliente na suriin ang agenda ng pulong bukas ng umaga.
+tl_061,tl,Qwen3-ASR-1.7B,Kailangan nating suriin ang email ng kliyente bago magtanghalian.,Kailangan nating suriin ang email ng cliente bago magtanghalian.
+tl_062,tl,Qwen3-ASR-1.7B,Kailangan ng kliyente na i-update ang ulat ng badyet bago matapos ang Biyernes.,Kailangan ng cliente na i-update ang ulat ng budget bago matapos ang business.
+tl_063,tl,Qwen3-ASR-1.7B,Kailangan kong ipadala ang email ng kliyente ngayong hapon.,Kailangan kong ipadala ang email ng client ngayon hapon.
+tl_064,tl,Qwen3-ASR-1.7B,Kailangan kong i-update ang email ng kliyente bago magtanghalian.,Kailangan kong i-update ang email ng cliente bago magtanghalian.
+tl_065,tl,Qwen3-ASR-1.7B,Kailangan ng koponan na ipadala ang plano ng proyekto bago magtanghalian.,Kailangan ng koponan na ipadala ang plano ng proyekto bago magtanghalian.
+tl_066,tl,Qwen3-ASR-1.7B,Kailangan kong ipadala ang agenda ng pulong bukas ng umaga.,Kailangan kong ipadala ang agenda ng pulong bukas ng umaga.
+tl_067,tl,Qwen3-ASR-1.7B,Kailangan ng kliyente na suriin ang plano ng proyekto ngayong hapon.,Kailangan ng cliente na suriin ang plano ng proyekto ngayong hapon.
+tl_068,tl,Qwen3-ASR-1.7B,Kailangan nating ayusin ang ulat ng badyet ngayong hapon.,Kailangan nating ayusin ang ulat ng budget ngayong hapon.
+tl_069,tl,Qwen3-ASR-1.7B,Kailangan nating tapusin ang agenda ng pulong bukas ng umaga.,Kailangan nating tapusin ang agenda ng pulong bukas ng umaga.
+tl_070,tl,Qwen3-ASR-1.7B,Kailangan nating tapusin ang email ng kliyente bukas ng umaga.,Kailangan nating tapusin ang email ng kliyente bukas ng umaga.
+tl_071,tl,Qwen3-ASR-1.7B,Kailangan ng aking boss na suriin ang email ng kliyente bago magtanghalian.,Kailangan ng aking boss na suriin ang email ng kliyente bago magtanghalian.
+tl_072,tl,Qwen3-ASR-1.7B,Kailangan ng kliyente na suriin ang agenda ng pulong bago matapos ang Biyernes.,Kailangan ng cliente na suriin ang agenda ng pulong bago matapos ang business.
+tl_073,tl,Qwen3-ASR-1.7B,Kailangan kong suriin ang email ng kliyente ngayong hapon.,Kailangan kong suriin ang email ng client ngayong hapon.
+tl_074,tl,Qwen3-ASR-1.7B,Kailangan kong i-update ang ulat ng badyet bago matapos ang Biyernes.,Kailangan kong i-update ang ulat ng budget bago matapos ang biernes.
+tl_075,tl,Qwen3-ASR-1.7B,Kailangan ng kliyente na ipadala ang email ng kliyente bago matapos ang Biyernes.,Kailangan ng cliente na ipadala ang email ng cliente bago matapos ang business.
+tl_076,tl,Qwen3-ASR-1.7B,Kailangan ng kliyente na ipadala ang agenda ng pulong bago matapos ang Biyernes.,Kailangan ng cliente na ipadala ang agenda ng pulong bago matapos ang business.
+tl_077,tl,Qwen3-ASR-1.7B,Kailangan ng aking boss na tapusin ang agenda ng pulong bago magtanghalian.,Kailangan ng aking boss na tapusin ang agenda ng pulong bago magtanghalian.
+tl_078,tl,Qwen3-ASR-1.7B,Kailangan kong i-update ang ulat ng badyet bago magtanghalian.,Kailangan kong i-update ang ulat ng budget bago magtanghalian.
+tl_079,tl,Qwen3-ASR-1.7B,Kailangan ng koponan na suriin ang ulat ng badyet ngayong hapon.,Kailangan ng koponan na suriin ang ulat ng budget ngayong hapon.
+tl_080,tl,Qwen3-ASR-1.7B,Kailangan nating suriin ang plano ng proyekto bago matapos ang Biyernes.,Kailangan nating suriin ang plano ng proyekto bago matapos ang biernes.
+tl_081,tl,Qwen3-ASR-1.7B,Kailangan nating i-update ang email ng kliyente ngayong hapon.,Kailangan nating i-update ang email ng client ngayong hapon.
+tl_082,tl,Qwen3-ASR-1.7B,Kailangan nating tapusin ang email ng kliyente bago magtanghalian.,Kailangan nating tapusin ang email ng kliyente bago magtanghalian.
+tl_083,tl,Qwen3-ASR-1.7B,Kailangan ng kliyente na suriin ang email ng kliyente ngayong hapon.,Kailangan ng cliente na suriin ang email ng cliente ngayong hapon.
+tl_084,tl,Qwen3-ASR-1.7B,Kailangan ng koponan na i-update ang ulat ng badyet bago matapos ang Biyernes.,Kailangan ng kuponan na i-update ang ulat ng budget bago matapos ang business.
+tl_085,tl,Qwen3-ASR-1.7B,Kailangan ng koponan na ayusin ang agenda ng pulong bago magtanghalian.,Kailangan ngkop na naayusin ang agenda ng pulong bago magtanghalian.
+tl_086,tl,Qwen3-ASR-1.7B,Kailangan kong i-update ang email ng kliyente ngayong hapon.,Kailangan kong i-update ang email ng client ngayon hapon.
+tl_087,tl,Qwen3-ASR-1.7B,Kailangan nating ipadala ang email ng kliyente ngayong hapon.,Kailangan nating ipadala ang email ng client ngayon hapon.
+tl_088,tl,Qwen3-ASR-1.7B,Kailangan ng koponan na tapusin ang email ng kliyente bukas ng umaga.,Kailangan ako po na natapusin ang email ng kliyente bukas ng umaga.
+tl_089,tl,Qwen3-ASR-1.7B,Kailangan kong tapusin ang plano ng proyekto bago matapos ang Biyernes.,Kailangan kong tapusin ang plano ng proyekto bago matapos ang biernes.
+tl_090,tl,Qwen3-ASR-1.7B,Kailangan ng koponan na ayusin ang ulat ng badyet bukas ng umaga.,Kailangan ng koponan na ayusin ang ulat ng budget bukas ng umaga.
+tl_091,tl,Qwen3-ASR-1.7B,Kailangan ng aking boss na ipadala ang agenda ng pulong bago magtanghalian.,Kailangan ng aking boss na ipadala ang agenda ng pulong bago magtanghalian.
+tl_092,tl,Qwen3-ASR-1.7B,Kailangan ng koponan na i-update ang plano ng proyekto bukas ng umaga.,Kailangan ng kuponan na i-update ang plano ng proyekto bukas ng umaga.
+tl_093,tl,Qwen3-ASR-1.7B,Kailangan ng kliyente na ipadala ang ulat ng badyet bago magtanghalian.,Kailangan ng kliyente na ipadala ang ulat ng budget bago magtanghalian.
+tl_094,tl,Qwen3-ASR-1.7B,Kailangan ng koponan na suriin ang plano ng proyekto bukas ng umaga.,Kailangan ng kopya na nasuriin ang plano ng proyekto bukas ng umaga.
+tl_095,tl,Qwen3-ASR-1.7B,Kailangan ng koponan na suriin ang plano ng proyekto bago matapos ang Biyernes.,Kailangan ng koponan na suriin ang plano ng proyekto bago matapos ang biernes.
+tl_096,tl,Qwen3-ASR-1.7B,Kailangan nating suriin ang agenda ng pulong bago matapos ang Biyernes.,Kailangan nating suriin ang agenda ng pulong bago matapos ang biernes.
+tl_097,tl,Qwen3-ASR-1.7B,Kailangan nating suriin ang email ng kliyente bago matapos ang Biyernes.,Kailangan nating suriin ang email ng kliyente bago matapos ang business.
+tl_098,tl,Qwen3-ASR-1.7B,Kailangan ng kliyente na tapusin ang plano ng proyekto bago magtanghalian.,Kailangan ng cliente na tapusin ang plano ng proyekto bago magtanghalian.
+tl_099,tl,Qwen3-ASR-1.7B,Kailangan ng aking boss na i-update ang agenda ng pulong ngayong hapon.,Kailangan ng aking boss na i-update ang agenda ng pulong ayon sa hapon.
+tl_100,tl,Qwen3-ASR-1.7B,Kailangan ng koponan na suriin ang email ng kliyente ngayong hapon.,Kailangan ng koponan na suriin ang email ng client ngayong hapon.

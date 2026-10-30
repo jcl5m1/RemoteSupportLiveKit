@@ -34,3 +34,6 @@ firebase_options.dart
 
 # ASR benchmark run log
 tests/asr/synthesize.log
+.venv-qwen/
+# Ad-hoc files shared from the dev server (not committed)
+backend/app/static/support-web/share/

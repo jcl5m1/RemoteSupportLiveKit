@@ -1,14 +1,19 @@
 language,model,language_name,wer,cer,n
+en,Qwen3-ASR-1.7B,English,0.005417118093174431,0.0009635767970707265,100
 en,Whisper Large v3 Turbo,English,0.0021668472372697724,0.0007708614376565812,100
 en,Whisper Medium,English,0.0010834236186348862,0.0003854307188282906,100
+es,Qwen3-ASR-1.7B,Spanish,0.0,0.0,100
 es,Wav2Vec2-XLSR-Spanish,Spanish,0.0,0.0,100
 es,Whisper Large v3 Turbo,Spanish,0.0,0.0,100
 es,Whisper Medium,Spanish,0.0,0.0,100
+tl,Qwen3-ASR-1.7B,Tagalog,0.0967741935483871,0.03431952662721893,100
 tl,Whisper Large v3 Turbo,Tagalog,0.06899641577060932,0.01819526627218935,100
 tl,Whisper Medium,Tagalog,0.19265232974910393,0.04304733727810651,100
 zh,Paraformer-zh,Chinese Mandarin,0.09,0.007423904974016332,100
+zh,Qwen3-ASR-1.7B,Chinese Mandarin,0.02,0.004454342984409799,100
 zh,Whisper Large v3 Turbo,Chinese Mandarin,0.09,0.020786933927245732,100
 zh,Whisper Medium,Chinese Mandarin,0.78,0.30660727542687455,100
 zh-tw,Paraformer-zh,Taiwan Mandarin,1.0,0.38084632516703787,100
+zh-tw,Qwen3-ASR-1.7B,Taiwan Mandarin,0.15,0.0378619153674833,100
 zh-tw,Whisper Large v3 Turbo,Taiwan Mandarin,0.82,0.31551596139569416,100
 zh-tw,Whisper Medium,Taiwan Mandarin,0.57,0.07201187824795843,100

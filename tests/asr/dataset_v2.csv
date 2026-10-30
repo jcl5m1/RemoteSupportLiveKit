@@ -1,0 +1,1201 @@
+id,language,condition,text,audio_path
+en_001,en,clean,My manager need to review the client email by Friday.,audio/en/en_001.mp3
+en_001,en,phone,My manager need to review the client email by Friday.,audio_phone/en/en_001.opus
+en_002,en,clean,We need to review the meeting agenda this afternoon.,audio/en/en_002.mp3
+en_002,en,phone,We need to review the meeting agenda this afternoon.,audio_phone/en/en_002.opus
+en_003,en,clean,We should update the meeting agenda this afternoon.,audio/en/en_003.mp3
+en_003,en,phone,We should update the meeting agenda this afternoon.,audio_phone/en/en_003.opus
+en_004,en,clean,The team need to review the project plan before lunch.,audio/en/en_004.mp3
+en_004,en,phone,The team need to review the project plan before lunch.,audio_phone/en/en_004.opus
+en_005,en,clean,My manager need to review the project plan this afternoon.,audio/en/en_005.mp3
+en_005,en,phone,My manager need to review the project plan this afternoon.,audio_phone/en/en_005.opus
+en_006,en,clean,The team should update the project plan before lunch.,audio/en/en_006.mp3
+en_006,en,phone,The team should update the project plan before lunch.,audio_phone/en/en_006.opus
+en_007,en,clean,The team will send the meeting agenda this afternoon.,audio/en/en_007.mp3
+en_007,en,phone,The team will send the meeting agenda this afternoon.,audio_phone/en/en_007.opus
+en_008,en,clean,We have to finish the client email this afternoon.,audio/en/en_008.mp3
+en_008,en,phone,We have to finish the client email this afternoon.,audio_phone/en/en_008.opus
+en_009,en,clean,My manager will send the budget report by Friday.,audio/en/en_009.mp3
+en_009,en,phone,My manager will send the budget report by Friday.,audio_phone/en/en_009.opus
+en_010,en,clean,My manager want to schedule the project plan before lunch.,audio/en/en_010.mp3
+en_010,en,phone,My manager want to schedule the project plan before lunch.,audio_phone/en/en_010.opus
+en_011,en,clean,The team have to finish the budget report before lunch.,audio/en/en_011.mp3
+en_011,en,phone,The team have to finish the budget report before lunch.,audio_phone/en/en_011.opus
+en_012,en,clean,My manager should update the budget report by Friday.,audio/en/en_012.mp3
+en_012,en,phone,My manager should update the budget report by Friday.,audio_phone/en/en_012.opus
+en_013,en,clean,I have to finish the project plan this afternoon.,audio/en/en_013.mp3
+en_013,en,phone,I have to finish the project plan this afternoon.,audio_phone/en/en_013.opus
+en_014,en,clean,The client will send the budget report this afternoon.,audio/en/en_014.mp3
+en_014,en,phone,The client will send the budget report this afternoon.,audio_phone/en/en_014.opus
+en_015,en,clean,The client will send the client email tomorrow morning.,audio/en/en_015.mp3
+en_015,en,phone,The client will send the client email tomorrow morning.,audio_phone/en/en_015.opus
+en_016,en,clean,The client have to finish the meeting agenda before lunch.,audio/en/en_016.mp3
+en_016,en,phone,The client have to finish the meeting agenda before lunch.,audio_phone/en/en_016.opus
+en_017,en,clean,I have to finish the client email tomorrow morning.,audio/en/en_017.mp3
+en_017,en,phone,I have to finish the client email tomorrow morning.,audio_phone/en/en_017.opus
+en_018,en,clean,The team want to schedule the client email by Friday.,audio/en/en_018.mp3
+en_018,en,phone,The team want to schedule the client email by Friday.,audio_phone/en/en_018.opus
+en_019,en,clean,We will send the budget report tomorrow morning.,audio/en/en_019.mp3
+en_019,en,phone,We will send the budget report tomorrow morning.,audio_phone/en/en_019.opus
+en_020,en,clean,I want to schedule the project plan by Friday.,audio/en/en_020.mp3
+en_020,en,phone,I want to schedule the project plan by Friday.,audio_phone/en/en_020.opus
+en_021,en,clean,My manager will send the meeting agenda tomorrow morning.,audio/en/en_021.mp3
+en_021,en,phone,My manager will send the meeting agenda tomorrow morning.,audio_phone/en/en_021.opus
+en_022,en,clean,The team need to review the client email by Friday.,audio/en/en_022.mp3
+en_022,en,phone,The team need to review the client email by Friday.,audio_phone/en/en_022.opus
+en_023,en,clean,My manager need to review the client email tomorrow morning.,audio/en/en_023.mp3
+en_023,en,phone,My manager need to review the client email tomorrow morning.,audio_phone/en/en_023.opus
+en_024,en,clean,I should update the meeting agenda by Friday.,audio/en/en_024.mp3
+en_024,en,phone,I should update the meeting agenda by Friday.,audio_phone/en/en_024.opus
+en_025,en,clean,I need to review the client email by Friday.,audio/en/en_025.mp3
+en_025,en,phone,I need to review the client email by Friday.,audio_phone/en/en_025.opus
+en_026,en,clean,I should update the project plan before lunch.,audio/en/en_026.mp3
+en_026,en,phone,I should update the project plan before lunch.,audio_phone/en/en_026.opus
+en_027,en,clean,The team have to finish the project plan this afternoon.,audio/en/en_027.mp3
+en_027,en,phone,The team have to finish the project plan this afternoon.,audio_phone/en/en_027.opus
+en_028,en,clean,I need to review the budget report this afternoon.,audio/en/en_028.mp3
+en_028,en,phone,I need to review the budget report this afternoon.,audio_phone/en/en_028.opus
+en_029,en,clean,The client have to finish the meeting agenda tomorrow morning.,audio/en/en_029.mp3
+en_029,en,phone,The client have to finish the meeting agenda tomorrow morning.,audio_phone/en/en_029.opus
+en_030,en,clean,The client want to schedule the project plan before lunch.,audio/en/en_030.mp3
+en_030,en,phone,The client want to schedule the project plan before lunch.,audio_phone/en/en_030.opus
+en_031,en,clean,My manager will send the budget report tomorrow morning.,audio/en/en_031.mp3
+en_031,en,phone,My manager will send the budget report tomorrow morning.,audio_phone/en/en_031.opus
+en_032,en,clean,My manager need to review the meeting agenda by Friday.,audio/en/en_032.mp3
+en_032,en,phone,My manager need to review the meeting agenda by Friday.,audio_phone/en/en_032.opus
+en_033,en,clean,My manager need to review the project plan before lunch.,audio/en/en_033.mp3
+en_033,en,phone,My manager need to review the project plan before lunch.,audio_phone/en/en_033.opus
+en_034,en,clean,The team want to schedule the budget report by Friday.,audio/en/en_034.mp3
+en_034,en,phone,The team want to schedule the budget report by Friday.,audio_phone/en/en_034.opus
+en_035,en,clean,I want to schedule the project plan tomorrow morning.,audio/en/en_035.mp3
+en_035,en,phone,I want to schedule the project plan tomorrow morning.,audio_phone/en/en_035.opus
+en_036,en,clean,I have to finish the budget report this afternoon.,audio/en/en_036.mp3
+en_036,en,phone,I have to finish the budget report this afternoon.,audio_phone/en/en_036.opus
+en_037,en,clean,The client have to finish the budget report this afternoon.,audio/en/en_037.mp3
+en_037,en,phone,The client have to finish the budget report this afternoon.,audio_phone/en/en_037.opus
+en_038,en,clean,My manager have to finish the client email before lunch.,audio/en/en_038.mp3
+en_038,en,phone,My manager have to finish the client email before lunch.,audio_phone/en/en_038.opus
+en_039,en,clean,I want to schedule the client email tomorrow morning.,audio/en/en_039.mp3
+en_039,en,phone,I want to schedule the client email tomorrow morning.,audio_phone/en/en_039.opus
+en_040,en,clean,My manager need to review the budget report tomorrow morning.,audio/en/en_040.mp3
+en_040,en,phone,My manager need to review the budget report tomorrow morning.,audio_phone/en/en_040.opus
+en_041,en,clean,The client should update the budget report this afternoon.,audio/en/en_041.mp3
+en_041,en,phone,The client should update the budget report this afternoon.,audio_phone/en/en_041.opus
+en_042,en,clean,My manager want to schedule the budget report by Friday.,audio/en/en_042.mp3
+en_042,en,phone,My manager want to schedule the budget report by Friday.,audio_phone/en/en_042.opus
+en_043,en,clean,The team should update the project plan this afternoon.,audio/en/en_043.mp3
+en_043,en,phone,The team should update the project plan this afternoon.,audio_phone/en/en_043.opus
+en_044,en,clean,The client want to schedule the meeting agenda before lunch.,audio/en/en_044.mp3
+en_044,en,phone,The client want to schedule the meeting agenda before lunch.,audio_phone/en/en_044.opus
+en_045,en,clean,I will send the meeting agenda by Friday.,audio/en/en_045.mp3
+en_045,en,phone,I will send the meeting agenda by Friday.,audio_phone/en/en_045.opus
+en_046,en,clean,The client need to review the client email tomorrow morning.,audio/en/en_046.mp3
+en_046,en,phone,The client need to review the client email tomorrow morning.,audio_phone/en/en_046.opus
+en_047,en,clean,My manager need to review the budget report before lunch.,audio/en/en_047.mp3
+en_047,en,phone,My manager need to review the budget report before lunch.,audio_phone/en/en_047.opus
+en_048,en,clean,We will send the budget report by Friday.,audio/en/en_048.mp3
+en_048,en,phone,We will send the budget report by Friday.,audio_phone/en/en_048.opus
+en_049,en,clean,The client need to review the budget report this afternoon.,audio/en/en_049.mp3
+en_049,en,phone,The client need to review the budget report this afternoon.,audio_phone/en/en_049.opus
+en_050,en,clean,We want to schedule the meeting agenda tomorrow morning.,audio/en/en_050.mp3
+en_050,en,phone,We want to schedule the meeting agenda tomorrow morning.,audio_phone/en/en_050.opus
+en_051,en,clean,The team need to review the meeting agenda tomorrow morning.,audio/en/en_051.mp3
+en_051,en,phone,The team need to review the meeting agenda tomorrow morning.,audio_phone/en/en_051.opus
+en_052,en,clean,I should update the budget report this afternoon.,audio/en/en_052.mp3
+en_052,en,phone,I should update the budget report this afternoon.,audio_phone/en/en_052.opus
+en_053,en,clean,The client will send the meeting agenda tomorrow morning.,audio/en/en_053.mp3
+en_053,en,phone,The client will send the meeting agenda tomorrow morning.,audio_phone/en/en_053.opus
+en_054,en,clean,I have to finish the meeting agenda by Friday.,audio/en/en_054.mp3
+en_054,en,phone,I have to finish the meeting agenda by Friday.,audio_phone/en/en_054.opus
+en_055,en,clean,The team should update the budget report tomorrow morning.,audio/en/en_055.mp3
+en_055,en,phone,The team should update the budget report tomorrow morning.,audio_phone/en/en_055.opus
+en_056,en,clean,We should update the budget report before lunch.,audio/en/en_056.mp3
+en_056,en,phone,We should update the budget report before lunch.,audio_phone/en/en_056.opus
+en_057,en,clean,The team want to schedule the project plan by Friday.,audio/en/en_057.mp3
+en_057,en,phone,The team want to schedule the project plan by Friday.,audio_phone/en/en_057.opus
+en_058,en,clean,I should update the client email tomorrow morning.,audio/en/en_058.mp3
+en_058,en,phone,I should update the client email tomorrow morning.,audio_phone/en/en_058.opus
+en_059,en,clean,The client want to schedule the project plan this afternoon.,audio/en/en_059.mp3
+en_059,en,phone,The client want to schedule the project plan this afternoon.,audio_phone/en/en_059.opus
+en_060,en,clean,The client need to review the meeting agenda tomorrow morning.,audio/en/en_060.mp3
+en_060,en,phone,The client need to review the meeting agenda tomorrow morning.,audio_phone/en/en_060.opus
+en_061,en,clean,We need to review the client email before lunch.,audio/en/en_061.mp3
+en_061,en,phone,We need to review the client email before lunch.,audio_phone/en/en_061.opus
+en_062,en,clean,The client should update the budget report by Friday.,audio/en/en_062.mp3
+en_062,en,phone,The client should update the budget report by Friday.,audio_phone/en/en_062.opus
+en_063,en,clean,I will send the client email this afternoon.,audio/en/en_063.mp3
+en_063,en,phone,I will send the client email this afternoon.,audio_phone/en/en_063.opus
+en_064,en,clean,I should update the client email before lunch.,audio/en/en_064.mp3
+en_064,en,phone,I should update the client email before lunch.,audio_phone/en/en_064.opus
+en_065,en,clean,The team will send the project plan before lunch.,audio/en/en_065.mp3
+en_065,en,phone,The team will send the project plan before lunch.,audio_phone/en/en_065.opus
+en_066,en,clean,I will send the meeting agenda tomorrow morning.,audio/en/en_066.mp3
+en_066,en,phone,I will send the meeting agenda tomorrow morning.,audio_phone/en/en_066.opus
+en_067,en,clean,The client need to review the project plan this afternoon.,audio/en/en_067.mp3
+en_067,en,phone,The client need to review the project plan this afternoon.,audio_phone/en/en_067.opus
+en_068,en,clean,We want to schedule the budget report this afternoon.,audio/en/en_068.mp3
+en_068,en,phone,We want to schedule the budget report this afternoon.,audio_phone/en/en_068.opus
+en_069,en,clean,We have to finish the meeting agenda tomorrow morning.,audio/en/en_069.mp3
+en_069,en,phone,We have to finish the meeting agenda tomorrow morning.,audio_phone/en/en_069.opus
+en_070,en,clean,We have to finish the client email tomorrow morning.,audio/en/en_070.mp3
+en_070,en,phone,We have to finish the client email tomorrow morning.,audio_phone/en/en_070.opus
+en_071,en,clean,My manager need to review the client email before lunch.,audio/en/en_071.mp3
+en_071,en,phone,My manager need to review the client email before lunch.,audio_phone/en/en_071.opus
+en_072,en,clean,The client need to review the meeting agenda by Friday.,audio/en/en_072.mp3
+en_072,en,phone,The client need to review the meeting agenda by Friday.,audio_phone/en/en_072.opus
+en_073,en,clean,I need to review the client email this afternoon.,audio/en/en_073.mp3
+en_073,en,phone,I need to review the client email this afternoon.,audio_phone/en/en_073.opus
+en_074,en,clean,I should update the budget report by Friday.,audio/en/en_074.mp3
+en_074,en,phone,I should update the budget report by Friday.,audio_phone/en/en_074.opus
+en_075,en,clean,The client will send the client email by Friday.,audio/en/en_075.mp3
+en_075,en,phone,The client will send the client email by Friday.,audio_phone/en/en_075.opus
+en_076,en,clean,The client will send the meeting agenda by Friday.,audio/en/en_076.mp3
+en_076,en,phone,The client will send the meeting agenda by Friday.,audio_phone/en/en_076.opus
+en_077,en,clean,My manager have to finish the meeting agenda before lunch.,audio/en/en_077.mp3
+en_077,en,phone,My manager have to finish the meeting agenda before lunch.,audio_phone/en/en_077.opus
+en_078,en,clean,I should update the budget report before lunch.,audio/en/en_078.mp3
+en_078,en,phone,I should update the budget report before lunch.,audio_phone/en/en_078.opus
+en_079,en,clean,The team need to review the budget report this afternoon.,audio/en/en_079.mp3
+en_079,en,phone,The team need to review the budget report this afternoon.,audio_phone/en/en_079.opus
+en_080,en,clean,We need to review the project plan by Friday.,audio/en/en_080.mp3
+en_080,en,phone,We need to review the project plan by Friday.,audio_phone/en/en_080.opus
+en_081,en,clean,We should update the client email this afternoon.,audio/en/en_081.mp3
+en_081,en,phone,We should update the client email this afternoon.,audio_phone/en/en_081.opus
+en_082,en,clean,We have to finish the client email before lunch.,audio/en/en_082.mp3
+en_082,en,phone,We have to finish the client email before lunch.,audio_phone/en/en_082.opus
+en_083,en,clean,The client need to review the client email this afternoon.,audio/en/en_083.mp3
+en_083,en,phone,The client need to review the client email this afternoon.,audio_phone/en/en_083.opus
+en_084,en,clean,The team should update the budget report by Friday.,audio/en/en_084.mp3
+en_084,en,phone,The team should update the budget report by Friday.,audio_phone/en/en_084.opus
+en_085,en,clean,The team want to schedule the meeting agenda before lunch.,audio/en/en_085.mp3
+en_085,en,phone,The team want to schedule the meeting agenda before lunch.,audio_phone/en/en_085.opus
+en_086,en,clean,I should update the client email this afternoon.,audio/en/en_086.mp3
+en_086,en,phone,I should update the client email this afternoon.,audio_phone/en/en_086.opus
+en_087,en,clean,We will send the client email this afternoon.,audio/en/en_087.mp3
+en_087,en,phone,We will send the client email this afternoon.,audio_phone/en/en_087.opus
+en_088,en,clean,The team have to finish the client email tomorrow morning.,audio/en/en_088.mp3
+en_088,en,phone,The team have to finish the client email tomorrow morning.,audio_phone/en/en_088.opus
+en_089,en,clean,I have to finish the project plan by Friday.,audio/en/en_089.mp3
+en_089,en,phone,I have to finish the project plan by Friday.,audio_phone/en/en_089.opus
+en_090,en,clean,The team want to schedule the budget report tomorrow morning.,audio/en/en_090.mp3
+en_090,en,phone,The team want to schedule the budget report tomorrow morning.,audio_phone/en/en_090.opus
+en_091,en,clean,My manager will send the meeting agenda before lunch.,audio/en/en_091.mp3
+en_091,en,phone,My manager will send the meeting agenda before lunch.,audio_phone/en/en_091.opus
+en_092,en,clean,The team should update the project plan tomorrow morning.,audio/en/en_092.mp3
+en_092,en,phone,The team should update the project plan tomorrow morning.,audio_phone/en/en_092.opus
+en_093,en,clean,The client will send the budget report before lunch.,audio/en/en_093.mp3
+en_093,en,phone,The client will send the budget report before lunch.,audio_phone/en/en_093.opus
+en_094,en,clean,The team need to review the project plan tomorrow morning.,audio/en/en_094.mp3
+en_094,en,phone,The team need to review the project plan tomorrow morning.,audio_phone/en/en_094.opus
+en_095,en,clean,The team need to review the project plan by Friday.,audio/en/en_095.mp3
+en_095,en,phone,The team need to review the project plan by Friday.,audio_phone/en/en_095.opus
+en_096,en,clean,We need to review the meeting agenda by Friday.,audio/en/en_096.mp3
+en_096,en,phone,We need to review the meeting agenda by Friday.,audio_phone/en/en_096.opus
+en_097,en,clean,We need to review the client email by Friday.,audio/en/en_097.mp3
+en_097,en,phone,We need to review the client email by Friday.,audio_phone/en/en_097.opus
+en_098,en,clean,The client have to finish the project plan before lunch.,audio/en/en_098.mp3
+en_098,en,phone,The client have to finish the project plan before lunch.,audio_phone/en/en_098.opus
+en_099,en,clean,My manager should update the meeting agenda this afternoon.,audio/en/en_099.mp3
+en_099,en,phone,My manager should update the meeting agenda this afternoon.,audio_phone/en/en_099.opus
+en_100,en,clean,The team need to review the client email this afternoon.,audio/en/en_100.mp3
+en_100,en,phone,The team need to review the client email this afternoon.,audio_phone/en/en_100.opus
+es_001,es,clean,Mi jefe tiene que revisar el correo del cliente para el viernes.,audio/es/es_001.mp3
+es_001,es,phone,Mi jefe tiene que revisar el correo del cliente para el viernes.,audio_phone/es/es_001.opus
+es_002,es,clean,Tenemos que revisar la agenda de la reunión esta tarde.,audio/es/es_002.mp3
+es_002,es,phone,Tenemos que revisar la agenda de la reunión esta tarde.,audio_phone/es/es_002.opus
+es_003,es,clean,Tenemos que actualizar la agenda de la reunión esta tarde.,audio/es/es_003.mp3
+es_003,es,phone,Tenemos que actualizar la agenda de la reunión esta tarde.,audio_phone/es/es_003.opus
+es_004,es,clean,El equipo tiene que revisar el plan del proyecto antes del almuerzo.,audio/es/es_004.mp3
+es_004,es,phone,El equipo tiene que revisar el plan del proyecto antes del almuerzo.,audio_phone/es/es_004.opus
+es_005,es,clean,Mi jefe tiene que revisar el plan del proyecto esta tarde.,audio/es/es_005.mp3
+es_005,es,phone,Mi jefe tiene que revisar el plan del proyecto esta tarde.,audio_phone/es/es_005.opus
+es_006,es,clean,El equipo tiene que actualizar el plan del proyecto antes del almuerzo.,audio/es/es_006.mp3
+es_006,es,phone,El equipo tiene que actualizar el plan del proyecto antes del almuerzo.,audio_phone/es/es_006.opus
+es_007,es,clean,El equipo tiene que enviar la agenda de la reunión esta tarde.,audio/es/es_007.mp3
+es_007,es,phone,El equipo tiene que enviar la agenda de la reunión esta tarde.,audio_phone/es/es_007.opus
+es_008,es,clean,Tenemos que terminar el correo del cliente esta tarde.,audio/es/es_008.mp3
+es_008,es,phone,Tenemos que terminar el correo del cliente esta tarde.,audio_phone/es/es_008.opus
+es_009,es,clean,Mi jefe tiene que enviar el informe de presupuesto para el viernes.,audio/es/es_009.mp3
+es_009,es,phone,Mi jefe tiene que enviar el informe de presupuesto para el viernes.,audio_phone/es/es_009.opus
+es_010,es,clean,Mi jefe tiene que programar el plan del proyecto antes del almuerzo.,audio/es/es_010.mp3
+es_010,es,phone,Mi jefe tiene que programar el plan del proyecto antes del almuerzo.,audio_phone/es/es_010.opus
+es_011,es,clean,El equipo tiene que terminar el informe de presupuesto antes del almuerzo.,audio/es/es_011.mp3
+es_011,es,phone,El equipo tiene que terminar el informe de presupuesto antes del almuerzo.,audio_phone/es/es_011.opus
+es_012,es,clean,Mi jefe tiene que actualizar el informe de presupuesto para el viernes.,audio/es/es_012.mp3
+es_012,es,phone,Mi jefe tiene que actualizar el informe de presupuesto para el viernes.,audio_phone/es/es_012.opus
+es_013,es,clean,Tengo que terminar el plan del proyecto esta tarde.,audio/es/es_013.mp3
+es_013,es,phone,Tengo que terminar el plan del proyecto esta tarde.,audio_phone/es/es_013.opus
+es_014,es,clean,El cliente tiene que enviar el informe de presupuesto esta tarde.,audio/es/es_014.mp3
+es_014,es,phone,El cliente tiene que enviar el informe de presupuesto esta tarde.,audio_phone/es/es_014.opus
+es_015,es,clean,El cliente tiene que enviar el correo del cliente mañana por la mañana.,audio/es/es_015.mp3
+es_015,es,phone,El cliente tiene que enviar el correo del cliente mañana por la mañana.,audio_phone/es/es_015.opus
+es_016,es,clean,El cliente tiene que terminar la agenda de la reunión antes del almuerzo.,audio/es/es_016.mp3
+es_016,es,phone,El cliente tiene que terminar la agenda de la reunión antes del almuerzo.,audio_phone/es/es_016.opus
+es_017,es,clean,Tengo que terminar el correo del cliente mañana por la mañana.,audio/es/es_017.mp3
+es_017,es,phone,Tengo que terminar el correo del cliente mañana por la mañana.,audio_phone/es/es_017.opus
+es_018,es,clean,El equipo tiene que programar el correo del cliente para el viernes.,audio/es/es_018.mp3
+es_018,es,phone,El equipo tiene que programar el correo del cliente para el viernes.,audio_phone/es/es_018.opus
+es_019,es,clean,Tenemos que enviar el informe de presupuesto mañana por la mañana.,audio/es/es_019.mp3
+es_019,es,phone,Tenemos que enviar el informe de presupuesto mañana por la mañana.,audio_phone/es/es_019.opus
+es_020,es,clean,Tengo que programar el plan del proyecto para el viernes.,audio/es/es_020.mp3
+es_020,es,phone,Tengo que programar el plan del proyecto para el viernes.,audio_phone/es/es_020.opus
+es_021,es,clean,Mi jefe tiene que enviar la agenda de la reunión mañana por la mañana.,audio/es/es_021.mp3
+es_021,es,phone,Mi jefe tiene que enviar la agenda de la reunión mañana por la mañana.,audio_phone/es/es_021.opus
+es_022,es,clean,El equipo tiene que revisar el correo del cliente para el viernes.,audio/es/es_022.mp3
+es_022,es,phone,El equipo tiene que revisar el correo del cliente para el viernes.,audio_phone/es/es_022.opus
+es_023,es,clean,Mi jefe tiene que revisar el correo del cliente mañana por la mañana.,audio/es/es_023.mp3
+es_023,es,phone,Mi jefe tiene que revisar el correo del cliente mañana por la mañana.,audio_phone/es/es_023.opus
+es_024,es,clean,Tengo que actualizar la agenda de la reunión para el viernes.,audio/es/es_024.mp3
+es_024,es,phone,Tengo que actualizar la agenda de la reunión para el viernes.,audio_phone/es/es_024.opus
+es_025,es,clean,Tengo que revisar el correo del cliente para el viernes.,audio/es/es_025.mp3
+es_025,es,phone,Tengo que revisar el correo del cliente para el viernes.,audio_phone/es/es_025.opus
+es_026,es,clean,Tengo que actualizar el plan del proyecto antes del almuerzo.,audio/es/es_026.mp3
+es_026,es,phone,Tengo que actualizar el plan del proyecto antes del almuerzo.,audio_phone/es/es_026.opus
+es_027,es,clean,El equipo tiene que terminar el plan del proyecto esta tarde.,audio/es/es_027.mp3
+es_027,es,phone,El equipo tiene que terminar el plan del proyecto esta tarde.,audio_phone/es/es_027.opus
+es_028,es,clean,Tengo que revisar el informe de presupuesto esta tarde.,audio/es/es_028.mp3
+es_028,es,phone,Tengo que revisar el informe de presupuesto esta tarde.,audio_phone/es/es_028.opus
+es_029,es,clean,El cliente tiene que terminar la agenda de la reunión mañana por la mañana.,audio/es/es_029.mp3
+es_029,es,phone,El cliente tiene que terminar la agenda de la reunión mañana por la mañana.,audio_phone/es/es_029.opus
+es_030,es,clean,El cliente tiene que programar el plan del proyecto antes del almuerzo.,audio/es/es_030.mp3
+es_030,es,phone,El cliente tiene que programar el plan del proyecto antes del almuerzo.,audio_phone/es/es_030.opus
+es_031,es,clean,Mi jefe tiene que enviar el informe de presupuesto mañana por la mañana.,audio/es/es_031.mp3
+es_031,es,phone,Mi jefe tiene que enviar el informe de presupuesto mañana por la mañana.,audio_phone/es/es_031.opus
+es_032,es,clean,Mi jefe tiene que revisar la agenda de la reunión para el viernes.,audio/es/es_032.mp3
+es_032,es,phone,Mi jefe tiene que revisar la agenda de la reunión para el viernes.,audio_phone/es/es_032.opus
+es_033,es,clean,Mi jefe tiene que revisar el plan del proyecto antes del almuerzo.,audio/es/es_033.mp3
+es_033,es,phone,Mi jefe tiene que revisar el plan del proyecto antes del almuerzo.,audio_phone/es/es_033.opus
+es_034,es,clean,El equipo tiene que programar el informe de presupuesto para el viernes.,audio/es/es_034.mp3
+es_034,es,phone,El equipo tiene que programar el informe de presupuesto para el viernes.,audio_phone/es/es_034.opus
+es_035,es,clean,Tengo que programar el plan del proyecto mañana por la mañana.,audio/es/es_035.mp3
+es_035,es,phone,Tengo que programar el plan del proyecto mañana por la mañana.,audio_phone/es/es_035.opus
+es_036,es,clean,Tengo que terminar el informe de presupuesto esta tarde.,audio/es/es_036.mp3
+es_036,es,phone,Tengo que terminar el informe de presupuesto esta tarde.,audio_phone/es/es_036.opus
+es_037,es,clean,El cliente tiene que terminar el informe de presupuesto esta tarde.,audio/es/es_037.mp3
+es_037,es,phone,El cliente tiene que terminar el informe de presupuesto esta tarde.,audio_phone/es/es_037.opus
+es_038,es,clean,Mi jefe tiene que terminar el correo del cliente antes del almuerzo.,audio/es/es_038.mp3
+es_038,es,phone,Mi jefe tiene que terminar el correo del cliente antes del almuerzo.,audio_phone/es/es_038.opus
+es_039,es,clean,Tengo que programar el correo del cliente mañana por la mañana.,audio/es/es_039.mp3
+es_039,es,phone,Tengo que programar el correo del cliente mañana por la mañana.,audio_phone/es/es_039.opus
+es_040,es,clean,Mi jefe tiene que revisar el informe de presupuesto mañana por la mañana.,audio/es/es_040.mp3
+es_040,es,phone,Mi jefe tiene que revisar el informe de presupuesto mañana por la mañana.,audio_phone/es/es_040.opus
+es_041,es,clean,El cliente tiene que actualizar el informe de presupuesto esta tarde.,audio/es/es_041.mp3
+es_041,es,phone,El cliente tiene que actualizar el informe de presupuesto esta tarde.,audio_phone/es/es_041.opus
+es_042,es,clean,Mi jefe tiene que programar el informe de presupuesto para el viernes.,audio/es/es_042.mp3
+es_042,es,phone,Mi jefe tiene que programar el informe de presupuesto para el viernes.,audio_phone/es/es_042.opus
+es_043,es,clean,El equipo tiene que actualizar el plan del proyecto esta tarde.,audio/es/es_043.mp3
+es_043,es,phone,El equipo tiene que actualizar el plan del proyecto esta tarde.,audio_phone/es/es_043.opus
+es_044,es,clean,El cliente tiene que programar la agenda de la reunión antes del almuerzo.,audio/es/es_044.mp3
+es_044,es,phone,El cliente tiene que programar la agenda de la reunión antes del almuerzo.,audio_phone/es/es_044.opus
+es_045,es,clean,Tengo que enviar la agenda de la reunión para el viernes.,audio/es/es_045.mp3
+es_045,es,phone,Tengo que enviar la agenda de la reunión para el viernes.,audio_phone/es/es_045.opus
+es_046,es,clean,El cliente tiene que revisar el correo del cliente mañana por la mañana.,audio/es/es_046.mp3
+es_046,es,phone,El cliente tiene que revisar el correo del cliente mañana por la mañana.,audio_phone/es/es_046.opus
+es_047,es,clean,Mi jefe tiene que revisar el informe de presupuesto antes del almuerzo.,audio/es/es_047.mp3
+es_047,es,phone,Mi jefe tiene que revisar el informe de presupuesto antes del almuerzo.,audio_phone/es/es_047.opus
+es_048,es,clean,Tenemos que enviar el informe de presupuesto para el viernes.,audio/es/es_048.mp3
+es_048,es,phone,Tenemos que enviar el informe de presupuesto para el viernes.,audio_phone/es/es_048.opus
+es_049,es,clean,El cliente tiene que revisar el informe de presupuesto esta tarde.,audio/es/es_049.mp3
+es_049,es,phone,El cliente tiene que revisar el informe de presupuesto esta tarde.,audio_phone/es/es_049.opus
+es_050,es,clean,Tenemos que programar la agenda de la reunión mañana por la mañana.,audio/es/es_050.mp3
+es_050,es,phone,Tenemos que programar la agenda de la reunión mañana por la mañana.,audio_phone/es/es_050.opus
+es_051,es,clean,El equipo tiene que revisar la agenda de la reunión mañana por la mañana.,audio/es/es_051.mp3
+es_051,es,phone,El equipo tiene que revisar la agenda de la reunión mañana por la mañana.,audio_phone/es/es_051.opus
+es_052,es,clean,Tengo que actualizar el informe de presupuesto esta tarde.,audio/es/es_052.mp3
+es_052,es,phone,Tengo que actualizar el informe de presupuesto esta tarde.,audio_phone/es/es_052.opus
+es_053,es,clean,El cliente tiene que enviar la agenda de la reunión mañana por la mañana.,audio/es/es_053.mp3
+es_053,es,phone,El cliente tiene que enviar la agenda de la reunión mañana por la mañana.,audio_phone/es/es_053.opus
+es_054,es,clean,Tengo que terminar la agenda de la reunión para el viernes.,audio/es/es_054.mp3
+es_054,es,phone,Tengo que terminar la agenda de la reunión para el viernes.,audio_phone/es/es_054.opus
+es_055,es,clean,El equipo tiene que actualizar el informe de presupuesto mañana por la mañana.,audio/es/es_055.mp3
+es_055,es,phone,El equipo tiene que actualizar el informe de presupuesto mañana por la mañana.,audio_phone/es/es_055.opus
+es_056,es,clean,Tenemos que actualizar el informe de presupuesto antes del almuerzo.,audio/es/es_056.mp3
+es_056,es,phone,Tenemos que actualizar el informe de presupuesto antes del almuerzo.,audio_phone/es/es_056.opus
+es_057,es,clean,El equipo tiene que programar el plan del proyecto para el viernes.,audio/es/es_057.mp3
+es_057,es,phone,El equipo tiene que programar el plan del proyecto para el viernes.,audio_phone/es/es_057.opus
+es_058,es,clean,Tengo que actualizar el correo del cliente mañana por la mañana.,audio/es/es_058.mp3
+es_058,es,phone,Tengo que actualizar el correo del cliente mañana por la mañana.,audio_phone/es/es_058.opus
+es_059,es,clean,El cliente tiene que programar el plan del proyecto esta tarde.,audio/es/es_059.mp3
+es_059,es,phone,El cliente tiene que programar el plan del proyecto esta tarde.,audio_phone/es/es_059.opus
+es_060,es,clean,El cliente tiene que revisar la agenda de la reunión mañana por la mañana.,audio/es/es_060.mp3
+es_060,es,phone,El cliente tiene que revisar la agenda de la reunión mañana por la mañana.,audio_phone/es/es_060.opus
+es_061,es,clean,Tenemos que revisar el correo del cliente antes del almuerzo.,audio/es/es_061.mp3
+es_061,es,phone,Tenemos que revisar el correo del cliente antes del almuerzo.,audio_phone/es/es_061.opus
+es_062,es,clean,El cliente tiene que actualizar el informe de presupuesto para el viernes.,audio/es/es_062.mp3
+es_062,es,phone,El cliente tiene que actualizar el informe de presupuesto para el viernes.,audio_phone/es/es_062.opus
+es_063,es,clean,Tengo que enviar el correo del cliente esta tarde.,audio/es/es_063.mp3
+es_063,es,phone,Tengo que enviar el correo del cliente esta tarde.,audio_phone/es/es_063.opus
+es_064,es,clean,Tengo que actualizar el correo del cliente antes del almuerzo.,audio/es/es_064.mp3
+es_064,es,phone,Tengo que actualizar el correo del cliente antes del almuerzo.,audio_phone/es/es_064.opus
+es_065,es,clean,El equipo tiene que enviar el plan del proyecto antes del almuerzo.,audio/es/es_065.mp3
+es_065,es,phone,El equipo tiene que enviar el plan del proyecto antes del almuerzo.,audio_phone/es/es_065.opus
+es_066,es,clean,Tengo que enviar la agenda de la reunión mañana por la mañana.,audio/es/es_066.mp3
+es_066,es,phone,Tengo que enviar la agenda de la reunión mañana por la mañana.,audio_phone/es/es_066.opus
+es_067,es,clean,El cliente tiene que revisar el plan del proyecto esta tarde.,audio/es/es_067.mp3
+es_067,es,phone,El cliente tiene que revisar el plan del proyecto esta tarde.,audio_phone/es/es_067.opus
+es_068,es,clean,Tenemos que programar el informe de presupuesto esta tarde.,audio/es/es_068.mp3
+es_068,es,phone,Tenemos que programar el informe de presupuesto esta tarde.,audio_phone/es/es_068.opus
+es_069,es,clean,Tenemos que terminar la agenda de la reunión mañana por la mañana.,audio/es/es_069.mp3
+es_069,es,phone,Tenemos que terminar la agenda de la reunión mañana por la mañana.,audio_phone/es/es_069.opus
+es_070,es,clean,Tenemos que terminar el correo del cliente mañana por la mañana.,audio/es/es_070.mp3
+es_070,es,phone,Tenemos que terminar el correo del cliente mañana por la mañana.,audio_phone/es/es_070.opus
+es_071,es,clean,Mi jefe tiene que revisar el correo del cliente antes del almuerzo.,audio/es/es_071.mp3
+es_071,es,phone,Mi jefe tiene que revisar el correo del cliente antes del almuerzo.,audio_phone/es/es_071.opus
+es_072,es,clean,El cliente tiene que revisar la agenda de la reunión para el viernes.,audio/es/es_072.mp3
+es_072,es,phone,El cliente tiene que revisar la agenda de la reunión para el viernes.,audio_phone/es/es_072.opus
+es_073,es,clean,Tengo que revisar el correo del cliente esta tarde.,audio/es/es_073.mp3
+es_073,es,phone,Tengo que revisar el correo del cliente esta tarde.,audio_phone/es/es_073.opus
+es_074,es,clean,Tengo que actualizar el informe de presupuesto para el viernes.,audio/es/es_074.mp3
+es_074,es,phone,Tengo que actualizar el informe de presupuesto para el viernes.,audio_phone/es/es_074.opus
+es_075,es,clean,El cliente tiene que enviar el correo del cliente para el viernes.,audio/es/es_075.mp3
+es_075,es,phone,El cliente tiene que enviar el correo del cliente para el viernes.,audio_phone/es/es_075.opus
+es_076,es,clean,El cliente tiene que enviar la agenda de la reunión para el viernes.,audio/es/es_076.mp3
+es_076,es,phone,El cliente tiene que enviar la agenda de la reunión para el viernes.,audio_phone/es/es_076.opus
+es_077,es,clean,Mi jefe tiene que terminar la agenda de la reunión antes del almuerzo.,audio/es/es_077.mp3
+es_077,es,phone,Mi jefe tiene que terminar la agenda de la reunión antes del almuerzo.,audio_phone/es/es_077.opus
+es_078,es,clean,Tengo que actualizar el informe de presupuesto antes del almuerzo.,audio/es/es_078.mp3
+es_078,es,phone,Tengo que actualizar el informe de presupuesto antes del almuerzo.,audio_phone/es/es_078.opus
+es_079,es,clean,El equipo tiene que revisar el informe de presupuesto esta tarde.,audio/es/es_079.mp3
+es_079,es,phone,El equipo tiene que revisar el informe de presupuesto esta tarde.,audio_phone/es/es_079.opus
+es_080,es,clean,Tenemos que revisar el plan del proyecto para el viernes.,audio/es/es_080.mp3
+es_080,es,phone,Tenemos que revisar el plan del proyecto para el viernes.,audio_phone/es/es_080.opus
+es_081,es,clean,Tenemos que actualizar el correo del cliente esta tarde.,audio/es/es_081.mp3
+es_081,es,phone,Tenemos que actualizar el correo del cliente esta tarde.,audio_phone/es/es_081.opus
+es_082,es,clean,Tenemos que terminar el correo del cliente antes del almuerzo.,audio/es/es_082.mp3
+es_082,es,phone,Tenemos que terminar el correo del cliente antes del almuerzo.,audio_phone/es/es_082.opus
+es_083,es,clean,El cliente tiene que revisar el correo del cliente esta tarde.,audio/es/es_083.mp3
+es_083,es,phone,El cliente tiene que revisar el correo del cliente esta tarde.,audio_phone/es/es_083.opus
+es_084,es,clean,El equipo tiene que actualizar el informe de presupuesto para el viernes.,audio/es/es_084.mp3
+es_084,es,phone,El equipo tiene que actualizar el informe de presupuesto para el viernes.,audio_phone/es/es_084.opus
+es_085,es,clean,El equipo tiene que programar la agenda de la reunión antes del almuerzo.,audio/es/es_085.mp3
+es_085,es,phone,El equipo tiene que programar la agenda de la reunión antes del almuerzo.,audio_phone/es/es_085.opus
+es_086,es,clean,Tengo que actualizar el correo del cliente esta tarde.,audio/es/es_086.mp3
+es_086,es,phone,Tengo que actualizar el correo del cliente esta tarde.,audio_phone/es/es_086.opus
+es_087,es,clean,Tenemos que enviar el correo del cliente esta tarde.,audio/es/es_087.mp3
+es_087,es,phone,Tenemos que enviar el correo del cliente esta tarde.,audio_phone/es/es_087.opus
+es_088,es,clean,El equipo tiene que terminar el correo del cliente mañana por la mañana.,audio/es/es_088.mp3
+es_088,es,phone,El equipo tiene que terminar el correo del cliente mañana por la mañana.,audio_phone/es/es_088.opus
+es_089,es,clean,Tengo que terminar el plan del proyecto para el viernes.,audio/es/es_089.mp3
+es_089,es,phone,Tengo que terminar el plan del proyecto para el viernes.,audio_phone/es/es_089.opus
+es_090,es,clean,El equipo tiene que programar el informe de presupuesto mañana por la mañana.,audio/es/es_090.mp3
+es_090,es,phone,El equipo tiene que programar el informe de presupuesto mañana por la mañana.,audio_phone/es/es_090.opus
+es_091,es,clean,Mi jefe tiene que enviar la agenda de la reunión antes del almuerzo.,audio/es/es_091.mp3
+es_091,es,phone,Mi jefe tiene que enviar la agenda de la reunión antes del almuerzo.,audio_phone/es/es_091.opus
+es_092,es,clean,El equipo tiene que actualizar el plan del proyecto mañana por la mañana.,audio/es/es_092.mp3
+es_092,es,phone,El equipo tiene que actualizar el plan del proyecto mañana por la mañana.,audio_phone/es/es_092.opus
+es_093,es,clean,El cliente tiene que enviar el informe de presupuesto antes del almuerzo.,audio/es/es_093.mp3
+es_093,es,phone,El cliente tiene que enviar el informe de presupuesto antes del almuerzo.,audio_phone/es/es_093.opus
+es_094,es,clean,El equipo tiene que revisar el plan del proyecto mañana por la mañana.,audio/es/es_094.mp3
+es_094,es,phone,El equipo tiene que revisar el plan del proyecto mañana por la mañana.,audio_phone/es/es_094.opus
+es_095,es,clean,El equipo tiene que revisar el plan del proyecto para el viernes.,audio/es/es_095.mp3
+es_095,es,phone,El equipo tiene que revisar el plan del proyecto para el viernes.,audio_phone/es/es_095.opus
+es_096,es,clean,Tenemos que revisar la agenda de la reunión para el viernes.,audio/es/es_096.mp3
+es_096,es,phone,Tenemos que revisar la agenda de la reunión para el viernes.,audio_phone/es/es_096.opus
+es_097,es,clean,Tenemos que revisar el correo del cliente para el viernes.,audio/es/es_097.mp3
+es_097,es,phone,Tenemos que revisar el correo del cliente para el viernes.,audio_phone/es/es_097.opus
+es_098,es,clean,El cliente tiene que terminar el plan del proyecto antes del almuerzo.,audio/es/es_098.mp3
+es_098,es,phone,El cliente tiene que terminar el plan del proyecto antes del almuerzo.,audio_phone/es/es_098.opus
+es_099,es,clean,Mi jefe tiene que actualizar la agenda de la reunión esta tarde.,audio/es/es_099.mp3
+es_099,es,phone,Mi jefe tiene que actualizar la agenda de la reunión esta tarde.,audio_phone/es/es_099.opus
+es_100,es,clean,El equipo tiene que revisar el correo del cliente esta tarde.,audio/es/es_100.mp3
+es_100,es,phone,El equipo tiene que revisar el correo del cliente esta tarde.,audio_phone/es/es_100.opus
+tl_001,tl,clean,Kailangan ng aking boss na suriin ang email ng kliyente bago matapos ang Biyernes.,audio/tl/tl_001.mp3
+tl_001,tl,phone,Kailangan ng aking boss na suriin ang email ng kliyente bago matapos ang Biyernes.,audio_phone/tl/tl_001.opus
+tl_002,tl,clean,Kailangan nating suriin ang agenda ng pulong ngayong hapon.,audio/tl/tl_002.mp3
+tl_002,tl,phone,Kailangan nating suriin ang agenda ng pulong ngayong hapon.,audio_phone/tl/tl_002.opus
+tl_003,tl,clean,Kailangan nating i-update ang agenda ng pulong ngayong hapon.,audio/tl/tl_003.mp3
+tl_003,tl,phone,Kailangan nating i-update ang agenda ng pulong ngayong hapon.,audio_phone/tl/tl_003.opus
+tl_004,tl,clean,Kailangan ng koponan na suriin ang plano ng proyekto bago magtanghalian.,audio/tl/tl_004.mp3
+tl_004,tl,phone,Kailangan ng koponan na suriin ang plano ng proyekto bago magtanghalian.,audio_phone/tl/tl_004.opus
+tl_005,tl,clean,Kailangan ng aking boss na suriin ang plano ng proyekto ngayong hapon.,audio/tl/tl_005.mp3
+tl_005,tl,phone,Kailangan ng aking boss na suriin ang plano ng proyekto ngayong hapon.,audio_phone/tl/tl_005.opus
+tl_006,tl,clean,Kailangan ng koponan na i-update ang plano ng proyekto bago magtanghalian.,audio/tl/tl_006.mp3
+tl_006,tl,phone,Kailangan ng koponan na i-update ang plano ng proyekto bago magtanghalian.,audio_phone/tl/tl_006.opus
+tl_007,tl,clean,Kailangan ng koponan na ipadala ang agenda ng pulong ngayong hapon.,audio/tl/tl_007.mp3
+tl_007,tl,phone,Kailangan ng koponan na ipadala ang agenda ng pulong ngayong hapon.,audio_phone/tl/tl_007.opus
+tl_008,tl,clean,Kailangan nating tapusin ang email ng kliyente ngayong hapon.,audio/tl/tl_008.mp3
+tl_008,tl,phone,Kailangan nating tapusin ang email ng kliyente ngayong hapon.,audio_phone/tl/tl_008.opus
+tl_009,tl,clean,Kailangan ng aking boss na ipadala ang ulat ng badyet bago matapos ang Biyernes.,audio/tl/tl_009.mp3
+tl_009,tl,phone,Kailangan ng aking boss na ipadala ang ulat ng badyet bago matapos ang Biyernes.,audio_phone/tl/tl_009.opus
+tl_010,tl,clean,Kailangan ng aking boss na ayusin ang plano ng proyekto bago magtanghalian.,audio/tl/tl_010.mp3
+tl_010,tl,phone,Kailangan ng aking boss na ayusin ang plano ng proyekto bago magtanghalian.,audio_phone/tl/tl_010.opus
+tl_011,tl,clean,Kailangan ng koponan na tapusin ang ulat ng badyet bago magtanghalian.,audio/tl/tl_011.mp3
+tl_011,tl,phone,Kailangan ng koponan na tapusin ang ulat ng badyet bago magtanghalian.,audio_phone/tl/tl_011.opus
+tl_012,tl,clean,Kailangan ng aking boss na i-update ang ulat ng badyet bago matapos ang Biyernes.,audio/tl/tl_012.mp3
+tl_012,tl,phone,Kailangan ng aking boss na i-update ang ulat ng badyet bago matapos ang Biyernes.,audio_phone/tl/tl_012.opus
+tl_013,tl,clean,Kailangan kong tapusin ang plano ng proyekto ngayong hapon.,audio/tl/tl_013.mp3
+tl_013,tl,phone,Kailangan kong tapusin ang plano ng proyekto ngayong hapon.,audio_phone/tl/tl_013.opus
+tl_014,tl,clean,Kailangan ng kliyente na ipadala ang ulat ng badyet ngayong hapon.,audio/tl/tl_014.mp3
+tl_014,tl,phone,Kailangan ng kliyente na ipadala ang ulat ng badyet ngayong hapon.,audio_phone/tl/tl_014.opus
+tl_015,tl,clean,Kailangan ng kliyente na ipadala ang email ng kliyente bukas ng umaga.,audio/tl/tl_015.mp3
+tl_015,tl,phone,Kailangan ng kliyente na ipadala ang email ng kliyente bukas ng umaga.,audio_phone/tl/tl_015.opus
+tl_016,tl,clean,Kailangan ng kliyente na tapusin ang agenda ng pulong bago magtanghalian.,audio/tl/tl_016.mp3
+tl_016,tl,phone,Kailangan ng kliyente na tapusin ang agenda ng pulong bago magtanghalian.,audio_phone/tl/tl_016.opus
+tl_017,tl,clean,Kailangan kong tapusin ang email ng kliyente bukas ng umaga.,audio/tl/tl_017.mp3
+tl_017,tl,phone,Kailangan kong tapusin ang email ng kliyente bukas ng umaga.,audio_phone/tl/tl_017.opus
+tl_018,tl,clean,Kailangan ng koponan na ayusin ang email ng kliyente bago matapos ang Biyernes.,audio/tl/tl_018.mp3
+tl_018,tl,phone,Kailangan ng koponan na ayusin ang email ng kliyente bago matapos ang Biyernes.,audio_phone/tl/tl_018.opus
+tl_019,tl,clean,Kailangan nating ipadala ang ulat ng badyet bukas ng umaga.,audio/tl/tl_019.mp3
+tl_019,tl,phone,Kailangan nating ipadala ang ulat ng badyet bukas ng umaga.,audio_phone/tl/tl_019.opus
+tl_020,tl,clean,Kailangan kong ayusin ang plano ng proyekto bago matapos ang Biyernes.,audio/tl/tl_020.mp3
+tl_020,tl,phone,Kailangan kong ayusin ang plano ng proyekto bago matapos ang Biyernes.,audio_phone/tl/tl_020.opus
+tl_021,tl,clean,Kailangan ng aking boss na ipadala ang agenda ng pulong bukas ng umaga.,audio/tl/tl_021.mp3
+tl_021,tl,phone,Kailangan ng aking boss na ipadala ang agenda ng pulong bukas ng umaga.,audio_phone/tl/tl_021.opus
+tl_022,tl,clean,Kailangan ng koponan na suriin ang email ng kliyente bago matapos ang Biyernes.,audio/tl/tl_022.mp3
+tl_022,tl,phone,Kailangan ng koponan na suriin ang email ng kliyente bago matapos ang Biyernes.,audio_phone/tl/tl_022.opus
+tl_023,tl,clean,Kailangan ng aking boss na suriin ang email ng kliyente bukas ng umaga.,audio/tl/tl_023.mp3
+tl_023,tl,phone,Kailangan ng aking boss na suriin ang email ng kliyente bukas ng umaga.,audio_phone/tl/tl_023.opus
+tl_024,tl,clean,Kailangan kong i-update ang agenda ng pulong bago matapos ang Biyernes.,audio/tl/tl_024.mp3
+tl_024,tl,phone,Kailangan kong i-update ang agenda ng pulong bago matapos ang Biyernes.,audio_phone/tl/tl_024.opus
+tl_025,tl,clean,Kailangan kong suriin ang email ng kliyente bago matapos ang Biyernes.,audio/tl/tl_025.mp3
+tl_025,tl,phone,Kailangan kong suriin ang email ng kliyente bago matapos ang Biyernes.,audio_phone/tl/tl_025.opus
+tl_026,tl,clean,Kailangan kong i-update ang plano ng proyekto bago magtanghalian.,audio/tl/tl_026.mp3
+tl_026,tl,phone,Kailangan kong i-update ang plano ng proyekto bago magtanghalian.,audio_phone/tl/tl_026.opus
+tl_027,tl,clean,Kailangan ng koponan na tapusin ang plano ng proyekto ngayong hapon.,audio/tl/tl_027.mp3
+tl_027,tl,phone,Kailangan ng koponan na tapusin ang plano ng proyekto ngayong hapon.,audio_phone/tl/tl_027.opus
+tl_028,tl,clean,Kailangan kong suriin ang ulat ng badyet ngayong hapon.,audio/tl/tl_028.mp3
+tl_028,tl,phone,Kailangan kong suriin ang ulat ng badyet ngayong hapon.,audio_phone/tl/tl_028.opus
+tl_029,tl,clean,Kailangan ng kliyente na tapusin ang agenda ng pulong bukas ng umaga.,audio/tl/tl_029.mp3
+tl_029,tl,phone,Kailangan ng kliyente na tapusin ang agenda ng pulong bukas ng umaga.,audio_phone/tl/tl_029.opus
+tl_030,tl,clean,Kailangan ng kliyente na ayusin ang plano ng proyekto bago magtanghalian.,audio/tl/tl_030.mp3
+tl_030,tl,phone,Kailangan ng kliyente na ayusin ang plano ng proyekto bago magtanghalian.,audio_phone/tl/tl_030.opus
+tl_031,tl,clean,Kailangan ng aking boss na ipadala ang ulat ng badyet bukas ng umaga.,audio/tl/tl_031.mp3
+tl_031,tl,phone,Kailangan ng aking boss na ipadala ang ulat ng badyet bukas ng umaga.,audio_phone/tl/tl_031.opus
+tl_032,tl,clean,Kailangan ng aking boss na suriin ang agenda ng pulong bago matapos ang Biyernes.,audio/tl/tl_032.mp3
+tl_032,tl,phone,Kailangan ng aking boss na suriin ang agenda ng pulong bago matapos ang Biyernes.,audio_phone/tl/tl_032.opus
+tl_033,tl,clean,Kailangan ng aking boss na suriin ang plano ng proyekto bago magtanghalian.,audio/tl/tl_033.mp3
+tl_033,tl,phone,Kailangan ng aking boss na suriin ang plano ng proyekto bago magtanghalian.,audio_phone/tl/tl_033.opus
+tl_034,tl,clean,Kailangan ng koponan na ayusin ang ulat ng badyet bago matapos ang Biyernes.,audio/tl/tl_034.mp3
+tl_034,tl,phone,Kailangan ng koponan na ayusin ang ulat ng badyet bago matapos ang Biyernes.,audio_phone/tl/tl_034.opus
+tl_035,tl,clean,Kailangan kong ayusin ang plano ng proyekto bukas ng umaga.,audio/tl/tl_035.mp3
+tl_035,tl,phone,Kailangan kong ayusin ang plano ng proyekto bukas ng umaga.,audio_phone/tl/tl_035.opus
+tl_036,tl,clean,Kailangan kong tapusin ang ulat ng badyet ngayong hapon.,audio/tl/tl_036.mp3
+tl_036,tl,phone,Kailangan kong tapusin ang ulat ng badyet ngayong hapon.,audio_phone/tl/tl_036.opus
+tl_037,tl,clean,Kailangan ng kliyente na tapusin ang ulat ng badyet ngayong hapon.,audio/tl/tl_037.mp3
+tl_037,tl,phone,Kailangan ng kliyente na tapusin ang ulat ng badyet ngayong hapon.,audio_phone/tl/tl_037.opus
+tl_038,tl,clean,Kailangan ng aking boss na tapusin ang email ng kliyente bago magtanghalian.,audio/tl/tl_038.mp3
+tl_038,tl,phone,Kailangan ng aking boss na tapusin ang email ng kliyente bago magtanghalian.,audio_phone/tl/tl_038.opus
+tl_039,tl,clean,Kailangan kong ayusin ang email ng kliyente bukas ng umaga.,audio/tl/tl_039.mp3
+tl_039,tl,phone,Kailangan kong ayusin ang email ng kliyente bukas ng umaga.,audio_phone/tl/tl_039.opus
+tl_040,tl,clean,Kailangan ng aking boss na suriin ang ulat ng badyet bukas ng umaga.,audio/tl/tl_040.mp3
+tl_040,tl,phone,Kailangan ng aking boss na suriin ang ulat ng badyet bukas ng umaga.,audio_phone/tl/tl_040.opus
+tl_041,tl,clean,Kailangan ng kliyente na i-update ang ulat ng badyet ngayong hapon.,audio/tl/tl_041.mp3
+tl_041,tl,phone,Kailangan ng kliyente na i-update ang ulat ng badyet ngayong hapon.,audio_phone/tl/tl_041.opus
+tl_042,tl,clean,Kailangan ng aking boss na ayusin ang ulat ng badyet bago matapos ang Biyernes.,audio/tl/tl_042.mp3
+tl_042,tl,phone,Kailangan ng aking boss na ayusin ang ulat ng badyet bago matapos ang Biyernes.,audio_phone/tl/tl_042.opus
+tl_043,tl,clean,Kailangan ng koponan na i-update ang plano ng proyekto ngayong hapon.,audio/tl/tl_043.mp3
+tl_043,tl,phone,Kailangan ng koponan na i-update ang plano ng proyekto ngayong hapon.,audio_phone/tl/tl_043.opus
+tl_044,tl,clean,Kailangan ng kliyente na ayusin ang agenda ng pulong bago magtanghalian.,audio/tl/tl_044.mp3
+tl_044,tl,phone,Kailangan ng kliyente na ayusin ang agenda ng pulong bago magtanghalian.,audio_phone/tl/tl_044.opus
+tl_045,tl,clean,Kailangan kong ipadala ang agenda ng pulong bago matapos ang Biyernes.,audio/tl/tl_045.mp3
+tl_045,tl,phone,Kailangan kong ipadala ang agenda ng pulong bago matapos ang Biyernes.,audio_phone/tl/tl_045.opus
+tl_046,tl,clean,Kailangan ng kliyente na suriin ang email ng kliyente bukas ng umaga.,audio/tl/tl_046.mp3
+tl_046,tl,phone,Kailangan ng kliyente na suriin ang email ng kliyente bukas ng umaga.,audio_phone/tl/tl_046.opus
+tl_047,tl,clean,Kailangan ng aking boss na suriin ang ulat ng badyet bago magtanghalian.,audio/tl/tl_047.mp3
+tl_047,tl,phone,Kailangan ng aking boss na suriin ang ulat ng badyet bago magtanghalian.,audio_phone/tl/tl_047.opus
+tl_048,tl,clean,Kailangan nating ipadala ang ulat ng badyet bago matapos ang Biyernes.,audio/tl/tl_048.mp3
+tl_048,tl,phone,Kailangan nating ipadala ang ulat ng badyet bago matapos ang Biyernes.,audio_phone/tl/tl_048.opus
+tl_049,tl,clean,Kailangan ng kliyente na suriin ang ulat ng badyet ngayong hapon.,audio/tl/tl_049.mp3
+tl_049,tl,phone,Kailangan ng kliyente na suriin ang ulat ng badyet ngayong hapon.,audio_phone/tl/tl_049.opus
+tl_050,tl,clean,Kailangan nating ayusin ang agenda ng pulong bukas ng umaga.,audio/tl/tl_050.mp3
+tl_050,tl,phone,Kailangan nating ayusin ang agenda ng pulong bukas ng umaga.,audio_phone/tl/tl_050.opus
+tl_051,tl,clean,Kailangan ng koponan na suriin ang agenda ng pulong bukas ng umaga.,audio/tl/tl_051.mp3
+tl_051,tl,phone,Kailangan ng koponan na suriin ang agenda ng pulong bukas ng umaga.,audio_phone/tl/tl_051.opus
+tl_052,tl,clean,Kailangan kong i-update ang ulat ng badyet ngayong hapon.,audio/tl/tl_052.mp3
+tl_052,tl,phone,Kailangan kong i-update ang ulat ng badyet ngayong hapon.,audio_phone/tl/tl_052.opus
+tl_053,tl,clean,Kailangan ng kliyente na ipadala ang agenda ng pulong bukas ng umaga.,audio/tl/tl_053.mp3
+tl_053,tl,phone,Kailangan ng kliyente na ipadala ang agenda ng pulong bukas ng umaga.,audio_phone/tl/tl_053.opus
+tl_054,tl,clean,Kailangan kong tapusin ang agenda ng pulong bago matapos ang Biyernes.,audio/tl/tl_054.mp3
+tl_054,tl,phone,Kailangan kong tapusin ang agenda ng pulong bago matapos ang Biyernes.,audio_phone/tl/tl_054.opus
+tl_055,tl,clean,Kailangan ng koponan na i-update ang ulat ng badyet bukas ng umaga.,audio/tl/tl_055.mp3
+tl_055,tl,phone,Kailangan ng koponan na i-update ang ulat ng badyet bukas ng umaga.,audio_phone/tl/tl_055.opus
+tl_056,tl,clean,Kailangan nating i-update ang ulat ng badyet bago magtanghalian.,audio/tl/tl_056.mp3
+tl_056,tl,phone,Kailangan nating i-update ang ulat ng badyet bago magtanghalian.,audio_phone/tl/tl_056.opus
+tl_057,tl,clean,Kailangan ng koponan na ayusin ang plano ng proyekto bago matapos ang Biyernes.,audio/tl/tl_057.mp3
+tl_057,tl,phone,Kailangan ng koponan na ayusin ang plano ng proyekto bago matapos ang Biyernes.,audio_phone/tl/tl_057.opus
+tl_058,tl,clean,Kailangan kong i-update ang email ng kliyente bukas ng umaga.,audio/tl/tl_058.mp3
+tl_058,tl,phone,Kailangan kong i-update ang email ng kliyente bukas ng umaga.,audio_phone/tl/tl_058.opus
+tl_059,tl,clean,Kailangan ng kliyente na ayusin ang plano ng proyekto ngayong hapon.,audio/tl/tl_059.mp3
+tl_059,tl,phone,Kailangan ng kliyente na ayusin ang plano ng proyekto ngayong hapon.,audio_phone/tl/tl_059.opus
+tl_060,tl,clean,Kailangan ng kliyente na suriin ang agenda ng pulong bukas ng umaga.,audio/tl/tl_060.mp3
+tl_060,tl,phone,Kailangan ng kliyente na suriin ang agenda ng pulong bukas ng umaga.,audio_phone/tl/tl_060.opus
+tl_061,tl,clean,Kailangan nating suriin ang email ng kliyente bago magtanghalian.,audio/tl/tl_061.mp3
+tl_061,tl,phone,Kailangan nating suriin ang email ng kliyente bago magtanghalian.,audio_phone/tl/tl_061.opus
+tl_062,tl,clean,Kailangan ng kliyente na i-update ang ulat ng badyet bago matapos ang Biyernes.,audio/tl/tl_062.mp3
+tl_062,tl,phone,Kailangan ng kliyente na i-update ang ulat ng badyet bago matapos ang Biyernes.,audio_phone/tl/tl_062.opus
+tl_063,tl,clean,Kailangan kong ipadala ang email ng kliyente ngayong hapon.,audio/tl/tl_063.mp3
+tl_063,tl,phone,Kailangan kong ipadala ang email ng kliyente ngayong hapon.,audio_phone/tl/tl_063.opus
+tl_064,tl,clean,Kailangan kong i-update ang email ng kliyente bago magtanghalian.,audio/tl/tl_064.mp3
+tl_064,tl,phone,Kailangan kong i-update ang email ng kliyente bago magtanghalian.,audio_phone/tl/tl_064.opus
+tl_065,tl,clean,Kailangan ng koponan na ipadala ang plano ng proyekto bago magtanghalian.,audio/tl/tl_065.mp3
+tl_065,tl,phone,Kailangan ng koponan na ipadala ang plano ng proyekto bago magtanghalian.,audio_phone/tl/tl_065.opus
+tl_066,tl,clean,Kailangan kong ipadala ang agenda ng pulong bukas ng umaga.,audio/tl/tl_066.mp3
+tl_066,tl,phone,Kailangan kong ipadala ang agenda ng pulong bukas ng umaga.,audio_phone/tl/tl_066.opus
+tl_067,tl,clean,Kailangan ng kliyente na suriin ang plano ng proyekto ngayong hapon.,audio/tl/tl_067.mp3
+tl_067,tl,phone,Kailangan ng kliyente na suriin ang plano ng proyekto ngayong hapon.,audio_phone/tl/tl_067.opus
+tl_068,tl,clean,Kailangan nating ayusin ang ulat ng badyet ngayong hapon.,audio/tl/tl_068.mp3
+tl_068,tl,phone,Kailangan nating ayusin ang ulat ng badyet ngayong hapon.,audio_phone/tl/tl_068.opus
+tl_069,tl,clean,Kailangan nating tapusin ang agenda ng pulong bukas ng umaga.,audio/tl/tl_069.mp3
+tl_069,tl,phone,Kailangan nating tapusin ang agenda ng pulong bukas ng umaga.,audio_phone/tl/tl_069.opus
+tl_070,tl,clean,Kailangan nating tapusin ang email ng kliyente bukas ng umaga.,audio/tl/tl_070.mp3
+tl_070,tl,phone,Kailangan nating tapusin ang email ng kliyente bukas ng umaga.,audio_phone/tl/tl_070.opus
+tl_071,tl,clean,Kailangan ng aking boss na suriin ang email ng kliyente bago magtanghalian.,audio/tl/tl_071.mp3
+tl_071,tl,phone,Kailangan ng aking boss na suriin ang email ng kliyente bago magtanghalian.,audio_phone/tl/tl_071.opus
+tl_072,tl,clean,Kailangan ng kliyente na suriin ang agenda ng pulong bago matapos ang Biyernes.,audio/tl/tl_072.mp3
+tl_072,tl,phone,Kailangan ng kliyente na suriin ang agenda ng pulong bago matapos ang Biyernes.,audio_phone/tl/tl_072.opus
+tl_073,tl,clean,Kailangan kong suriin ang email ng kliyente ngayong hapon.,audio/tl/tl_073.mp3
+tl_073,tl,phone,Kailangan kong suriin ang email ng kliyente ngayong hapon.,audio_phone/tl/tl_073.opus
+tl_074,tl,clean,Kailangan kong i-update ang ulat ng badyet bago matapos ang Biyernes.,audio/tl/tl_074.mp3
+tl_074,tl,phone,Kailangan kong i-update ang ulat ng badyet bago matapos ang Biyernes.,audio_phone/tl/tl_074.opus
+tl_075,tl,clean,Kailangan ng kliyente na ipadala ang email ng kliyente bago matapos ang Biyernes.,audio/tl/tl_075.mp3
+tl_075,tl,phone,Kailangan ng kliyente na ipadala ang email ng kliyente bago matapos ang Biyernes.,audio_phone/tl/tl_075.opus
+tl_076,tl,clean,Kailangan ng kliyente na ipadala ang agenda ng pulong bago matapos ang Biyernes.,audio/tl/tl_076.mp3
+tl_076,tl,phone,Kailangan ng kliyente na ipadala ang agenda ng pulong bago matapos ang Biyernes.,audio_phone/tl/tl_076.opus
+tl_077,tl,clean,Kailangan ng aking boss na tapusin ang agenda ng pulong bago magtanghalian.,audio/tl/tl_077.mp3
+tl_077,tl,phone,Kailangan ng aking boss na tapusin ang agenda ng pulong bago magtanghalian.,audio_phone/tl/tl_077.opus
+tl_078,tl,clean,Kailangan kong i-update ang ulat ng badyet bago magtanghalian.,audio/tl/tl_078.mp3
+tl_078,tl,phone,Kailangan kong i-update ang ulat ng badyet bago magtanghalian.,audio_phone/tl/tl_078.opus
+tl_079,tl,clean,Kailangan ng koponan na suriin ang ulat ng badyet ngayong hapon.,audio/tl/tl_079.mp3
+tl_079,tl,phone,Kailangan ng koponan na suriin ang ulat ng badyet ngayong hapon.,audio_phone/tl/tl_079.opus
+tl_080,tl,clean,Kailangan nating suriin ang plano ng proyekto bago matapos ang Biyernes.,audio/tl/tl_080.mp3
+tl_080,tl,phone,Kailangan nating suriin ang plano ng proyekto bago matapos ang Biyernes.,audio_phone/tl/tl_080.opus
+tl_081,tl,clean,Kailangan nating i-update ang email ng kliyente ngayong hapon.,audio/tl/tl_081.mp3
+tl_081,tl,phone,Kailangan nating i-update ang email ng kliyente ngayong hapon.,audio_phone/tl/tl_081.opus
+tl_082,tl,clean,Kailangan nating tapusin ang email ng kliyente bago magtanghalian.,audio/tl/tl_082.mp3
+tl_082,tl,phone,Kailangan nating tapusin ang email ng kliyente bago magtanghalian.,audio_phone/tl/tl_082.opus
+tl_083,tl,clean,Kailangan ng kliyente na suriin ang email ng kliyente ngayong hapon.,audio/tl/tl_083.mp3
+tl_083,tl,phone,Kailangan ng kliyente na suriin ang email ng kliyente ngayong hapon.,audio_phone/tl/tl_083.opus
+tl_084,tl,clean,Kailangan ng koponan na i-update ang ulat ng badyet bago matapos ang Biyernes.,audio/tl/tl_084.mp3
+tl_084,tl,phone,Kailangan ng koponan na i-update ang ulat ng badyet bago matapos ang Biyernes.,audio_phone/tl/tl_084.opus
+tl_085,tl,clean,Kailangan ng koponan na ayusin ang agenda ng pulong bago magtanghalian.,audio/tl/tl_085.mp3
+tl_085,tl,phone,Kailangan ng koponan na ayusin ang agenda ng pulong bago magtanghalian.,audio_phone/tl/tl_085.opus
+tl_086,tl,clean,Kailangan kong i-update ang email ng kliyente ngayong hapon.,audio/tl/tl_086.mp3
+tl_086,tl,phone,Kailangan kong i-update ang email ng kliyente ngayong hapon.,audio_phone/tl/tl_086.opus
+tl_087,tl,clean,Kailangan nating ipadala ang email ng kliyente ngayong hapon.,audio/tl/tl_087.mp3
+tl_087,tl,phone,Kailangan nating ipadala ang email ng kliyente ngayong hapon.,audio_phone/tl/tl_087.opus
+tl_088,tl,clean,Kailangan ng koponan na tapusin ang email ng kliyente bukas ng umaga.,audio/tl/tl_088.mp3
+tl_088,tl,phone,Kailangan ng koponan na tapusin ang email ng kliyente bukas ng umaga.,audio_phone/tl/tl_088.opus
+tl_089,tl,clean,Kailangan kong tapusin ang plano ng proyekto bago matapos ang Biyernes.,audio/tl/tl_089.mp3
+tl_089,tl,phone,Kailangan kong tapusin ang plano ng proyekto bago matapos ang Biyernes.,audio_phone/tl/tl_089.opus
+tl_090,tl,clean,Kailangan ng koponan na ayusin ang ulat ng badyet bukas ng umaga.,audio/tl/tl_090.mp3
+tl_090,tl,phone,Kailangan ng koponan na ayusin ang ulat ng badyet bukas ng umaga.,audio_phone/tl/tl_090.opus
+tl_091,tl,clean,Kailangan ng aking boss na ipadala ang agenda ng pulong bago magtanghalian.,audio/tl/tl_091.mp3
+tl_091,tl,phone,Kailangan ng aking boss na ipadala ang agenda ng pulong bago magtanghalian.,audio_phone/tl/tl_091.opus
+tl_092,tl,clean,Kailangan ng koponan na i-update ang plano ng proyekto bukas ng umaga.,audio/tl/tl_092.mp3
+tl_092,tl,phone,Kailangan ng koponan na i-update ang plano ng proyekto bukas ng umaga.,audio_phone/tl/tl_092.opus
+tl_093,tl,clean,Kailangan ng kliyente na ipadala ang ulat ng badyet bago magtanghalian.,audio/tl/tl_093.mp3
+tl_093,tl,phone,Kailangan ng kliyente na ipadala ang ulat ng badyet bago magtanghalian.,audio_phone/tl/tl_093.opus
+tl_094,tl,clean,Kailangan ng koponan na suriin ang plano ng proyekto bukas ng umaga.,audio/tl/tl_094.mp3
+tl_094,tl,phone,Kailangan ng koponan na suriin ang plano ng proyekto bukas ng umaga.,audio_phone/tl/tl_094.opus
+tl_095,tl,clean,Kailangan ng koponan na suriin ang plano ng proyekto bago matapos ang Biyernes.,audio/tl/tl_095.mp3
+tl_095,tl,phone,Kailangan ng koponan na suriin ang plano ng proyekto bago matapos ang Biyernes.,audio_phone/tl/tl_095.opus
+tl_096,tl,clean,Kailangan nating suriin ang agenda ng pulong bago matapos ang Biyernes.,audio/tl/tl_096.mp3
+tl_096,tl,phone,Kailangan nating suriin ang agenda ng pulong bago matapos ang Biyernes.,audio_phone/tl/tl_096.opus
+tl_097,tl,clean,Kailangan nating suriin ang email ng kliyente bago matapos ang Biyernes.,audio/tl/tl_097.mp3
+tl_097,tl,phone,Kailangan nating suriin ang email ng kliyente bago matapos ang Biyernes.,audio_phone/tl/tl_097.opus
+tl_098,tl,clean,Kailangan ng kliyente na tapusin ang plano ng proyekto bago magtanghalian.,audio/tl/tl_098.mp3
+tl_098,tl,phone,Kailangan ng kliyente na tapusin ang plano ng proyekto bago magtanghalian.,audio_phone/tl/tl_098.opus
+tl_099,tl,clean,Kailangan ng aking boss na i-update ang agenda ng pulong ngayong hapon.,audio/tl/tl_099.mp3
+tl_099,tl,phone,Kailangan ng aking boss na i-update ang agenda ng pulong ngayong hapon.,audio_phone/tl/tl_099.opus
+tl_100,tl,clean,Kailangan ng koponan na suriin ang email ng kliyente ngayong hapon.,audio/tl/tl_100.mp3
+tl_100,tl,phone,Kailangan ng koponan na suriin ang email ng kliyente ngayong hapon.,audio_phone/tl/tl_100.opus
+zh-tw_001,zh-tw,clean,我的經理需要審閱客戶郵件週五前。,audio/zh-tw/zh-tw_001.mp3
+zh-tw_001,zh-tw,phone,我的經理需要審閱客戶郵件週五前。,audio_phone/zh-tw/zh-tw_001.opus
+zh-tw_002,zh-tw,clean,我們需要審閱會議議程今天下午。,audio/zh-tw/zh-tw_002.mp3
+zh-tw_002,zh-tw,phone,我們需要審閱會議議程今天下午。,audio_phone/zh-tw/zh-tw_002.opus
+zh-tw_003,zh-tw,clean,我們應該更新會議議程今天下午。,audio/zh-tw/zh-tw_003.mp3
+zh-tw_003,zh-tw,phone,我們應該更新會議議程今天下午。,audio_phone/zh-tw/zh-tw_003.opus
+zh-tw_004,zh-tw,clean,團隊需要審閱專案計畫午餐前。,audio/zh-tw/zh-tw_004.mp3
+zh-tw_004,zh-tw,phone,團隊需要審閱專案計畫午餐前。,audio_phone/zh-tw/zh-tw_004.opus
+zh-tw_005,zh-tw,clean,我的經理需要審閱專案計畫今天下午。,audio/zh-tw/zh-tw_005.mp3
+zh-tw_005,zh-tw,phone,我的經理需要審閱專案計畫今天下午。,audio_phone/zh-tw/zh-tw_005.opus
+zh-tw_006,zh-tw,clean,團隊應該更新專案計畫午餐前。,audio/zh-tw/zh-tw_006.mp3
+zh-tw_006,zh-tw,phone,團隊應該更新專案計畫午餐前。,audio_phone/zh-tw/zh-tw_006.opus
+zh-tw_007,zh-tw,clean,團隊會寄送會議議程今天下午。,audio/zh-tw/zh-tw_007.mp3
+zh-tw_007,zh-tw,phone,團隊會寄送會議議程今天下午。,audio_phone/zh-tw/zh-tw_007.opus
+zh-tw_008,zh-tw,clean,我們必須完成客戶郵件今天下午。,audio/zh-tw/zh-tw_008.mp3
+zh-tw_008,zh-tw,phone,我們必須完成客戶郵件今天下午。,audio_phone/zh-tw/zh-tw_008.opus
+zh-tw_009,zh-tw,clean,我的經理會寄送預算報告週五前。,audio/zh-tw/zh-tw_009.mp3
+zh-tw_009,zh-tw,phone,我的經理會寄送預算報告週五前。,audio_phone/zh-tw/zh-tw_009.opus
+zh-tw_010,zh-tw,clean,我的經理想要安排專案計畫午餐前。,audio/zh-tw/zh-tw_010.mp3
+zh-tw_010,zh-tw,phone,我的經理想要安排專案計畫午餐前。,audio_phone/zh-tw/zh-tw_010.opus
+zh-tw_011,zh-tw,clean,團隊必須完成預算報告午餐前。,audio/zh-tw/zh-tw_011.mp3
+zh-tw_011,zh-tw,phone,團隊必須完成預算報告午餐前。,audio_phone/zh-tw/zh-tw_011.opus
+zh-tw_012,zh-tw,clean,我的經理應該更新預算報告週五前。,audio/zh-tw/zh-tw_012.mp3
+zh-tw_012,zh-tw,phone,我的經理應該更新預算報告週五前。,audio_phone/zh-tw/zh-tw_012.opus
+zh-tw_013,zh-tw,clean,我必須完成專案計畫今天下午。,audio/zh-tw/zh-tw_013.mp3
+zh-tw_013,zh-tw,phone,我必須完成專案計畫今天下午。,audio_phone/zh-tw/zh-tw_013.opus
+zh-tw_014,zh-tw,clean,客戶會寄送預算報告今天下午。,audio/zh-tw/zh-tw_014.mp3
+zh-tw_014,zh-tw,phone,客戶會寄送預算報告今天下午。,audio_phone/zh-tw/zh-tw_014.opus
+zh-tw_015,zh-tw,clean,客戶會寄送客戶郵件明天上午。,audio/zh-tw/zh-tw_015.mp3
+zh-tw_015,zh-tw,phone,客戶會寄送客戶郵件明天上午。,audio_phone/zh-tw/zh-tw_015.opus
+zh-tw_016,zh-tw,clean,客戶必須完成會議議程午餐前。,audio/zh-tw/zh-tw_016.mp3
+zh-tw_016,zh-tw,phone,客戶必須完成會議議程午餐前。,audio_phone/zh-tw/zh-tw_016.opus
+zh-tw_017,zh-tw,clean,我必須完成客戶郵件明天上午。,audio/zh-tw/zh-tw_017.mp3
+zh-tw_017,zh-tw,phone,我必須完成客戶郵件明天上午。,audio_phone/zh-tw/zh-tw_017.opus
+zh-tw_018,zh-tw,clean,團隊想要安排客戶郵件週五前。,audio/zh-tw/zh-tw_018.mp3
+zh-tw_018,zh-tw,phone,團隊想要安排客戶郵件週五前。,audio_phone/zh-tw/zh-tw_018.opus
+zh-tw_019,zh-tw,clean,我們會寄送預算報告明天上午。,audio/zh-tw/zh-tw_019.mp3
+zh-tw_019,zh-tw,phone,我們會寄送預算報告明天上午。,audio_phone/zh-tw/zh-tw_019.opus
+zh-tw_020,zh-tw,clean,我想要安排專案計畫週五前。,audio/zh-tw/zh-tw_020.mp3
+zh-tw_020,zh-tw,phone,我想要安排專案計畫週五前。,audio_phone/zh-tw/zh-tw_020.opus
+zh-tw_021,zh-tw,clean,我的經理會寄送會議議程明天上午。,audio/zh-tw/zh-tw_021.mp3
+zh-tw_021,zh-tw,phone,我的經理會寄送會議議程明天上午。,audio_phone/zh-tw/zh-tw_021.opus
+zh-tw_022,zh-tw,clean,團隊需要審閱客戶郵件週五前。,audio/zh-tw/zh-tw_022.mp3
+zh-tw_022,zh-tw,phone,團隊需要審閱客戶郵件週五前。,audio_phone/zh-tw/zh-tw_022.opus
+zh-tw_023,zh-tw,clean,我的經理需要審閱客戶郵件明天上午。,audio/zh-tw/zh-tw_023.mp3
+zh-tw_023,zh-tw,phone,我的經理需要審閱客戶郵件明天上午。,audio_phone/zh-tw/zh-tw_023.opus
+zh-tw_024,zh-tw,clean,我應該更新會議議程週五前。,audio/zh-tw/zh-tw_024.mp3
+zh-tw_024,zh-tw,phone,我應該更新會議議程週五前。,audio_phone/zh-tw/zh-tw_024.opus
+zh-tw_025,zh-tw,clean,我需要審閱客戶郵件週五前。,audio/zh-tw/zh-tw_025.mp3
+zh-tw_025,zh-tw,phone,我需要審閱客戶郵件週五前。,audio_phone/zh-tw/zh-tw_025.opus
+zh-tw_026,zh-tw,clean,我應該更新專案計畫午餐前。,audio/zh-tw/zh-tw_026.mp3
+zh-tw_026,zh-tw,phone,我應該更新專案計畫午餐前。,audio_phone/zh-tw/zh-tw_026.opus
+zh-tw_027,zh-tw,clean,團隊必須完成專案計畫今天下午。,audio/zh-tw/zh-tw_027.mp3
+zh-tw_027,zh-tw,phone,團隊必須完成專案計畫今天下午。,audio_phone/zh-tw/zh-tw_027.opus
+zh-tw_028,zh-tw,clean,我需要審閱預算報告今天下午。,audio/zh-tw/zh-tw_028.mp3
+zh-tw_028,zh-tw,phone,我需要審閱預算報告今天下午。,audio_phone/zh-tw/zh-tw_028.opus
+zh-tw_029,zh-tw,clean,客戶必須完成會議議程明天上午。,audio/zh-tw/zh-tw_029.mp3
+zh-tw_029,zh-tw,phone,客戶必須完成會議議程明天上午。,audio_phone/zh-tw/zh-tw_029.opus
+zh-tw_030,zh-tw,clean,客戶想要安排專案計畫午餐前。,audio/zh-tw/zh-tw_030.mp3
+zh-tw_030,zh-tw,phone,客戶想要安排專案計畫午餐前。,audio_phone/zh-tw/zh-tw_030.opus
+zh-tw_031,zh-tw,clean,我的經理會寄送預算報告明天上午。,audio/zh-tw/zh-tw_031.mp3
+zh-tw_031,zh-tw,phone,我的經理會寄送預算報告明天上午。,audio_phone/zh-tw/zh-tw_031.opus
+zh-tw_032,zh-tw,clean,我的經理需要審閱會議議程週五前。,audio/zh-tw/zh-tw_032.mp3
+zh-tw_032,zh-tw,phone,我的經理需要審閱會議議程週五前。,audio_phone/zh-tw/zh-tw_032.opus
+zh-tw_033,zh-tw,clean,我的經理需要審閱專案計畫午餐前。,audio/zh-tw/zh-tw_033.mp3
+zh-tw_033,zh-tw,phone,我的經理需要審閱專案計畫午餐前。,audio_phone/zh-tw/zh-tw_033.opus
+zh-tw_034,zh-tw,clean,團隊想要安排預算報告週五前。,audio/zh-tw/zh-tw_034.mp3
+zh-tw_034,zh-tw,phone,團隊想要安排預算報告週五前。,audio_phone/zh-tw/zh-tw_034.opus
+zh-tw_035,zh-tw,clean,我想要安排專案計畫明天上午。,audio/zh-tw/zh-tw_035.mp3
+zh-tw_035,zh-tw,phone,我想要安排專案計畫明天上午。,audio_phone/zh-tw/zh-tw_035.opus
+zh-tw_036,zh-tw,clean,我必須完成預算報告今天下午。,audio/zh-tw/zh-tw_036.mp3
+zh-tw_036,zh-tw,phone,我必須完成預算報告今天下午。,audio_phone/zh-tw/zh-tw_036.opus
+zh-tw_037,zh-tw,clean,客戶必須完成預算報告今天下午。,audio/zh-tw/zh-tw_037.mp3
+zh-tw_037,zh-tw,phone,客戶必須完成預算報告今天下午。,audio_phone/zh-tw/zh-tw_037.opus
+zh-tw_038,zh-tw,clean,我的經理必須完成客戶郵件午餐前。,audio/zh-tw/zh-tw_038.mp3
+zh-tw_038,zh-tw,phone,我的經理必須完成客戶郵件午餐前。,audio_phone/zh-tw/zh-tw_038.opus
+zh-tw_039,zh-tw,clean,我想要安排客戶郵件明天上午。,audio/zh-tw/zh-tw_039.mp3
+zh-tw_039,zh-tw,phone,我想要安排客戶郵件明天上午。,audio_phone/zh-tw/zh-tw_039.opus
+zh-tw_040,zh-tw,clean,我的經理需要審閱預算報告明天上午。,audio/zh-tw/zh-tw_040.mp3
+zh-tw_040,zh-tw,phone,我的經理需要審閱預算報告明天上午。,audio_phone/zh-tw/zh-tw_040.opus
+zh-tw_041,zh-tw,clean,客戶應該更新預算報告今天下午。,audio/zh-tw/zh-tw_041.mp3
+zh-tw_041,zh-tw,phone,客戶應該更新預算報告今天下午。,audio_phone/zh-tw/zh-tw_041.opus
+zh-tw_042,zh-tw,clean,我的經理想要安排預算報告週五前。,audio/zh-tw/zh-tw_042.mp3
+zh-tw_042,zh-tw,phone,我的經理想要安排預算報告週五前。,audio_phone/zh-tw/zh-tw_042.opus
+zh-tw_043,zh-tw,clean,團隊應該更新專案計畫今天下午。,audio/zh-tw/zh-tw_043.mp3
+zh-tw_043,zh-tw,phone,團隊應該更新專案計畫今天下午。,audio_phone/zh-tw/zh-tw_043.opus
+zh-tw_044,zh-tw,clean,客戶想要安排會議議程午餐前。,audio/zh-tw/zh-tw_044.mp3
+zh-tw_044,zh-tw,phone,客戶想要安排會議議程午餐前。,audio_phone/zh-tw/zh-tw_044.opus
+zh-tw_045,zh-tw,clean,我會寄送會議議程週五前。,audio/zh-tw/zh-tw_045.mp3
+zh-tw_045,zh-tw,phone,我會寄送會議議程週五前。,audio_phone/zh-tw/zh-tw_045.opus
+zh-tw_046,zh-tw,clean,客戶需要審閱客戶郵件明天上午。,audio/zh-tw/zh-tw_046.mp3
+zh-tw_046,zh-tw,phone,客戶需要審閱客戶郵件明天上午。,audio_phone/zh-tw/zh-tw_046.opus
+zh-tw_047,zh-tw,clean,我的經理需要審閱預算報告午餐前。,audio/zh-tw/zh-tw_047.mp3
+zh-tw_047,zh-tw,phone,我的經理需要審閱預算報告午餐前。,audio_phone/zh-tw/zh-tw_047.opus
+zh-tw_048,zh-tw,clean,我們會寄送預算報告週五前。,audio/zh-tw/zh-tw_048.mp3
+zh-tw_048,zh-tw,phone,我們會寄送預算報告週五前。,audio_phone/zh-tw/zh-tw_048.opus
+zh-tw_049,zh-tw,clean,客戶需要審閱預算報告今天下午。,audio/zh-tw/zh-tw_049.mp3
+zh-tw_049,zh-tw,phone,客戶需要審閱預算報告今天下午。,audio_phone/zh-tw/zh-tw_049.opus
+zh-tw_050,zh-tw,clean,我們想要安排會議議程明天上午。,audio/zh-tw/zh-tw_050.mp3
+zh-tw_050,zh-tw,phone,我們想要安排會議議程明天上午。,audio_phone/zh-tw/zh-tw_050.opus
+zh-tw_051,zh-tw,clean,團隊需要審閱會議議程明天上午。,audio/zh-tw/zh-tw_051.mp3
+zh-tw_051,zh-tw,phone,團隊需要審閱會議議程明天上午。,audio_phone/zh-tw/zh-tw_051.opus
+zh-tw_052,zh-tw,clean,我應該更新預算報告今天下午。,audio/zh-tw/zh-tw_052.mp3
+zh-tw_052,zh-tw,phone,我應該更新預算報告今天下午。,audio_phone/zh-tw/zh-tw_052.opus
+zh-tw_053,zh-tw,clean,客戶會寄送會議議程明天上午。,audio/zh-tw/zh-tw_053.mp3
+zh-tw_053,zh-tw,phone,客戶會寄送會議議程明天上午。,audio_phone/zh-tw/zh-tw_053.opus
+zh-tw_054,zh-tw,clean,我必須完成會議議程週五前。,audio/zh-tw/zh-tw_054.mp3
+zh-tw_054,zh-tw,phone,我必須完成會議議程週五前。,audio_phone/zh-tw/zh-tw_054.opus
+zh-tw_055,zh-tw,clean,團隊應該更新預算報告明天上午。,audio/zh-tw/zh-tw_055.mp3
+zh-tw_055,zh-tw,phone,團隊應該更新預算報告明天上午。,audio_phone/zh-tw/zh-tw_055.opus
+zh-tw_056,zh-tw,clean,我們應該更新預算報告午餐前。,audio/zh-tw/zh-tw_056.mp3
+zh-tw_056,zh-tw,phone,我們應該更新預算報告午餐前。,audio_phone/zh-tw/zh-tw_056.opus
+zh-tw_057,zh-tw,clean,團隊想要安排專案計畫週五前。,audio/zh-tw/zh-tw_057.mp3
+zh-tw_057,zh-tw,phone,團隊想要安排專案計畫週五前。,audio_phone/zh-tw/zh-tw_057.opus
+zh-tw_058,zh-tw,clean,我應該更新客戶郵件明天上午。,audio/zh-tw/zh-tw_058.mp3
+zh-tw_058,zh-tw,phone,我應該更新客戶郵件明天上午。,audio_phone/zh-tw/zh-tw_058.opus
+zh-tw_059,zh-tw,clean,客戶想要安排專案計畫今天下午。,audio/zh-tw/zh-tw_059.mp3
+zh-tw_059,zh-tw,phone,客戶想要安排專案計畫今天下午。,audio_phone/zh-tw/zh-tw_059.opus
+zh-tw_060,zh-tw,clean,客戶需要審閱會議議程明天上午。,audio/zh-tw/zh-tw_060.mp3
+zh-tw_060,zh-tw,phone,客戶需要審閱會議議程明天上午。,audio_phone/zh-tw/zh-tw_060.opus
+zh-tw_061,zh-tw,clean,我們需要審閱客戶郵件午餐前。,audio/zh-tw/zh-tw_061.mp3
+zh-tw_061,zh-tw,phone,我們需要審閱客戶郵件午餐前。,audio_phone/zh-tw/zh-tw_061.opus
+zh-tw_062,zh-tw,clean,客戶應該更新預算報告週五前。,audio/zh-tw/zh-tw_062.mp3
+zh-tw_062,zh-tw,phone,客戶應該更新預算報告週五前。,audio_phone/zh-tw/zh-tw_062.opus
+zh-tw_063,zh-tw,clean,我會寄送客戶郵件今天下午。,audio/zh-tw/zh-tw_063.mp3
+zh-tw_063,zh-tw,phone,我會寄送客戶郵件今天下午。,audio_phone/zh-tw/zh-tw_063.opus
+zh-tw_064,zh-tw,clean,我應該更新客戶郵件午餐前。,audio/zh-tw/zh-tw_064.mp3
+zh-tw_064,zh-tw,phone,我應該更新客戶郵件午餐前。,audio_phone/zh-tw/zh-tw_064.opus
+zh-tw_065,zh-tw,clean,團隊會寄送專案計畫午餐前。,audio/zh-tw/zh-tw_065.mp3
+zh-tw_065,zh-tw,phone,團隊會寄送專案計畫午餐前。,audio_phone/zh-tw/zh-tw_065.opus
+zh-tw_066,zh-tw,clean,我會寄送會議議程明天上午。,audio/zh-tw/zh-tw_066.mp3
+zh-tw_066,zh-tw,phone,我會寄送會議議程明天上午。,audio_phone/zh-tw/zh-tw_066.opus
+zh-tw_067,zh-tw,clean,客戶需要審閱專案計畫今天下午。,audio/zh-tw/zh-tw_067.mp3
+zh-tw_067,zh-tw,phone,客戶需要審閱專案計畫今天下午。,audio_phone/zh-tw/zh-tw_067.opus
+zh-tw_068,zh-tw,clean,我們想要安排預算報告今天下午。,audio/zh-tw/zh-tw_068.mp3
+zh-tw_068,zh-tw,phone,我們想要安排預算報告今天下午。,audio_phone/zh-tw/zh-tw_068.opus
+zh-tw_069,zh-tw,clean,我們必須完成會議議程明天上午。,audio/zh-tw/zh-tw_069.mp3
+zh-tw_069,zh-tw,phone,我們必須完成會議議程明天上午。,audio_phone/zh-tw/zh-tw_069.opus
+zh-tw_070,zh-tw,clean,我們必須完成客戶郵件明天上午。,audio/zh-tw/zh-tw_070.mp3
+zh-tw_070,zh-tw,phone,我們必須完成客戶郵件明天上午。,audio_phone/zh-tw/zh-tw_070.opus
+zh-tw_071,zh-tw,clean,我的經理需要審閱客戶郵件午餐前。,audio/zh-tw/zh-tw_071.mp3
+zh-tw_071,zh-tw,phone,我的經理需要審閱客戶郵件午餐前。,audio_phone/zh-tw/zh-tw_071.opus
+zh-tw_072,zh-tw,clean,客戶需要審閱會議議程週五前。,audio/zh-tw/zh-tw_072.mp3
+zh-tw_072,zh-tw,phone,客戶需要審閱會議議程週五前。,audio_phone/zh-tw/zh-tw_072.opus
+zh-tw_073,zh-tw,clean,我需要審閱客戶郵件今天下午。,audio/zh-tw/zh-tw_073.mp3
+zh-tw_073,zh-tw,phone,我需要審閱客戶郵件今天下午。,audio_phone/zh-tw/zh-tw_073.opus
+zh-tw_074,zh-tw,clean,我應該更新預算報告週五前。,audio/zh-tw/zh-tw_074.mp3
+zh-tw_074,zh-tw,phone,我應該更新預算報告週五前。,audio_phone/zh-tw/zh-tw_074.opus
+zh-tw_075,zh-tw,clean,客戶會寄送客戶郵件週五前。,audio/zh-tw/zh-tw_075.mp3
+zh-tw_075,zh-tw,phone,客戶會寄送客戶郵件週五前。,audio_phone/zh-tw/zh-tw_075.opus
+zh-tw_076,zh-tw,clean,客戶會寄送會議議程週五前。,audio/zh-tw/zh-tw_076.mp3
+zh-tw_076,zh-tw,phone,客戶會寄送會議議程週五前。,audio_phone/zh-tw/zh-tw_076.opus
+zh-tw_077,zh-tw,clean,我的經理必須完成會議議程午餐前。,audio/zh-tw/zh-tw_077.mp3
+zh-tw_077,zh-tw,phone,我的經理必須完成會議議程午餐前。,audio_phone/zh-tw/zh-tw_077.opus
+zh-tw_078,zh-tw,clean,我應該更新預算報告午餐前。,audio/zh-tw/zh-tw_078.mp3
+zh-tw_078,zh-tw,phone,我應該更新預算報告午餐前。,audio_phone/zh-tw/zh-tw_078.opus
+zh-tw_079,zh-tw,clean,團隊需要審閱預算報告今天下午。,audio/zh-tw/zh-tw_079.mp3
+zh-tw_079,zh-tw,phone,團隊需要審閱預算報告今天下午。,audio_phone/zh-tw/zh-tw_079.opus
+zh-tw_080,zh-tw,clean,我們需要審閱專案計畫週五前。,audio/zh-tw/zh-tw_080.mp3
+zh-tw_080,zh-tw,phone,我們需要審閱專案計畫週五前。,audio_phone/zh-tw/zh-tw_080.opus
+zh-tw_081,zh-tw,clean,我們應該更新客戶郵件今天下午。,audio/zh-tw/zh-tw_081.mp3
+zh-tw_081,zh-tw,phone,我們應該更新客戶郵件今天下午。,audio_phone/zh-tw/zh-tw_081.opus
+zh-tw_082,zh-tw,clean,我們必須完成客戶郵件午餐前。,audio/zh-tw/zh-tw_082.mp3
+zh-tw_082,zh-tw,phone,我們必須完成客戶郵件午餐前。,audio_phone/zh-tw/zh-tw_082.opus
+zh-tw_083,zh-tw,clean,客戶需要審閱客戶郵件今天下午。,audio/zh-tw/zh-tw_083.mp3
+zh-tw_083,zh-tw,phone,客戶需要審閱客戶郵件今天下午。,audio_phone/zh-tw/zh-tw_083.opus
+zh-tw_084,zh-tw,clean,團隊應該更新預算報告週五前。,audio/zh-tw/zh-tw_084.mp3
+zh-tw_084,zh-tw,phone,團隊應該更新預算報告週五前。,audio_phone/zh-tw/zh-tw_084.opus
+zh-tw_085,zh-tw,clean,團隊想要安排會議議程午餐前。,audio/zh-tw/zh-tw_085.mp3
+zh-tw_085,zh-tw,phone,團隊想要安排會議議程午餐前。,audio_phone/zh-tw/zh-tw_085.opus
+zh-tw_086,zh-tw,clean,我應該更新客戶郵件今天下午。,audio/zh-tw/zh-tw_086.mp3
+zh-tw_086,zh-tw,phone,我應該更新客戶郵件今天下午。,audio_phone/zh-tw/zh-tw_086.opus
+zh-tw_087,zh-tw,clean,我們會寄送客戶郵件今天下午。,audio/zh-tw/zh-tw_087.mp3
+zh-tw_087,zh-tw,phone,我們會寄送客戶郵件今天下午。,audio_phone/zh-tw/zh-tw_087.opus
+zh-tw_088,zh-tw,clean,團隊必須完成客戶郵件明天上午。,audio/zh-tw/zh-tw_088.mp3
+zh-tw_088,zh-tw,phone,團隊必須完成客戶郵件明天上午。,audio_phone/zh-tw/zh-tw_088.opus
+zh-tw_089,zh-tw,clean,我必須完成專案計畫週五前。,audio/zh-tw/zh-tw_089.mp3
+zh-tw_089,zh-tw,phone,我必須完成專案計畫週五前。,audio_phone/zh-tw/zh-tw_089.opus
+zh-tw_090,zh-tw,clean,團隊想要安排預算報告明天上午。,audio/zh-tw/zh-tw_090.mp3
+zh-tw_090,zh-tw,phone,團隊想要安排預算報告明天上午。,audio_phone/zh-tw/zh-tw_090.opus
+zh-tw_091,zh-tw,clean,我的經理會寄送會議議程午餐前。,audio/zh-tw/zh-tw_091.mp3
+zh-tw_091,zh-tw,phone,我的經理會寄送會議議程午餐前。,audio_phone/zh-tw/zh-tw_091.opus
+zh-tw_092,zh-tw,clean,團隊應該更新專案計畫明天上午。,audio/zh-tw/zh-tw_092.mp3
+zh-tw_092,zh-tw,phone,團隊應該更新專案計畫明天上午。,audio_phone/zh-tw/zh-tw_092.opus
+zh-tw_093,zh-tw,clean,客戶會寄送預算報告午餐前。,audio/zh-tw/zh-tw_093.mp3
+zh-tw_093,zh-tw,phone,客戶會寄送預算報告午餐前。,audio_phone/zh-tw/zh-tw_093.opus
+zh-tw_094,zh-tw,clean,團隊需要審閱專案計畫明天上午。,audio/zh-tw/zh-tw_094.mp3
+zh-tw_094,zh-tw,phone,團隊需要審閱專案計畫明天上午。,audio_phone/zh-tw/zh-tw_094.opus
+zh-tw_095,zh-tw,clean,團隊需要審閱專案計畫週五前。,audio/zh-tw/zh-tw_095.mp3
+zh-tw_095,zh-tw,phone,團隊需要審閱專案計畫週五前。,audio_phone/zh-tw/zh-tw_095.opus
+zh-tw_096,zh-tw,clean,我們需要審閱會議議程週五前。,audio/zh-tw/zh-tw_096.mp3
+zh-tw_096,zh-tw,phone,我們需要審閱會議議程週五前。,audio_phone/zh-tw/zh-tw_096.opus
+zh-tw_097,zh-tw,clean,我們需要審閱客戶郵件週五前。,audio/zh-tw/zh-tw_097.mp3
+zh-tw_097,zh-tw,phone,我們需要審閱客戶郵件週五前。,audio_phone/zh-tw/zh-tw_097.opus
+zh-tw_098,zh-tw,clean,客戶必須完成專案計畫午餐前。,audio/zh-tw/zh-tw_098.mp3
+zh-tw_098,zh-tw,phone,客戶必須完成專案計畫午餐前。,audio_phone/zh-tw/zh-tw_098.opus
+zh-tw_099,zh-tw,clean,我的經理應該更新會議議程今天下午。,audio/zh-tw/zh-tw_099.mp3
+zh-tw_099,zh-tw,phone,我的經理應該更新會議議程今天下午。,audio_phone/zh-tw/zh-tw_099.opus
+zh-tw_100,zh-tw,clean,團隊需要審閱客戶郵件今天下午。,audio/zh-tw/zh-tw_100.mp3
+zh-tw_100,zh-tw,phone,團隊需要審閱客戶郵件今天下午。,audio_phone/zh-tw/zh-tw_100.opus
+zh_001,zh,clean,我的经理需要审阅客户邮件周五前。,audio/zh/zh_001.mp3
+zh_001,zh,phone,我的经理需要审阅客户邮件周五前。,audio_phone/zh/zh_001.opus
+zh_002,zh,clean,我们需要审阅会议议程今天下午。,audio/zh/zh_002.mp3
+zh_002,zh,phone,我们需要审阅会议议程今天下午。,audio_phone/zh/zh_002.opus
+zh_003,zh,clean,我们应该更新会议议程今天下午。,audio/zh/zh_003.mp3
+zh_003,zh,phone,我们应该更新会议议程今天下午。,audio_phone/zh/zh_003.opus
+zh_004,zh,clean,团队需要审阅项目计划午饭前。,audio/zh/zh_004.mp3
+zh_004,zh,phone,团队需要审阅项目计划午饭前。,audio_phone/zh/zh_004.opus
+zh_005,zh,clean,我的经理需要审阅项目计划今天下午。,audio/zh/zh_005.mp3
+zh_005,zh,phone,我的经理需要审阅项目计划今天下午。,audio_phone/zh/zh_005.opus
+zh_006,zh,clean,团队应该更新项目计划午饭前。,audio/zh/zh_006.mp3
+zh_006,zh,phone,团队应该更新项目计划午饭前。,audio_phone/zh/zh_006.opus
+zh_007,zh,clean,团队会发送会议议程今天下午。,audio/zh/zh_007.mp3
+zh_007,zh,phone,团队会发送会议议程今天下午。,audio_phone/zh/zh_007.opus
+zh_008,zh,clean,我们必须完成客户邮件今天下午。,audio/zh/zh_008.mp3
+zh_008,zh,phone,我们必须完成客户邮件今天下午。,audio_phone/zh/zh_008.opus
+zh_009,zh,clean,我的经理会发送预算报告周五前。,audio/zh/zh_009.mp3
+zh_009,zh,phone,我的经理会发送预算报告周五前。,audio_phone/zh/zh_009.opus
+zh_010,zh,clean,我的经理想要安排项目计划午饭前。,audio/zh/zh_010.mp3
+zh_010,zh,phone,我的经理想要安排项目计划午饭前。,audio_phone/zh/zh_010.opus
+zh_011,zh,clean,团队必须完成预算报告午饭前。,audio/zh/zh_011.mp3
+zh_011,zh,phone,团队必须完成预算报告午饭前。,audio_phone/zh/zh_011.opus
+zh_012,zh,clean,我的经理应该更新预算报告周五前。,audio/zh/zh_012.mp3
+zh_012,zh,phone,我的经理应该更新预算报告周五前。,audio_phone/zh/zh_012.opus
+zh_013,zh,clean,我必须完成项目计划今天下午。,audio/zh/zh_013.mp3
+zh_013,zh,phone,我必须完成项目计划今天下午。,audio_phone/zh/zh_013.opus
+zh_014,zh,clean,客户会发送预算报告今天下午。,audio/zh/zh_014.mp3
+zh_014,zh,phone,客户会发送预算报告今天下午。,audio_phone/zh/zh_014.opus
+zh_015,zh,clean,客户会发送客户邮件明天上午。,audio/zh/zh_015.mp3
+zh_015,zh,phone,客户会发送客户邮件明天上午。,audio_phone/zh/zh_015.opus
+zh_016,zh,clean,客户必须完成会议议程午饭前。,audio/zh/zh_016.mp3
+zh_016,zh,phone,客户必须完成会议议程午饭前。,audio_phone/zh/zh_016.opus
+zh_017,zh,clean,我必须完成客户邮件明天上午。,audio/zh/zh_017.mp3
+zh_017,zh,phone,我必须完成客户邮件明天上午。,audio_phone/zh/zh_017.opus
+zh_018,zh,clean,团队想要安排客户邮件周五前。,audio/zh/zh_018.mp3
+zh_018,zh,phone,团队想要安排客户邮件周五前。,audio_phone/zh/zh_018.opus
+zh_019,zh,clean,我们会发送预算报告明天上午。,audio/zh/zh_019.mp3
+zh_019,zh,phone,我们会发送预算报告明天上午。,audio_phone/zh/zh_019.opus
+zh_020,zh,clean,我想要安排项目计划周五前。,audio/zh/zh_020.mp3
+zh_020,zh,phone,我想要安排项目计划周五前。,audio_phone/zh/zh_020.opus
+zh_021,zh,clean,我的经理会发送会议议程明天上午。,audio/zh/zh_021.mp3
+zh_021,zh,phone,我的经理会发送会议议程明天上午。,audio_phone/zh/zh_021.opus
+zh_022,zh,clean,团队需要审阅客户邮件周五前。,audio/zh/zh_022.mp3
+zh_022,zh,phone,团队需要审阅客户邮件周五前。,audio_phone/zh/zh_022.opus
+zh_023,zh,clean,我的经理需要审阅客户邮件明天上午。,audio/zh/zh_023.mp3
+zh_023,zh,phone,我的经理需要审阅客户邮件明天上午。,audio_phone/zh/zh_023.opus
+zh_024,zh,clean,我应该更新会议议程周五前。,audio/zh/zh_024.mp3
+zh_024,zh,phone,我应该更新会议议程周五前。,audio_phone/zh/zh_024.opus
+zh_025,zh,clean,我需要审阅客户邮件周五前。,audio/zh/zh_025.mp3
+zh_025,zh,phone,我需要审阅客户邮件周五前。,audio_phone/zh/zh_025.opus
+zh_026,zh,clean,我应该更新项目计划午饭前。,audio/zh/zh_026.mp3
+zh_026,zh,phone,我应该更新项目计划午饭前。,audio_phone/zh/zh_026.opus
+zh_027,zh,clean,团队必须完成项目计划今天下午。,audio/zh/zh_027.mp3
+zh_027,zh,phone,团队必须完成项目计划今天下午。,audio_phone/zh/zh_027.opus
+zh_028,zh,clean,我需要审阅预算报告今天下午。,audio/zh/zh_028.mp3
+zh_028,zh,phone,我需要审阅预算报告今天下午。,audio_phone/zh/zh_028.opus
+zh_029,zh,clean,客户必须完成会议议程明天上午。,audio/zh/zh_029.mp3
+zh_029,zh,phone,客户必须完成会议议程明天上午。,audio_phone/zh/zh_029.opus
+zh_030,zh,clean,客户想要安排项目计划午饭前。,audio/zh/zh_030.mp3
+zh_030,zh,phone,客户想要安排项目计划午饭前。,audio_phone/zh/zh_030.opus
+zh_031,zh,clean,我的经理会发送预算报告明天上午。,audio/zh/zh_031.mp3
+zh_031,zh,phone,我的经理会发送预算报告明天上午。,audio_phone/zh/zh_031.opus
+zh_032,zh,clean,我的经理需要审阅会议议程周五前。,audio/zh/zh_032.mp3
+zh_032,zh,phone,我的经理需要审阅会议议程周五前。,audio_phone/zh/zh_032.opus
+zh_033,zh,clean,我的经理需要审阅项目计划午饭前。,audio/zh/zh_033.mp3
+zh_033,zh,phone,我的经理需要审阅项目计划午饭前。,audio_phone/zh/zh_033.opus
+zh_034,zh,clean,团队想要安排预算报告周五前。,audio/zh/zh_034.mp3
+zh_034,zh,phone,团队想要安排预算报告周五前。,audio_phone/zh/zh_034.opus
+zh_035,zh,clean,我想要安排项目计划明天上午。,audio/zh/zh_035.mp3
+zh_035,zh,phone,我想要安排项目计划明天上午。,audio_phone/zh/zh_035.opus
+zh_036,zh,clean,我必须完成预算报告今天下午。,audio/zh/zh_036.mp3
+zh_036,zh,phone,我必须完成预算报告今天下午。,audio_phone/zh/zh_036.opus
+zh_037,zh,clean,客户必须完成预算报告今天下午。,audio/zh/zh_037.mp3
+zh_037,zh,phone,客户必须完成预算报告今天下午。,audio_phone/zh/zh_037.opus
+zh_038,zh,clean,我的经理必须完成客户邮件午饭前。,audio/zh/zh_038.mp3
+zh_038,zh,phone,我的经理必须完成客户邮件午饭前。,audio_phone/zh/zh_038.opus
+zh_039,zh,clean,我想要安排客户邮件明天上午。,audio/zh/zh_039.mp3
+zh_039,zh,phone,我想要安排客户邮件明天上午。,audio_phone/zh/zh_039.opus
+zh_040,zh,clean,我的经理需要审阅预算报告明天上午。,audio/zh/zh_040.mp3
+zh_040,zh,phone,我的经理需要审阅预算报告明天上午。,audio_phone/zh/zh_040.opus
+zh_041,zh,clean,客户应该更新预算报告今天下午。,audio/zh/zh_041.mp3
+zh_041,zh,phone,客户应该更新预算报告今天下午。,audio_phone/zh/zh_041.opus
+zh_042,zh,clean,我的经理想要安排预算报告周五前。,audio/zh/zh_042.mp3
+zh_042,zh,phone,我的经理想要安排预算报告周五前。,audio_phone/zh/zh_042.opus
+zh_043,zh,clean,团队应该更新项目计划今天下午。,audio/zh/zh_043.mp3
+zh_043,zh,phone,团队应该更新项目计划今天下午。,audio_phone/zh/zh_043.opus
+zh_044,zh,clean,客户想要安排会议议程午饭前。,audio/zh/zh_044.mp3
+zh_044,zh,phone,客户想要安排会议议程午饭前。,audio_phone/zh/zh_044.opus
+zh_045,zh,clean,我会发送会议议程周五前。,audio/zh/zh_045.mp3
+zh_045,zh,phone,我会发送会议议程周五前。,audio_phone/zh/zh_045.opus
+zh_046,zh,clean,客户需要审阅客户邮件明天上午。,audio/zh/zh_046.mp3
+zh_046,zh,phone,客户需要审阅客户邮件明天上午。,audio_phone/zh/zh_046.opus
+zh_047,zh,clean,我的经理需要审阅预算报告午饭前。,audio/zh/zh_047.mp3
+zh_047,zh,phone,我的经理需要审阅预算报告午饭前。,audio_phone/zh/zh_047.opus
+zh_048,zh,clean,我们会发送预算报告周五前。,audio/zh/zh_048.mp3
+zh_048,zh,phone,我们会发送预算报告周五前。,audio_phone/zh/zh_048.opus
+zh_049,zh,clean,客户需要审阅预算报告今天下午。,audio/zh/zh_049.mp3
+zh_049,zh,phone,客户需要审阅预算报告今天下午。,audio_phone/zh/zh_049.opus
+zh_050,zh,clean,我们想要安排会议议程明天上午。,audio/zh/zh_050.mp3
+zh_050,zh,phone,我们想要安排会议议程明天上午。,audio_phone/zh/zh_050.opus
+zh_051,zh,clean,团队需要审阅会议议程明天上午。,audio/zh/zh_051.mp3
+zh_051,zh,phone,团队需要审阅会议议程明天上午。,audio_phone/zh/zh_051.opus
+zh_052,zh,clean,我应该更新预算报告今天下午。,audio/zh/zh_052.mp3
+zh_052,zh,phone,我应该更新预算报告今天下午。,audio_phone/zh/zh_052.opus
+zh_053,zh,clean,客户会发送会议议程明天上午。,audio/zh/zh_053.mp3
+zh_053,zh,phone,客户会发送会议议程明天上午。,audio_phone/zh/zh_053.opus
+zh_054,zh,clean,我必须完成会议议程周五前。,audio/zh/zh_054.mp3
+zh_054,zh,phone,我必须完成会议议程周五前。,audio_phone/zh/zh_054.opus
+zh_055,zh,clean,团队应该更新预算报告明天上午。,audio/zh/zh_055.mp3
+zh_055,zh,phone,团队应该更新预算报告明天上午。,audio_phone/zh/zh_055.opus
+zh_056,zh,clean,我们应该更新预算报告午饭前。,audio/zh/zh_056.mp3
+zh_056,zh,phone,我们应该更新预算报告午饭前。,audio_phone/zh/zh_056.opus
+zh_057,zh,clean,团队想要安排项目计划周五前。,audio/zh/zh_057.mp3
+zh_057,zh,phone,团队想要安排项目计划周五前。,audio_phone/zh/zh_057.opus
+zh_058,zh,clean,我应该更新客户邮件明天上午。,audio/zh/zh_058.mp3
+zh_058,zh,phone,我应该更新客户邮件明天上午。,audio_phone/zh/zh_058.opus
+zh_059,zh,clean,客户想要安排项目计划今天下午。,audio/zh/zh_059.mp3
+zh_059,zh,phone,客户想要安排项目计划今天下午。,audio_phone/zh/zh_059.opus
+zh_060,zh,clean,客户需要审阅会议议程明天上午。,audio/zh/zh_060.mp3
+zh_060,zh,phone,客户需要审阅会议议程明天上午。,audio_phone/zh/zh_060.opus
+zh_061,zh,clean,我们需要审阅客户邮件午饭前。,audio/zh/zh_061.mp3
+zh_061,zh,phone,我们需要审阅客户邮件午饭前。,audio_phone/zh/zh_061.opus
+zh_062,zh,clean,客户应该更新预算报告周五前。,audio/zh/zh_062.mp3
+zh_062,zh,phone,客户应该更新预算报告周五前。,audio_phone/zh/zh_062.opus
+zh_063,zh,clean,我会发送客户邮件今天下午。,audio/zh/zh_063.mp3
+zh_063,zh,phone,我会发送客户邮件今天下午。,audio_phone/zh/zh_063.opus
+zh_064,zh,clean,我应该更新客户邮件午饭前。,audio/zh/zh_064.mp3
+zh_064,zh,phone,我应该更新客户邮件午饭前。,audio_phone/zh/zh_064.opus
+zh_065,zh,clean,团队会发送项目计划午饭前。,audio/zh/zh_065.mp3
+zh_065,zh,phone,团队会发送项目计划午饭前。,audio_phone/zh/zh_065.opus
+zh_066,zh,clean,我会发送会议议程明天上午。,audio/zh/zh_066.mp3
+zh_066,zh,phone,我会发送会议议程明天上午。,audio_phone/zh/zh_066.opus
+zh_067,zh,clean,客户需要审阅项目计划今天下午。,audio/zh/zh_067.mp3
+zh_067,zh,phone,客户需要审阅项目计划今天下午。,audio_phone/zh/zh_067.opus
+zh_068,zh,clean,我们想要安排预算报告今天下午。,audio/zh/zh_068.mp3
+zh_068,zh,phone,我们想要安排预算报告今天下午。,audio_phone/zh/zh_068.opus
+zh_069,zh,clean,我们必须完成会议议程明天上午。,audio/zh/zh_069.mp3
+zh_069,zh,phone,我们必须完成会议议程明天上午。,audio_phone/zh/zh_069.opus
+zh_070,zh,clean,我们必须完成客户邮件明天上午。,audio/zh/zh_070.mp3
+zh_070,zh,phone,我们必须完成客户邮件明天上午。,audio_phone/zh/zh_070.opus
+zh_071,zh,clean,我的经理需要审阅客户邮件午饭前。,audio/zh/zh_071.mp3
+zh_071,zh,phone,我的经理需要审阅客户邮件午饭前。,audio_phone/zh/zh_071.opus
+zh_072,zh,clean,客户需要审阅会议议程周五前。,audio/zh/zh_072.mp3
+zh_072,zh,phone,客户需要审阅会议议程周五前。,audio_phone/zh/zh_072.opus
+zh_073,zh,clean,我需要审阅客户邮件今天下午。,audio/zh/zh_073.mp3
+zh_073,zh,phone,我需要审阅客户邮件今天下午。,audio_phone/zh/zh_073.opus
+zh_074,zh,clean,我应该更新预算报告周五前。,audio/zh/zh_074.mp3
+zh_074,zh,phone,我应该更新预算报告周五前。,audio_phone/zh/zh_074.opus
+zh_075,zh,clean,客户会发送客户邮件周五前。,audio/zh/zh_075.mp3
+zh_075,zh,phone,客户会发送客户邮件周五前。,audio_phone/zh/zh_075.opus
+zh_076,zh,clean,客户会发送会议议程周五前。,audio/zh/zh_076.mp3
+zh_076,zh,phone,客户会发送会议议程周五前。,audio_phone/zh/zh_076.opus
+zh_077,zh,clean,我的经理必须完成会议议程午饭前。,audio/zh/zh_077.mp3
+zh_077,zh,phone,我的经理必须完成会议议程午饭前。,audio_phone/zh/zh_077.opus
+zh_078,zh,clean,我应该更新预算报告午饭前。,audio/zh/zh_078.mp3
+zh_078,zh,phone,我应该更新预算报告午饭前。,audio_phone/zh/zh_078.opus
+zh_079,zh,clean,团队需要审阅预算报告今天下午。,audio/zh/zh_079.mp3
+zh_079,zh,phone,团队需要审阅预算报告今天下午。,audio_phone/zh/zh_079.opus
+zh_080,zh,clean,我们需要审阅项目计划周五前。,audio/zh/zh_080.mp3
+zh_080,zh,phone,我们需要审阅项目计划周五前。,audio_phone/zh/zh_080.opus
+zh_081,zh,clean,我们应该更新客户邮件今天下午。,audio/zh/zh_081.mp3
+zh_081,zh,phone,我们应该更新客户邮件今天下午。,audio_phone/zh/zh_081.opus
+zh_082,zh,clean,我们必须完成客户邮件午饭前。,audio/zh/zh_082.mp3
+zh_082,zh,phone,我们必须完成客户邮件午饭前。,audio_phone/zh/zh_082.opus
+zh_083,zh,clean,客户需要审阅客户邮件今天下午。,audio/zh/zh_083.mp3
+zh_083,zh,phone,客户需要审阅客户邮件今天下午。,audio_phone/zh/zh_083.opus
+zh_084,zh,clean,团队应该更新预算报告周五前。,audio/zh/zh_084.mp3
+zh_084,zh,phone,团队应该更新预算报告周五前。,audio_phone/zh/zh_084.opus
+zh_085,zh,clean,团队想要安排会议议程午饭前。,audio/zh/zh_085.mp3
+zh_085,zh,phone,团队想要安排会议议程午饭前。,audio_phone/zh/zh_085.opus
+zh_086,zh,clean,我应该更新客户邮件今天下午。,audio/zh/zh_086.mp3
+zh_086,zh,phone,我应该更新客户邮件今天下午。,audio_phone/zh/zh_086.opus
+zh_087,zh,clean,我们会发送客户邮件今天下午。,audio/zh/zh_087.mp3
+zh_087,zh,phone,我们会发送客户邮件今天下午。,audio_phone/zh/zh_087.opus
+zh_088,zh,clean,团队必须完成客户邮件明天上午。,audio/zh/zh_088.mp3
+zh_088,zh,phone,团队必须完成客户邮件明天上午。,audio_phone/zh/zh_088.opus
+zh_089,zh,clean,我必须完成项目计划周五前。,audio/zh/zh_089.mp3
+zh_089,zh,phone,我必须完成项目计划周五前。,audio_phone/zh/zh_089.opus
+zh_090,zh,clean,团队想要安排预算报告明天上午。,audio/zh/zh_090.mp3
+zh_090,zh,phone,团队想要安排预算报告明天上午。,audio_phone/zh/zh_090.opus
+zh_091,zh,clean,我的经理会发送会议议程午饭前。,audio/zh/zh_091.mp3
+zh_091,zh,phone,我的经理会发送会议议程午饭前。,audio_phone/zh/zh_091.opus
+zh_092,zh,clean,团队应该更新项目计划明天上午。,audio/zh/zh_092.mp3
+zh_092,zh,phone,团队应该更新项目计划明天上午。,audio_phone/zh/zh_092.opus
+zh_093,zh,clean,客户会发送预算报告午饭前。,audio/zh/zh_093.mp3
+zh_093,zh,phone,客户会发送预算报告午饭前。,audio_phone/zh/zh_093.opus
+zh_094,zh,clean,团队需要审阅项目计划明天上午。,audio/zh/zh_094.mp3
+zh_094,zh,phone,团队需要审阅项目计划明天上午。,audio_phone/zh/zh_094.opus
+zh_095,zh,clean,团队需要审阅项目计划周五前。,audio/zh/zh_095.mp3
+zh_095,zh,phone,团队需要审阅项目计划周五前。,audio_phone/zh/zh_095.opus
+zh_096,zh,clean,我们需要审阅会议议程周五前。,audio/zh/zh_096.mp3
+zh_096,zh,phone,我们需要审阅会议议程周五前。,audio_phone/zh/zh_096.opus
+zh_097,zh,clean,我们需要审阅客户邮件周五前。,audio/zh/zh_097.mp3
+zh_097,zh,phone,我们需要审阅客户邮件周五前。,audio_phone/zh/zh_097.opus
+zh_098,zh,clean,客户必须完成项目计划午饭前。,audio/zh/zh_098.mp3
+zh_098,zh,phone,客户必须完成项目计划午饭前。,audio_phone/zh/zh_098.opus
+zh_099,zh,clean,我的经理应该更新会议议程今天下午。,audio/zh/zh_099.mp3
+zh_099,zh,phone,我的经理应该更新会议议程今天下午。,audio_phone/zh/zh_099.opus
+zh_100,zh,clean,团队需要审阅客户邮件今天下午。,audio/zh/zh_100.mp3
+zh_100,zh,phone,团队需要审阅客户邮件今天下午。,audio_phone/zh/zh_100.opus
+tl-en_001,tl-en,clean,"Okay na po, na-install na yung router last week.",audio/tl-en/tl-en_001.mp3
+tl-en_001,tl-en,phone,"Okay na po, na-install na yung router last week.",audio_phone/tl-en/tl-en_001.opus
+tl-en_002,tl-en,clean,Pwede mo bang i-reset yung printer ngayon?,audio/tl-en/tl-en_002.mp3
+tl-en_002,tl-en,phone,Pwede mo bang i-reset yung printer ngayon?,audio_phone/tl-en/tl-en_002.opus
+tl-en_003,tl-en,clean,Pwede mo bang i-reset yung email account this afternoon?,audio/tl-en/tl-en_003.mp3
+tl-en_003,tl-en,phone,Pwede mo bang i-reset yung email account this afternoon?,audio_phone/tl-en/tl-en_003.opus
+tl-en_004,tl-en,clean,Hindi gumagana yung router ko since kahapon.,audio/tl-en/tl-en_004.mp3
+tl-en_004,tl-en,phone,Hindi gumagana yung router ko since kahapon.,audio_phone/tl-en/tl-en_004.opus
+tl-en_005,tl-en,clean,Hindi gumagana yung monitor ko since kanina.,audio/tl-en/tl-en_005.mp3
+tl-en_005,tl-en,phone,Hindi gumagana yung monitor ko since kanina.,audio_phone/tl-en/tl-en_005.opus
+tl-en_006,tl-en,clean,Na-try ko na i-restart yung email account pero hindi siya nag-o-on.,audio/tl-en/tl-en_006.mp3
+tl-en_006,tl-en,phone,Na-try ko na i-restart yung email account pero hindi siya nag-o-on.,audio_phone/tl-en/tl-en_006.opus
+tl-en_007,tl-en,clean,Pwede mo bang i-install yung email account mamaya?,audio/tl-en/tl-en_007.mp3
+tl-en_007,tl-en,phone,Pwede mo bang i-install yung email account mamaya?,audio_phone/tl-en/tl-en_007.opus
+tl-en_008,tl-en,clean,Pwede mo bang i-restart yung monitor mamaya?,audio/tl-en/tl-en_008.mp3
+tl-en_008,tl-en,phone,Pwede mo bang i-restart yung monitor mamaya?,audio_phone/tl-en/tl-en_008.opus
+tl-en_009,tl-en,clean,"Okay na po, na-update na yung printer last week.",audio/tl-en/tl-en_009.mp3
+tl-en_009,tl-en,phone,"Okay na po, na-update na yung printer last week.",audio_phone/tl-en/tl-en_009.opus
+tl-en_010,tl-en,clean,Hindi gumagana yung phone ko since last week.,audio/tl-en/tl-en_010.mp3
+tl-en_010,tl-en,phone,Hindi gumagana yung phone ko since last week.,audio_phone/tl-en/tl-en_010.opus
+tl-en_011,tl-en,clean,Hindi gumagana yung monitor ko since last week.,audio/tl-en/tl-en_011.mp3
+tl-en_011,tl-en,phone,Hindi gumagana yung monitor ko since last week.,audio_phone/tl-en/tl-en_011.opus
+tl-en_012,tl-en,clean,Hindi gumagana yung Wi-Fi ko since kanina.,audio/tl-en/tl-en_012.mp3
+tl-en_012,tl-en,phone,Hindi gumagana yung Wi-Fi ko since kanina.,audio_phone/tl-en/tl-en_012.opus
+tl-en_013,tl-en,clean,Kailangan ko ng help sa Wi-Fi kasi sobrang bagal.,audio/tl-en/tl-en_013.mp3
+tl-en_013,tl-en,phone,Kailangan ko ng help sa Wi-Fi kasi sobrang bagal.,audio_phone/tl-en/tl-en_013.opus
+tl-en_014,tl-en,clean,Hindi gumagana yung email account ko since this morning.,audio/tl-en/tl-en_014.mp3
+tl-en_014,tl-en,phone,Hindi gumagana yung email account ko since this morning.,audio_phone/tl-en/tl-en_014.opus
+tl-en_015,tl-en,clean,Pwede mo bang i-update yung monitor after lunch?,audio/tl-en/tl-en_015.mp3
+tl-en_015,tl-en,phone,Pwede mo bang i-update yung monitor after lunch?,audio_phone/tl-en/tl-en_015.opus
+tl-en_016,tl-en,clean,Pwede mo bang i-check yung monitor this afternoon?,audio/tl-en/tl-en_016.mp3
+tl-en_016,tl-en,phone,Pwede mo bang i-check yung monitor this afternoon?,audio_phone/tl-en/tl-en_016.opus
+tl-en_017,tl-en,clean,"Okay na po, na-update na yung printer kahapon.",audio/tl-en/tl-en_017.mp3
+tl-en_017,tl-en,phone,"Okay na po, na-update na yung printer kahapon.",audio_phone/tl-en/tl-en_017.opus
+tl-en_018,tl-en,clean,Pwede mo bang i-update yung printer this afternoon?,audio/tl-en/tl-en_018.mp3
+tl-en_018,tl-en,phone,Pwede mo bang i-update yung printer this afternoon?,audio_phone/tl-en/tl-en_018.opus
+tl-en_019,tl-en,clean,Na-try ko na i-restart yung Wi-Fi pero ayaw pa rin mag-connect.,audio/tl-en/tl-en_019.mp3
+tl-en_019,tl-en,phone,Na-try ko na i-restart yung Wi-Fi pero ayaw pa rin mag-connect.,audio_phone/tl-en/tl-en_019.opus
+tl-en_020,tl-en,clean,Pwede mo bang i-update yung phone after lunch?,audio/tl-en/tl-en_020.mp3
+tl-en_020,tl-en,phone,Pwede mo bang i-update yung phone after lunch?,audio_phone/tl-en/tl-en_020.opus
+tl-en_021,tl-en,clean,Na-try ko na i-install yung phone pero sobrang bagal.,audio/tl-en/tl-en_021.mp3
+tl-en_021,tl-en,phone,Na-try ko na i-install yung phone pero sobrang bagal.,audio_phone/tl-en/tl-en_021.opus
+tl-en_022,tl-en,clean,"Okay na po, na-restart na yung password last week.",audio/tl-en/tl-en_022.mp3
+tl-en_022,tl-en,phone,"Okay na po, na-restart na yung password last week.",audio_phone/tl-en/tl-en_022.opus
+tl-en_023,tl-en,clean,Pwede mo bang i-update yung printer after lunch?,audio/tl-en/tl-en_023.mp3
+tl-en_023,tl-en,phone,Pwede mo bang i-update yung printer after lunch?,audio_phone/tl-en/tl-en_023.opus
+tl-en_024,tl-en,clean,Kailangan ko ng help sa laptop kasi sobrang bagal.,audio/tl-en/tl-en_024.mp3
+tl-en_024,tl-en,phone,Kailangan ko ng help sa laptop kasi sobrang bagal.,audio_phone/tl-en/tl-en_024.opus
+tl-en_025,tl-en,clean,"Okay na po, na-check na yung router kahapon.",audio/tl-en/tl-en_025.mp3
+tl-en_025,tl-en,phone,"Okay na po, na-check na yung router kahapon.",audio_phone/tl-en/tl-en_025.opus
+tl-en_026,tl-en,clean,"Okay na po, na-check na yung email account kanina.",audio/tl-en/tl-en_026.mp3
+tl-en_026,tl-en,phone,"Okay na po, na-check na yung email account kanina.",audio_phone/tl-en/tl-en_026.opus
+tl-en_027,tl-en,clean,Hindi gumagana yung password ko since this morning.,audio/tl-en/tl-en_027.mp3
+tl-en_027,tl-en,phone,Hindi gumagana yung password ko since this morning.,audio_phone/tl-en/tl-en_027.opus
+tl-en_028,tl-en,clean,Kailangan ko ng help sa Wi-Fi kasi hindi siya nag-o-on.,audio/tl-en/tl-en_028.mp3
+tl-en_028,tl-en,phone,Kailangan ko ng help sa Wi-Fi kasi hindi siya nag-o-on.,audio_phone/tl-en/tl-en_028.opus
+tl-en_029,tl-en,clean,"Okay na po, na-update na yung printer kanina.",audio/tl-en/tl-en_029.mp3
+tl-en_029,tl-en,phone,"Okay na po, na-update na yung printer kanina.",audio_phone/tl-en/tl-en_029.opus
+tl-en_030,tl-en,clean,Hindi gumagana yung email account ko since kahapon.,audio/tl-en/tl-en_030.mp3
+tl-en_030,tl-en,phone,Hindi gumagana yung email account ko since kahapon.,audio_phone/tl-en/tl-en_030.opus
+tl-en_031,tl-en,clean,Hindi gumagana yung password ko since kahapon.,audio/tl-en/tl-en_031.mp3
+tl-en_031,tl-en,phone,Hindi gumagana yung password ko since kahapon.,audio_phone/tl-en/tl-en_031.opus
+tl-en_032,tl-en,clean,"Okay na po, na-install na yung router kanina.",audio/tl-en/tl-en_032.mp3
+tl-en_032,tl-en,phone,"Okay na po, na-install na yung router kanina.",audio_phone/tl-en/tl-en_032.opus
+tl-en_033,tl-en,clean,Pwede mo bang i-update yung printer bukas ng umaga?,audio/tl-en/tl-en_033.mp3
+tl-en_033,tl-en,phone,Pwede mo bang i-update yung printer bukas ng umaga?,audio_phone/tl-en/tl-en_033.opus
+tl-en_034,tl-en,clean,Pwede mo bang i-update yung monitor bukas ng umaga?,audio/tl-en/tl-en_034.mp3
+tl-en_034,tl-en,phone,Pwede mo bang i-update yung monitor bukas ng umaga?,audio_phone/tl-en/tl-en_034.opus
+tl-en_035,tl-en,clean,Pwede mo bang i-install yung router mamaya?,audio/tl-en/tl-en_035.mp3
+tl-en_035,tl-en,phone,Pwede mo bang i-install yung router mamaya?,audio_phone/tl-en/tl-en_035.opus
+tl-en_036,tl-en,clean,Kailangan ko ng help sa monitor kasi sobrang bagal.,audio/tl-en/tl-en_036.mp3
+tl-en_036,tl-en,phone,Kailangan ko ng help sa monitor kasi sobrang bagal.,audio_phone/tl-en/tl-en_036.opus
+tl-en_037,tl-en,clean,"Okay na po, na-restart na yung email account kahapon.",audio/tl-en/tl-en_037.mp3
+tl-en_037,tl-en,phone,"Okay na po, na-restart na yung email account kahapon.",audio_phone/tl-en/tl-en_037.opus
+tl-en_038,tl-en,clean,Hindi gumagana yung password ko since kanina.,audio/tl-en/tl-en_038.mp3
+tl-en_038,tl-en,phone,Hindi gumagana yung password ko since kanina.,audio_phone/tl-en/tl-en_038.opus
+tl-en_039,tl-en,clean,Kailangan ko ng help sa email account kasi ayaw pa rin mag-connect.,audio/tl-en/tl-en_039.mp3
+tl-en_039,tl-en,phone,Kailangan ko ng help sa email account kasi ayaw pa rin mag-connect.,audio_phone/tl-en/tl-en_039.opus
+tl-en_040,tl-en,clean,Hindi gumagana yung router ko since this morning.,audio/tl-en/tl-en_040.mp3
+tl-en_040,tl-en,phone,Hindi gumagana yung router ko since this morning.,audio_phone/tl-en/tl-en_040.opus
+tl-en_041,tl-en,clean,Kailangan ko ng help sa monitor kasi nag-e-error pa rin.,audio/tl-en/tl-en_041.mp3
+tl-en_041,tl-en,phone,Kailangan ko ng help sa monitor kasi nag-e-error pa rin.,audio_phone/tl-en/tl-en_041.opus
+tl-en_042,tl-en,clean,Kailangan ko ng help sa printer kasi hindi siya nag-o-on.,audio/tl-en/tl-en_042.mp3
+tl-en_042,tl-en,phone,Kailangan ko ng help sa printer kasi hindi siya nag-o-on.,audio_phone/tl-en/tl-en_042.opus
+tl-en_043,tl-en,clean,Na-try ko na i-check yung monitor pero ayaw pa rin mag-connect.,audio/tl-en/tl-en_043.mp3
+tl-en_043,tl-en,phone,Na-try ko na i-check yung monitor pero ayaw pa rin mag-connect.,audio_phone/tl-en/tl-en_043.opus
+tl-en_044,tl-en,clean,Kailangan ko ng help sa password kasi hindi siya nag-o-on.,audio/tl-en/tl-en_044.mp3
+tl-en_044,tl-en,phone,Kailangan ko ng help sa password kasi hindi siya nag-o-on.,audio_phone/tl-en/tl-en_044.opus
+tl-en_045,tl-en,clean,Pwede mo bang i-reset yung monitor this afternoon?,audio/tl-en/tl-en_045.mp3
+tl-en_045,tl-en,phone,Pwede mo bang i-reset yung monitor this afternoon?,audio_phone/tl-en/tl-en_045.opus
+tl-en_046,tl-en,clean,Na-try ko na i-update yung monitor pero ayaw pa rin mag-connect.,audio/tl-en/tl-en_046.mp3
+tl-en_046,tl-en,phone,Na-try ko na i-update yung monitor pero ayaw pa rin mag-connect.,audio_phone/tl-en/tl-en_046.opus
+tl-en_047,tl-en,clean,Pwede mo bang i-restart yung laptop bukas ng umaga?,audio/tl-en/tl-en_047.mp3
+tl-en_047,tl-en,phone,Pwede mo bang i-restart yung laptop bukas ng umaga?,audio_phone/tl-en/tl-en_047.opus
+tl-en_048,tl-en,clean,Pwede mo bang i-reset yung phone after lunch?,audio/tl-en/tl-en_048.mp3
+tl-en_048,tl-en,phone,Pwede mo bang i-reset yung phone after lunch?,audio_phone/tl-en/tl-en_048.opus
+tl-en_049,tl-en,clean,Na-try ko na i-reset yung laptop pero ayaw pa rin mag-connect.,audio/tl-en/tl-en_049.mp3
+tl-en_049,tl-en,phone,Na-try ko na i-reset yung laptop pero ayaw pa rin mag-connect.,audio_phone/tl-en/tl-en_049.opus
+tl-en_050,tl-en,clean,Na-try ko na i-update yung password pero hindi siya nag-o-on.,audio/tl-en/tl-en_050.mp3
+tl-en_050,tl-en,phone,Na-try ko na i-update yung password pero hindi siya nag-o-on.,audio_phone/tl-en/tl-en_050.opus
+tl-en_051,tl-en,clean,"Okay na po, na-check na yung password kanina.",audio/tl-en/tl-en_051.mp3
+tl-en_051,tl-en,phone,"Okay na po, na-check na yung password kanina.",audio_phone/tl-en/tl-en_051.opus
+tl-en_052,tl-en,clean,Kailangan ko ng help sa Wi-Fi kasi ayaw pa rin mag-connect.,audio/tl-en/tl-en_052.mp3
+tl-en_052,tl-en,phone,Kailangan ko ng help sa Wi-Fi kasi ayaw pa rin mag-connect.,audio_phone/tl-en/tl-en_052.opus
+tl-en_053,tl-en,clean,"Okay na po, na-install na yung printer this morning.",audio/tl-en/tl-en_053.mp3
+tl-en_053,tl-en,phone,"Okay na po, na-install na yung printer this morning.",audio_phone/tl-en/tl-en_053.opus
+tl-en_054,tl-en,clean,Na-try ko na i-reset yung password pero sobrang bagal.,audio/tl-en/tl-en_054.mp3
+tl-en_054,tl-en,phone,Na-try ko na i-reset yung password pero sobrang bagal.,audio_phone/tl-en/tl-en_054.opus
+tl-en_055,tl-en,clean,Hindi gumagana yung phone ko since this morning.,audio/tl-en/tl-en_055.mp3
+tl-en_055,tl-en,phone,Hindi gumagana yung phone ko since this morning.,audio_phone/tl-en/tl-en_055.opus
+tl-en_056,tl-en,clean,Hindi gumagana yung printer ko since this morning.,audio/tl-en/tl-en_056.mp3
+tl-en_056,tl-en,phone,Hindi gumagana yung printer ko since this morning.,audio_phone/tl-en/tl-en_056.opus
+tl-en_057,tl-en,clean,Pwede mo bang i-reset yung Wi-Fi ngayon?,audio/tl-en/tl-en_057.mp3
+tl-en_057,tl-en,phone,Pwede mo bang i-reset yung Wi-Fi ngayon?,audio_phone/tl-en/tl-en_057.opus
+tl-en_058,tl-en,clean,Na-try ko na i-install yung email account pero nag-e-error pa rin.,audio/tl-en/tl-en_058.mp3
+tl-en_058,tl-en,phone,Na-try ko na i-install yung email account pero nag-e-error pa rin.,audio_phone/tl-en/tl-en_058.opus
+tl-en_059,tl-en,clean,Kailangan ko ng help sa router kasi sobrang bagal.,audio/tl-en/tl-en_059.mp3
+tl-en_059,tl-en,phone,Kailangan ko ng help sa router kasi sobrang bagal.,audio_phone/tl-en/tl-en_059.opus
+tl-en_060,tl-en,clean,Hindi gumagana yung printer ko since kanina.,audio/tl-en/tl-en_060.mp3
+tl-en_060,tl-en,phone,Hindi gumagana yung printer ko since kanina.,audio_phone/tl-en/tl-en_060.opus
+tl-en_061,tl-en,clean,Na-try ko na i-reset yung router pero sobrang bagal.,audio/tl-en/tl-en_061.mp3
+tl-en_061,tl-en,phone,Na-try ko na i-reset yung router pero sobrang bagal.,audio_phone/tl-en/tl-en_061.opus
+tl-en_062,tl-en,clean,"Okay na po, na-update na yung email account kahapon.",audio/tl-en/tl-en_062.mp3
+tl-en_062,tl-en,phone,"Okay na po, na-update na yung email account kahapon.",audio_phone/tl-en/tl-en_062.opus
+tl-en_063,tl-en,clean,Na-try ko na i-check yung phone pero ayaw pa rin mag-connect.,audio/tl-en/tl-en_063.mp3
+tl-en_063,tl-en,phone,Na-try ko na i-check yung phone pero ayaw pa rin mag-connect.,audio_phone/tl-en/tl-en_063.opus
+tl-en_064,tl-en,clean,Kailangan ko ng help sa email account kasi sobrang bagal.,audio/tl-en/tl-en_064.mp3
+tl-en_064,tl-en,phone,Kailangan ko ng help sa email account kasi sobrang bagal.,audio_phone/tl-en/tl-en_064.opus
+tl-en_065,tl-en,clean,"Okay na po, na-update na yung Wi-Fi kanina.",audio/tl-en/tl-en_065.mp3
+tl-en_065,tl-en,phone,"Okay na po, na-update na yung Wi-Fi kanina.",audio_phone/tl-en/tl-en_065.opus
+tl-en_066,tl-en,clean,Pwede mo bang i-reset yung email account ngayon?,audio/tl-en/tl-en_066.mp3
+tl-en_066,tl-en,phone,Pwede mo bang i-reset yung email account ngayon?,audio_phone/tl-en/tl-en_066.opus
+tl-en_067,tl-en,clean,Pwede mo bang i-update yung Wi-Fi mamaya?,audio/tl-en/tl-en_067.mp3
+tl-en_067,tl-en,phone,Pwede mo bang i-update yung Wi-Fi mamaya?,audio_phone/tl-en/tl-en_067.opus
+tl-en_068,tl-en,clean,Na-try ko na i-install yung email account pero sobrang bagal.,audio/tl-en/tl-en_068.mp3
+tl-en_068,tl-en,phone,Na-try ko na i-install yung email account pero sobrang bagal.,audio_phone/tl-en/tl-en_068.opus
+tl-en_069,tl-en,clean,"Okay na po, na-check na yung phone kanina.",audio/tl-en/tl-en_069.mp3
+tl-en_069,tl-en,phone,"Okay na po, na-check na yung phone kanina.",audio_phone/tl-en/tl-en_069.opus
+tl-en_070,tl-en,clean,Hindi gumagana yung laptop ko since kahapon.,audio/tl-en/tl-en_070.mp3
+tl-en_070,tl-en,phone,Hindi gumagana yung laptop ko since kahapon.,audio_phone/tl-en/tl-en_070.opus
+tl-en_071,tl-en,clean,Kailangan ko ng help sa phone kasi sobrang bagal.,audio/tl-en/tl-en_071.mp3
+tl-en_071,tl-en,phone,Kailangan ko ng help sa phone kasi sobrang bagal.,audio_phone/tl-en/tl-en_071.opus
+tl-en_072,tl-en,clean,"Okay na po, na-restart na yung email account this morning.",audio/tl-en/tl-en_072.mp3
+tl-en_072,tl-en,phone,"Okay na po, na-restart na yung email account this morning.",audio_phone/tl-en/tl-en_072.opus
+tl-en_073,tl-en,clean,Na-try ko na i-update yung email account pero hindi siya nag-o-on.,audio/tl-en/tl-en_073.mp3
+tl-en_073,tl-en,phone,Na-try ko na i-update yung email account pero hindi siya nag-o-on.,audio_phone/tl-en/tl-en_073.opus
+tl-en_074,tl-en,clean,Na-try ko na i-check yung printer pero ayaw pa rin mag-connect.,audio/tl-en/tl-en_074.mp3
+tl-en_074,tl-en,phone,Na-try ko na i-check yung printer pero ayaw pa rin mag-connect.,audio_phone/tl-en/tl-en_074.opus
+tl-en_075,tl-en,clean,Na-try ko na i-restart yung monitor pero hindi siya nag-o-on.,audio/tl-en/tl-en_075.mp3
+tl-en_075,tl-en,phone,Na-try ko na i-restart yung monitor pero hindi siya nag-o-on.,audio_phone/tl-en/tl-en_075.opus
+tl-en_076,tl-en,clean,Na-try ko na i-update yung phone pero sobrang bagal.,audio/tl-en/tl-en_076.mp3
+tl-en_076,tl-en,phone,Na-try ko na i-update yung phone pero sobrang bagal.,audio_phone/tl-en/tl-en_076.opus
+tl-en_077,tl-en,clean,Kailangan ko ng help sa printer kasi ayaw pa rin mag-connect.,audio/tl-en/tl-en_077.mp3
+tl-en_077,tl-en,phone,Kailangan ko ng help sa printer kasi ayaw pa rin mag-connect.,audio_phone/tl-en/tl-en_077.opus
+tl-en_078,tl-en,clean,Pwede mo bang i-check yung printer bukas ng umaga?,audio/tl-en/tl-en_078.mp3
+tl-en_078,tl-en,phone,Pwede mo bang i-check yung printer bukas ng umaga?,audio_phone/tl-en/tl-en_078.opus
+tl-en_079,tl-en,clean,Hindi gumagana yung monitor ko since this morning.,audio/tl-en/tl-en_079.mp3
+tl-en_079,tl-en,phone,Hindi gumagana yung monitor ko since this morning.,audio_phone/tl-en/tl-en_079.opus
+tl-en_080,tl-en,clean,"Okay na po, na-restart na yung monitor last week.",audio/tl-en/tl-en_080.mp3
+tl-en_080,tl-en,phone,"Okay na po, na-restart na yung monitor last week.",audio_phone/tl-en/tl-en_080.opus
+tl-en_081,tl-en,clean,"Okay na po, na-check na yung laptop kanina.",audio/tl-en/tl-en_081.mp3
+tl-en_081,tl-en,phone,"Okay na po, na-check na yung laptop kanina.",audio_phone/tl-en/tl-en_081.opus
+tl-en_082,tl-en,clean,Na-try ko na i-reset yung phone pero hindi siya nag-o-on.,audio/tl-en/tl-en_082.mp3
+tl-en_082,tl-en,phone,Na-try ko na i-reset yung phone pero hindi siya nag-o-on.,audio_phone/tl-en/tl-en_082.opus
+tl-en_083,tl-en,clean,Kailangan ko ng help sa laptop kasi hindi siya nag-o-on.,audio/tl-en/tl-en_083.mp3
+tl-en_083,tl-en,phone,Kailangan ko ng help sa laptop kasi hindi siya nag-o-on.,audio_phone/tl-en/tl-en_083.opus
+tl-en_084,tl-en,clean,Kailangan ko ng help sa printer kasi sobrang bagal.,audio/tl-en/tl-en_084.mp3
+tl-en_084,tl-en,phone,Kailangan ko ng help sa printer kasi sobrang bagal.,audio_phone/tl-en/tl-en_084.opus
+tl-en_085,tl-en,clean,"Okay na po, na-reset na yung email account kanina.",audio/tl-en/tl-en_085.mp3
+tl-en_085,tl-en,phone,"Okay na po, na-reset na yung email account kanina.",audio_phone/tl-en/tl-en_085.opus
+tl-en_086,tl-en,clean,"Okay na po, na-update na yung password last week.",audio/tl-en/tl-en_086.mp3
+tl-en_086,tl-en,phone,"Okay na po, na-update na yung password last week.",audio_phone/tl-en/tl-en_086.opus
+tl-en_087,tl-en,clean,"Okay na po, na-check na yung router kanina.",audio/tl-en/tl-en_087.mp3
+tl-en_087,tl-en,phone,"Okay na po, na-check na yung router kanina.",audio_phone/tl-en/tl-en_087.opus
+tl-en_088,tl-en,clean,Na-try ko na i-reset yung Wi-Fi pero hindi siya nag-o-on.,audio/tl-en/tl-en_088.mp3
+tl-en_088,tl-en,phone,Na-try ko na i-reset yung Wi-Fi pero hindi siya nag-o-on.,audio_phone/tl-en/tl-en_088.opus
+tl-en_089,tl-en,clean,"Okay na po, na-install na yung laptop kahapon.",audio/tl-en/tl-en_089.mp3
+tl-en_089,tl-en,phone,"Okay na po, na-install na yung laptop kahapon.",audio_phone/tl-en/tl-en_089.opus
+tl-en_090,tl-en,clean,Kailangan ko ng help sa router kasi nag-e-error pa rin.,audio/tl-en/tl-en_090.mp3
+tl-en_090,tl-en,phone,Kailangan ko ng help sa router kasi nag-e-error pa rin.,audio_phone/tl-en/tl-en_090.opus
+tl-en_091,tl-en,clean,Na-try ko na i-check yung password pero nag-e-error pa rin.,audio/tl-en/tl-en_091.mp3
+tl-en_091,tl-en,phone,Na-try ko na i-check yung password pero nag-e-error pa rin.,audio_phone/tl-en/tl-en_091.opus
+tl-en_092,tl-en,clean,Pwede mo bang i-reset yung password bukas ng umaga?,audio/tl-en/tl-en_092.mp3
+tl-en_092,tl-en,phone,Pwede mo bang i-reset yung password bukas ng umaga?,audio_phone/tl-en/tl-en_092.opus
+tl-en_093,tl-en,clean,"Okay na po, na-update na yung printer this morning.",audio/tl-en/tl-en_093.mp3
+tl-en_093,tl-en,phone,"Okay na po, na-update na yung printer this morning.",audio_phone/tl-en/tl-en_093.opus
+tl-en_094,tl-en,clean,Na-try ko na i-restart yung password pero nag-e-error pa rin.,audio/tl-en/tl-en_094.mp3
+tl-en_094,tl-en,phone,Na-try ko na i-restart yung password pero nag-e-error pa rin.,audio_phone/tl-en/tl-en_094.opus
+tl-en_095,tl-en,clean,"Okay na po, na-reset na yung phone last week.",audio/tl-en/tl-en_095.mp3
+tl-en_095,tl-en,phone,"Okay na po, na-reset na yung phone last week.",audio_phone/tl-en/tl-en_095.opus
+tl-en_096,tl-en,clean,Na-try ko na i-restart yung printer pero ayaw pa rin mag-connect.,audio/tl-en/tl-en_096.mp3
+tl-en_096,tl-en,phone,Na-try ko na i-restart yung printer pero ayaw pa rin mag-connect.,audio_phone/tl-en/tl-en_096.opus
+tl-en_097,tl-en,clean,Na-try ko na i-install yung monitor pero nag-e-error pa rin.,audio/tl-en/tl-en_097.mp3
+tl-en_097,tl-en,phone,Na-try ko na i-install yung monitor pero nag-e-error pa rin.,audio_phone/tl-en/tl-en_097.opus
+tl-en_098,tl-en,clean,Na-try ko na i-install yung router pero nag-e-error pa rin.,audio/tl-en/tl-en_098.mp3
+tl-en_098,tl-en,phone,Na-try ko na i-install yung router pero nag-e-error pa rin.,audio_phone/tl-en/tl-en_098.opus
+tl-en_099,tl-en,clean,Pwede mo bang i-update yung Wi-Fi bukas ng umaga?,audio/tl-en/tl-en_099.mp3
+tl-en_099,tl-en,phone,Pwede mo bang i-update yung Wi-Fi bukas ng umaga?,audio_phone/tl-en/tl-en_099.opus
+tl-en_100,tl-en,clean,Hindi gumagana yung router ko since last week.,audio/tl-en/tl-en_100.mp3
+tl-en_100,tl-en,phone,Hindi gumagana yung router ko since last week.,audio_phone/tl-en/tl-en_100.opus
